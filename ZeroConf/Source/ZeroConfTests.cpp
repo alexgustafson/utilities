@@ -23,15 +23,23 @@ void ZeroConfTests::browseTest()
     Monitor monitor;
     monitor.startMonitoring();
     
-    ScopedPointer<ZeroConfManager> zeroConfManager = new ZeroConfManager("_diapro._udp", &monitor);
+    ZeroConfObserver listener;
+    
+    ScopedPointer<ZeroConfManager> zeroConfManager = new ZeroConfManager("_diapro._udp", &monitor, &listener);
+
     
     Thread::sleep(2000);
     /*
      Start consolue command:
      dns-sd -R "Mu Shu" _diapro._udp local 9904
     */
+    int i = 0;
+    while (i < 100) {
+        i++;
+        Thread::sleep(300);
+    }
     
-    Thread::sleep(18000);
+    //Thread::sleep(18000);
     
     monitor.stop();
 }

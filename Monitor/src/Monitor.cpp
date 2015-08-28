@@ -100,6 +100,10 @@ void Monitor::run()
         for (int i = 0; i < fileDescriptors.size(); i++)
         {
             int fd = fileDescriptors[i];
+            if (maxfd < fd)
+            {
+                maxfd = fd;
+            }
             FD_SET(fd, &readset);
         }
         
@@ -127,18 +131,26 @@ void Monitor::run()
 void Monitor::addFileDescriptorAndListener(int fileDescriptor, FileDescriptorListener* listener)
 {
     const ScopedLock myScopedLock (lock);
-    if (maxfd < fileDescriptor)
-    {
-        maxfd = fileDescriptor;
-    }
     
-    listeners.add(listener);
     fileDescriptors.add(fileDescriptor);
     map.set(fileDescriptor , listener);
     
     if (fileDescriptor != control_listener) {
         write(control_send, "reset select", 13 * sizeof(char));
     }
+}
+
+void Monitor::removeFileDescriptorAndListener(int fileDescriptor)
+{
+    const ScopedLock myScopedLock (lock);
+    
+    map.remove(fileDescriptor);
+    fileDescriptors.removeFirstMatchingValue(fileDescriptor);
+    
+    if (fileDescriptor != control_listener) {
+        write(control_send, "reset select", 13 * sizeof(char));
+    }
+    
 }
 
 void Monitor::handleFileDescriptor(int fileDescriptor)

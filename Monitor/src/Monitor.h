@@ -35,6 +35,7 @@ public:
     
     void initializeControlSocket();
     void addFileDescriptorAndListener(int fileDescriptor, FileDescriptorListener* listener);
+    void removeFileDescriptorAndListener(int fileDescriptor);
     void startMonitoring();
     void stop();
     
@@ -50,7 +51,6 @@ private:
     void run() override;
     int control_socket_port;
     
-    Array<FileDescriptorListener *> listeners;
     Array<int> fileDescriptors;
     CriticalSection lock;
     

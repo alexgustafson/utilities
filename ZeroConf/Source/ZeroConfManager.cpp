@@ -46,26 +46,18 @@ static void zeroResolveCallback(DNSServiceRef sdRef,
                                 const unsigned char *txtRecord,
                                 void *context)
 {
-    response.clear();
+
     response.set("fullname", fullname);
     response.set("hosttarget", hosttarget);
     response.set("port", port);
     response.set("txtLen", txtLen);
     response.set("txtRecord", txtRecord);
     
-    #pragma unused(flags)
-    #pragma unused(fullname)
-    
-    if (errorCode != kDNSServiceErr_NoError)
-        fprintf(stderr, "MyResolveCallBack returned %d\n", errorCode);
-    else
-        printf("RESOLVE: %s is at %s:%d\n", fullname, hosttarget, ntohs(port));
-    if (!(flags & kDNSServiceFlagsMoreComing)) fflush(stdout);
-    
 }
 
-ZeroConfManager::ZeroConfManager(const char * service_type, Monitor* socket_monitor) {
+ZeroConfManager::ZeroConfManager(const char * service_type, Monitor* socket_monitor, ZeroConfListener* lstnr) : Thread ("ZeroConf Manager Thread") {
     
+    this->listener = lstnr;
     monitor = socket_monitor;
     
     DNSServiceErrorType error;
@@ -87,6 +79,8 @@ ZeroConfManager::~ZeroConfManager()
 
 }
 
+
+
 void ZeroConfManager::handleFileDescriptor(int fileDescriptor)
 {
     Logger::writeToLog("ZeroConf Manager is handling it's file descriptor");
@@ -102,7 +96,7 @@ void ZeroConfManager::handleFileDescriptor(int fileDescriptor)
             error = DNSServiceResolve(&resolveServiceRef,
                                       0,
                                       0,
-                                      "Mu Shu",
+                                      response.getVarPointer("serviceName")->toString().toRawUTF8(),
                                       response.getVarPointer("regtype")->toString().toRawUTF8(),
                                       response.getVarPointer("replyDomain")->toString().toRawUTF8(),
                                       zeroResolveCallback,
@@ -120,9 +114,11 @@ void ZeroConfManager::handleFileDescriptor(int fileDescriptor)
         Logger::writeToLog(response.getVarPointer("fullname")->toString());
         Logger::writeToLog(response.getVarPointer("hosttarget")->toString());
         Logger::writeToLog(response.getVarPointer("port")->toString());
+            
+        serviceList.add(new NamedValueSet(response));
+        startThread();
     }
 }
-
 
 int ZeroConfManager::getBrowseServiceFileDescriptor()
 {
@@ -132,4 +128,9 @@ int ZeroConfManager::getBrowseServiceFileDescriptor()
 int ZeroConfManager::getResolveServiceFileDescriptor()
 {
     return DNSServiceRefSockFD(resolveServiceRef);
+}
+
+void ZeroConfManager::run()
+{
+    listener->handleZeroConfUpdate(&serviceList);
 }

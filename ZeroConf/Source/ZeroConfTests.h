@@ -23,6 +23,30 @@ public:
     void runTest();
     
 private:
+    
+    class ZeroConfObserver : public ZeroConfListener
+    {
+    public:
+        
+        ZeroConfObserver() {};
+        
+        void handleZeroConfUpdate(OwnedArray<NamedValueSet> *serviceList)
+        {
+            Logger::writeToLog("notified");
+            for (int i = 0; i < serviceList->size(); i++) {
+                
+                NamedValueSet *service = serviceList->getUnchecked(i);
+                for (int j = 0; j < service->size(); j++) {
+                    Logger::writeToLog(service->getValueAt(j).toString());
+                }
+                
+                
+            }
+        };
+
+    private:
+    };
+    
     ScopedPointer<ThreadPool> pool;
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (ZeroConfTests)
 };

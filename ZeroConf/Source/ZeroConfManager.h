@@ -14,26 +14,40 @@
 #include "JuceHeader.h"
 #include <dns_sd.h>
 
+class ZeroConfListener {
+public:
+    //virtual ~ZeroConfListener();
+    virtual void handleZeroConfUpdate(OwnedArray<NamedValueSet> *serviceList) = 0;
+};
 
-class ZeroConfManager : public FileDescriptorListener
+
+
+class ZeroConfManager : public FileDescriptorListener,
+                        private Thread
 {
 public:
-    ZeroConfManager(const char * service_type, Monitor* socketMonitor);
+    ZeroConfManager(const char * service_type, Monitor* socketMonitor, ZeroConfListener* listener);
     ~ZeroConfManager();
     
     void handleFileDescriptor(int fileDescriptor);
     int getBrowseServiceFileDescriptor();
     int getResolveServiceFileDescriptor();
     
+    void run () override;
+    
 private:
     DNSServiceRef  browseServiceRef;
     DNSServiceRef  resolveServiceRef;
-    int zeroconf_socket;
-    JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (ZeroConfManager)
-    NamedValueSet browserResponse;
+    
+    NamedValueSet browseResponse;
+    NamedValueSet resolveResponse;
+    
     Monitor *monitor;
-    Array<NamedValueSet> serviceBrowserResults;
-    Array<NamedValueSet> serviceResolverResults;
+    
+    ZeroConfListener* listener;
+    OwnedArray<NamedValueSet> serviceList;
+    
+    JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (ZeroConfManager)
 };
 
 #endif  // ZEROCONFMANAGER_H_INCLUDED
