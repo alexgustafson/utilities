@@ -10,7 +10,7 @@
 
 #include "ZeroConfManager.h"
 
-NamedValueSet response;
+ZeroConfService response;
 
 static void zeroBrowseCallback(DNSServiceRef sdRef,
                                DNSServiceFlags flags,
@@ -26,13 +26,13 @@ static void zeroBrowseCallback(DNSServiceRef sdRef,
     String moreString = (flags & kDNSServiceFlagsMoreComing) ? "MORE" : "";
     
     response.clear();
-    response.set("serviceName", serviceName);
-    response.set("regtype", regtype);
-    response.set("replyDomain", replyDomain);
-    response.set("addString", addString);
-    response.set("moreString", moreString);
-    response.set("errorCode", errorCode);
-    
+    response.serviceName =  serviceName;
+    response.regType = regtype;
+    response.addString =  addString;
+    response.moreString =  moreString;
+    response.errorCode =  errorCode;
+    response.replyDomain =  replyDomain;
+
 }
 
 static void zeroResolveCallback(DNSServiceRef sdRef,
@@ -47,12 +47,10 @@ static void zeroResolveCallback(DNSServiceRef sdRef,
                                 void *context)
 {
 
-    response.set("fullname", fullname);
-    response.set("hosttarget", hosttarget);
-    response.set("port", port);
-    response.set("txtLen", txtLen);
-    response.set("txtRecord", txtRecord);
-    
+    response.fullname=  fullname;
+    response.hosttarget =  hosttarget;
+    response.port =  port;
+
 }
 
 ZeroConfManager::ZeroConfManager(const char * service_type, Monitor* socket_monitor, ZeroConfListener* lstnr) : Thread ("ZeroConf Manager Thread") {
@@ -76,10 +74,8 @@ ZeroConfManager::ZeroConfManager(const char * service_type, Monitor* socket_moni
 
 ZeroConfManager::~ZeroConfManager()
 {
-
+    stopThread(20);
 }
-
-
 
 void ZeroConfManager::handleFileDescriptor(int fileDescriptor)
 {
@@ -90,32 +86,56 @@ void ZeroConfManager::handleFileDescriptor(int fileDescriptor)
     if(fileDescriptor == DNSServiceRefSockFD(browseServiceRef))
     {
         err = DNSServiceProcessResult(this->browseServiceRef);
-        if (response.getVarPointer("addString")->toString().equalsIgnoreCase("ADD")) {
+        if (response.addString.equalsIgnoreCase("ADD")) {
             
             Logger::writeToLog("DNSServiceBrowser Found A Match");
             error = DNSServiceResolve(&resolveServiceRef,
                                       0,
                                       0,
-                                      response.getVarPointer("serviceName")->toString().toRawUTF8(),
-                                      response.getVarPointer("regtype")->toString().toRawUTF8(),
-                                      response.getVarPointer("replyDomain")->toString().toRawUTF8(),
+                                      response.serviceName.toRawUTF8(),
+                                      response.regType.toRawUTF8(),
+                                      response.replyDomain.toRawUTF8(),
                                       zeroResolveCallback,
                                       NULL);
             
             if (error == kDNSServiceErr_NoError) {
                 Logger::writeToLog("Attempting to Resolve Service");
                 monitor->addFileDescriptorAndListener(this->getResolveServiceFileDescriptor(), this);
+                serviceList.add(new ZeroConfService(response));
+
             }
+        }else if (response.addString.equalsIgnoreCase("REMOVE")){
+            for (int i = 0; i < serviceList.size(); i++) {
+                ZeroConfService *service = serviceList.getUnchecked(i);
+                if (*service == response)
+                {
+                    serviceList.removeObject(service);
+                    
+                    break;
+                }
+            }
+            startThread();
         }
         
     }else if (fileDescriptor == DNSServiceRefSockFD(resolveServiceRef))
     {
+  
         err = DNSServiceProcessResult(this->resolveServiceRef);
-        Logger::writeToLog(response.getVarPointer("fullname")->toString());
-        Logger::writeToLog(response.getVarPointer("hosttarget")->toString());
-        Logger::writeToLog(response.getVarPointer("port")->toString());
-            
-        serviceList.add(new NamedValueSet(response));
+        Logger::writeToLog("serviceName: " + response.serviceName);
+        Logger::writeToLog("regType: " + response.regType);
+        Logger::writeToLog("replyDomain: " + response.replyDomain);
+        
+        for (int i = 0; i < serviceList.size(); i++) {
+            ZeroConfService *service = serviceList.getUnchecked(i);
+            if (*service == response)
+            {
+                serviceList.removeObject(service);
+                
+                break;
+            }
+        }
+        serviceList.add(new ZeroConfService(response));
+
         startThread();
     }
 }
@@ -131,6 +151,11 @@ int ZeroConfManager::getResolveServiceFileDescriptor()
 }
 
 void ZeroConfManager::run()
+{
+    notifyListener();
+}
+
+void ZeroConfManager::notifyListener()
 {
     listener->handleZeroConfUpdate(&serviceList);
 }

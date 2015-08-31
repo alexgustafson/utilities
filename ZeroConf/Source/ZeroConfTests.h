@@ -24,30 +24,29 @@ public:
     
 private:
     
-    class ZeroConfObserver : public ZeroConfListener
-    {
-    public:
+class ZeroConfObserver : public ZeroConfListener
+{
+public:
         
         ZeroConfObserver() {};
+        ~ZeroConfObserver() {};
         
-        void handleZeroConfUpdate(OwnedArray<NamedValueSet> *serviceList)
+        void handleZeroConfUpdate(OwnedArray<ZeroConfService> *serviceList)
         {
             Logger::writeToLog("notified");
             for (int i = 0; i < serviceList->size(); i++) {
                 
-                NamedValueSet *service = serviceList->getUnchecked(i);
-                for (int j = 0; j < service->size(); j++) {
-                    Logger::writeToLog(service->getValueAt(j).toString());
-                }
+                ZeroConfService *service = serviceList->getUnchecked(i);
                 
+                Logger::writeToLog(service->fullname);
                 
             }
         };
 
-    private:
-    };
+private:
+};
     
-    ScopedPointer<ThreadPool> pool;
-    JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (ZeroConfTests)
+ScopedPointer<ThreadPool> pool;
+JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (ZeroConfTests)
 };
 #endif  // ZEROCONFTESTS_H_INCLUDED

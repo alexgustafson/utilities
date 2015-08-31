@@ -14,12 +14,58 @@
 #include "JuceHeader.h"
 #include <dns_sd.h>
 
-class ZeroConfListener {
+
+class ZeroConfService {
 public:
-    //virtual ~ZeroConfListener();
-    virtual void handleZeroConfUpdate(OwnedArray<NamedValueSet> *serviceList) = 0;
+    uint32_t interfaceIndex;
+    DNSServiceFlags flags;
+    DNSServiceErrorType errorCode;
+    
+    String serviceName = "";
+    String regType = "";
+    String replyDomain = "";
+    String fullname = "";
+    String hosttarget = "";
+    String addString = "";
+    String moreString = "";
+    uint16_t port = 0;
+    
+    bool operator==(const ZeroConfService& rhs) const {
+        return
+            serviceName == rhs.serviceName
+        && regType == rhs.regType
+        && replyDomain == rhs.replyDomain;
+
+    }
+    
+    const char* key() {
+        return String(serviceName + "." + regType + "." + replyDomain).toRawUTF8();
+    }
+    
+    void clear() {
+        interfaceIndex = 0;
+        flags = 0;
+        errorCode= 0;
+        
+        serviceName = "";
+        regType = "";
+        replyDomain = "";
+        fullname = "";
+        hosttarget = "";
+        addString = "";
+        moreString = "";
+        port = 0;
+        
+    }
+    
+private:
 };
 
+class ZeroConfListener {
+public:
+    virtual ~ZeroConfListener() {};
+    virtual void handleZeroConfUpdate(OwnedArray<ZeroConfService> *serviceList) = 0;
+};
 
 
 class ZeroConfManager : public FileDescriptorListener,
@@ -33,9 +79,11 @@ public:
     int getBrowseServiceFileDescriptor();
     int getResolveServiceFileDescriptor();
     
-    void run () override;
-    
 private:
+    
+    void run () override;
+    void notifyListener();
+    
     DNSServiceRef  browseServiceRef;
     DNSServiceRef  resolveServiceRef;
     
@@ -45,7 +93,7 @@ private:
     Monitor *monitor;
     
     ZeroConfListener* listener;
-    OwnedArray<NamedValueSet> serviceList;
+    OwnedArray<ZeroConfService> serviceList;
     
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (ZeroConfManager)
 };
