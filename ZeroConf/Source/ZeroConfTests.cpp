@@ -20,13 +20,14 @@ void ZeroConfTests::firstTest()
 
 void ZeroConfTests::browseTest()
 {
+    beginTest("Browse Test");
     Monitor monitor;
     monitor.startMonitoring();
     
     ZeroConfObserver listener;
     
-    ScopedPointer<ZeroConfManager> zeroConfManager = new ZeroConfManager("_diapro._udp", &monitor, &listener);
-
+    ScopedPointer<ZeroConfManager> zeroConfManager = new ZeroConfManager(&monitor, &listener);
+    zeroConfManager->browseService("_diapro._udp");
     
     Thread::sleep(2000);
     /*
@@ -34,12 +35,47 @@ void ZeroConfTests::browseTest()
      dns-sd -R "Mu Shu" _diapro._udp local 9904
     */
     int i = 0;
-    while (i < 100) {
+    while (i < 50) {
         i++;
-        Thread::sleep(300);
+        Thread::sleep(50);
     }
     
-    //Thread::sleep(18000);
+    monitor.stop();
+}
+
+void ZeroConfTests::registerTest()
+{
+    
+    beginTest("Register Test");
+    Monitor monitor;
+    monitor.startMonitoring();
+    
+    ZeroConfObserver listener;
+    
+    ScopedPointer<ZeroConfManager> zeroConfManager = new ZeroConfManager(&monitor, &listener);
+    zeroConfManager->browseService("_diapro._udp");
+    
+    Thread::sleep(100);
+    ZeroConfObserver registrar;
+    ScopedPointer<ZeroConfManager> zeroConfManager2 = new ZeroConfManager(&monitor, &registrar);
+    ScopedPointer<ZeroConfService> service = new ZeroConfService();
+    
+    service->setPort(9905);
+    service->setServiceName("Mu Shi");
+    service->setRegType("_diapro._udp");
+    
+    zeroConfManager2->registerService(service);
+    
+    Thread::sleep(2000);
+
+    int i = 0;
+    while (i < 50) {
+        i++;
+        Thread::sleep(50);
+    }
+    
+    zeroConfManager2->removeService(service);
+    Thread::sleep(1000);
     
     monitor.stop();
 }
@@ -48,4 +84,5 @@ void ZeroConfTests::runTest()
 {
     firstTest();
     browseTest();
+    registerTest();
 }

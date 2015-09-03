@@ -130,6 +130,8 @@ void Monitor::run()
 
 void Monitor::addFileDescriptorAndListener(int fileDescriptor, FileDescriptorListener* listener)
 {
+    // if this fails, you've passed an invalid fileDescriptor
+    jassert(fileDescriptor > 0);
     const ScopedLock myScopedLock (lock);
     
     fileDescriptors.add(fileDescriptor);
@@ -158,6 +160,6 @@ void Monitor::handleFileDescriptor(int fileDescriptor)
     const ScopedLock myScopedLock (lock);
 
     char buffer[1000];
-     recv(fileDescriptor, buffer, sizeof(buffer), 0);
+    recv(fileDescriptor, buffer, sizeof(buffer), 0);
 
 }

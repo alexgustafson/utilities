@@ -10,6 +10,7 @@
 
 #include "ZeroConfManager.h"
 
+
 ZeroConfService response;
 
 static void zeroBrowseCallback(DNSServiceRef sdRef,
@@ -21,18 +22,16 @@ static void zeroBrowseCallback(DNSServiceRef sdRef,
                                const char *replyDomain,
                                void *context)
 {
-    
     String addString  = (flags & kDNSServiceFlagsAdd) ? "ADD" : "REMOVE";
     String moreString = (flags & kDNSServiceFlagsMoreComing) ? "MORE" : "";
     
     response.clear();
-    response.serviceName =  serviceName;
-    response.regType = regtype;
-    response.addString =  addString;
-    response.moreString =  moreString;
-    response.errorCode =  errorCode;
-    response.replyDomain =  replyDomain;
-
+    response.setServiceName(serviceName);
+    response.setRegType(regtype);
+    response.setAddString(addString);
+    response.setMoreString(moreString);
+    response.setErrorCode(errorCode);
+    response.setReplyDomain(replyDomain);
 }
 
 static void zeroResolveCallback(DNSServiceRef sdRef,
@@ -46,30 +45,26 @@ static void zeroResolveCallback(DNSServiceRef sdRef,
                                 const unsigned char *txtRecord,
                                 void *context)
 {
-
-    response.fullname=  fullname;
-    response.hosttarget =  hosttarget;
-    response.port =  port;
-
+    response.setFullname(fullname);
+    response.setHosttarget(hosttarget);
+    response.setPort(port);
 }
 
-ZeroConfManager::ZeroConfManager(const char * service_type, Monitor* socket_monitor, ZeroConfListener* lstnr) : Thread ("ZeroConf Manager Thread") {
+static void zeroRegisterCallback(DNSServiceRef sdRef,
+                                DNSServiceFlags flags,
+                                DNSServiceErrorType errorCode,
+                                const char *serviceName,
+                                const char *regtype,
+                                const char *domain,
+                                void *context)
+{
+    response.clear();
+}
+
+ZeroConfManager::ZeroConfManager( Monitor* socket_monitor, ZeroConfListener* lstnr) : Thread ("ZeroConf Manager Thread") {
     
     this->listener = lstnr;
     monitor = socket_monitor;
-    
-    DNSServiceErrorType error;
-    
-    error = DNSServiceBrowse(&browseServiceRef,
-                             0,                // no flags
-                             0,                // all network interfaces
-                             service_type,     // service type
-                             "",               // default domains
-                             zeroBrowseCallback,   // call back function
-                             NULL);            // no context
-    
-    
-    monitor->addFileDescriptorAndListener(this->getBrowseServiceFileDescriptor(), this);
 }
 
 ZeroConfManager::~ZeroConfManager()
@@ -77,34 +72,94 @@ ZeroConfManager::~ZeroConfManager()
     stopThread(20);
 }
 
+void ZeroConfManager::run()
+{
+    notifyListener();
+}
+
+void ZeroConfManager::notifyListener()
+{
+    listener->handleZeroConfUpdate(&serviceList);
+}
+
+void ZeroConfManager::registerService(ZeroConfService *service)
+{
+    response.clear();
+    DNSServiceErrorType error;
+    
+    error = DNSServiceRegister(&registerServiceRef,
+                               0,
+                               0,
+                               service->getServiceName().toRawUTF8(),
+                               service->getRegType().toRawUTF8(),
+                               NULL,
+                               NULL,
+                               htons(service->getPort()),
+                               0,
+                               NULL,
+                               zeroRegisterCallback,
+                               NULL);
+    if (error == kDNSServiceErr_NoError) {
+        monitor->addFileDescriptorAndListener(this->getRegisterServiceFileDescriptor(), this);
+    }else {
+        fprintf(stderr, "DNSServiceRegister returned %d\n", error);
+    }
+}
+void ZeroConfManager::removeService(ZeroConfService *service)
+{
+    response.clear();
+    monitor->removeFileDescriptorAndListener(this->getRegisterServiceFileDescriptor());
+    
+}
+
+void ZeroConfManager::browseService(const char * service_type)
+{
+    response.clear();
+    DNSServiceErrorType error;
+
+    error = DNSServiceBrowse(&browseServiceRef,
+            0,                // no flags
+            0,                // all network interfaces
+            service_type,     // service type
+            "",               // default domains
+            zeroBrowseCallback,   // call back function
+            NULL);            // no context
+    
+    if (error == kDNSServiceErr_NoError) {
+        monitor->addFileDescriptorAndListener(this->getBrowseServiceFileDescriptor(), this);
+    }else {
+        fprintf(stderr, "DNSServiceDiscovery returned %d\n", error);
+    }
+}
+
+
 void ZeroConfManager::handleFileDescriptor(int fileDescriptor)
 {
-    Logger::writeToLog("ZeroConf Manager is handling it's file descriptor");
     DNSServiceErrorType err = kDNSServiceErr_NoError;
     DNSServiceErrorType error;
     
     if(fileDescriptor == DNSServiceRefSockFD(browseServiceRef))
     {
         err = DNSServiceProcessResult(this->browseServiceRef);
-        if (response.addString.equalsIgnoreCase("ADD")) {
+        if (response.getAddString().equalsIgnoreCase("ADD")) {
             
-            Logger::writeToLog("DNSServiceBrowser Found A Match");
+            
             error = DNSServiceResolve(&resolveServiceRef,
                                       0,
                                       0,
-                                      response.serviceName.toRawUTF8(),
-                                      response.regType.toRawUTF8(),
-                                      response.replyDomain.toRawUTF8(),
+                                      response.getServiceName().toRawUTF8(),
+                                      response.getRegType().toRawUTF8(),
+                                      response.getReplyDomain().toRawUTF8(),
                                       zeroResolveCallback,
                                       NULL);
             
             if (error == kDNSServiceErr_NoError) {
-                Logger::writeToLog("Attempting to Resolve Service");
+
                 monitor->addFileDescriptorAndListener(this->getResolveServiceFileDescriptor(), this);
                 serviceList.add(new ZeroConfService(response));
-
+                
             }
-        }else if (response.addString.equalsIgnoreCase("REMOVE")){
+        }else if (response.getAddString().equalsIgnoreCase("REMOVE")){
             for (int i = 0; i < serviceList.size(); i++) {
                 ZeroConfService *service = serviceList.getUnchecked(i);
                 if (*service == response)
@@ -119,24 +174,24 @@ void ZeroConfManager::handleFileDescriptor(int fileDescriptor)
         
     }else if (fileDescriptor == DNSServiceRefSockFD(resolveServiceRef))
     {
-  
+        
         err = DNSServiceProcessResult(this->resolveServiceRef);
-        Logger::writeToLog("serviceName: " + response.serviceName);
-        Logger::writeToLog("regType: " + response.regType);
-        Logger::writeToLog("replyDomain: " + response.replyDomain);
         
         for (int i = 0; i < serviceList.size(); i++) {
             ZeroConfService *service = serviceList.getUnchecked(i);
             if (*service == response)
             {
                 serviceList.removeObject(service);
-                
                 break;
             }
         }
         serviceList.add(new ZeroConfService(response));
-
+        
         startThread();
+    }else if(fileDescriptor == DNSServiceRefSockFD(registerServiceRef))
+    {
+        err = DNSServiceProcessResult(this->registerServiceRef);
+        
     }
 }
 
@@ -149,13 +204,8 @@ int ZeroConfManager::getResolveServiceFileDescriptor()
 {
     return DNSServiceRefSockFD(resolveServiceRef);
 }
-
-void ZeroConfManager::run()
+int ZeroConfManager::getRegisterServiceFileDescriptor()
 {
-    notifyListener();
+    return DNSServiceRefSockFD(registerServiceRef);
 }
 
-void ZeroConfManager::notifyListener()
-{
-    listener->handleZeroConfUpdate(&serviceList);
-}

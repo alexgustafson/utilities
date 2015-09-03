@@ -20,6 +20,7 @@ public:
     ZeroConfTests() : UnitTest("") { pool = new ThreadPool(); }
     void firstTest();
     void browseTest();
+    void registerTest();
     void runTest();
     
 private:
@@ -37,9 +38,7 @@ public:
             for (int i = 0; i < serviceList->size(); i++) {
                 
                 ZeroConfService *service = serviceList->getUnchecked(i);
-                
-                Logger::writeToLog(service->fullname);
-                
+                Logger::writeToLog(service->getFullname());
             }
         };
 

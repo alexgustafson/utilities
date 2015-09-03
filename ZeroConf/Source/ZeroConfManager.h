@@ -17,6 +17,120 @@
 
 class ZeroConfService {
 public:
+
+    uint32_t getInterfaceIndex() const {
+        return interfaceIndex;
+    }
+
+    void setInterfaceIndex(uint32_t interfaceIndex) {
+        ZeroConfService::interfaceIndex = interfaceIndex;
+    }
+
+    DNSServiceFlags getFlags() const {
+        return flags;
+    }
+
+    void setFlags(DNSServiceFlags flags) {
+        ZeroConfService::flags = flags;
+    }
+
+    DNSServiceErrorType getErrorCode() const {
+        return errorCode;
+    }
+
+    void setErrorCode(DNSServiceErrorType errorCode) {
+        ZeroConfService::errorCode = errorCode;
+    }
+
+    const String &getServiceName() const {
+        return serviceName;
+    }
+
+    void setServiceName(const String &serviceName) {
+        ZeroConfService::serviceName = serviceName;
+    }
+
+    const String &getRegType() const {
+        return regType;
+    }
+
+    void setRegType(const String &regType) {
+        ZeroConfService::regType = regType;
+    }
+
+    const String &getReplyDomain() const {
+        return replyDomain;
+    }
+
+    void setReplyDomain(const String &replyDomain) {
+        ZeroConfService::replyDomain = replyDomain;
+    }
+
+    const String &getFullname() const {
+        return fullname;
+    }
+
+    void setFullname(const String &fullname) {
+        ZeroConfService::fullname = fullname;
+    }
+
+    const String &getHosttarget() const {
+        return hosttarget;
+    }
+
+    void setHosttarget(const String &hosttarget) {
+        ZeroConfService::hosttarget = hosttarget;
+    }
+
+    const String &getAddString() const {
+        return addString;
+    }
+
+    void setAddString(const String &addString) {
+        ZeroConfService::addString = addString;
+    }
+
+    const String &getMoreString() const {
+        return moreString;
+    }
+
+    void setMoreString(const String &moreString) {
+        ZeroConfService::moreString = moreString;
+    }
+
+    uint16_t getPort() const {
+        return port;
+    }
+
+    void setPort(uint16_t port) {
+        ZeroConfService::port = port;
+    }
+
+    bool operator==(const ZeroConfService& rhs) const {
+        return
+            serviceName == rhs.serviceName
+        && regType == rhs.regType
+        && replyDomain == rhs.replyDomain;
+    }
+    
+    const char* key() {
+        return String(serviceName + "." + regType + "." + replyDomain).toRawUTF8();
+    }
+    
+    void clear() {
+        interfaceIndex = 0;
+        flags = 0;
+        errorCode= 0;
+        serviceName = "";
+        regType = "";
+        replyDomain = "";
+        fullname = "";
+        hosttarget = "";
+        addString = "";
+        moreString = "";
+        port = 0;
+    }
+    
     uint32_t interfaceIndex;
     DNSServiceFlags flags;
     DNSServiceErrorType errorCode;
@@ -30,35 +144,8 @@ public:
     String moreString = "";
     uint16_t port = 0;
     
-    bool operator==(const ZeroConfService& rhs) const {
-        return
-            serviceName == rhs.serviceName
-        && regType == rhs.regType
-        && replyDomain == rhs.replyDomain;
-
-    }
-    
-    const char* key() {
-        return String(serviceName + "." + regType + "." + replyDomain).toRawUTF8();
-    }
-    
-    void clear() {
-        interfaceIndex = 0;
-        flags = 0;
-        errorCode= 0;
-        
-        serviceName = "";
-        regType = "";
-        replyDomain = "";
-        fullname = "";
-        hosttarget = "";
-        addString = "";
-        moreString = "";
-        port = 0;
-        
-    }
-    
 private:
+    
 };
 
 class ZeroConfListener {
@@ -72,12 +159,18 @@ class ZeroConfManager : public FileDescriptorListener,
                         private Thread
 {
 public:
-    ZeroConfManager(const char * service_type, Monitor* socketMonitor, ZeroConfListener* listener);
+    ZeroConfManager(Monitor* socketMonitor, ZeroConfListener* listener);
     ~ZeroConfManager();
+    
+    void browseService(const char * service_type);
+    void registerService(ZeroConfService *service);
+    void removeService(ZeroConfService *service);
     
     void handleFileDescriptor(int fileDescriptor);
     int getBrowseServiceFileDescriptor();
     int getResolveServiceFileDescriptor();
+    int getRegisterServiceFileDescriptor();
+
     
 private:
     
@@ -86,6 +179,7 @@ private:
     
     DNSServiceRef  browseServiceRef;
     DNSServiceRef  resolveServiceRef;
+    DNSServiceRef  registerServiceRef;
     
     NamedValueSet browseResponse;
     NamedValueSet resolveResponse;
