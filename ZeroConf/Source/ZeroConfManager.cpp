@@ -191,7 +191,6 @@ void ZeroConfManager::handleFileDescriptor(int fileDescriptor)
     }else if(fileDescriptor == DNSServiceRefSockFD(registerServiceRef))
     {
         err = DNSServiceProcessResult(this->registerServiceRef);
-        
     }
 }
 
