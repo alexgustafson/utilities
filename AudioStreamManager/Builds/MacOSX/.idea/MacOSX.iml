@@ -11,12 +11,6 @@
     <content url="file://$MODULE_DIR$/../../JuceLibraryCode/JuceHeader.h">
       <sourceFolder url="file://$MODULE_DIR$/../../JuceLibraryCode/JuceHeader.h" isTestSource="false" />
     </content>
-    <content url="file://$MODULE_DIR$/../../Source/AudioFifoBuffer.cpp">
-      <sourceFolder url="file://$MODULE_DIR$/../../Source/AudioFifoBuffer.cpp" isTestSource="false" />
-    </content>
-    <content url="file://$MODULE_DIR$/../../Source/AudioFifoBuffer.h">
-      <sourceFolder url="file://$MODULE_DIR$/../../Source/AudioFifoBuffer.h" isTestSource="false" />
-    </content>
     <content url="file://$MODULE_DIR$/../../Source/AudioStreamManager.cpp">
       <sourceFolder url="file://$MODULE_DIR$/../../Source/AudioStreamManager.cpp" isTestSource="false" />
     </content>

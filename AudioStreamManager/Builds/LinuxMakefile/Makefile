@@ -49,7 +49,6 @@ ifeq ($(CONFIG),Release)
 endif
 
 OBJECTS := \
-  $(OBJDIR)/AudioFifoBuffer_62ee9403.o \
   $(OBJDIR)/Monitor_1802c2c0.o \
   $(OBJDIR)/ZeroConfManager_bf750d16.o \
   $(OBJDIR)/AudioStreamManagerTests_cb2de7eb.o \
@@ -87,11 +86,6 @@ clean:
 strip:
 	@echo Stripping AudioStreamManager
 	-@strip --strip-unneeded $(OUTDIR)/$(TARGET)
-
-$(OBJDIR)/AudioFifoBuffer_62ee9403.o: ../../Source/AudioFifoBuffer.cpp
-	-@mkdir -p $(OBJDIR)
-	@echo "Compiling AudioFifoBuffer.cpp"
-	@$(CXX) $(CXXFLAGS) -o "$@" -c "$<"
 
 $(OBJDIR)/Monitor_1802c2c0.o: ../../../Monitor/src/Monitor.cpp
 	-@mkdir -p $(OBJDIR)

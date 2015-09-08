@@ -5,10 +5,6 @@
               includeBinaryInAppConfig="1" jucerVersion="3.2.0">
   <MAINGROUP id="qfCtvG" name="AudioStreamManager">
     <GROUP id="{B69F0727-66D0-3E09-485C-E911815BC007}" name="Source">
-      <FILE id="T2f2tH" name="AudioFifoBuffer.cpp" compile="1" resource="0"
-            file="Source/AudioFifoBuffer.cpp"/>
-      <FILE id="CtTyJ3" name="AudioFifoBuffer.h" compile="0" resource="0"
-            file="Source/AudioFifoBuffer.h"/>
       <FILE id="BVYn5g" name="Monitor.cpp" compile="1" resource="0" file="../Monitor/src/Monitor.cpp"/>
       <FILE id="F8TxUq" name="Monitor.h" compile="0" resource="0" file="../Monitor/src/Monitor.h"/>
       <FILE id="OrbW9Z" name="ZeroConfManager.cpp" compile="1" resource="0"

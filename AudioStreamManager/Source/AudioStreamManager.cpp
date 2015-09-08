@@ -16,9 +16,6 @@ AudioStreamManager::AudioStreamManager(Monitor *monitor)
     this->setMonitor(monitor);
 }
 
-AudioStreamManager::~AudioStreamManager() {
-
-}
 
 void AudioStreamManager::handleFileDescriptor(int fileDescriptor) {
 

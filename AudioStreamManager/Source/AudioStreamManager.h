@@ -14,8 +14,10 @@
 #include "JuceHeader.h"
 #include "Monitor.h"
 
-
-
+//==============================================================================
+/**
+    An abstract class
+*/
 class AudioStreamManager : public FileDescriptorListener {
 public:
 
@@ -27,16 +29,14 @@ public:
         AudioStreamManager::monitor = monitor;
     }
 
-    void
 
-    void handleFileDescriptor(int fileDescriptor) override;
+    void handleFileDescriptor(int fileDescriptor);
 
 private:
     Monitor *monitor;
     drow::FifoBuffer<float> circularBuffer;
-    int
 
-    JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(AudioStreamManager);
+
 };
 
 
