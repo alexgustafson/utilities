@@ -20,7 +20,14 @@ void TestProcess::releaseResources() {
 }
 
 void TestProcess::processBlock(AudioSampleBuffer &buffer, MidiBuffer &midiMessages) {
-    Logger::writeToLog("processing audio");
+    
+    for (int channel = 0; channel < buffer.getNumChannels(); ++channel)
+    {
+        for (int sample = 0; sample < buffer.getNumSamples(); sample++) {
+
+
+        }
+    }
 }
 
 void TestProcess::reset() {

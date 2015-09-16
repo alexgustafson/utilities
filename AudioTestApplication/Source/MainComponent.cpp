@@ -27,22 +27,34 @@ public:
         setSize (800, 600);
 
         // specify the number of input and output channels that we want to open
-        setAudioChannels (2, 2);
+
         
         monitor.startMonitoring();
         
         addAndMakeVisible (networkBrowserComponent);
         networkBrowserComponent.setBounds(0, 0, getWidth(), getHeight());
         networkBrowserComponent.initializeWithMonitor(&monitor);
-
-
-        graph.addNode(&testProcess);
         
+        ioProcIn = new AudioProcessorGraph::AudioGraphIOProcessor (AudioProcessorGraph::AudioGraphIOProcessor::audioInputNode);
+        ioProcOut = new AudioProcessorGraph::AudioGraphIOProcessor (AudioProcessorGraph::AudioGraphIOProcessor::audioOutputNode);
+        
+        ioProcMidiIn = new AudioProcessorGraph::AudioGraphIOProcessor (AudioProcessorGraph::AudioGraphIOProcessor::midiInputNode);
+        
+        ioProcInNode = graph.addNode(ioProcIn);
+        ioProcOutNode = graph.addNode (ioProcOut);
+        ioProcMidiInNode = graph.addNode (ioProcMidiIn);
+        
+        AudioProcessorGraph::Node* sbNode = graph.addNode (testProcess = new TestProcess());
+        testProcess->setNodeID (sbNode->nodeId);
+        
+
+        setAudioChannels (2, 2);
     }
 
     ~MainContentComponent()
     {
         monitor.stop();
+        
         shutdownAudio();
         
     }
@@ -58,9 +70,16 @@ public:
 
         // For more details, see the help for AudioProcessor::prepareToPlay()
         midiCollector.reset (sampleRate);
-        testProcess.prepareToPlay(sampleRate, samplesPerBlockExpected);
         graph.setPlayConfigDetails(2, 2, sampleRate, samplesPerBlockExpected);
         graph.prepareToPlay(sampleRate, samplesPerBlockExpected);
+        
+        graph.addConnection(testProcess->getNodeID(), 0, ioProcOutNode->nodeId, 0);
+        graph.addConnection(testProcess->getNodeID(), 1, ioProcOutNode->nodeId, 1);
+        
+        //graph.addConnection(ioProcInNode->nodeId, 0, testProcess->getNodeID(), 0);
+        //graph.addConnection(ioProcInNode->nodeId, 1, testProcess->getNodeID(), 1);
+        
+        testProcess->prepareToPlay(sampleRate, samplesPerBlockExpected);
         
     }
 
@@ -75,7 +94,8 @@ public:
         //bufferToFill.clearActiveBufferRegion();
         MidiBuffer incomingMidi;
         midiCollector.removeNextBlockOfMessages (incomingMidi, bufferToFill.numSamples);
-        graph.processBlock(*bufferToFill.buffer, incomingMidi);
+        //graph.processBlock(*bufferToFill.buffer, incomingMidi);
+        testProcess->processBlock(*bufferToFill.buffer, incomingMidi);
         
     }
 
@@ -85,6 +105,7 @@ public:
         // restarted due to a setting change.
 
         // For more details, see the help for AudioProcessor::releaseResources()
+        graph.releaseResources();
     }
 
     //=======================================================================
@@ -111,10 +132,21 @@ private:
 
     // Your private member variables go here...
     NetworkBrowser networkBrowserComponent;
-    AudioProcessorGraph graph;
+    
     Monitor monitor;
     MidiMessageCollector midiCollector;
-    TestProcess testProcess;
+    
+    AudioProcessorGraph graph;
+    
+    AudioProcessorGraph::AudioGraphIOProcessor* ioProcIn;
+    AudioProcessorGraph::AudioGraphIOProcessor* ioProcOut;
+    AudioProcessorGraph::AudioGraphIOProcessor* ioProcMidiIn;
+    
+    AudioProcessorGraph::Node* ioProcInNode;
+    AudioProcessorGraph::Node* ioProcOutNode;
+    AudioProcessorGraph::Node* ioProcMidiInNode;
+    
+    TestProcess *testProcess;
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MainContentComponent)
 };

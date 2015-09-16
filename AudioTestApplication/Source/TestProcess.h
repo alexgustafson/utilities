@@ -48,6 +48,14 @@ public:
 
     bool hasEditor() const override                  { return true; }
     AudioProcessorEditor* createEditor() override;
+    
+    void setNodeID (int32 newNodeID) { nodeID = newNodeID; }
+    int32 getNodeID() { return nodeID; }
+    
+private:
+    int32 nodeID;
+    
+    JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (TestProcess)
 };
 
 #endif  // TESTPROCESS_H_INCLUDED
