@@ -14,7 +14,7 @@
 #include "JuceHeader.h"
 #include <netinet/in.h>
 #include <sys/socket.h>
-#include <fcntl.h>
+#include <unistd.h>
 #include <sys/select.h>
 
 
