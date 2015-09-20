@@ -55,16 +55,15 @@ public:
         this->zeroconfManager = new ZeroConfManager(mon, this);
         this->zeroconfManager->browseService("_diapro._udp");
 
-
     };
 
-    int getNumRows ()
+    int getNumRows () override
     {
         int count = listData.size();
         return count;
     };
 
-    void paintListBoxItem (int rowNumber, Graphics &g, int width, int height, bool rowIsSelected)
+    void paintListBoxItem (int rowNumber, Graphics &g, int width, int height, bool rowIsSelected) override
     {
         if (rowIsSelected)
             g.fillAll (Colours::lightblue);
@@ -85,6 +84,8 @@ public:
     void handleAsyncUpdate() {
         listBox.updateContent();
     }
+    
+    void 	listBoxItemClicked (int row, const MouseEvent &e) override;
     //[/UserMethods]
 
     void paint (Graphics& g);

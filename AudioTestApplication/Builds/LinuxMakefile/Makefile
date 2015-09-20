@@ -49,6 +49,7 @@ ifeq ($(CONFIG),Release)
 endif
 
 OBJECTS := \
+  $(OBJDIR)/NetProcess_c987ae9b.o \
   $(OBJDIR)/TestProcess_2171d5e.o \
   $(OBJDIR)/NetworkBrowser_98da27a3.o \
   $(OBJDIR)/Monitor_1802c2c0.o \
@@ -86,6 +87,11 @@ clean:
 strip:
 	@echo Stripping AudioTestApplication
 	-@strip --strip-unneeded $(OUTDIR)/$(TARGET)
+
+$(OBJDIR)/NetProcess_c987ae9b.o: ../../Source/NetProcess.cpp
+	-@mkdir -p $(OBJDIR)
+	@echo "Compiling NetProcess.cpp"
+	@$(CXX) $(CXXFLAGS) -o "$@" -c "$<"
 
 $(OBJDIR)/TestProcess_2171d5e.o: ../../Source/TestProcess.cpp
 	-@mkdir -p $(OBJDIR)

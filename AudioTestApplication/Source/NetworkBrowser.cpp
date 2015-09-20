@@ -83,6 +83,11 @@ void NetworkBrowser::resized()
 
 
 //[MiscUserCode] You can add your own definitions of your custom methods or any other code here...
+void 	NetworkBrowser::listBoxItemClicked (int row, const MouseEvent &e)
+{
+    ZeroConfService* service = listData.getReference(row);
+    Logger::writeToLog(String(service->getPort()));
+}
 //[/MiscUserCode]
 
 

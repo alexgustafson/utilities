@@ -60,7 +60,7 @@ void ZeroConfTests::registerTest()
     ScopedPointer<ZeroConfManager> zeroConfManager2 = new ZeroConfManager(&monitor, &registrar);
     ScopedPointer<ZeroConfService> service = new ZeroConfService();
     
-    service->setPort(9905);
+    service->setPort(htons(9905));
     service->setServiceName("Mu Shi");
     service->setRegType("_diapro._udp");
     

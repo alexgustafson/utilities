@@ -5,6 +5,8 @@
               includeBinaryInAppConfig="1" jucerVersion="3.2.0">
   <MAINGROUP id="dQbx4h" name="AudioTestApplication">
     <GROUP id="{50BEB5C8-D523-6838-3B9F-096A34DFCE8B}" name="Source">
+      <FILE id="QI1YW0" name="NetProcess.cpp" compile="1" resource="0" file="Source/NetProcess.cpp"/>
+      <FILE id="sf2Fuz" name="NetProcess.h" compile="0" resource="0" file="Source/NetProcess.h"/>
       <FILE id="GTAUeT" name="TestProcess.cpp" compile="1" resource="0" file="Source/TestProcess.cpp"/>
       <FILE id="hJw6qn" name="TestProcess.h" compile="0" resource="0" file="Source/TestProcess.h"/>
       <FILE id="oa8lbN" name="NetworkBrowser.cpp" compile="1" resource="0"

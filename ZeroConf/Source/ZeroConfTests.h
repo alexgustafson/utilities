@@ -13,11 +13,13 @@
 #include "JuceHeader.h"
 #include "ZeroConfManager.h"
 #include "Monitor.h"
+#include <inttypes.h>
+
 
 class ZeroConfTests : public UnitTest
 {
 public:
-    ZeroConfTests() : UnitTest("") { pool = new ThreadPool(); }
+    ZeroConfTests() : UnitTest("") {  }
     void firstTest();
     void browseTest();
     void registerTest();
@@ -39,13 +41,14 @@ public:
                 
                 ZeroConfService *service = serviceList->getUnchecked(i);
                 Logger::writeToLog(service->getFullname());
+                Logger::writeToLog(String::formatted("%" PRIu16, service->getPort()));
             }
         };
 
 private:
 };
     
-ScopedPointer<ThreadPool> pool;
+
 JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (ZeroConfTests)
 };
 #endif  // ZEROCONFTESTS_H_INCLUDED

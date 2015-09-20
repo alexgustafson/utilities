@@ -12,6 +12,7 @@
 #include "../JuceLibraryCode/JuceHeader.h"
 #include "NetworkBrowser.h"
 #include "TestProcess.h"
+#include "NetProcess.h"
 
 //==============================================================================
 /*
@@ -32,6 +33,7 @@ public:
         monitor.startMonitoring();
         
         addAndMakeVisible (networkBrowserComponent);
+        
         networkBrowserComponent.setBounds(0, 0, getWidth(), getHeight());
         networkBrowserComponent.initializeWithMonitor(&monitor);
         
@@ -47,6 +49,8 @@ public:
         AudioProcessorGraph::Node* sbNode = graph.addNode (testProcess = new TestProcess());
         testProcess->setNodeID (sbNode->nodeId);
         
+        AudioProcessorGraph::Node* sbNode2 = graph.addNode (netProcess = new NetProcess());
+        netProcess->setNodeID(sbNode2->nodeId);
 
         setAudioChannels (2, 2);
     }
@@ -80,6 +84,7 @@ public:
         //graph.addConnection(ioProcInNode->nodeId, 1, testProcess->getNodeID(), 1);
         
         testProcess->prepareToPlay(sampleRate, samplesPerBlockExpected);
+        netProcess->prepareToPlay(sampleRate, samplesPerBlockExpected);
         
     }
 
@@ -95,7 +100,16 @@ public:
         MidiBuffer incomingMidi;
         midiCollector.removeNextBlockOfMessages (incomingMidi, bufferToFill.numSamples);
         //graph.processBlock(*bufferToFill.buffer, incomingMidi);
-        testProcess->processBlock(*bufferToFill.buffer, incomingMidi);
+        if(nodeAvailable)
+        {
+            netProcess->processBlock(*bufferToFill.buffer, incomingMidi);
+            
+        }else {
+            
+            testProcess->processBlock(*bufferToFill.buffer, incomingMidi);
+            
+        }
+        
         
     }
 
@@ -147,6 +161,10 @@ private:
     AudioProcessorGraph::Node* ioProcMidiInNode;
     
     TestProcess *testProcess;
+    NetProcess *netProcess;
+    Boolean nodeAvailable;
+    int processPort;
+    int processIP;
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MainContentComponent)
 };

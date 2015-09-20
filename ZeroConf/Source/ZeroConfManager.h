@@ -142,7 +142,7 @@ public:
     String hosttarget = "";
     String addString = "";
     String moreString = "";
-    uint16_t port = 0;
+    uint16_t port = htons(0);
     
 private:
     
@@ -166,7 +166,7 @@ public:
     void registerService(ZeroConfService *service);
     void removeService(ZeroConfService *service);
     
-    void handleFileDescriptor(int fileDescriptor);
+    void handleFileDescriptor(int fileDescriptor) override;
     int getBrowseServiceFileDescriptor();
     int getResolveServiceFileDescriptor();
     int getRegisterServiceFileDescriptor();

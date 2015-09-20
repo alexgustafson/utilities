@@ -41,11 +41,11 @@ void Monitor::initializeControlSocket()
     struct sockaddr_in sin_l, sin_w;
     sin_l.sin_family = AF_INET;
     sin_l.sin_addr.s_addr = 0;
-    sin_l.sin_port = htons(40713);
+    sin_l.sin_port = htons(0);
     
     sin_w.sin_family = AF_INET;
     sin_w.sin_addr.s_addr = 0;
-    sin_w.sin_port = htons(40714);
+    sin_w.sin_port = htons(0);
     
     int result;
     result = bind(control_listener, (struct sockaddr*)&sin_l, sizeof(sin_l));
@@ -62,7 +62,12 @@ void Monitor::initializeControlSocket()
         return;
     }
     
-    result = connect(control_send, (struct sockaddr*)&sin_l, sizeof(sin_l));
+    struct sockaddr_in get_port;
+    int len_inet;
+    
+    result = getsockname(control_listener, (struct sockaddr*)&get_port, (socklen_t *)&len_inet);
+    
+    result = connect(control_send, (struct sockaddr*)&get_port, sizeof(sin_l));
     
     if (result < 0) {
         printf("connect() returned %d errno %d %s\n", result, errno, strerror(errno));
