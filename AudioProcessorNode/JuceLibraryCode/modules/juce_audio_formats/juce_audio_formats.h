@@ -6,7 +6,7 @@
 #elif defined (JUCER_CODEBLOCKS_LINUX_191E0897)
  #include "../../../../../../JUCE/modules/juce_audio_formats/juce_audio_formats.h"
 #elif defined (JUCER_LINUX_MAKE_6D53C8B4)
- #include "../../../../../../../JUCE/modules/juce_audio_formats/juce_audio_formats.h"
+ #include "../../../../../../JUCE/modules/juce_audio_formats/juce_audio_formats.h"
 #else
  #error "This file is designed to be used in an Introjucer-generated project!"
 #endif

@@ -6,7 +6,7 @@
 #elif defined (JUCER_CODEBLOCKS_LINUX_191E0897)
  #include "../../../../../../JUCE/modules/juce_gui_extra/juce_gui_extra.h"
 #elif defined (JUCER_LINUX_MAKE_6D53C8B4)
- #include "../../../../../../../JUCE/modules/juce_gui_extra/juce_gui_extra.h"
+ #include "../../../../../../JUCE/modules/juce_gui_extra/juce_gui_extra.h"
 #else
  #error "This file is designed to be used in an Introjucer-generated project!"
 #endif

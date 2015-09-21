@@ -6,7 +6,7 @@
 #elif defined (JUCER_CODEBLOCKS_LINUX_191E0897)
  #include "../../../../../../JUCE/modules/juce_data_structures/juce_data_structures.h"
 #elif defined (JUCER_LINUX_MAKE_6D53C8B4)
- #include "../../../../../../../JUCE/modules/juce_data_structures/juce_data_structures.h"
+ #include "../../../../../../JUCE/modules/juce_data_structures/juce_data_structures.h"
 #else
  #error "This file is designed to be used in an Introjucer-generated project!"
 #endif
