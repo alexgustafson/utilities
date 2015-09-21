@@ -5,10 +5,10 @@
               includeBinaryInAppConfig="1" jucerVersion="3.2.0">
   <MAINGROUP id="eXMOZj" name="AudioProcessorNode">
     <GROUP id="{EFD99188-C070-E25C-E518-CE21E0420BC1}" name="Source">
-      <FILE id="ChuC81" name="AudioProcessorNode.cpp" compile="1" resource="0"
-            file="../ZeroConf/Source/AudioProcessorNode.cpp"/>
-      <FILE id="OLeJs2" name="AudioProcessorNode.h" compile="0" resource="0"
-            file="../ZeroConf/Source/AudioProcessorNode.h"/>
+      <FILE id="X87zHL" name="AudioProcessorNode.cpp" compile="1" resource="0"
+            file="Source/AudioProcessorNode.cpp"/>
+      <FILE id="eN7zAD" name="AudioProcessorNode.h" compile="0" resource="0"
+            file="Source/AudioProcessorNode.h"/>
       <FILE id="AV1vP7" name="ZeroConfManager.cpp" compile="1" resource="0"
             file="../ZeroConf/Source/ZeroConfManager.cpp"/>
       <FILE id="O5ry4p" name="ZeroConfManager.h" compile="0" resource="0"
@@ -42,29 +42,6 @@
         <MODULEPATH id="juce_audio_processors" path="../../../../JUCE/modules"/>
       </MODULEPATHS>
     </XCODE_MAC>
-    <LINUX_MAKE targetFolder="Builds/LinuxMakefile">
-      <CONFIGURATIONS>
-        <CONFIGURATION name="Debug" libraryPath="/usr/X11R6/lib/" isDebug="1" optimisation="1"
-                       targetName="AudioProcessorNode"/>
-        <CONFIGURATION name="Release" libraryPath="/usr/X11R6/lib/" isDebug="0" optimisation="3"
-                       targetName="AudioProcessorNode"/>
-      </CONFIGURATIONS>
-      <MODULEPATHS>
-        <MODULEPATH id="juce_core" path="../../../JUCE/modules"/>
-        <MODULEPATH id="juce_events" path="../../../JUCE/modules"/>
-        <MODULEPATH id="juce_graphics" path="../../../JUCE/modules"/>
-        <MODULEPATH id="juce_data_structures" path="../../../JUCE/modules"/>
-        <MODULEPATH id="juce_gui_basics" path="../../../JUCE/modules"/>
-        <MODULEPATH id="juce_gui_extra" path="../../../JUCE/modules"/>
-        <MODULEPATH id="juce_cryptography" path="../../../JUCE/modules"/>
-        <MODULEPATH id="juce_video" path="../../../JUCE/modules"/>
-        <MODULEPATH id="juce_opengl" path="../../../JUCE/modules"/>
-        <MODULEPATH id="juce_audio_basics" path="../../JUCE/modules"/>
-        <MODULEPATH id="juce_audio_devices" path="../../../JUCE/modules"/>
-        <MODULEPATH id="juce_audio_formats" path="../../../JUCE/modules"/>
-        <MODULEPATH id="juce_audio_processors" path="../../../JUCE/modules"/>
-      </MODULEPATHS>
-    </LINUX_MAKE>
     <CODEBLOCKS_LINUX targetFolder="Builds/CodeBlocksLinux">
       <CONFIGURATIONS>
         <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="AudioProcessorNode"/>
@@ -86,6 +63,29 @@
         <MODULEPATH id="juce_audio_processors" path="../../../JUCE/modules"/>
       </MODULEPATHS>
     </CODEBLOCKS_LINUX>
+    <LINUX_MAKE targetFolder="Builds/LinuxMakefile">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" libraryPath="/usr/X11R6/lib/" isDebug="1" optimisation="1"
+                       targetName="AudioProcessorNode"/>
+        <CONFIGURATION name="Release" libraryPath="/usr/X11R6/lib/" isDebug="0" optimisation="3"
+                       targetName="AudioProcessorNode"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_video" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../../../../JUCE/modules"/>
+      </MODULEPATHS>
+    </LINUX_MAKE>
   </EXPORTFORMATS>
   <MODULES>
     <MODULES id="juce_audio_basics" showAllCode="1" useLocalCopy="0"/>
