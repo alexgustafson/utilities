@@ -11,7 +11,7 @@
 #ifndef AUDIOPROCESSORNODE_H_INCLUDED
 #define AUDIOPROCESSORNODE_H_INCLUDED
 
-#include "ZeroConfManager.h"
+#include "../../ZeroConf/Source/ZeroConfManager.h"
 
 class AudioProcessorNode :  public FileDescriptorListener,
                             public ZeroConfListener
