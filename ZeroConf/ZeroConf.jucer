@@ -66,10 +66,10 @@
     </XCODE_IPHONE>
     <LINUX_MAKE targetFolder="Builds/LinuxMakefile">
       <CONFIGURATIONS>
-        <CONFIGURATION name="Debug" libraryPath="/usr/X11R6/lib/" isDebug="1" optimisation="1"
-                       targetName="ZeroConf"/>
-        <CONFIGURATION name="Release" libraryPath="/usr/X11R6/lib/" isDebug="0" optimisation="3"
-                       targetName="ZeroConf"/>
+        <CONFIGURATION name="Debug" libraryPath="/usr/X11R6/lib/&#10;dns__sd" isDebug="1"
+                       optimisation="1" targetName="ZeroConf" headerPath="../../../Common/mDNSShared"/>
+        <CONFIGURATION name="Release" libraryPath="/usr/X11R6/lib/&#10;dns__sd" isDebug="0"
+                       optimisation="3" targetName="ZeroConf" headerPath="../../../Common/mDNSShared"/>
       </CONFIGURATIONS>
       <MODULEPATHS>
         <MODULEPATH id="juce_core" path="../../../JUCE/modules"/>

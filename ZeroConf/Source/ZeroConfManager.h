@@ -12,7 +12,7 @@
 #define ZEROCONFMANAGER_H_INCLUDED
 #include "../../Monitor/src/Monitor.h"
 #include "JuceHeader.h"
-#include <dns_sd.h>
+#include "dns_sd.h"
 
 
 class ZeroConfService {
