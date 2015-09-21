@@ -4,7 +4,7 @@
 #if defined (JUCER_XCODE_MAC_F6D2F4CF)
  #include "../../../../../../../JUCE/modules/juce_audio_basics/juce_audio_basics.h"
 #elif defined (JUCER_LINUX_MAKE_6D53C8B4)
- #include "../../../../../../JUCE/modules/juce_audio_basics/juce_audio_basics.h"
+ #include "../../../../../JUCE/modules/juce_audio_basics/juce_audio_basics.h"
 #elif defined (JUCER_CODEBLOCKS_LINUX_191E0897)
  #include "../../../../../../JUCE/modules/juce_audio_basics/juce_audio_basics.h"
 #else
