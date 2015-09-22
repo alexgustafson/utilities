@@ -87,6 +87,13 @@ void 	NetworkBrowser::listBoxItemClicked (int row, const MouseEvent &e)
 {
     ZeroConfService* service = listData.getReference(row);
     Logger::writeToLog(String(service->getPort()));
+    
+    
+}
+
+void NetworkBrowser::addListener (NetworkBrowserListener* listener)
+{
+    listeners.add(listener);
 }
 //[/MiscUserCode]
 

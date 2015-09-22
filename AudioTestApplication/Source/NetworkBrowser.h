@@ -57,6 +57,14 @@ public:
 
     };
 
+    
+    class NetworkBrowserListener
+    {
+    public:
+        virtual ~NetworkBrowserListener() {};
+        virtual void networkItemChanged(ZeroConfService* serviceThatChanged) = 0;
+    };
+
     int getNumRows () override
     {
         int count = listData.size();
@@ -72,25 +80,30 @@ public:
         g.drawText (listData.getReference(rowNumber)->getHosttarget(), 4, 0, width - 4, height, Justification::centredLeft, true);
     }
 
-    void handleZeroConfUpdate(OwnedArray<ZeroConfService> *serviceList)
+    void handleZeroConfUpdate(OwnedArray<ZeroConfService> *serviceList) override
     {
         listData.clear();
+        
         for (int i = 0; i < serviceList->size(); i++) {
-            listData.add(serviceList->getUnchecked(i));
+            ZeroConfService* service = serviceList->getUnchecked(i);
+            listData.add(service);
+            listeners.call(&NetworkBrowser::NetworkBrowserListener::networkItemChanged, service);
         }
         triggerAsyncUpdate();
     }
 
-    void handleAsyncUpdate() {
+    void handleAsyncUpdate() override{
         listBox.updateContent();
     }
     
     void 	listBoxItemClicked (int row, const MouseEvent &e) override;
+    
+    void addListener(NetworkBrowserListener* listener);
+
     //[/UserMethods]
 
-    void paint (Graphics& g);
-    void resized();
-
+    void paint (Graphics& g) override;
+    void resized() override;
 
 
 private:
@@ -99,6 +112,7 @@ private:
     ScopedPointer<ZeroConfManager> zeroconfManager;
     Array<ZeroConfService *> listData;
     ListBox listBox;
+    ListenerList<NetworkBrowserListener> listeners;
     //[/UserVariables]
 
     //==============================================================================

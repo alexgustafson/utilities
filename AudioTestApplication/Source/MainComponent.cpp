@@ -10,9 +10,7 @@
 #define MAINCOMPONENT_H_INCLUDED
 
 #include "../JuceLibraryCode/JuceHeader.h"
-#include "NetworkBrowser.h"
-#include "TestProcess.h"
-#include "NetProcess.h"
+#include "DiauproProcessor.h"
 
 //==============================================================================
 /*
@@ -31,28 +29,12 @@ public:
 
         
         monitor.startMonitoring();
-        
-        addAndMakeVisible (networkBrowserComponent);
-        
-        networkBrowserComponent.setBounds(0, 0, getWidth(), getHeight());
-        networkBrowserComponent.initializeWithMonitor(&monitor);
-        
-        ioProcIn = new AudioProcessorGraph::AudioGraphIOProcessor (AudioProcessorGraph::AudioGraphIOProcessor::audioInputNode);
-        ioProcOut = new AudioProcessorGraph::AudioGraphIOProcessor (AudioProcessorGraph::AudioGraphIOProcessor::audioOutputNode);
-        
-        ioProcMidiIn = new AudioProcessorGraph::AudioGraphIOProcessor (AudioProcessorGraph::AudioGraphIOProcessor::midiInputNode);
-        
-        ioProcInNode = graph.addNode(ioProcIn);
-        ioProcOutNode = graph.addNode (ioProcOut);
-        ioProcMidiInNode = graph.addNode (ioProcMidiIn);
-        
-        AudioProcessorGraph::Node* sbNode = graph.addNode (testProcess = new TestProcess());
-        testProcess->setNodeID (sbNode->nodeId);
-        
-        AudioProcessorGraph::Node* sbNode2 = graph.addNode (netProcess = new NetProcess());
-        netProcess->setNodeID(sbNode2->nodeId);
+
+        diauproProcessor = new DiauproProcessor();
+        diauproProcessor->setMonitor(&monitor);
 
         setAudioChannels (2, 2);
+        
     }
 
     ~MainContentComponent()
@@ -74,17 +56,9 @@ public:
 
         // For more details, see the help for AudioProcessor::prepareToPlay()
         midiCollector.reset (sampleRate);
-        graph.setPlayConfigDetails(2, 2, sampleRate, samplesPerBlockExpected);
-        graph.prepareToPlay(sampleRate, samplesPerBlockExpected);
-        
-        graph.addConnection(testProcess->getNodeID(), 0, ioProcOutNode->nodeId, 0);
-        graph.addConnection(testProcess->getNodeID(), 1, ioProcOutNode->nodeId, 1);
-        
-        //graph.addConnection(ioProcInNode->nodeId, 0, testProcess->getNodeID(), 0);
-        //graph.addConnection(ioProcInNode->nodeId, 1, testProcess->getNodeID(), 1);
-        
-        testProcess->prepareToPlay(sampleRate, samplesPerBlockExpected);
-        netProcess->prepareToPlay(sampleRate, samplesPerBlockExpected);
+
+
+        diauproProcessor->prepareToPlay(sampleRate, samplesPerBlockExpected);
         
     }
 
@@ -99,18 +73,9 @@ public:
         //bufferToFill.clearActiveBufferRegion();
         MidiBuffer incomingMidi;
         midiCollector.removeNextBlockOfMessages (incomingMidi, bufferToFill.numSamples);
-        //graph.processBlock(*bufferToFill.buffer, incomingMidi);
-        if(nodeAvailable)
-        {
-            netProcess->processBlock(*bufferToFill.buffer, incomingMidi);
-            
-        }else {
-            
-            testProcess->processBlock(*bufferToFill.buffer, incomingMidi);
-            
-        }
-        
-        
+
+        diauproProcessor->processBlock(*bufferToFill.buffer, incomingMidi);
+
     }
 
     void releaseResources() override
@@ -119,7 +84,7 @@ public:
         // restarted due to a setting change.
 
         // For more details, see the help for AudioProcessor::releaseResources()
-        graph.releaseResources();
+
     }
 
     //=======================================================================
@@ -137,7 +102,6 @@ public:
         // This is called when the MainContentComponent is resized.
         // If you add any child components, this is where you should
         // update their positions.
-        networkBrowserComponent.setBounds(0, 0, getWidth(), getHeight());
     }
 
 
@@ -145,26 +109,12 @@ private:
     //==============================================================================
 
     // Your private member variables go here...
-    NetworkBrowser networkBrowserComponent;
-    
     Monitor monitor;
     MidiMessageCollector midiCollector;
     
-    AudioProcessorGraph graph;
-    
-    AudioProcessorGraph::AudioGraphIOProcessor* ioProcIn;
-    AudioProcessorGraph::AudioGraphIOProcessor* ioProcOut;
-    AudioProcessorGraph::AudioGraphIOProcessor* ioProcMidiIn;
-    
-    AudioProcessorGraph::Node* ioProcInNode;
-    AudioProcessorGraph::Node* ioProcOutNode;
-    AudioProcessorGraph::Node* ioProcMidiInNode;
-    
-    TestProcess *testProcess;
-    NetProcess *netProcess;
-    Boolean nodeAvailable;
-    int processPort;
-    int processIP;
+
+    DiauproProcessor *diauproProcessor;
+
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MainContentComponent)
 };

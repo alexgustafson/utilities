@@ -49,6 +49,7 @@ ifeq ($(CONFIG),Release)
 endif
 
 OBJECTS := \
+  $(OBJDIR)/DiauproProcessor_52add1e7.o \
   $(OBJDIR)/NetProcess_c987ae9b.o \
   $(OBJDIR)/TestProcess_2171d5e.o \
   $(OBJDIR)/NetworkBrowser_98da27a3.o \
@@ -56,6 +57,7 @@ OBJECTS := \
   $(OBJDIR)/ZeroConfManager_bf750d16.o \
   $(OBJDIR)/MainComponent_a6ffb4a5.o \
   $(OBJDIR)/Main_90ebc5c2.o \
+  $(OBJDIR)/dRowAudio_f51ed6d.o \
   $(OBJDIR)/juce_audio_basics_d6d0de5c.o \
   $(OBJDIR)/juce_audio_devices_ebbe0c1a.o \
   $(OBJDIR)/juce_audio_formats_1a3f55ba.o \
@@ -87,6 +89,11 @@ clean:
 strip:
 	@echo Stripping AudioTestApplication
 	-@strip --strip-unneeded $(OUTDIR)/$(TARGET)
+
+$(OBJDIR)/DiauproProcessor_52add1e7.o: ../../Source/DiauproProcessor.cpp
+	-@mkdir -p $(OBJDIR)
+	@echo "Compiling DiauproProcessor.cpp"
+	@$(CXX) $(CXXFLAGS) -o "$@" -c "$<"
 
 $(OBJDIR)/NetProcess_c987ae9b.o: ../../Source/NetProcess.cpp
 	-@mkdir -p $(OBJDIR)
@@ -121,6 +128,11 @@ $(OBJDIR)/MainComponent_a6ffb4a5.o: ../../Source/MainComponent.cpp
 $(OBJDIR)/Main_90ebc5c2.o: ../../Source/Main.cpp
 	-@mkdir -p $(OBJDIR)
 	@echo "Compiling Main.cpp"
+	@$(CXX) $(CXXFLAGS) -o "$@" -c "$<"
+
+$(OBJDIR)/dRowAudio_f51ed6d.o: ../../../../../../JUCE/modules/dRowAudio/dRowAudio/dRowAudio.cpp
+	-@mkdir -p $(OBJDIR)
+	@echo "Compiling dRowAudio.cpp"
 	@$(CXX) $(CXXFLAGS) -o "$@" -c "$<"
 
 $(OBJDIR)/juce_audio_basics_d6d0de5c.o: ../../../../../../JUCE/modules/juce_audio_basics/juce_audio_basics.cpp

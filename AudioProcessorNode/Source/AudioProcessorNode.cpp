@@ -14,6 +14,12 @@
 
 AudioProcessorNode::AudioProcessorNode()
 {
+    
+    buffer = new AudioSampleBuffer(2, 1024);
+    
+    sock_in = new DatagramSocket(0);
+    sock_in->bindToPort(53000);
+    
     input_socket = socket(AF_INET, SOCK_DGRAM, 0);
     output_socket = socket(AF_INET, SOCK_DGRAM, 0);
     
@@ -35,7 +41,7 @@ AudioProcessorNode::AudioProcessorNode()
     sin_w.sin_port = htons(0);
     
     int result;
-    result = bind(input_socket, (struct sockaddr*)&sin_l, sizeof(sin_l));
+    //result = bind(input_socket, (struct sockaddr*)&sin_l, sizeof(sin_l));
     
     if (result < 0) {
         printf("bind() returned %d errno %d %s\n", result, errno, strerror(errno));
@@ -48,6 +54,10 @@ AudioProcessorNode::AudioProcessorNode()
         printf("bind() returned %d errno %d %s\n", result, errno, strerror(errno));
         return;
     }
+    
+    input_socket = sock_in->getRawSocketHandle();
+    fcntl(input_socket, F_SETFL, O_NONBLOCK);
+
     
     //struct sockaddr_in get_port;
     //int len_inet;

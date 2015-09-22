@@ -22,21 +22,32 @@ public:
     
     void handleFileDescriptor(int fileDescriptor)
     {
-        Logger::writeToLog("notified on input socket");
+        
+        bytesRead = sock_in->read(buffer->getWritePointer(0), buffer->getNumChannels() * buffer->getNumSamples() + sizeof(float), false, senderHost, senderPort);
+        
+        sock_in->write(senderHost, senderPort, buffer->getReadPointer(0), bytesRead);
 
     }
     
     void handleZeroConfUpdate(OwnedArray<ZeroConfService> *serviceList)
     {
         Logger::writeToLog("notified");
-
     };
     
     int input_socket;
     
+    
 private:
-    JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (AudioProcessorNode)
+    
     int output_socket;
+    ScopedPointer<DatagramSocket> sock_in;
+    ScopedPointer<AudioSampleBuffer> buffer;
+    
+    int senderPort;
+    int bytesRead;
+    String senderHost;
+    
+    JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (AudioProcessorNode)
 };
 
 

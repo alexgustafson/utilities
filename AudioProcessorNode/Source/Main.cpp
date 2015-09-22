@@ -29,7 +29,12 @@ int main (int argc, char* argv[])
     service->setRegType("_diapro._udp");
     
     zeroConfManager->registerService(service);
+    
+    
     monitor.addFileDescriptorAndListener(audioProcessorNode.input_socket, &audioProcessorNode);
+    
+    
+    
     
     std::cout << "press enter to exit...";
     getchar();

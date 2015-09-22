@@ -5,6 +5,10 @@
               includeBinaryInAppConfig="1" jucerVersion="3.2.0">
   <MAINGROUP id="dQbx4h" name="AudioTestApplication">
     <GROUP id="{50BEB5C8-D523-6838-3B9F-096A34DFCE8B}" name="Source">
+      <FILE id="IAgc25" name="DiauproProcessor.cpp" compile="1" resource="0"
+            file="Source/DiauproProcessor.cpp"/>
+      <FILE id="CQxnPI" name="DiauproProcessor.h" compile="0" resource="0"
+            file="Source/DiauproProcessor.h"/>
       <FILE id="QI1YW0" name="NetProcess.cpp" compile="1" resource="0" file="Source/NetProcess.cpp"/>
       <FILE id="sf2Fuz" name="NetProcess.h" compile="0" resource="0" file="Source/NetProcess.h"/>
       <FILE id="GTAUeT" name="TestProcess.cpp" compile="1" resource="0" file="Source/TestProcess.cpp"/>
@@ -47,6 +51,7 @@
         <MODULEPATH id="juce_audio_formats" path="../../../../JUCE/modules"/>
         <MODULEPATH id="juce_audio_processors" path="../../../../JUCE/modules"/>
         <MODULEPATH id="juce_audio_utils" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="dRowAudio" path="../../../../JUCE/modules"/>
       </MODULEPATHS>
     </XCODE_MAC>
     <LINUX_MAKE targetFolder="Builds/LinuxMakefile">
@@ -71,10 +76,12 @@
         <MODULEPATH id="juce_audio_formats" path="../../../../JUCE/modules"/>
         <MODULEPATH id="juce_audio_processors" path="../../../../JUCE/modules"/>
         <MODULEPATH id="juce_audio_utils" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="dRowAudio" path="../../../../JUCE/modules"/>
       </MODULEPATHS>
     </LINUX_MAKE>
   </EXPORTFORMATS>
   <MODULES>
+    <MODULES id="dRowAudio" showAllCode="1" useLocalCopy="0"/>
     <MODULES id="juce_audio_basics" showAllCode="1" useLocalCopy="0"/>
     <MODULES id="juce_audio_devices" showAllCode="1" useLocalCopy="0"/>
     <MODULES id="juce_audio_formats" showAllCode="1" useLocalCopy="0"/>
@@ -90,5 +97,6 @@
     <MODULES id="juce_opengl" showAllCode="1" useLocalCopy="0"/>
     <MODULES id="juce_video" showAllCode="1" useLocalCopy="0"/>
   </MODULES>
-  <JUCEOPTIONS/>
+  <JUCEOPTIONS DROWAUDIO_USE_FFTREAL="disabled" DROWAUDIO_USE_SOUNDTOUCH="disabled"
+               DROWAUDIO_USE_CURL="disabled"/>
 </JUCERPROJECT>

@@ -10,14 +10,23 @@
 
 #include "NetProcess.h"
 
-void NetProcess::initializeSocket(int portNr)
+void NetProcess::setSocket(int sock)
 {
-    
 }
 
+void NetProcess::removeSocket()
+{
+    socket = 0;
+}
 
+void NetProcess::setTarget(int port, String host)
+{
+    targetHost = host;
+    targetPort = port;
+}
 
-void NetProcess::prepareToPlay(double sampleRate, int samplesPerBlock) {
+void NetProcess::prepareToPlay(double sampleRate, int samplesPerBlock)
+{
     
 }
 
@@ -25,15 +34,14 @@ void NetProcess::releaseResources() {
     
 }
 
-void NetProcess::processBlock(AudioSampleBuffer &buffer, MidiBuffer &midiMessages) {
+void NetProcess::processBlock(AudioSampleBuffer &buffer, MidiBuffer &midiMessages)
+{
     
-    for (int channel = 0; channel < buffer.getNumChannels(); ++channel)
-    {
-        for (int sample = 0; sample < buffer.getNumSamples(); sample++) {
-            
-            
-        }
-    }
+    socket->write(targetHost, targetPort, buffer.getReadPointer(0), buffer.getNumChannels() * buffer.getNumSamples() * sizeof(float));
+    
+    buffer.clear();
+    socket->read(buffer.getWritePointer(0), buffer.getNumChannels() * buffer.getNumSamples() * sizeof(float), false);
+    
 }
 
 void NetProcess::reset() {
@@ -81,4 +89,9 @@ void NetProcess::setStateInformation(const void *data, int sizeInBytes) {
 
 AudioProcessorEditor *NetProcess::createEditor() {
     return nullptr;
+}
+
+void NetProcess::handleFileDescriptor(int fileDescriptor)
+{
+    
 }

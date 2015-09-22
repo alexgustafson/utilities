@@ -11,15 +11,22 @@
 #ifndef NETPROCESS_H_INCLUDED
 #define NETPROCESS_H_INCLUDED
 #include "JuceHeader.h"
+#include "Monitor.h"
 
-class NetProcess : public AudioProcessor
+class NetProcess : public AudioProcessor, public FileDescriptorListener
 {
 public:
     
-    NetProcess() {};
+    NetProcess() : circularBuffer(44100) {
+        tempBuffer = new AudioSampleBuffer(2, 44100);
+        socket = new DatagramSocket();
+        socket->bindToPort(40240);
+    };
     ~NetProcess() {};
     
-    void initializeSocket(int portNr);
+    void setTarget(int port, String host);
+    void setSocket(int sock);
+    void removeSocket();
     
     void prepareToPlay (double sampleRate, int samplesPerBlock) override;
     void releaseResources() override;
@@ -54,9 +61,17 @@ public:
     void setNodeID (int32 newNodeID) { nodeID = newNodeID; }
     int32 getNodeID() { return nodeID; }
     
+    void handleFileDescriptor(int fileDescriptor) override;
+    
 private:
     int32 nodeID;
-    int socket;
+    ScopedPointer<DatagramSocket> socket;
+    int targetPort;
+    String targetHost;
+    
+    
+    drow::FifoBuffer<float> circularBuffer;
+    ScopedPointer<AudioSampleBuffer> tempBuffer;
     
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (NetProcess)
 };
