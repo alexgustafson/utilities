@@ -59,10 +59,10 @@
     </CODEBLOCKS_LINUX>
     <LINUX_MAKE targetFolder="Builds/LinuxMakefile">
       <CONFIGURATIONS>
-        <CONFIGURATION name="Debug" libraryPath="/usr/X11R6/lib/&#10;dns__sd" isDebug="1"
-                       optimisation="1" targetName="AudioProcessorNode" headerPath="../../../Common/mDNSShared"/>
-        <CONFIGURATION name="Release" libraryPath="/usr/X11R6/lib/&#10;dns__sd" isDebug="0"
-                       optimisation="3" targetName="AudioProcessorNode" headerPath="../../../Common/mDNSShared"/>
+        <CONFIGURATION name="Debug" libraryPath="/usr/X11R6/lib/&#10;dns_sd" isDebug="1"
+                       optimisation="1" targetName="AudioProcessorNode" headerPath=""/>
+        <CONFIGURATION name="Release" libraryPath="/usr/X11R6/lib/&#10;dns_sd" isDebug="0"
+                       optimisation="3" targetName="AudioProcessorNode" headerPath=""/>
       </CONFIGURATIONS>
       <MODULEPATHS>
         <MODULEPATH id="juce_events" path="../../../JUCE/modules"/>
