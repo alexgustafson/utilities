@@ -24,17 +24,13 @@ int main (int argc, char* argv[])
     ScopedPointer<ZeroConfManager> zeroConfManager = new ZeroConfManager(&monitor, &audioProcessorNode);
     ScopedPointer<ZeroConfService> service = new ZeroConfService();
     
-    service->setPort(htons(53000));
+    service->setPort(audioProcessorNode.getPort());
     service->setServiceName("Audio_Processor_Node");
     service->setRegType("_diapro._udp");
     
     zeroConfManager->registerService(service);
     
-    
-    monitor.addFileDescriptorAndListener(audioProcessorNode.input_socket, &audioProcessorNode);
-    
-    
-    
+    monitor.addFileDescriptorAndListener(audioProcessorNode.getSock(), &audioProcessorNode);
     
     std::cout << "press enter to exit...";
     getchar();

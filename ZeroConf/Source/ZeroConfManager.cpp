@@ -47,7 +47,7 @@ static void zeroResolveCallback(DNSServiceRef sdRef,
 {
     response.setFullname(fullname);
     response.setHosttarget(hosttarget);
-    response.setPort(port);
+    response.setPort(ntohs(port));
 }
 
 static void zeroRegisterCallback(DNSServiceRef sdRef,

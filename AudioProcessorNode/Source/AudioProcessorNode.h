@@ -18,34 +18,24 @@ class AudioProcessorNode :  public FileDescriptorListener,
 {
 public:
     AudioProcessorNode();
-    ~AudioProcessorNode() {};
+    ~AudioProcessorNode() { };
     
-    void handleFileDescriptor(int fileDescriptor)
-    {
-        
-        bytesRead = sock_in->read(buffer->getWritePointer(0), buffer->getNumChannels() * buffer->getNumSamples() + sizeof(float), false, senderHost, senderPort);
-        
-        sock_in->write(senderHost, senderPort, buffer->getReadPointer(0), bytesRead);
-
-    }
+    void handleFileDescriptor(int fileDescriptor);
+    void handleZeroConfUpdate(OwnedArray<ZeroConfService> *serviceList);
     
-    void handleZeroConfUpdate(OwnedArray<ZeroConfService> *serviceList)
-    {
-        Logger::writeToLog("notified");
-    };
-    
-    int input_socket;
-    
+    int getPort();
+    int getSock();
     
 private:
     
-    int output_socket;
-    ScopedPointer<DatagramSocket> sock_in;
+    ScopedPointer<DatagramSocket> socket;
     ScopedPointer<AudioSampleBuffer> buffer;
     
     int senderPort;
     int bytesRead;
     String senderHost;
+    
+    
     
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (AudioProcessorNode)
 };

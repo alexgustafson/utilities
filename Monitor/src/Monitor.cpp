@@ -146,6 +146,12 @@ void Monitor::addFileDescriptorAndListener(int fileDescriptor, FileDescriptorLis
     if (fileDescriptor != control_listener) {
         write(control_send, "reset select", 13 * sizeof(char));
     }
+    struct sockaddr_in sin_addr;
+    socklen_t len = sizeof (sin_addr);
+    
+    getsockname (fileDescriptor, (struct sockaddr*) &sin_addr, &len);
+    
+    Logger::writeToLog(String::formatted("listening on port %d", ntohs (sin_addr.sin_port)));
 }
 
 void Monitor::removeFileDescriptorAndListener(int fileDescriptor)

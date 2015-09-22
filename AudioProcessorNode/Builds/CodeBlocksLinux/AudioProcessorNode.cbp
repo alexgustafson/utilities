@@ -263,11 +263,11 @@
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_audio_basics/juce_module_info">
+    <Unit filename="../../../../../../JUCE/modules/juce_audio_basics/juce_module_info">
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_audio_basics/juce_audio_basics.h">
+    <Unit filename="../../../../../../JUCE/modules/juce_audio_basics/juce_audio_basics.h">
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
@@ -423,11 +423,11 @@
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_audio_devices/juce_module_info">
+    <Unit filename="../../../../../../JUCE/modules/juce_audio_devices/juce_module_info">
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_audio_devices/juce_audio_devices.h">
+    <Unit filename="../../../../../../JUCE/modules/juce_audio_devices/juce_audio_devices.h">
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
@@ -571,11 +571,11 @@
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_audio_formats/juce_module_info">
+    <Unit filename="../../../../../../JUCE/modules/juce_audio_formats/juce_module_info">
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_audio_formats/juce_audio_formats.h">
+    <Unit filename="../../../../../../JUCE/modules/juce_audio_formats/juce_audio_formats.h">
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
@@ -719,11 +719,11 @@
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_audio_processors/juce_module_info">
+    <Unit filename="../../../../../../JUCE/modules/juce_audio_processors/juce_module_info">
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_audio_processors/juce_audio_processors.h">
+    <Unit filename="../../../../../../JUCE/modules/juce_audio_processors/juce_audio_processors.h">
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
@@ -1507,11 +1507,11 @@
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_core/juce_module_info">
+    <Unit filename="../../../../../../JUCE/modules/juce_core/juce_module_info">
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_core/juce_core.h">
+    <Unit filename="../../../../../../JUCE/modules/juce_core/juce_core.h">
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
@@ -1567,11 +1567,11 @@
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_data_structures/juce_module_info">
+    <Unit filename="../../../../../../JUCE/modules/juce_data_structures/juce_module_info">
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_data_structures/juce_data_structures.h">
+    <Unit filename="../../../../../../JUCE/modules/juce_data_structures/juce_data_structures.h">
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
@@ -1735,11 +1735,11 @@
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_events/juce_module_info">
+    <Unit filename="../../../../../../JUCE/modules/juce_events/juce_module_info">
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_events/juce_events.h">
+    <Unit filename="../../../../../../JUCE/modules/juce_events/juce_events.h">
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
@@ -2043,11 +2043,11 @@
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_graphics/juce_module_info">
+    <Unit filename="../../../../../../JUCE/modules/juce_graphics/juce_module_info">
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_graphics/juce_graphics.h">
+    <Unit filename="../../../../../../JUCE/modules/juce_graphics/juce_graphics.h">
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
@@ -3059,11 +3059,11 @@
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_gui_basics/juce_module_info">
+    <Unit filename="../../../../../../JUCE/modules/juce_gui_basics/juce_module_info">
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_gui_basics/juce_gui_basics.h">
+    <Unit filename="../../../../../../JUCE/modules/juce_gui_basics/juce_gui_basics.h">
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
@@ -3263,11 +3263,11 @@
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_gui_extra/juce_module_info">
+    <Unit filename="../../../../../../JUCE/modules/juce_gui_extra/juce_module_info">
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_gui_extra/juce_gui_extra.h">
+    <Unit filename="../../../../../../JUCE/modules/juce_gui_extra/juce_gui_extra.h">
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
@@ -3275,16 +3275,16 @@
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_audio_basics/juce_audio_basics.cpp"/>
-    <Unit filename="../../../../../JUCE/modules/juce_audio_devices/juce_audio_devices.cpp"/>
-    <Unit filename="../../../../../JUCE/modules/juce_audio_formats/juce_audio_formats.cpp"/>
-    <Unit filename="../../../../../JUCE/modules/juce_audio_processors/juce_audio_processors.cpp"/>
-    <Unit filename="../../../../../JUCE/modules/juce_core/juce_core.cpp"/>
-    <Unit filename="../../../../../JUCE/modules/juce_data_structures/juce_data_structures.cpp"/>
-    <Unit filename="../../../../../JUCE/modules/juce_events/juce_events.cpp"/>
-    <Unit filename="../../../../../JUCE/modules/juce_graphics/juce_graphics.cpp"/>
-    <Unit filename="../../../../../JUCE/modules/juce_gui_basics/juce_gui_basics.cpp"/>
-    <Unit filename="../../../../../JUCE/modules/juce_gui_extra/juce_gui_extra.cpp"/>
+    <Unit filename="../../../../../../JUCE/modules/juce_audio_basics/juce_audio_basics.cpp"/>
+    <Unit filename="../../../../../../JUCE/modules/juce_audio_devices/juce_audio_devices.cpp"/>
+    <Unit filename="../../../../../../JUCE/modules/juce_audio_formats/juce_audio_formats.cpp"/>
+    <Unit filename="../../../../../../JUCE/modules/juce_audio_processors/juce_audio_processors.cpp"/>
+    <Unit filename="../../../../../../JUCE/modules/juce_core/juce_core.cpp"/>
+    <Unit filename="../../../../../../JUCE/modules/juce_data_structures/juce_data_structures.cpp"/>
+    <Unit filename="../../../../../../JUCE/modules/juce_events/juce_events.cpp"/>
+    <Unit filename="../../../../../../JUCE/modules/juce_graphics/juce_graphics.cpp"/>
+    <Unit filename="../../../../../../JUCE/modules/juce_gui_basics/juce_gui_basics.cpp"/>
+    <Unit filename="../../../../../../JUCE/modules/juce_gui_extra/juce_gui_extra.cpp"/>
     <Unit filename="../../JuceLibraryCode/JuceHeader.h">
       <Option compile="0"/>
       <Option link="0"/>

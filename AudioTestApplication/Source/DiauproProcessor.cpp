@@ -15,6 +15,8 @@ DiauproProcessor::DiauproProcessor() : circularBuffer(41000) {
     socket = new DatagramSocket();
     socket->bindToPort(0);
     activeNode = NULL;
+    fcntl(socket->getRawSocketHandle(), F_SETFL, O_NONBLOCK);
+
 }
 
 DiauproProcessor::~DiauproProcessor() {
@@ -54,10 +56,15 @@ void DiauproProcessor::processBlock(AudioSampleBuffer &buffer, MidiBuffer &midiM
 
     if (activeNode != nullptr) {
         socket->write(targetHost, targetPort, buffer.getReadPointer(0), buffer.getNumChannels() * buffer.getNumSamples() * sizeof(float));
+        Logger::writeToLog("Data Sent");
+
         buffer.clear();
 
-        dataReturned.wait(maxWaitTimeMs);
-        socket->read(buffer.getWritePointer(0), buffer.getNumChannels() * buffer.getNumSamples() * sizeof(float), false);  //deadlock here when node disconects
+        dataReturned.wait();
+        int bytesRead = socket->read(buffer.getWritePointer(0), buffer.getNumChannels() * buffer.getNumSamples() * sizeof(float), false);  //deadlock here when node disconects
+        
+        Logger::writeToLog("Data Read");
+
 
     } else {
 
@@ -133,19 +140,28 @@ void DiauproProcessor::handleFileDescriptor(int fileDescriptor) {
     //int numSamples = size / (tempBuffer->getNumChannels() * sizeof(float));
     //circularBuffer.writeSamples(tempBuffer->getReadPointer(0), numSamples);
     dataReturned.signal();
+    Logger::writeToLog("Data Recieved");
+
 
 }
 
 void DiauproProcessor::handleZeroConfUpdate(OwnedArray<ZeroConfService> *serviceList) {
 
     if (serviceList->size() > 0) {
+        Logger::writeToLog("Node Found");
         activeNode = serviceList->getUnchecked(0);
         targetHost = activeNode->getHosttarget();
         targetPort = activeNode->getPort();
         this->monitor->addFileDescriptorAndListener(this->socket->getRawSocketHandle(), this);
+        dataReturned.signal();
+
         return;
     }
-    serviceList = nullptr;
+    this->activeNode = nullptr;
+    Logger::writeToLog("Node Lost");
+    dataReturned.signal();
+
+
 
 }
 

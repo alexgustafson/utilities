@@ -19,11 +19,11 @@
 class ZeroConfService {
 public:
 
-    uint32_t getInterfaceIndex() const {
+    int getInterfaceIndex() const {
         return interfaceIndex;
     }
 
-    void setInterfaceIndex(uint32_t interfaceIndex) {
+    void setInterfaceIndex(int interfaceIndex) {
         ZeroConfService::interfaceIndex = interfaceIndex;
     }
 
@@ -99,11 +99,11 @@ public:
         ZeroConfService::moreString = moreString;
     }
 
-    uint16_t getPort() const {
+    int getPort() const {
         return port;
     }
 
-    void setPort(uint16_t port) {
+    void setPort(int port) {
         ZeroConfService::port = port;
     }
 
@@ -132,7 +132,7 @@ public:
         port = 0;
     }
 
-    uint32_t interfaceIndex;
+    int interfaceIndex;
     DNSServiceFlags flags;
     DNSServiceErrorType errorCode;
 
@@ -143,7 +143,7 @@ public:
     String hosttarget = "";
     String addString = "";
     String moreString = "";
-    uint16_t port = 0;
+    int port = 0;
 
 private:
 

@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3aa37274-6c16-4420-9e4a-344a6d41b9d0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/AudioProcessorNode.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/AudioProcessorNode.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/Builds/MacOSX/AudioTestApplication.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/AudioTestApplication/Builds/MacOSX/AudioTestApplication.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="utilities.iws" />
@@ -284,6 +283,184 @@
       <recent name="$PROJECT_DIR$/Common" />
       <recent name="$PROJECT_DIR$/AudioProcessorNode/Source" />
     </key>
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/AudioProcessorNode/AudioProcessorNode.jucer</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/AudioProcessorNode/Builds/CodeBlocksLinux/AudioProcessorNode.cbp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/AudioProcessorNode/Builds/LinuxMakefile/Makefile</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/AudioProcessorNode.xcodeproj/project.pbxproj</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/AppConfig.h</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/JuceHeader.h</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/ReadMe.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/juce_audio_basics/juce_audio_basics.h</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/juce_audio_devices/juce_audio_devices.h</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/juce_audio_formats/juce_audio_formats.h</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/juce_audio_processors/juce_audio_processors.h</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/juce_core/juce_core.h</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/juce_data_structures/juce_data_structures.h</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/juce_events/juce_events.h</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/juce_graphics/juce_graphics.h</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/juce_gui_basics/juce_gui_basics.h</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/juce_gui_extra/juce_gui_extra.h</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ZeroConf/Source/ZeroConfManager.h</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/AudioProcessorNode/Builds/CodeBlocksLinux/AudioProcessorNode.layout</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/AudioProcessorNode/Builds/LinuxMakefile/build/intermediate/Debug/AudioProcessorNode_86a96807.d</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/AudioProcessorNode/Builds/LinuxMakefile/build/intermediate/Debug/Main_90ebc5c2.d</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/AudioProcessorNode/Builds/LinuxMakefile/build/intermediate/Debug/Monitor_1802c2c0.d</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/AudioProcessorNode/Builds/LinuxMakefile/build/intermediate/Debug/ZeroConfManager_bf750d16.d</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/AudioProcessorNode/Builds/LinuxMakefile/build/intermediate/Debug/juce_audio_basics_89a6632b.d</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/AudioProcessorNode/Builds/LinuxMakefile/build/intermediate/Debug/juce_audio_devices_3f459929.d</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/AudioProcessorNode/Builds/LinuxMakefile/build/intermediate/Debug/juce_audio_formats_6dc6e2c9.d</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/AudioProcessorNode/Builds/LinuxMakefile/build/intermediate/Debug/juce_audio_processors_eb06e1e3.d</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/AudioProcessorNode/Builds/LinuxMakefile/build/intermediate/Debug/juce_core_a278a20d.d</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/AudioProcessorNode/Builds/LinuxMakefile/build/intermediate/Debug/juce_cryptography_8b2b6667.d</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/AudioProcessorNode/Builds/LinuxMakefile/build/intermediate/Debug/juce_data_structures_c98de09.d</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/AudioProcessorNode/Builds/LinuxMakefile/build/intermediate/Debug/juce_events_afa14001.d</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/AudioProcessorNode/Builds/LinuxMakefile/build/intermediate/Debug/juce_graphics_4cb436e5.d</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/AudioProcessorNode/Builds/LinuxMakefile/build/intermediate/Debug/juce_gui_basics_d5c7a3e1.d</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/AudioProcessorNode/Builds/LinuxMakefile/build/intermediate/Debug/juce_gui_extra_13d359a9.d</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/AudioProcessorNode/Builds/LinuxMakefile/build/intermediate/Debug/juce_opengl_6fe9682d.d</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/AudioProcessorNode/Builds/LinuxMakefile/build/intermediate/Debug/juce_video_72be35c9.d</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/AudioProcessorNode/Builds/LinuxMakefile/build/intermediate/Release/AudioProcessorNode_86a96807.d</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/AudioProcessorNode/Builds/LinuxMakefile/build/intermediate/Release/Main_90ebc5c2.d</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/AudioProcessorNode/Builds/LinuxMakefile/build/intermediate/Release/Monitor_1802c2c0.d</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/AudioProcessorNode/Builds/LinuxMakefile/build/intermediate/Release/ZeroConfManager_bf750d16.d</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/AudioProcessorNode/Builds/LinuxMakefile/build/intermediate/Release/juce_audio_basics_89a6632b.d</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/AudioProcessorNode/Builds/LinuxMakefile/build/intermediate/Release/juce_audio_devices_3f459929.d</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/AudioProcessorNode/Builds/LinuxMakefile/build/intermediate/Release/juce_audio_formats_6dc6e2c9.d</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/AudioProcessorNode/Builds/LinuxMakefile/build/intermediate/Release/juce_audio_processors_eb06e1e3.d</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/AudioProcessorNode/Builds/LinuxMakefile/build/intermediate/Release/juce_core_a278a20d.d</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/AudioProcessorNode/Builds/LinuxMakefile/build/intermediate/Release/juce_data_structures_c98de09.d</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/AudioProcessorNode/Builds/LinuxMakefile/build/intermediate/Release/juce_events_afa14001.d</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/AudioProcessorNode/Builds/LinuxMakefile/build/intermediate/Release/juce_graphics_4cb436e5.d</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/AudioProcessorNode/Builds/LinuxMakefile/build/intermediate/Release/juce_gui_basics_d5c7a3e1.d</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/AudioProcessorNode/Builds/LinuxMakefile/build/intermediate/Release/juce_gui_extra_13d359a9.d</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ZeroConf/Builds/CodeBlocksLinux/ZeroConf.depend</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ZeroConf/Builds/CodeBlocksLinux/ZeroConf.layout</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ZeroConf/Builds/LinuxMakefile/build/intermediate/Debug/Main_90ebc5c2.d</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ZeroConf/Builds/LinuxMakefile/build/intermediate/Debug/Monitor_1802c2c0.d</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ZeroConf/Builds/LinuxMakefile/build/intermediate/Debug/ZeroConfManager_33adc402.d</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ZeroConf/Builds/LinuxMakefile/build/intermediate/Debug/ZeroConfTests_ff263076.d</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ZeroConf/Builds/LinuxMakefile/build/intermediate/Debug/juce_audio_basics_89a6632b.d</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ZeroConf/Builds/LinuxMakefile/build/intermediate/Debug/juce_audio_devices_3f459929.d</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ZeroConf/Builds/LinuxMakefile/build/intermediate/Debug/juce_audio_formats_6dc6e2c9.d</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ZeroConf/Builds/LinuxMakefile/build/intermediate/Debug/juce_audio_processors_eb06e1e3.d</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ZeroConf/Builds/LinuxMakefile/build/intermediate/Debug/juce_core_a278a20d.d</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ZeroConf/Builds/LinuxMakefile/build/intermediate/Debug/juce_cryptography_8b2b6667.d</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ZeroConf/Builds/LinuxMakefile/build/intermediate/Debug/juce_data_structures_c98de09.d</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ZeroConf/Builds/LinuxMakefile/build/intermediate/Debug/juce_events_afa14001.d</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ZeroConf/Builds/LinuxMakefile/build/intermediate/Debug/juce_graphics_4cb436e5.d</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ZeroConf/Builds/LinuxMakefile/build/intermediate/Debug/juce_gui_basics_d5c7a3e1.d</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ZeroConf/Builds/LinuxMakefile/build/intermediate/Debug/juce_gui_extra_13d359a9.d</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ZeroConf/Builds/LinuxMakefile/build/intermediate/Debug/juce_opengl_6fe9682d.d</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ZeroConf/Builds/LinuxMakefile/build/intermediate/Debug/juce_video_72be35c9.d</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunManager">
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
@@ -672,29 +849,35 @@
       <option name="project" value="LOCAL" />
       <updated>1442936613798</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="moved zeroconf handling into audioprocessor">
+      <created>1442947891919</created>
+      <option name="number" value="00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1442947891919</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="336" y="170" width="1008" height="680" extended-state="0" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287858" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32505175" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32505175" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34406778" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3452381" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287858" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
