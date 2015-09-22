@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3aa37274-6c16-4420-9e4a-344a6d41b9d0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/AudioProcessorNode.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/AudioProcessorNode.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioProcessorNode/Builds/LinuxMakefile/build/intermediate/Debug/AudioProcessorNode_86a96807.d" afterPath="$PROJECT_DIR$/AudioProcessorNode/Builds/LinuxMakefile/build/intermediate/Debug/AudioProcessorNode_86a96807.d" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioProcessorNode/Builds/LinuxMakefile/build/intermediate/Debug/Main_90ebc5c2.d" afterPath="$PROJECT_DIR$/AudioProcessorNode/Builds/LinuxMakefile/build/intermediate/Debug/Main_90ebc5c2.d" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioProcessorNode/Builds/LinuxMakefile/Makefile" afterPath="$PROJECT_DIR$/AudioProcessorNode/Builds/LinuxMakefile/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioProcessorNode/Builds/LinuxMakefile/build/intermediate/Debug/Monitor_1802c2c0.d" afterPath="$PROJECT_DIR$/AudioProcessorNode/Builds/LinuxMakefile/build/intermediate/Debug/Monitor_1802c2c0.d" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ZeroConf/Source/ZeroConfManager.h" afterPath="$PROJECT_DIR$/ZeroConf/Source/ZeroConfManager.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioProcessorNode/Builds/LinuxMakefile/build/intermediate/Debug/ZeroConfManager_bf750d16.d" afterPath="$PROJECT_DIR$/AudioProcessorNode/Builds/LinuxMakefile/build/intermediate/Debug/ZeroConfManager_bf750d16.d" />
     </list>
     <ignored path="utilities.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,7 +43,7 @@
         <entry file="file://$PROJECT_DIR$/AudioProcessorNode/Source/AudioProcessorNode.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -49,7 +53,7 @@
         <entry file="file://$PROJECT_DIR$/AudioProcessorNode/Source/AudioProcessorNode.h">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
+              <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -159,8 +163,8 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="336" />
-    <option name="y" value="170" />
+    <option name="x" value="104" />
+    <option name="y" value="73" />
     <option name="width" value="1008" />
     <option name="height" value="680" />
   </component>
@@ -859,7 +863,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="336" y="170" width="1008" height="680" extended-state="0" />
+    <frame x="104" y="73" width="1008" height="680" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287858" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1241,7 +1245,7 @@
     <entry file="file://$PROJECT_DIR$/AudioProcessorNode/Source/AudioProcessorNode.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1249,7 +1253,7 @@
     <entry file="file://$PROJECT_DIR$/AudioProcessorNode/Source/AudioProcessorNode.h">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
+          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
           <folding />
         </state>
       </provider>

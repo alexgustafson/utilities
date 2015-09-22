@@ -392,15 +392,6 @@ build/intermediate/Debug/Main_90ebc5c2.o: ../../Source/Main.cpp \
  ../../Source/../JuceLibraryCode/modules/juce_audio_processors/../../../../../../JUCE/modules/juce_audio_processors/scanning/juce_PluginListComponent.h \
  ../../Source/../JuceLibraryCode/modules/juce_core/juce_core.h \
  ../../Source/../JuceLibraryCode/modules/juce_core/../../../../../../JUCE/modules/juce_core/juce_core.h \
- ../../Source/../JuceLibraryCode/modules/juce_cryptography/juce_cryptography.h \
- ../../Source/../JuceLibraryCode/modules/juce_cryptography/../../../../../../JUCE/modules/juce_cryptography/juce_cryptography.h \
- ../../Source/../JuceLibraryCode/modules/juce_cryptography/../../../../../../JUCE/modules/juce_cryptography/../juce_core/juce_core.h \
- ../../Source/../JuceLibraryCode/modules/juce_cryptography/../../../../../../JUCE/modules/juce_cryptography/encryption/juce_BlowFish.h \
- ../../Source/../JuceLibraryCode/modules/juce_cryptography/../../../../../../JUCE/modules/juce_cryptography/encryption/juce_Primes.h \
- ../../Source/../JuceLibraryCode/modules/juce_cryptography/../../../../../../JUCE/modules/juce_cryptography/encryption/juce_RSAKey.h \
- ../../Source/../JuceLibraryCode/modules/juce_cryptography/../../../../../../JUCE/modules/juce_cryptography/hashing/juce_MD5.h \
- ../../Source/../JuceLibraryCode/modules/juce_cryptography/../../../../../../JUCE/modules/juce_cryptography/hashing/juce_SHA256.h \
- ../../Source/../JuceLibraryCode/modules/juce_cryptography/../../../../../../JUCE/modules/juce_cryptography/hashing/juce_Whirlpool.h \
  ../../Source/../JuceLibraryCode/modules/juce_data_structures/juce_data_structures.h \
  ../../Source/../JuceLibraryCode/modules/juce_data_structures/../../../../../../JUCE/modules/juce_data_structures/juce_data_structures.h \
  ../../Source/../JuceLibraryCode/modules/juce_events/juce_events.h \
@@ -434,35 +425,7 @@ build/intermediate/Debug/Main_90ebc5c2.o: ../../Source/Main.cpp \
  ../../Source/../JuceLibraryCode/modules/juce_gui_extra/../../../../../../JUCE/modules/juce_gui_extra/misc/juce_WebBrowserComponent.h \
  ../../Source/../JuceLibraryCode/modules/juce_gui_extra/../../../../../../JUCE/modules/juce_gui_extra/misc/juce_LiveConstantEditor.h \
  ../../Source/../JuceLibraryCode/modules/juce_gui_extra/../../../../../../JUCE/modules/juce_gui_extra/misc/juce_AnimatedAppComponent.h \
- ../../Source/../JuceLibraryCode/modules/juce_opengl/juce_opengl.h \
- ../../Source/../JuceLibraryCode/modules/juce_opengl/../../../../../../JUCE/modules/juce_opengl/juce_opengl.h \
- ../../Source/../JuceLibraryCode/modules/juce_opengl/../../../../../../JUCE/modules/juce_opengl/../juce_gui_extra/juce_gui_extra.h \
- ../../Source/../JuceLibraryCode/modules/juce_opengl/../../../../../../JUCE/modules/juce_opengl/geometry/juce_Quaternion.h \
- ../../Source/../JuceLibraryCode/modules/juce_opengl/../../../../../../JUCE/modules/juce_opengl/geometry/juce_Vector3D.h \
- ../../Source/../JuceLibraryCode/modules/juce_opengl/../../../../../../JUCE/modules/juce_opengl/geometry/juce_Matrix3D.h \
- ../../Source/../JuceLibraryCode/modules/juce_opengl/../../../../../../JUCE/modules/juce_opengl/geometry/juce_Matrix3D.h \
- ../../Source/../JuceLibraryCode/modules/juce_opengl/../../../../../../JUCE/modules/juce_opengl/geometry/juce_Vector3D.h \
- ../../Source/../JuceLibraryCode/modules/juce_opengl/../../../../../../JUCE/modules/juce_opengl/geometry/juce_Draggable3DOrientation.h \
- ../../Source/../JuceLibraryCode/modules/juce_opengl/../../../../../../JUCE/modules/juce_opengl/native/juce_MissingGLDefinitions.h \
- ../../Source/../JuceLibraryCode/modules/juce_opengl/../../../../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLHelpers.h \
- ../../Source/../JuceLibraryCode/modules/juce_opengl/../../../../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLPixelFormat.h \
- ../../Source/../JuceLibraryCode/modules/juce_opengl/../../../../../../JUCE/modules/juce_opengl/native/juce_OpenGLExtensions.h \
- ../../Source/../JuceLibraryCode/modules/juce_opengl/../../../../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLRenderer.h \
- ../../Source/../JuceLibraryCode/modules/juce_opengl/../../../../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLContext.h \
- ../../Source/../JuceLibraryCode/modules/juce_opengl/../../../../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLFrameBuffer.h \
- ../../Source/../JuceLibraryCode/modules/juce_opengl/../../../../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLGraphicsContext.h \
- ../../Source/../JuceLibraryCode/modules/juce_opengl/../../../../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLImage.h \
- ../../Source/../JuceLibraryCode/modules/juce_opengl/../../../../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLShaderProgram.h \
- ../../Source/../JuceLibraryCode/modules/juce_opengl/../../../../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLTexture.h \
- ../../Source/../JuceLibraryCode/modules/juce_opengl/../../../../../../JUCE/modules/juce_opengl/utils/juce_OpenGLAppComponent.h \
- ../../Source/../JuceLibraryCode/modules/juce_video/juce_video.h \
- ../../Source/../JuceLibraryCode/modules/juce_video/../../../../../../JUCE/modules/juce_video/juce_video.h \
- ../../Source/../JuceLibraryCode/modules/juce_video/../../../../../../JUCE/modules/juce_video/../juce_gui_extra/juce_gui_extra.h \
- ../../Source/../JuceLibraryCode/modules/juce_video/../../../../../../JUCE/modules/juce_video/playback/juce_DirectShowComponent.h \
- ../../Source/../JuceLibraryCode/modules/juce_video/../../../../../../JUCE/modules/juce_video/playback/juce_QuickTimeMovieComponent.h \
- ../../Source/../JuceLibraryCode/modules/juce_video/../../../../../../JUCE/modules/juce_video/capture/juce_CameraDevice.h \
  ../../Source/../../Monitor/src/Monitor.h \
  ../../JuceLibraryCode/JuceHeader.h ../../Source/AudioProcessorNode.h \
  ../../Source/../../ZeroConf/Source/ZeroConfManager.h \
- ../../Source/../../ZeroConf/Source/../../Monitor/src/Monitor.h \
- ../../../Common/mDNSShared/dns_sd.h
+ ../../Source/../../ZeroConf/Source/../../Monitor/src/Monitor.h
