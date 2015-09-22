@@ -30,7 +30,6 @@
           <Add directory="/usr/include/freetype2"/>
         </Compiler>
         <Linker>
-          <Add library="GL"/>
           <Add library="X11"/>
           <Add library="Xext"/>
           <Add library="Xinerama"/>
@@ -63,7 +62,6 @@
         </Compiler>
         <Linker>
           <Add option="-s"/>
-          <Add library="GL"/>
           <Add library="X11"/>
           <Add library="Xext"/>
           <Add library="Xinerama"/>
@@ -265,11 +263,11 @@
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
-    <Unit filename="../../../../../../JUCE/modules/juce_audio_basics/juce_module_info">
+    <Unit filename="../../../../../JUCE/modules/juce_audio_basics/juce_module_info">
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
-    <Unit filename="../../../../../../JUCE/modules/juce_audio_basics/juce_audio_basics.h">
+    <Unit filename="../../../../../JUCE/modules/juce_audio_basics/juce_audio_basics.h">
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
@@ -425,11 +423,11 @@
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
-    <Unit filename="../../../../../../JUCE/modules/juce_audio_devices/juce_module_info">
+    <Unit filename="../../../../../JUCE/modules/juce_audio_devices/juce_module_info">
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
-    <Unit filename="../../../../../../JUCE/modules/juce_audio_devices/juce_audio_devices.h">
+    <Unit filename="../../../../../JUCE/modules/juce_audio_devices/juce_audio_devices.h">
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
@@ -573,11 +571,11 @@
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
-    <Unit filename="../../../../../../JUCE/modules/juce_audio_formats/juce_module_info">
+    <Unit filename="../../../../../JUCE/modules/juce_audio_formats/juce_module_info">
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
-    <Unit filename="../../../../../../JUCE/modules/juce_audio_formats/juce_audio_formats.h">
+    <Unit filename="../../../../../JUCE/modules/juce_audio_formats/juce_audio_formats.h">
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
@@ -721,11 +719,11 @@
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
-    <Unit filename="../../../../../../JUCE/modules/juce_audio_processors/juce_module_info">
+    <Unit filename="../../../../../JUCE/modules/juce_audio_processors/juce_module_info">
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
-    <Unit filename="../../../../../../JUCE/modules/juce_audio_processors/juce_audio_processors.h">
+    <Unit filename="../../../../../JUCE/modules/juce_audio_processors/juce_audio_processors.h">
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
@@ -1509,67 +1507,11 @@
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
-    <Unit filename="../../../../../../JUCE/modules/juce_core/juce_module_info">
+    <Unit filename="../../../../../JUCE/modules/juce_core/juce_module_info">
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
-    <Unit filename="../../../../../../JUCE/modules/juce_core/juce_core.h">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_cryptography/encryption/juce_BlowFish.cpp">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_cryptography/encryption/juce_BlowFish.h">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_cryptography/encryption/juce_Primes.cpp">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_cryptography/encryption/juce_Primes.h">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_cryptography/encryption/juce_RSAKey.cpp">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_cryptography/encryption/juce_RSAKey.h">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_cryptography/hashing/juce_MD5.cpp">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_cryptography/hashing/juce_MD5.h">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_cryptography/hashing/juce_SHA256.cpp">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_cryptography/hashing/juce_SHA256.h">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_cryptography/hashing/juce_Whirlpool.cpp">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_cryptography/hashing/juce_Whirlpool.h">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../../../../JUCE/modules/juce_cryptography/juce_module_info">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../../../../JUCE/modules/juce_cryptography/juce_cryptography.h">
+    <Unit filename="../../../../../JUCE/modules/juce_core/juce_core.h">
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
@@ -1625,11 +1567,11 @@
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
-    <Unit filename="../../../../../../JUCE/modules/juce_data_structures/juce_module_info">
+    <Unit filename="../../../../../JUCE/modules/juce_data_structures/juce_module_info">
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
-    <Unit filename="../../../../../../JUCE/modules/juce_data_structures/juce_data_structures.h">
+    <Unit filename="../../../../../JUCE/modules/juce_data_structures/juce_data_structures.h">
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
@@ -1793,11 +1735,11 @@
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
-    <Unit filename="../../../../../../JUCE/modules/juce_events/juce_module_info">
+    <Unit filename="../../../../../JUCE/modules/juce_events/juce_module_info">
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
-    <Unit filename="../../../../../../JUCE/modules/juce_events/juce_events.h">
+    <Unit filename="../../../../../JUCE/modules/juce_events/juce_events.h">
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
@@ -2101,11 +2043,11 @@
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
-    <Unit filename="../../../../../../JUCE/modules/juce_graphics/juce_module_info">
+    <Unit filename="../../../../../JUCE/modules/juce_graphics/juce_module_info">
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
-    <Unit filename="../../../../../../JUCE/modules/juce_graphics/juce_graphics.h">
+    <Unit filename="../../../../../JUCE/modules/juce_graphics/juce_graphics.h">
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
@@ -3117,11 +3059,11 @@
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
-    <Unit filename="../../../../../../JUCE/modules/juce_gui_basics/juce_module_info">
+    <Unit filename="../../../../../JUCE/modules/juce_gui_basics/juce_module_info">
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
-    <Unit filename="../../../../../../JUCE/modules/juce_gui_basics/juce_gui_basics.h">
+    <Unit filename="../../../../../JUCE/modules/juce_gui_basics/juce_gui_basics.h">
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
@@ -3321,187 +3263,11 @@
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
-    <Unit filename="../../../../../../JUCE/modules/juce_gui_extra/juce_module_info">
+    <Unit filename="../../../../../JUCE/modules/juce_gui_extra/juce_module_info">
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
-    <Unit filename="../../../../../../JUCE/modules/juce_gui_extra/juce_gui_extra.h">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLContext.cpp">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLContext.h">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLFrameBuffer.cpp">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLFrameBuffer.h">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLGraphicsContext.cpp">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLGraphicsContext.h">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLHelpers.cpp">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLHelpers.h">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLImage.cpp">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLImage.h">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLPixelFormat.cpp">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLPixelFormat.h">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLRenderer.h">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLShaderProgram.cpp">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLShaderProgram.h">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLTexture.cpp">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_opengl/opengl/juce_OpenGLTexture.h">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_opengl/geometry/juce_Draggable3DOrientation.h">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_opengl/geometry/juce_Matrix3D.h">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_opengl/geometry/juce_Quaternion.h">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_opengl/geometry/juce_Vector3D.h">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_opengl/utils/juce_OpenGLAppComponent.cpp">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_opengl/utils/juce_OpenGLAppComponent.h">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_opengl/native/juce_MissingGLDefinitions.h">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_opengl/native/juce_OpenGL_android.h">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_opengl/native/juce_OpenGL_ios.h">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_opengl/native/juce_OpenGL_linux.h">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_opengl/native/juce_OpenGL_osx.h">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_opengl/native/juce_OpenGL_win32.h">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_opengl/native/juce_OpenGLExtensions.h">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../../../../JUCE/modules/juce_opengl/juce_module_info">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../../../../JUCE/modules/juce_opengl/juce_opengl.h">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_video/playback/juce_DirectShowComponent.h">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_video/playback/juce_QuickTimeMovieComponent.h">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_video/capture/juce_CameraDevice.cpp">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_video/capture/juce_CameraDevice.h">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_video/native/juce_android_CameraDevice.cpp">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_video/native/juce_mac_CameraDevice.mm">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_video/native/juce_mac_QuickTimeMovieComponent.mm">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_video/native/juce_win32_CameraDevice.cpp">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_video/native/juce_win32_DirectShowComponent.cpp">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../../../JUCE/modules/juce_video/native/juce_win32_QuickTimeMovieComponent.cpp">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../../../../JUCE/modules/juce_video/juce_module_info">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../../../../JUCE/modules/juce_video/juce_video.h">
+    <Unit filename="../../../../../JUCE/modules/juce_gui_extra/juce_gui_extra.h">
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
@@ -3509,19 +3275,16 @@
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
-    <Unit filename="../../../../../../JUCE/modules/juce_audio_basics/juce_audio_basics.cpp"/>
-    <Unit filename="../../../../../../JUCE/modules/juce_audio_devices/juce_audio_devices.cpp"/>
-    <Unit filename="../../../../../../JUCE/modules/juce_audio_formats/juce_audio_formats.cpp"/>
-    <Unit filename="../../../../../../JUCE/modules/juce_audio_processors/juce_audio_processors.cpp"/>
-    <Unit filename="../../../../../../JUCE/modules/juce_core/juce_core.cpp"/>
-    <Unit filename="../../../../../../JUCE/modules/juce_cryptography/juce_cryptography.cpp"/>
-    <Unit filename="../../../../../../JUCE/modules/juce_data_structures/juce_data_structures.cpp"/>
-    <Unit filename="../../../../../../JUCE/modules/juce_events/juce_events.cpp"/>
-    <Unit filename="../../../../../../JUCE/modules/juce_graphics/juce_graphics.cpp"/>
-    <Unit filename="../../../../../../JUCE/modules/juce_gui_basics/juce_gui_basics.cpp"/>
-    <Unit filename="../../../../../../JUCE/modules/juce_gui_extra/juce_gui_extra.cpp"/>
-    <Unit filename="../../../../../../JUCE/modules/juce_opengl/juce_opengl.cpp"/>
-    <Unit filename="../../../../../../JUCE/modules/juce_video/juce_video.cpp"/>
+    <Unit filename="../../../../../JUCE/modules/juce_audio_basics/juce_audio_basics.cpp"/>
+    <Unit filename="../../../../../JUCE/modules/juce_audio_devices/juce_audio_devices.cpp"/>
+    <Unit filename="../../../../../JUCE/modules/juce_audio_formats/juce_audio_formats.cpp"/>
+    <Unit filename="../../../../../JUCE/modules/juce_audio_processors/juce_audio_processors.cpp"/>
+    <Unit filename="../../../../../JUCE/modules/juce_core/juce_core.cpp"/>
+    <Unit filename="../../../../../JUCE/modules/juce_data_structures/juce_data_structures.cpp"/>
+    <Unit filename="../../../../../JUCE/modules/juce_events/juce_events.cpp"/>
+    <Unit filename="../../../../../JUCE/modules/juce_graphics/juce_graphics.cpp"/>
+    <Unit filename="../../../../../JUCE/modules/juce_gui_basics/juce_gui_basics.cpp"/>
+    <Unit filename="../../../../../JUCE/modules/juce_gui_extra/juce_gui_extra.cpp"/>
     <Unit filename="../../JuceLibraryCode/JuceHeader.h">
       <Option compile="0"/>
       <Option link="0"/>

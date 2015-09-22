@@ -143,7 +143,7 @@ public:
     String hosttarget = "";
     String addString = "";
     String moreString = "";
-    uint16_t port = htons(0);
+    uint16_t port = 0;
 
 private:
 
