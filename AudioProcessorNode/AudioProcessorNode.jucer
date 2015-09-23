@@ -19,7 +19,7 @@
     </GROUP>
   </MAINGROUP>
   <EXPORTFORMATS>
-    <XCODE_MAC targetFolder="Builds/MacOSX">
+    <XCODE_MAC targetFolder="Builds/MacOSX" externalLibraries="">
       <CONFIGURATIONS>
         <CONFIGURATION name="Debug" osxSDK="default" osxCompatibility="10.9 SDK" osxArchitecture="default"
                        isDebug="1" optimisation="1" targetName="AudioProcessorNode"/>
@@ -39,12 +39,12 @@
         <MODULEPATH id="juce_gui_extra" path="../../../JUCE/modules"/>
       </MODULEPATHS>
     </XCODE_MAC>
-    <CODEBLOCKS_LINUX targetFolder="Builds/CodeBlocksLinux">
+    <CODEBLOCKS_LINUX targetFolder="Builds/CodeBlocksLinux" extraLinkerFlags="" externalLibraries="dns_sd">
       <CONFIGURATIONS>
         <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="AudioProcessorNode"
-                       libraryPath="dns_sd"/>
+                       libraryPath=""/>
         <CONFIGURATION name="Release" isDebug="0" optimisation="3" targetName="AudioProcessorNode"
-                       libraryPath="dns_sd"/>
+                       libraryPath=""/>
       </CONFIGURATIONS>
       <MODULEPATHS>
         <MODULEPATH id="juce_core" path="../../../JUCE/modules"/>
@@ -59,11 +59,11 @@
         <MODULEPATH id="juce_gui_extra" path="../../../JUCE/modules"/>
       </MODULEPATHS>
     </CODEBLOCKS_LINUX>
-    <LINUX_MAKE targetFolder="Builds/LinuxMakefile">
+    <LINUX_MAKE targetFolder="Builds/LinuxMakefile" externalLibraries="dns_sd">
       <CONFIGURATIONS>
-        <CONFIGURATION name="Debug" libraryPath="/usr/X11R6/lib/&#10;dns_sd" isDebug="1"
-                       optimisation="1" targetName="AudioProcessorNode" headerPath=""/>
-        <CONFIGURATION name="Release" libraryPath="/usr/X11R6/lib/&#10;dns_sd" isDebug="0"
+        <CONFIGURATION name="Debug" libraryPath="/usr/X11R6/lib/&#10;" isDebug="1" optimisation="1"
+                       targetName="AudioProcessorNode" headerPath=""/>
+        <CONFIGURATION name="Release" libraryPath="/usr/X11R6/lib/&#10;" isDebug="0"
                        optimisation="3" targetName="AudioProcessorNode" headerPath=""/>
       </CONFIGURATIONS>
       <MODULEPATHS>

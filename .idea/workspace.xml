@@ -2,44 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3aa37274-6c16-4420-9e4a-344a6d41b9d0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/build/Debug/AudioProcessorNode" afterPath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/build/Debug/AudioProcessorNode" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/AudioProcessorNode.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/AudioProcessorNode.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/Builds/MacOSX/AudioTestApplication.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/AudioTestApplication/Builds/MacOSX/AudioTestApplication.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioProcessorNode/Builds/CodeBlocksLinux/AudioProcessorNode.cbp" afterPath="$PROJECT_DIR$/AudioProcessorNode/Builds/CodeBlocksLinux/AudioProcessorNode.cbp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioProcessorNode/AudioProcessorNode.jucer" afterPath="$PROJECT_DIR$/AudioProcessorNode/AudioProcessorNode.jucer" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/AudioTestApplication.jucer" afterPath="$PROJECT_DIR$/AudioTestApplication/AudioTestApplication.jucer" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproProcessor.cpp" afterPath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproProcessor.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproProcessor.h" afterPath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproProcessor.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioProcessorNode/Builds/LinuxMakefile/Makefile" afterPath="$PROJECT_DIR$/AudioProcessorNode/Builds/LinuxMakefile/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/Builds/LinuxMakefile/Makefile" afterPath="$PROJECT_DIR$/AudioTestApplication/Builds/LinuxMakefile/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Monitor/src/Monitor.cpp" afterPath="$PROJECT_DIR$/Monitor/src/Monitor.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/JuceLibraryCode/modules/dRowAudio/dRowAudio.h" afterPath="$PROJECT_DIR$/AudioTestApplication/JuceLibraryCode/modules/dRowAudio/dRowAudio.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/juce_audio_basics/juce_audio_basics.h" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/juce_audio_basics/juce_audio_basics.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/JuceLibraryCode/modules/juce_audio_basics/juce_audio_basics.h" afterPath="$PROJECT_DIR$/AudioTestApplication/JuceLibraryCode/modules/juce_audio_basics/juce_audio_basics.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/juce_audio_devices/juce_audio_devices.h" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/juce_audio_devices/juce_audio_devices.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/JuceLibraryCode/modules/juce_audio_devices/juce_audio_devices.h" afterPath="$PROJECT_DIR$/AudioTestApplication/JuceLibraryCode/modules/juce_audio_devices/juce_audio_devices.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/juce_audio_formats/juce_audio_formats.h" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/juce_audio_formats/juce_audio_formats.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/JuceLibraryCode/modules/juce_audio_formats/juce_audio_formats.h" afterPath="$PROJECT_DIR$/AudioTestApplication/JuceLibraryCode/modules/juce_audio_formats/juce_audio_formats.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/juce_audio_processors/juce_audio_processors.h" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/juce_audio_processors/juce_audio_processors.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/JuceLibraryCode/modules/juce_audio_processors/juce_audio_processors.h" afterPath="$PROJECT_DIR$/AudioTestApplication/JuceLibraryCode/modules/juce_audio_processors/juce_audio_processors.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/JuceLibraryCode/modules/juce_audio_utils/juce_audio_utils.h" afterPath="$PROJECT_DIR$/AudioTestApplication/JuceLibraryCode/modules/juce_audio_utils/juce_audio_utils.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/juce_core/juce_core.h" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/juce_core/juce_core.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/JuceLibraryCode/modules/juce_core/juce_core.h" afterPath="$PROJECT_DIR$/AudioTestApplication/JuceLibraryCode/modules/juce_core/juce_core.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/JuceLibraryCode/modules/juce_cryptography/juce_cryptography.h" afterPath="$PROJECT_DIR$/AudioTestApplication/JuceLibraryCode/modules/juce_cryptography/juce_cryptography.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/juce_data_structures/juce_data_structures.h" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/juce_data_structures/juce_data_structures.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/JuceLibraryCode/modules/juce_data_structures/juce_data_structures.h" afterPath="$PROJECT_DIR$/AudioTestApplication/JuceLibraryCode/modules/juce_data_structures/juce_data_structures.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/juce_events/juce_events.h" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/juce_events/juce_events.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/JuceLibraryCode/modules/juce_events/juce_events.h" afterPath="$PROJECT_DIR$/AudioTestApplication/JuceLibraryCode/modules/juce_events/juce_events.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/juce_graphics/juce_graphics.h" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/juce_graphics/juce_graphics.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/JuceLibraryCode/modules/juce_graphics/juce_graphics.h" afterPath="$PROJECT_DIR$/AudioTestApplication/JuceLibraryCode/modules/juce_graphics/juce_graphics.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/juce_gui_basics/juce_gui_basics.h" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/juce_gui_basics/juce_gui_basics.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/JuceLibraryCode/modules/juce_gui_basics/juce_gui_basics.h" afterPath="$PROJECT_DIR$/AudioTestApplication/JuceLibraryCode/modules/juce_gui_basics/juce_gui_basics.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/juce_gui_extra/juce_gui_extra.h" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/juce_gui_extra/juce_gui_extra.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/JuceLibraryCode/modules/juce_gui_extra/juce_gui_extra.h" afterPath="$PROJECT_DIR$/AudioTestApplication/JuceLibraryCode/modules/juce_gui_extra/juce_gui_extra.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/JuceLibraryCode/modules/juce_opengl/juce_opengl.h" afterPath="$PROJECT_DIR$/AudioTestApplication/JuceLibraryCode/modules/juce_opengl/juce_opengl.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/JuceLibraryCode/modules/juce_video/juce_video.h" afterPath="$PROJECT_DIR$/AudioTestApplication/JuceLibraryCode/modules/juce_video/juce_video.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/AudioProcessorNode.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/AudioProcessorNode.xcodeproj/project.pbxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/Builds/MacOSX/AudioTestApplication.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/AudioTestApplication/Builds/MacOSX/AudioTestApplication.xcodeproj/project.pbxproj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="utilities.iws" />
@@ -196,8 +158,8 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1883" />
-    <option name="y" value="76" />
+    <option name="x" value="1714" />
+    <option name="y" value="46" />
     <option name="width" value="1050" />
     <option name="height" value="818" />
   </component>
@@ -726,13 +688,20 @@
       <option name="project" value="LOCAL" />
       <updated>1443001430504</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="unified path structure">
+      <created>1443003669647</created>
+      <option name="number" value="00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1443003669647</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1883" y="76" width="1050" height="818" extended-state="0" />
+    <frame x="1714" y="46" width="1050" height="818" extended-state="0" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287858" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -742,13 +711,12 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27884614" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27961433" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287858" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -778,7 +746,8 @@
     <MESSAGE value="moved zeroconf handling into audioprocessor" />
     <MESSAGE value="Merge branch 'master' of https://github.com/alexgustafson/utilities&#10;&#10;# Conflicts:&#10;#&#9;AudioProcessorNode/AudioProcessorNode.jucer&#10;#&#9;AudioProcessorNode/Builds/LinuxMakefile/Makefile&#10;" />
     <MESSAGE value="hotswapping node enabled" />
-    <option name="LAST_COMMIT_MESSAGE" value="hotswapping node enabled" />
+    <MESSAGE value="unified path structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="unified path structure" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />

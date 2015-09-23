@@ -38,7 +38,6 @@
           <Add library="freetype"/>
           <Add library="pthread"/>
           <Add library="rt"/>
-          <Add directory="dns_sd"/>
         </Linker>
       </Target>
       <Target title="Release">
@@ -71,7 +70,6 @@
           <Add library="freetype"/>
           <Add library="pthread"/>
           <Add library="rt"/>
-          <Add directory="dns_sd"/>
         </Linker>
       </Target>
     </Build>
@@ -80,7 +78,9 @@
       <Add option="-Wno-strict-aliasing"/>
       <Add option="-Wno-strict-overflow"/>
     </Compiler>
-    <Linker/>
+    <Linker>
+      <Add library="dns_sd"/>
+    </Linker>
     <Unit filename="../../Source/AudioProcessorNode.cpp"/>
     <Unit filename="../../Source/AudioProcessorNode.h">
       <Option compile="0"/>
