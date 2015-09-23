@@ -9,7 +9,7 @@
 */
 
 #include "../JuceLibraryCode/JuceHeader.h"
-#include "../../Monitor/src/Monitor.h"
+#include "Monitor.h"
 #include "AudioProcessorNode.h"
 
 //==============================================================================
