@@ -5,8 +5,8 @@
               jucerVersion="3.2.0">
   <MAINGROUP id="fkk6Ea" name="ZeroConf">
     <GROUP id="{671D2AAE-6EBB-722D-1765-83ECE4AC6E87}" name="Source">
-      <FILE id="Uokbag" name="Monitor.cpp" compile="1" resource="0" file="../Monitor/src/Monitor.cpp"/>
-      <FILE id="dbe0cC" name="Monitor.h" compile="0" resource="0" file="../Monitor/src/Monitor.h"/>
+      <FILE id="YsBCch" name="Monitor.cpp" compile="1" resource="0" file="../Monitor/Source/Monitor.cpp"/>
+      <FILE id="qvJgG9" name="Monitor.h" compile="0" resource="0" file="../Monitor/Source/Monitor.h"/>
       <FILE id="lOf5nl" name="ZeroConfTests.cpp" compile="1" resource="0"
             file="Source/ZeroConfTests.cpp"/>
       <FILE id="ORm70l" name="ZeroConfTests.h" compile="0" resource="0" file="Source/ZeroConfTests.h"/>
@@ -64,12 +64,12 @@
         <MODULEPATH id="juce_audio_processors" path="..../../../JUCE/modules"/>
       </MODULEPATHS>
     </XCODE_IPHONE>
-    <LINUX_MAKE targetFolder="Builds/LinuxMakefile">
+    <LINUX_MAKE targetFolder="Builds/LinuxMakefile" externalLibraries="dns_sd">
       <CONFIGURATIONS>
-        <CONFIGURATION name="Debug" libraryPath="/usr/X11R6/lib/&#10;dns__sd" isDebug="1"
-                       optimisation="1" targetName="ZeroConf" headerPath="../../../Common/mDNSShared"/>
-        <CONFIGURATION name="Release" libraryPath="/usr/X11R6/lib/&#10;dns__sd" isDebug="0"
-                       optimisation="3" targetName="ZeroConf" headerPath="../../../Common/mDNSShared"/>
+        <CONFIGURATION name="Debug" libraryPath="/usr/X11R6/lib/&#10;" isDebug="1" optimisation="1"
+                       targetName="ZeroConf" headerPath=""/>
+        <CONFIGURATION name="Release" libraryPath="/usr/X11R6/lib/&#10;" isDebug="0"
+                       optimisation="3" targetName="ZeroConf" headerPath=""/>
       </CONFIGURATIONS>
       <MODULEPATHS>
         <MODULEPATH id="juce_core" path="../../../JUCE/modules"/>
@@ -87,7 +87,7 @@
         <MODULEPATH id="juce_audio_processors" path="../../../JUCE/modules"/>
       </MODULEPATHS>
     </LINUX_MAKE>
-    <CODEBLOCKS_LINUX targetFolder="Builds/CodeBlocksLinux">
+    <CODEBLOCKS_LINUX targetFolder="Builds/CodeBlocksLinux" externalLibraries="dns_sd">
       <CONFIGURATIONS>
         <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="ZeroConf"/>
         <CONFIGURATION name="Release" isDebug="0" optimisation="3" targetName="ZeroConf"/>
