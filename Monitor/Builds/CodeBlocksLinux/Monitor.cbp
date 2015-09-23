@@ -81,13 +81,13 @@
       <Add option="-Wno-strict-overflow"/>
     </Compiler>
     <Linker/>
-    <Unit filename="../../Source/MonitorTests.cpp"/>
-    <Unit filename="../../Source/MonitorTests.h">
+    <Unit filename="../../Source/Monitor.cpp"/>
+    <Unit filename="../../Source/Monitor.h">
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
-    <Unit filename="../../src/Monitor.cpp"/>
-    <Unit filename="../../src/Monitor.h">
+    <Unit filename="../../Source/MonitorTests.cpp"/>
+    <Unit filename="../../Source/MonitorTests.h">
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>

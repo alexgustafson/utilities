@@ -5,11 +5,11 @@
               jucerVersion="3.2.0">
   <MAINGROUP id="Rg4OpA" name="Monitor">
     <GROUP id="{D86EC6C8-B3A3-1EB5-763F-DAB640AA6B99}" name="Source">
+      <FILE id="ZpBzaG" name="Monitor.cpp" compile="1" resource="0" file="Source/Monitor.cpp"/>
+      <FILE id="bWVU7o" name="Monitor.h" compile="0" resource="0" file="Source/Monitor.h"/>
       <FILE id="C1bE3F" name="MonitorTests.cpp" compile="1" resource="0"
             file="Source/MonitorTests.cpp"/>
       <FILE id="Uuu9Qr" name="MonitorTests.h" compile="0" resource="0" file="Source/MonitorTests.h"/>
-      <FILE id="I4GPxL" name="Monitor.cpp" compile="1" resource="0" file="src/Monitor.cpp"/>
-      <FILE id="oS3AYE" name="Monitor.h" compile="0" resource="0" file="src/Monitor.h"/>
       <FILE id="DeUHLJ" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
     </GROUP>
   </MAINGROUP>

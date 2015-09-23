@@ -49,8 +49,8 @@ ifeq ($(CONFIG),Release)
 endif
 
 OBJECTS := \
+  $(OBJDIR)/Monitor_627cd0bb.o \
   $(OBJDIR)/MonitorTests_77fb4df0.o \
-  $(OBJDIR)/Monitor_3978cda4.o \
   $(OBJDIR)/Main_90ebc5c2.o \
   $(OBJDIR)/juce_audio_basics_89a6632b.o \
   $(OBJDIR)/juce_audio_devices_3f459929.o \
@@ -83,14 +83,14 @@ strip:
 	@echo Stripping Monitor
 	-@strip --strip-unneeded $(OUTDIR)/$(TARGET)
 
+$(OBJDIR)/Monitor_627cd0bb.o: ../../Source/Monitor.cpp
+	-@mkdir -p $(OBJDIR)
+	@echo "Compiling Monitor.cpp"
+	@$(CXX) $(CXXFLAGS) -o "$@" -c "$<"
+
 $(OBJDIR)/MonitorTests_77fb4df0.o: ../../Source/MonitorTests.cpp
 	-@mkdir -p $(OBJDIR)
 	@echo "Compiling MonitorTests.cpp"
-	@$(CXX) $(CXXFLAGS) -o "$@" -c "$<"
-
-$(OBJDIR)/Monitor_3978cda4.o: ../../src/Monitor.cpp
-	-@mkdir -p $(OBJDIR)
-	@echo "Compiling Monitor.cpp"
 	@$(CXX) $(CXXFLAGS) -o "$@" -c "$<"
 
 $(OBJDIR)/Main_90ebc5c2.o: ../../Source/Main.cpp
