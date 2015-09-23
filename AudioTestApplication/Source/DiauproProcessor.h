@@ -87,6 +87,7 @@ private:
     WaitableEvent dataReturned;
     int maxWaitTimeMs;
     int bytesRead;
+    char ip[100];
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (DiauproProcessor)
 };

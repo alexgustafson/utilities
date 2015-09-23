@@ -10,9 +10,12 @@
 
 #include "DiauproProcessor.h"
 
+#include <netinet/in.h>
+#include <arpa/inet.h>
+
 DiauproProcessor::DiauproProcessor() :  circularBuffer(41000) {
     tempBuffer = new AudioSampleBuffer(2, 44100);
-    socket = new DatagramSocket();
+    socket = new DatagramSocket(true);
     socket->bindToPort(0);
     activeNode = nullptr;
 }
@@ -134,12 +137,12 @@ bool DiauproProcessor::acceptsMidi() const {
 void DiauproProcessor::handleZeroConfUpdate(OwnedArray<ZeroConfService> *serviceList) {
 
     if (serviceList->size() > 0) {
-        Logger::writeToLog("Node Found");
+        
         activeNode = serviceList->getUnchecked(0);
         targetHost = activeNode->getHosttarget();
         targetPort = activeNode->getPort();
 
-
+        Logger::writeToLog(String::formatted("Node Found on %s:%d interface %d", targetHost.toRawUTF8(), targetPort, activeNode->getInterfaceIndex()));
         return;
     }
     this->activeNode = nullptr;

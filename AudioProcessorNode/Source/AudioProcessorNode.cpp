@@ -25,7 +25,8 @@ AudioProcessorNode::AudioProcessorNode() : FileDescriptorListener("Audio Process
 
 void AudioProcessorNode::handleFileDescriptor(int fileDescriptor)
 {
-    int bufferSize =buffer->getNumChannels() * buffer->getNumSamples() + sizeof(float);
+    Logger::writeToLog("packets received");
+    int bufferSize = buffer->getNumChannels() * buffer->getNumSamples() + sizeof(float);
     bytesRead = socket->read(buffer->getWritePointer(0), bufferSize, false, senderHost, senderPort);
     
     socket->write(senderHost, senderPort, buffer->getReadPointer(0), bytesRead);
