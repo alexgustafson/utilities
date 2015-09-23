@@ -27,6 +27,7 @@
           <Add option="-DJUCE_APP_VERSION_HEX=0x10000"/>
           <Add directory="."/>
           <Add directory="..\..\JuceLibraryCode"/>
+          <Add directory="../../../Monitor/Source/"/>
           <Add directory="/usr/include/freetype2"/>
         </Compiler>
         <Linker>
@@ -38,6 +39,7 @@
           <Add library="freetype"/>
           <Add library="pthread"/>
           <Add library="rt"/>
+          <Add directory="../../../Monitor/Source/"/>
         </Linker>
       </Target>
       <Target title="Release">

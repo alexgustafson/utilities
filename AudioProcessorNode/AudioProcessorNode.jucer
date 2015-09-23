@@ -42,7 +42,7 @@
     <CODEBLOCKS_LINUX targetFolder="Builds/CodeBlocksLinux" extraLinkerFlags="" externalLibraries="dns_sd">
       <CONFIGURATIONS>
         <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="AudioProcessorNode"
-                       libraryPath=""/>
+                       libraryPath="../../../Monitor/Source/&#10;" headerPath="../../../Monitor/Source/&#10;"/>
         <CONFIGURATION name="Release" isDebug="0" optimisation="3" targetName="AudioProcessorNode"
                        libraryPath=""/>
       </CONFIGURATIONS>
@@ -61,10 +61,12 @@
     </CODEBLOCKS_LINUX>
     <LINUX_MAKE targetFolder="Builds/LinuxMakefile" externalLibraries="dns_sd">
       <CONFIGURATIONS>
-        <CONFIGURATION name="Debug" libraryPath="/usr/X11R6/lib/&#10;" isDebug="1" optimisation="1"
-                       targetName="AudioProcessorNode" headerPath=""/>
-        <CONFIGURATION name="Release" libraryPath="/usr/X11R6/lib/&#10;" isDebug="0"
-                       optimisation="3" targetName="AudioProcessorNode" headerPath=""/>
+        <CONFIGURATION name="Debug" libraryPath="/usr/X11R6/lib/&#10;../../../Monitor/Source/&#10;"
+                       isDebug="1" optimisation="1" targetName="AudioProcessorNode"
+                       headerPath="../../../Monitor/Source/&#10;"/>
+        <CONFIGURATION name="Release" libraryPath="/usr/X11R6/lib/&#10;../../../Monitor/Source/&#10;"
+                       isDebug="0" optimisation="3" targetName="AudioProcessorNode"
+                       headerPath="../../../Monitor/Source/&#10;"/>
       </CONFIGURATIONS>
       <MODULEPATHS>
         <MODULEPATH id="juce_events" path="../../../JUCE/modules"/>
@@ -90,7 +92,7 @@
     <MODULES id="juce_events" showAllCode="1" useLocalCopy="0"/>
     <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0"/>
     <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0"/>
-    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_gui_extra" showAllCode="1" useLocalCopy="0"/>
   </MODULES>
   <JUCEOPTIONS/>
 </JUCERPROJECT>
