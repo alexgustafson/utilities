@@ -15,7 +15,7 @@
 
 DiauproProcessor::DiauproProcessor() :  circularBuffer(41000) {
     tempBuffer = new AudioSampleBuffer(2, 44100);
-    socket = new DatagramSocket(true);
+    socket = new DatagramSocket(0);
     socket->bindToPort(0);
     activeNode = nullptr;
 }
