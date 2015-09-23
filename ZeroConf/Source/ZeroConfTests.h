@@ -12,7 +12,7 @@
 #define ZEROCONFTESTS_H_INCLUDED
 #include "JuceHeader.h"
 #include "ZeroConfManager.h"
-#include "../../Monitor/src/Monitor.h"
+#include "Monitor.h"
 #include <inttypes.h>
 
 
