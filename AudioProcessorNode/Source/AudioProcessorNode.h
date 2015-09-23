@@ -28,14 +28,14 @@ public:
     
 private:
     
-    ScopedPointer<DatagramSocket> socket;
+    //ScopedPointer<DatagramSocket> socket;
     ScopedPointer<AudioSampleBuffer> buffer;
     
     int senderPort;
     int bytesRead;
     String senderHost;
     
-    
+    int sock;
     
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (AudioProcessorNode)
 };
