@@ -67,9 +67,9 @@
     <LINUX_MAKE targetFolder="Builds/LinuxMakefile" externalLibraries="dns_sd">
       <CONFIGURATIONS>
         <CONFIGURATION name="Debug" libraryPath="/usr/X11R6/lib/&#10;../../../Monitor/Source/"
-                       isDebug="1" optimisation="1" targetName="ZeroConf" headerPath=""/>
+                       isDebug="1" optimisation="1" targetName="ZeroConf" headerPath="../../../Monitor/Source/&#10;"/>
         <CONFIGURATION name="Release" libraryPath="/usr/X11R6/lib/&#10;../../../Monitor/Source/&#10;"
-                       isDebug="0" optimisation="3" targetName="ZeroConf" headerPath=""/>
+                       isDebug="0" optimisation="3" targetName="ZeroConf" headerPath="../../../Monitor/Source/&#10;"/>
       </CONFIGURATIONS>
       <MODULEPATHS>
         <MODULEPATH id="juce_core" path="../../../JUCE/modules"/>
