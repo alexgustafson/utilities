@@ -10,13 +10,11 @@
 
 #include "DiauproProcessor.h"
 
-DiauproProcessor::DiauproProcessor() : FileDescriptorListener("Diaupro Processor"), circularBuffer(41000) {
+DiauproProcessor::DiauproProcessor() :  circularBuffer(41000) {
     tempBuffer = new AudioSampleBuffer(2, 44100);
     socket = new DatagramSocket();
     socket->bindToPort(0);
-    activeNode = NULL;
-    //fcntl(socket->getRawSocketHandle(), F_SETFL, O_NONBLOCK);
-
+    activeNode = nullptr;
 }
 
 DiauproProcessor::~DiauproProcessor() {
@@ -60,14 +58,10 @@ void DiauproProcessor::processBlock(AudioSampleBuffer &buffer, MidiBuffer &midiM
 
         buffer.clear();
 
-        //dataReturned.wait();
         bytesRead = 0;
         if (socket->waitUntilReady(true, maxWaitTimeMs)) {
-            bytesRead = socket->read(buffer.getWritePointer(0), buffer.getNumChannels() * buffer.getNumSamples() * sizeof(float), false);  //deadlock here when node disconects
+            bytesRead = socket->read(buffer.getWritePointer(0), buffer.getNumChannels() * buffer.getNumSamples() * sizeof(float), false);
         }
-        
-        Logger::writeToLog(String::formatted("Bytes Read: %d", bytesRead));
-
 
     } else {
 
@@ -137,16 +131,6 @@ bool DiauproProcessor::acceptsMidi() const {
 }
 
 
-void DiauproProcessor::handleFileDescriptor(int fileDescriptor) {
-
-    //int size = socket->read(tempBuffer->getWritePointer(0), tempBuffer->getNumChannels() * tempBuffer->getNumSamples() * sizeof(float), false);
-    //int numSamples = size / (tempBuffer->getNumChannels() * sizeof(float));
-    //circularBuffer.writeSamples(tempBuffer->getReadPointer(0), numSamples);
-    dataReturned.signal();
-    //Logger::writeToLog("Data Recieved");
-
-}
-
 void DiauproProcessor::handleZeroConfUpdate(OwnedArray<ZeroConfService> *serviceList) {
 
     if (serviceList->size() > 0) {
@@ -154,14 +138,12 @@ void DiauproProcessor::handleZeroConfUpdate(OwnedArray<ZeroConfService> *service
         activeNode = serviceList->getUnchecked(0);
         targetHost = activeNode->getHosttarget();
         targetPort = activeNode->getPort();
-        //this->monitor->addFileDescriptorAndListener(this->socket->getRawSocketHandle(), this);
-        dataReturned.signal();
+
 
         return;
     }
     this->activeNode = nullptr;
     Logger::writeToLog("Node Lost");
-    dataReturned.signal();
 
 }
 

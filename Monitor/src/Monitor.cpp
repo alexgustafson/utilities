@@ -125,7 +125,7 @@ void Monitor::run()
                     FileDescriptorListener* listener = map[fd];
                     listener->handleFileDescriptor(fd);
                     
-                    Logger::writeToLog(String::formatted("update on fd %d with listener: %s",fd, listener->getFileDescriptorListenerName().toRawUTF8()));
+                    //Logger::writeToLog(String::formatted("update on fd %d with listener: %s",fd, listener->getFileDescriptorListenerName().toRawUTF8()));
                 }
             }
         }

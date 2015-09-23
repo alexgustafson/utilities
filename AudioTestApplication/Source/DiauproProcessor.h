@@ -16,8 +16,8 @@
 #include "Monitor.h"
 
 class DiauproProcessor : public AudioProcessor,
-                         public FileDescriptorListener,
-                         public ZeroConfListener {
+                         public ZeroConfListener
+{
 public:
     DiauproProcessor();
 
@@ -68,12 +68,6 @@ public:
     virtual bool producesMidi() const;
 
     virtual bool acceptsMidi() const;
-
-
-    //FileDescriptorListener Methods:
-
-    virtual void handleFileDescriptor(int fileDescriptor);
-
 
     //ZeroConfListener Methods:
 

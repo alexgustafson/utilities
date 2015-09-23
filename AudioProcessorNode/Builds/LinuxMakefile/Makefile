@@ -53,16 +53,16 @@ OBJECTS := \
   $(OBJDIR)/ZeroConfManager_bf750d16.o \
   $(OBJDIR)/Monitor_1802c2c0.o \
   $(OBJDIR)/Main_90ebc5c2.o \
-  $(OBJDIR)/juce_audio_basics_d6d0de5c.o \
-  $(OBJDIR)/juce_audio_devices_ebbe0c1a.o \
-  $(OBJDIR)/juce_audio_formats_1a3f55ba.o \
-  $(OBJDIR)/juce_audio_processors_b09f9c14.o \
-  $(OBJDIR)/juce_core_1eb99f3e.o \
-  $(OBJDIR)/juce_data_structures_10cc707a.o \
-  $(OBJDIR)/juce_events_fbce3cb2.o \
-  $(OBJDIR)/juce_graphics_8bc17316.o \
-  $(OBJDIR)/juce_gui_basics_16895f92.o \
-  $(OBJDIR)/juce_gui_extra_c4824d9a.o \
+  $(OBJDIR)/juce_audio_basics_89a6632b.o \
+  $(OBJDIR)/juce_audio_devices_3f459929.o \
+  $(OBJDIR)/juce_audio_formats_6dc6e2c9.o \
+  $(OBJDIR)/juce_audio_processors_eb06e1e3.o \
+  $(OBJDIR)/juce_core_a278a20d.o \
+  $(OBJDIR)/juce_data_structures_c98de09.o \
+  $(OBJDIR)/juce_events_afa14001.o \
+  $(OBJDIR)/juce_graphics_4cb436e5.o \
+  $(OBJDIR)/juce_gui_basics_d5c7a3e1.o \
+  $(OBJDIR)/juce_gui_extra_13d359a9.o \
 
 .PHONY: clean
 
