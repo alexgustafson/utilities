@@ -30,7 +30,7 @@ private:
     class SocketListener : public ThreadPoolJob, FileDescriptorListener
     {
     public:
-        SocketListener() : ThreadPoolJob("Watcher") {}
+        SocketListener() : ThreadPoolJob("Watcher"), FileDescriptorListener("Socket Listener") {}
         ~SocketListener() {
             close(socket_to_trigger);
             close(socket_to_watch);
