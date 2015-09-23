@@ -81,6 +81,11 @@
     <Linker>
       <Add library="dns_sd"/>
     </Linker>
+    <Unit filename="../../../Monitor/Source/Monitor.cpp"/>
+    <Unit filename="../../../Monitor/Source/Monitor.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
     <Unit filename="../../Source/AudioProcessorNode.cpp"/>
     <Unit filename="../../Source/AudioProcessorNode.h">
       <Option compile="0"/>
@@ -88,11 +93,6 @@
     </Unit>
     <Unit filename="../../../ZeroConf/Source/ZeroConfManager.cpp"/>
     <Unit filename="../../../ZeroConf/Source/ZeroConfManager.h">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../Monitor/src/Monitor.cpp"/>
-    <Unit filename="../../../Monitor/src/Monitor.h">
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>

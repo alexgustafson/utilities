@@ -49,9 +49,9 @@ ifeq ($(CONFIG),Release)
 endif
 
 OBJECTS := \
+  $(OBJDIR)/Monitor_7abf761f.o \
   $(OBJDIR)/AudioProcessorNode_86a96807.o \
   $(OBJDIR)/ZeroConfManager_bf750d16.o \
-  $(OBJDIR)/Monitor_1802c2c0.o \
   $(OBJDIR)/Main_90ebc5c2.o \
   $(OBJDIR)/juce_audio_basics_89a6632b.o \
   $(OBJDIR)/juce_audio_devices_3f459929.o \
@@ -81,6 +81,11 @@ strip:
 	@echo Stripping AudioProcessorNode
 	-@strip --strip-unneeded $(OUTDIR)/$(TARGET)
 
+$(OBJDIR)/Monitor_7abf761f.o: ../../../Monitor/Source/Monitor.cpp
+	-@mkdir -p $(OBJDIR)
+	@echo "Compiling Monitor.cpp"
+	@$(CXX) $(CXXFLAGS) -o "$@" -c "$<"
+
 $(OBJDIR)/AudioProcessorNode_86a96807.o: ../../Source/AudioProcessorNode.cpp
 	-@mkdir -p $(OBJDIR)
 	@echo "Compiling AudioProcessorNode.cpp"
@@ -89,11 +94,6 @@ $(OBJDIR)/AudioProcessorNode_86a96807.o: ../../Source/AudioProcessorNode.cpp
 $(OBJDIR)/ZeroConfManager_bf750d16.o: ../../../ZeroConf/Source/ZeroConfManager.cpp
 	-@mkdir -p $(OBJDIR)
 	@echo "Compiling ZeroConfManager.cpp"
-	@$(CXX) $(CXXFLAGS) -o "$@" -c "$<"
-
-$(OBJDIR)/Monitor_1802c2c0.o: ../../../Monitor/src/Monitor.cpp
-	-@mkdir -p $(OBJDIR)
-	@echo "Compiling Monitor.cpp"
 	@$(CXX) $(CXXFLAGS) -o "$@" -c "$<"
 
 $(OBJDIR)/Main_90ebc5c2.o: ../../Source/Main.cpp
