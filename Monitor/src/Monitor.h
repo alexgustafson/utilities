@@ -23,10 +23,12 @@
 class FileDescriptorListener
 {
 public:
+    explicit FileDescriptorListener(const String& _listenerName) : listenerName (_listenerName) {};
     virtual ~FileDescriptorListener() {};
     virtual void handleFileDescriptor(int fileDescriptor) = 0;
+    String getFileDescriptorListenerName() { return this->listenerName; };
 private:
-    
+    String listenerName;
 };
 
 class Monitor : public FileDescriptorListener, Thread

@@ -16,7 +16,7 @@ void make_nonblocking(int fd)
     fcntl(fd, F_SETFL, O_NONBLOCK);
 }
 
-Monitor::Monitor() : Thread ("file descriptor monitor server")
+Monitor::Monitor() : FileDescriptorListener("Main Monitor"), Thread ("file descriptor monitor server")
 {
     maxfd = 0;
 }
@@ -42,11 +42,11 @@ void Monitor::initializeControlSocket()
     struct sockaddr_in sin_l, sin_w;
     sin_l.sin_family = AF_INET;
     sin_l.sin_addr.s_addr = 0;
-    sin_l.sin_port = htons(0);
+    sin_l.sin_port = 0;
     
     sin_w.sin_family = AF_INET;
     sin_w.sin_addr.s_addr = 0;
-    sin_w.sin_port = htons(0);
+    sin_w.sin_port = 0;
     
     int result;
     result = bind(control_listener, (struct sockaddr*)&sin_l, sizeof(sin_l));
@@ -124,6 +124,8 @@ void Monitor::run()
                 if (FD_ISSET(fd, &readset)) {
                     FileDescriptorListener* listener = map[fd];
                     listener->handleFileDescriptor(fd);
+                    
+                    Logger::writeToLog(String::formatted("update on fd %d with listener: %s",fd, listener->getFileDescriptorListenerName().toRawUTF8()));
                 }
             }
         }
@@ -148,10 +150,9 @@ void Monitor::addFileDescriptorAndListener(int fileDescriptor, FileDescriptorLis
     }
     struct sockaddr_in sin_addr;
     socklen_t len = sizeof (sin_addr);
-    
     getsockname (fileDescriptor, (struct sockaddr*) &sin_addr, &len);
     
-    Logger::writeToLog(String::formatted("listening on port %d", ntohs (sin_addr.sin_port)));
+    Logger::writeToLog(String::formatted("registered listener %s for fd %d on port %d",listener->getFileDescriptorListenerName().toRawUTF8(),fileDescriptor, ntohs (sin_addr.sin_port)));
 }
 
 void Monitor::removeFileDescriptorAndListener(int fileDescriptor)
@@ -164,6 +165,12 @@ void Monitor::removeFileDescriptorAndListener(int fileDescriptor)
     if (fileDescriptor != control_listener) {
         write(control_send, "reset select", 13 * sizeof(char));
     }
+    struct sockaddr_in sin_addr;
+    socklen_t len = sizeof (sin_addr);
+    
+    getsockname (fileDescriptor, (struct sockaddr*) &sin_addr, &len);
+    
+    Logger::writeToLog(String::formatted("removed listener for port %d", ntohs (sin_addr.sin_port)));
     
 }
 

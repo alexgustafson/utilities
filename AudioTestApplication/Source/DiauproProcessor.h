@@ -92,6 +92,7 @@ private:
     Monitor *monitor;
     WaitableEvent dataReturned;
     int maxWaitTimeMs;
+    int bytesRead;
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (DiauproProcessor)
 };

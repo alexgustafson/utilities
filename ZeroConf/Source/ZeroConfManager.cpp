@@ -61,7 +61,7 @@ static void zeroRegisterCallback(DNSServiceRef sdRef,
     response.clear();
 }
 
-ZeroConfManager::ZeroConfManager( Monitor* socket_monitor, ZeroConfListener* lstnr) : Thread ("ZeroConf Manager Thread") {
+ZeroConfManager::ZeroConfManager( Monitor* socket_monitor, ZeroConfListener* lstnr) : FileDescriptorListener("Zero Conf Manager"), Thread ("ZeroConf Manager Thread") {
     
     this->listener = lstnr;
     monitor = socket_monitor;
@@ -138,7 +138,7 @@ void ZeroConfManager::handleFileDescriptor(int fileDescriptor)
     DNSServiceErrorType err = kDNSServiceErr_NoError;
     DNSServiceErrorType error;
     
-    if(fileDescriptor == DNSServiceRefSockFD(browseServiceRef))
+    if(fileDescriptor == DNSServiceRefSockFD(this->browseServiceRef))
     {
         err = DNSServiceProcessResult(this->browseServiceRef);
         if (response.getAddString().equalsIgnoreCase("ADD")) {
@@ -165,14 +165,13 @@ void ZeroConfManager::handleFileDescriptor(int fileDescriptor)
                 if (*service == response)
                 {
                     serviceList.removeObject(service);
-                    
                     break;
                 }
             }
             startThread();
         }
         
-    }else if (fileDescriptor == DNSServiceRefSockFD(resolveServiceRef))
+    }else if (fileDescriptor == DNSServiceRefSockFD(this->resolveServiceRef))
     {
         
         err = DNSServiceProcessResult(this->resolveServiceRef);
@@ -185,10 +184,13 @@ void ZeroConfManager::handleFileDescriptor(int fileDescriptor)
                 break;
             }
         }
+        monitor->removeFileDescriptorAndListener(fileDescriptor);
+        DNSServiceRefDeallocate(this->resolveServiceRef);
         serviceList.add(new ZeroConfService(response));
         
         startThread();
-    }else if(fileDescriptor == DNSServiceRefSockFD(registerServiceRef))
+        
+    }else if(fileDescriptor == DNSServiceRefSockFD(this->registerServiceRef))
     {
         err = DNSServiceProcessResult(this->registerServiceRef);
     }

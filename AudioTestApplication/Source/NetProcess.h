@@ -17,7 +17,9 @@ class NetProcess : public AudioProcessor, public FileDescriptorListener
 {
 public:
     
-    NetProcess() : circularBuffer(44100) {
+    NetProcess() : FileDescriptorListener("Net Process"),
+                    circularBuffer(44100)
+    {
         tempBuffer = new AudioSampleBuffer(2, 44100);
         socket = new DatagramSocket();
         socket->bindToPort(40240);

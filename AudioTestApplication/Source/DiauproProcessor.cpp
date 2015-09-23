@@ -10,12 +10,12 @@
 
 #include "DiauproProcessor.h"
 
-DiauproProcessor::DiauproProcessor() : circularBuffer(41000) {
+DiauproProcessor::DiauproProcessor() : FileDescriptorListener("Diaupro Processor"), circularBuffer(41000) {
     tempBuffer = new AudioSampleBuffer(2, 44100);
     socket = new DatagramSocket();
     socket->bindToPort(0);
     activeNode = NULL;
-    fcntl(socket->getRawSocketHandle(), F_SETFL, O_NONBLOCK);
+    //fcntl(socket->getRawSocketHandle(), F_SETFL, O_NONBLOCK);
 
 }
 
@@ -56,14 +56,17 @@ void DiauproProcessor::processBlock(AudioSampleBuffer &buffer, MidiBuffer &midiM
 
     if (activeNode != nullptr) {
         socket->write(targetHost, targetPort, buffer.getReadPointer(0), buffer.getNumChannels() * buffer.getNumSamples() * sizeof(float));
-        Logger::writeToLog("Data Sent");
+        //Logger::writeToLog("Data Sent");
 
         buffer.clear();
 
-        dataReturned.wait();
-        int bytesRead = socket->read(buffer.getWritePointer(0), buffer.getNumChannels() * buffer.getNumSamples() * sizeof(float), false);  //deadlock here when node disconects
+        //dataReturned.wait();
+        bytesRead = 0;
+        if (socket->waitUntilReady(true, maxWaitTimeMs)) {
+            bytesRead = socket->read(buffer.getWritePointer(0), buffer.getNumChannels() * buffer.getNumSamples() * sizeof(float), false);  //deadlock here when node disconects
+        }
         
-        Logger::writeToLog("Data Read");
+        Logger::writeToLog(String::formatted("Bytes Read: %d", bytesRead));
 
 
     } else {
@@ -140,8 +143,7 @@ void DiauproProcessor::handleFileDescriptor(int fileDescriptor) {
     //int numSamples = size / (tempBuffer->getNumChannels() * sizeof(float));
     //circularBuffer.writeSamples(tempBuffer->getReadPointer(0), numSamples);
     dataReturned.signal();
-    Logger::writeToLog("Data Recieved");
-
+    //Logger::writeToLog("Data Recieved");
 
 }
 
@@ -152,7 +154,7 @@ void DiauproProcessor::handleZeroConfUpdate(OwnedArray<ZeroConfService> *service
         activeNode = serviceList->getUnchecked(0);
         targetHost = activeNode->getHosttarget();
         targetPort = activeNode->getPort();
-        this->monitor->addFileDescriptorAndListener(this->socket->getRawSocketHandle(), this);
+        //this->monitor->addFileDescriptorAndListener(this->socket->getRawSocketHandle(), this);
         dataReturned.signal();
 
         return;
@@ -160,8 +162,6 @@ void DiauproProcessor::handleZeroConfUpdate(OwnedArray<ZeroConfService> *service
     this->activeNode = nullptr;
     Logger::writeToLog("Node Lost");
     dataReturned.signal();
-
-
 
 }
 

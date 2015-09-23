@@ -12,7 +12,7 @@
 
 
 
-AudioProcessorNode::AudioProcessorNode()
+AudioProcessorNode::AudioProcessorNode() : FileDescriptorListener("Audio Processor Node")
 {
     
     buffer = new AudioSampleBuffer(2, 1024);
@@ -25,12 +25,10 @@ AudioProcessorNode::AudioProcessorNode()
 
 void AudioProcessorNode::handleFileDescriptor(int fileDescriptor)
 {
-    Logger::writeToLog("Data Recieved");
     int bufferSize =buffer->getNumChannels() * buffer->getNumSamples() + sizeof(float);
     bytesRead = socket->read(buffer->getWritePointer(0), bufferSize, false, senderHost, senderPort);
     
     socket->write(senderHost, senderPort, buffer->getReadPointer(0), bytesRead);
-    Logger::writeToLog("Data Sent");
     
 }
 
