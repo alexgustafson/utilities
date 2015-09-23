@@ -63,17 +63,8 @@ void Monitor::initializeControlSocket()
         return;
     }
     
-    struct sockaddr_in get_port;
-    int len_inet;
-    
-    result = getsockname(control_listener, (struct sockaddr*)&get_port, (socklen_t *)&len_inet);
-    
-    result = connect(control_send, (struct sockaddr*)&get_port, sizeof(sin_l));
-    
-    if (result < 0) {
-        printf("connect() returned %d errno %d %s\n", result, errno, strerror(errno));
-        return;
-    }
+    result = getsockname(control_listener, (struct sockaddr*)&control_address, (socklen_t *)&len_control_address);
+
 
 }
 
@@ -87,7 +78,7 @@ void Monitor::startMonitoring()
 
 void Monitor::stop()
 {
-    write(control_send, "shutdown", 9 * sizeof(char));
+    sendto(control_send, "shutdown", 9 * sizeof(char), 0, &control_address, len_control_address);
     stopThread(500);
     close(control_listener);
     close(control_send);
@@ -125,7 +116,7 @@ void Monitor::run()
                     FileDescriptorListener* listener = map[fd];
                     listener->handleFileDescriptor(fd);
                     
-                    //Logger::writeToLog(String::formatted("update on fd %d with listener: %s",fd, listener->getFileDescriptorListenerName().toRawUTF8()));
+                    Logger::writeToLog(String::formatted("update on fd %d with listener: %s",fd, listener->getFileDescriptorListenerName().toRawUTF8()));
                 }
             }
         }
@@ -146,7 +137,7 @@ void Monitor::addFileDescriptorAndListener(int fileDescriptor, FileDescriptorLis
     map.set(fileDescriptor , listener);
     
     if (fileDescriptor != control_listener) {
-        write(control_send, "reset select", 13 * sizeof(char));
+        sendto(control_send, "reset select", 13 * sizeof(char), 0, &control_address, len_control_address);
     }
     struct sockaddr_in sin_addr;
     socklen_t len = sizeof (sin_addr);
@@ -163,7 +154,8 @@ void Monitor::removeFileDescriptorAndListener(int fileDescriptor)
     fileDescriptors.removeFirstMatchingValue(fileDescriptor);
     
     if (fileDescriptor != control_listener) {
-        write(control_send, "reset select", 13 * sizeof(char));
+        sendto(control_send, "reset select", 13 * sizeof(char), 0, &control_address, len_control_address);
+
     }
     struct sockaddr_in sin_addr;
     socklen_t len = sizeof (sin_addr);

@@ -51,6 +51,8 @@ private:
     int maxfd;
     int control_listener;
     int control_send;
+    struct sockaddr control_address;
+    socklen_t len_control_address;
 
     void run() override;
     int control_socket_port;
