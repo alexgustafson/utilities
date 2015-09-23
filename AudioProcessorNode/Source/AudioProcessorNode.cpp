@@ -39,6 +39,7 @@ AudioProcessorNode::AudioProcessorNode() : FileDescriptorListener("Audio Process
         return;
     }
     
+    fcntl(sock, F_SETFL, O_NONBLOCK);
 
 };
 

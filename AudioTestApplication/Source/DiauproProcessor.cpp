@@ -140,6 +140,7 @@ void DiauproProcessor::handleZeroConfUpdate(OwnedArray<ZeroConfService> *service
         
         activeNode = serviceList->getUnchecked(0);
         targetHost = activeNode->getHosttarget();
+        //targetHost = "192.168.2.2";
         targetPort = activeNode->getPort();
 
         Logger::writeToLog(String::formatted("Node Found on %s:%d interface %d", targetHost.toRawUTF8(), targetPort, activeNode->getInterfaceIndex()));
