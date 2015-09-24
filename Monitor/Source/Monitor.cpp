@@ -28,44 +28,17 @@ Monitor::~Monitor() {
 
 void Monitor::initializeControlSocket()
 {
-    control_listener = socket(AF_INET, SOCK_DGRAM, 0);
-    control_send = socket(AF_INET, SOCK_DGRAM, 0);
     
+    listenSocket = new DatagramSocket(false);
+    listenSocket->bindToPort(0);
+    
+    controlSocket = new DatagramSocket(false);
+    controlSocket->bindToPort(0);
+    
+    control_listener = listenSocket->getRawSocketHandle();
+    control_send = controlSocket->getRawSocketHandle();
+
     make_nonblocking(control_listener);
-#ifndef WIN32
-    {
-        int one = 1;
-        setsockopt(control_listener, SOL_SOCKET, SO_REUSEADDR, &one, sizeof(one));
-        setsockopt(control_send, SOL_SOCKET, SO_REUSEADDR, &one, sizeof(one));
-    }
-#endif
-    struct sockaddr_in sin_l, sin_w;
-    sin_l.sin_family = AF_INET;
-    sin_l.sin_addr.s_addr = 0;
-    sin_l.sin_port = 0;
-    
-    sin_w.sin_family = AF_INET;
-    sin_w.sin_addr.s_addr = 0;
-    sin_w.sin_port = 0;
-    
-    int result;
-    result = bind(control_listener, (struct sockaddr*)&sin_l, sizeof(sin_l));
-    
-    if (result < 0) {
-        printf("bind() returned %d errno %d %s\n", result, errno, strerror(errno));
-        return;
-    }
-    
-    result = bind(control_send, (struct sockaddr*)&sin_w, sizeof(sin_w));
-    
-    if (result < 0) {
-        printf("bind() returned %d errno %d %s\n", result, errno, strerror(errno));
-        return;
-    }
-    
-    result = getsockname(control_listener, (struct sockaddr*)&control_address, (socklen_t *)&len_control_address);
-
-
 }
 
 void Monitor::startMonitoring()
@@ -73,12 +46,13 @@ void Monitor::startMonitoring()
     initializeControlSocket();
     addFileDescriptorAndListener(control_listener, this);
     startThread();
-    Thread::sleep(200);
 }
 
 void Monitor::stop()
 {
-    sendto(control_send, "shutdown", 9 * sizeof(char), 0, &control_address, len_control_address);
+    //sendto(control_send, "shutdown", 9 * sizeof(char), 0, &control_address, len_control_address);
+    String msg("trigger update to monitor list");
+    controlSocket->write("0.0.0.0", listenSocket->getBoundPort(), msg.toRawUTF8(), sizeof(msg.toRawUTF8()));
     stopThread(500);
     close(control_listener);
     close(control_send);
@@ -137,7 +111,9 @@ void Monitor::addFileDescriptorAndListener(int fileDescriptor, FileDescriptorLis
     map.set(fileDescriptor , listener);
     
     if (fileDescriptor != control_listener) {
-        sendto(control_send, "reset select", 13 * sizeof(char), 0, &control_address, len_control_address);
+        //sendto(control_send, "reset select", 13 * sizeof(char), 0, &control_address, len_control_address);
+        String msg("trigger update to monitor list");
+        controlSocket->write("0.0.0.0", listenSocket->getBoundPort(), msg.toRawUTF8(), sizeof(msg.toRawUTF8()));
     }
     struct sockaddr_in sin_addr;
     socklen_t len = sizeof (sin_addr);
@@ -154,8 +130,9 @@ void Monitor::removeFileDescriptorAndListener(int fileDescriptor)
     fileDescriptors.removeFirstMatchingValue(fileDescriptor);
     
     if (fileDescriptor != control_listener) {
-        sendto(control_send, "reset select", 13 * sizeof(char), 0, &control_address, len_control_address);
-
+        //sendto(control_send, "reset select", 13 * sizeof(char), 0, &control_address, len_control_address);
+        String msg("trigger update to monitor list");
+        controlSocket->write("0.0.0.0", listenSocket->getBoundPort(), msg.toRawUTF8(), sizeof(msg.toRawUTF8()));
     }
     struct sockaddr_in sin_addr;
     socklen_t len = sizeof (sin_addr);

@@ -49,8 +49,8 @@ ifeq ($(CONFIG),Release)
 endif
 
 OBJECTS := \
+  $(OBJDIR)/Monitor_7abf761f.o \
   $(OBJDIR)/DiauproProcessor_52add1e7.o \
-  $(OBJDIR)/Monitor_1802c2c0.o \
   $(OBJDIR)/ZeroConfManager_bf750d16.o \
   $(OBJDIR)/MainComponent_a6ffb4a5.o \
   $(OBJDIR)/Main_90ebc5c2.o \
@@ -87,14 +87,14 @@ strip:
 	@echo Stripping AudioTestApplication
 	-@strip --strip-unneeded $(OUTDIR)/$(TARGET)
 
+$(OBJDIR)/Monitor_7abf761f.o: ../../../Monitor/Source/Monitor.cpp
+	-@mkdir -p $(OBJDIR)
+	@echo "Compiling Monitor.cpp"
+	@$(CXX) $(CXXFLAGS) -o "$@" -c "$<"
+
 $(OBJDIR)/DiauproProcessor_52add1e7.o: ../../Source/DiauproProcessor.cpp
 	-@mkdir -p $(OBJDIR)
 	@echo "Compiling DiauproProcessor.cpp"
-	@$(CXX) $(CXXFLAGS) -o "$@" -c "$<"
-
-$(OBJDIR)/Monitor_1802c2c0.o: ../../../Monitor/src/Monitor.cpp
-	-@mkdir -p $(OBJDIR)
-	@echo "Compiling Monitor.cpp"
 	@$(CXX) $(CXXFLAGS) -o "$@" -c "$<"
 
 $(OBJDIR)/ZeroConfManager_bf750d16.o: ../../../ZeroConf/Source/ZeroConfManager.cpp

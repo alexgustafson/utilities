@@ -5,12 +5,12 @@
               includeBinaryInAppConfig="1" jucerVersion="3.2.0">
   <MAINGROUP id="dQbx4h" name="AudioTestApplication">
     <GROUP id="{50BEB5C8-D523-6838-3B9F-096A34DFCE8B}" name="Source">
+      <FILE id="VdSljw" name="Monitor.cpp" compile="1" resource="0" file="../Monitor/Source/Monitor.cpp"/>
+      <FILE id="DNDe7w" name="Monitor.h" compile="0" resource="0" file="../Monitor/Source/Monitor.h"/>
       <FILE id="IAgc25" name="DiauproProcessor.cpp" compile="1" resource="0"
             file="Source/DiauproProcessor.cpp"/>
       <FILE id="CQxnPI" name="DiauproProcessor.h" compile="0" resource="0"
             file="Source/DiauproProcessor.h"/>
-      <FILE id="WqpRFY" name="Monitor.cpp" compile="1" resource="0" file="../Monitor/src/Monitor.cpp"/>
-      <FILE id="EUEffD" name="Monitor.h" compile="0" resource="0" file="../Monitor/src/Monitor.h"/>
       <FILE id="GzuiCu" name="ZeroConfManager.cpp" compile="1" resource="0"
             file="../ZeroConf/Source/ZeroConfManager.cpp"/>
       <FILE id="jWazKp" name="ZeroConfManager.h" compile="0" resource="0"

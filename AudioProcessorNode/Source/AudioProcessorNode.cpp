@@ -40,6 +40,8 @@ AudioProcessorNode::AudioProcessorNode() : FileDescriptorListener("Audio Process
     }
     
     fcntl(sock, F_SETFL, O_NONBLOCK);
+    int one = 1;
+    setsockopt(sock, SOL_SOCKET, SO_REUSEADDR, &one, sizeof(one));
 
 };
 
