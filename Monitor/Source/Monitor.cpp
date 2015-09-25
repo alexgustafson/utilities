@@ -30,6 +30,7 @@ void Monitor::initializeControlSocket()
 {
     
     listenSocket = new DatagramSocket(false);
+    
     listenSocket->bindToPort(0);
     
     controlSocket = new DatagramSocket(false);

@@ -57,12 +57,12 @@ AudioProcessorEditor *DiauproProcessor::createEditor() {
 void DiauproProcessor::processBlock(AudioSampleBuffer &buffer, MidiBuffer &midiMessages) {
 
     if (activeNode != nullptr) {
-        //if (socket->waitUntilReady(false, maxWaitTimeMs)) {
-            //bytesRead = socket->write(targetHost, targetPort, buffer.getReadPointer(0), buffer.getNumChannels() * buffer.getNumSamples() * sizeof(float));
-            //Logger::writeToLog(String::formatted("Bytes Sent: %d", bytesRead));
+        if (socket->waitUntilReady(false, maxWaitTimeMs)) {
+            bytesRead = socket->write(targetHost, targetPort, buffer.getReadPointer(0), buffer.getNumChannels() * buffer.getNumSamples() * sizeof(float));
+            Logger::writeToLog(String::formatted("Bytes Sent: %d", bytesRead));
             
 
-            
+            /*
             int result;
             
             struct sockaddr_in ip4addr;
@@ -70,19 +70,21 @@ void DiauproProcessor::processBlock(AudioSampleBuffer &buffer, MidiBuffer &midiM
             
             ip4addr.sin_family = AF_INET;
             ip4addr.sin_port = htons(targetPort);
-            inet_pton(AF_INET, "192.168.2.2", &ip4addr.sin_addr);
+            inet_pton(AF_INET, targetHost.toRawUTF8(), &ip4addr.sin_addr);
             
             //inet_ntop(AF_INET, &ip4addr.sin_addr, s, sizeof(s));
             
             //Logger::writeToLog(String::formatted("Attept seind to: %d %s", ntohs(ip4addr.sin_port), s ));
             
             result = sendto(socket->getRawSocketHandle(), buffer.getReadPointer(0), buffer.getNumChannels() * buffer.getNumSamples() * sizeof(float), 0, (struct sockaddr*)&ip4addr, sizeof(ip4addr));
-            printf("sent %d bytes\n", result);
-            if (result < 0) {
-                printf("sendto() returned %d errno %d %s\n", result, errno, strerror(errno));
+             */
+            
+
+            if (bytesRead < 0) {
+                printf("sendto() returned %d errno %d %s\n", bytesRead, errno, strerror(errno));
                 return;
             }
-        //}
+        }
 
         buffer.clear();
 
@@ -164,7 +166,7 @@ void DiauproProcessor::handleZeroConfUpdate(OwnedArray<ZeroConfService> *service
     if (serviceList->size() > 0) {
         
         activeNode = serviceList->getUnchecked(0);
-        targetHost = activeNode->getHosttarget();
+        targetHost = activeNode->ip;
         targetPort = activeNode->getPort();
 
         Logger::writeToLog(String::formatted("Node Found on %s:%d interface %d", targetHost.toRawUTF8(), targetPort, activeNode->getInterfaceIndex()));

@@ -106,6 +106,14 @@ public:
     void setPort(int port) {
         ZeroConfService::port = port;
     }
+    
+    String getIP() const {
+        return ip;
+    }
+    
+    void setIP(String _ip) {
+        ZeroConfService::ip = _ip;
+    }
 
     bool operator==(const ZeroConfService &rhs) const {
         return
@@ -130,6 +138,7 @@ public:
         addString = "";
         moreString = "";
         port = 0;
+        ip = "";
     }
 
     int interfaceIndex;
@@ -144,6 +153,7 @@ public:
     String addString = "";
     String moreString = "";
     int port = 0;
+    String ip = "";
 
 private:
 
@@ -178,7 +188,8 @@ public:
     int getResolveServiceFileDescriptor();
 
     int getRegisterServiceFileDescriptor();
-
+                            
+    int getQueryServiceFileDescriptor();
 
 private:
 
@@ -189,6 +200,7 @@ private:
     DNSServiceRef browseServiceRef;
     DNSServiceRef resolveServiceRef;
     DNSServiceRef registerServiceRef;
+    DNSServiceRef queryServiceRef;
 
     NamedValueSet browseResponse;
     NamedValueSet resolveResponse;
