@@ -5,6 +5,10 @@
               includeBinaryInAppConfig="1" jucerVersion="3.2.0">
   <MAINGROUP id="dQbx4h" name="AudioTestApplication">
     <GROUP id="{50BEB5C8-D523-6838-3B9F-096A34DFCE8B}" name="Source">
+      <FILE id="JubkCH" name="DiauproMessage.cpp" compile="1" resource="0"
+            file="../DiauproMessage/Source/DiauproMessage.cpp"/>
+      <FILE id="ldjEDO" name="DiauproMessage.h" compile="0" resource="0"
+            file="../DiauproMessage/Source/DiauproMessage.h"/>
       <FILE id="VdSljw" name="Monitor.cpp" compile="1" resource="0" file="../Monitor/Source/Monitor.cpp"/>
       <FILE id="DNDe7w" name="Monitor.h" compile="0" resource="0" file="../Monitor/Source/Monitor.h"/>
       <FILE id="IAgc25" name="DiauproProcessor.cpp" compile="1" resource="0"

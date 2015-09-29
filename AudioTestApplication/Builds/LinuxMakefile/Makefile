@@ -49,6 +49,7 @@ ifeq ($(CONFIG),Release)
 endif
 
 OBJECTS := \
+  $(OBJDIR)/DiauproMessage_d3d3602f.o \
   $(OBJDIR)/Monitor_7abf761f.o \
   $(OBJDIR)/DiauproProcessor_52add1e7.o \
   $(OBJDIR)/ZeroConfManager_bf750d16.o \
@@ -86,6 +87,11 @@ clean:
 strip:
 	@echo Stripping AudioTestApplication
 	-@strip --strip-unneeded $(OUTDIR)/$(TARGET)
+
+$(OBJDIR)/DiauproMessage_d3d3602f.o: ../../../DiauproMessage/Source/DiauproMessage.cpp
+	-@mkdir -p $(OBJDIR)
+	@echo "Compiling DiauproMessage.cpp"
+	@$(CXX) $(CXXFLAGS) -o "$@" -c "$<"
 
 $(OBJDIR)/Monitor_7abf761f.o: ../../../Monitor/Source/Monitor.cpp
 	-@mkdir -p $(OBJDIR)

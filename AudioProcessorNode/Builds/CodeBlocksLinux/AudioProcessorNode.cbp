@@ -28,6 +28,7 @@
           <Add directory="."/>
           <Add directory="..\..\JuceLibraryCode"/>
           <Add directory="../../../Monitor/Source/"/>
+          <Add directory="../../../DiauproMessage/Source/"/>
           <Add directory="/usr/include/freetype2"/>
         </Compiler>
         <Linker>
@@ -40,6 +41,7 @@
           <Add library="pthread"/>
           <Add library="rt"/>
           <Add directory="../../../Monitor/Source/"/>
+          <Add directory="../../../DiauproMessage/Source/"/>
         </Linker>
       </Target>
       <Target title="Release">
@@ -60,6 +62,8 @@
           <Add option="-DJUCE_APP_VERSION_HEX=0x10000"/>
           <Add directory="."/>
           <Add directory="..\..\JuceLibraryCode"/>
+          <Add directory="../../../Monitor/Source/"/>
+          <Add directory="../../../DiauproMessage/Source/"/>
           <Add directory="/usr/include/freetype2"/>
         </Compiler>
         <Linker>
@@ -72,6 +76,8 @@
           <Add library="freetype"/>
           <Add library="pthread"/>
           <Add library="rt"/>
+          <Add directory="../../../Monitor/Source/"/>
+          <Add directory="../../../DiauproMessage/Source/"/>
         </Linker>
       </Target>
     </Build>
@@ -83,6 +89,11 @@
     <Linker>
       <Add library="dns_sd"/>
     </Linker>
+    <Unit filename="../../../DiauproMessage/Source/DiauproMessage.cpp"/>
+    <Unit filename="../../../DiauproMessage/Source/DiauproMessage.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
     <Unit filename="../../../Monitor/Source/Monitor.cpp"/>
     <Unit filename="../../../Monitor/Source/Monitor.h">
       <Option compile="0"/>
