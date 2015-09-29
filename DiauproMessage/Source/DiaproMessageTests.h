@@ -20,6 +20,7 @@ public:
     DiauproMessageTest() : UnitTest(""){}
     void firstTest();
     void secondTest();
+    void thirdTest();
     void runTest();
 
 private:

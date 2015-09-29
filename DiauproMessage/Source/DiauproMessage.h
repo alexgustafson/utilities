@@ -14,7 +14,6 @@
 #include "JuceHeader.h"
 
 
-
 class DiauproMessage {
 public:
 
@@ -24,6 +23,7 @@ public:
     };
 
     int readFromSocket(DatagramSocket *sock);
+
     int readFromSocket(DatagramSocket *sock, String &targetHost, int &targetPort);
 
     int getSequeceNumber();
@@ -35,9 +35,10 @@ public:
     void setSequenceNumber(int sequenceNumber);
 
     void setAudioData(AudioSampleBuffer *buffer);
-    void setMidiData(MidiBuffer &midiMessages);
 
-    MidiBuffer* getMidiData();
+    void setMidiData(MidiBuffer *midiMessages);
+
+    MidiBuffer *getMidiData();
 
     AudioSampleBuffer *getAudioData(AudioSampleBuffer *buffer);
 
@@ -46,7 +47,8 @@ public:
 
     int getSampleDataSize();
 
-    void* getData();
+    void *getData();
+
     size_t getSize();
 
 private:
@@ -66,9 +68,11 @@ private:
     void setNumberSamples(int numSamples);
 
     void setPointerToSampleData(float *ptr);
+
     void setPointerToMidiData(MidiBuffer *ptr);
 
     size_t getAudioDataOffset();
+
     size_t getMidiDataOffset();
 
     MemoryBlock data;
