@@ -221,7 +221,7 @@ void ZeroConfManager::handleFileDescriptor(int fileDescriptor)
 
         
         DNSServiceFlags flags;
-        flags = kDNSServiceFlagsShareConnection;
+        //flags = kDNSServiceFlagsShareConnection;
         
         error =  DNSServiceQueryRecord(&queryServiceRef,
                                        0,
