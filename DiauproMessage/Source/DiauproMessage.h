@@ -42,7 +42,6 @@ public:
 
     AudioSampleBuffer *getAudioData(AudioSampleBuffer *buffer);
 
-
     float *getSampleData();
 
     int getSampleDataSize();

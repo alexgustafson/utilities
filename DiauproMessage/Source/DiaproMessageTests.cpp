@@ -102,12 +102,7 @@ void DiauproMessageTest::thirdTest()
 
     for(int i = 0; i < 16; i++)
     {
-        MidiMessage * midimsg = new MidiMessage();
-        midimsg->setChannel(i + 1);
-        midimsg->setNoteNumber(i);
-        midimsg->setVelocity(i);
-
-        sourceMidiBuffer.addEvent(*midimsg, i);
+        sourceMidiBuffer.addEvent(MidiMessage::noteOn(i+1, i,(float)i), i);
     }
 
     ScopedPointer<DiauproMessage> sourceMessage;
@@ -149,13 +144,13 @@ void DiauproMessageTest::thirdTest()
     MidiMessage msg;
     int sampleIndex;
     MidiBuffer::Iterator iterator(destinationMidiBuffer);
-
-    iterator.getNextEvent(msg, sampleIndex);
-    iterator.getNextEvent(msg, sampleIndex);
-    iterator.getNextEvent(msg, sampleIndex);
-
-    expectEquals(msg.getChannel(), 1);
-
+    int i = 0;
+    while(iterator.getNextEvent(msg, sampleIndex))
+    {
+        expectEquals(msg.getNoteNumber(), i);
+        expectEquals(msg.getChannel(), i + 1);
+        i++;
+    }
 
 }
 
