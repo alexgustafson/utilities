@@ -20,24 +20,16 @@ AudioProcessorNode::AudioProcessorNode() : FileDescriptorListener("Audio Process
 {
     
     buffer = new AudioSampleBuffer(2, 1024);
-    //socket = new DatagramSocket(0);
-    //socket->bindToPort(0);
-    
-    //fcntl(socket->getRawSocketHandle(), F_SETFL, O_NONBLOCK);
-    
-    sock = socket(AF_INET, SOCK_DGRAM, 0);
-    struct sockaddr_in sin;
-    sin.sin_family = AF_INET;
-    sin.sin_addr.s_addr = 0;
-    sin.sin_port = 0;
-    
-    int result;
-    result = bind(sock, (struct sockaddr*)&sin, sizeof(sin));
+    message = new DiauproMessage(65000, false);
+    socket = new DatagramSocket(0);
+    int result = socket->bindToPort(0);
     
     if (result < 0) {
         printf("bind() returned %d errno %d %s\n", result, errno, strerror(errno));
         return;
     }
+
+    sock = socket->getRawSocketHandle();
     
     fcntl(sock, F_SETFL, O_NONBLOCK);
     int one = 1;
@@ -48,14 +40,11 @@ AudioProcessorNode::AudioProcessorNode() : FileDescriptorListener("Audio Process
 void AudioProcessorNode::handleFileDescriptor(int fileDescriptor)
 {
     Logger::writeToLog("packets received");
-    int bufferSize = buffer->getNumChannels() * buffer->getNumSamples() + sizeof(float);
-    //bytesRead = socket->read(buffer->getWritePointer(0), bufferSize, false, senderHost, senderPort);
-    struct sockaddr sender;
-    socklen_t sendsize = sizeof(sender);
-    bytesRead = recvfrom(sock, buffer->getWritePointer(0), bufferSize, 0, &sender, &sendsize);
-    
-    //socket->write(senderHost, senderPort, buffer->getReadPointer(0), bytesRead);
-    sendto(sock, buffer->getReadPointer(0), bytesRead, 0, (struct sockaddr *)&sender, sendsize);
+
+    bytesRead = message->readFromSocket(socket, senderHost, senderPort);
+
+    socket->write(senderHost, senderPort, message->getData(), message->getSize());
+
 }
 
 void AudioProcessorNode::handleZeroConfUpdate(OwnedArray<ZeroConfService> *serviceList)

@@ -17,6 +17,7 @@
 DiauproProcessor::DiauproProcessor() :  circularBuffer(41000) {
     tempBuffer = new AudioSampleBuffer(2, 44100);
     socket = new DatagramSocket(0);
+    message = new DiauproMessage(65000, false);
     socket->bindToPort(0);
     activeNode = nullptr;
 }
@@ -58,27 +59,8 @@ void DiauproProcessor::processBlock(AudioSampleBuffer &buffer, MidiBuffer &midiM
 
     if (activeNode != nullptr) {
         if (socket->waitUntilReady(false, maxWaitTimeMs)) {
-            bytesRead = socket->write(targetHost, targetPort, buffer.getReadPointer(0), buffer.getNumChannels() * buffer.getNumSamples() * sizeof(float));
-            Logger::writeToLog(String::formatted("Bytes Sent: %d", bytesRead));
-            
-
-            /*
-            int result;
-            
-            struct sockaddr_in ip4addr;
-            char s[INET6_ADDRSTRLEN];
-            
-            ip4addr.sin_family = AF_INET;
-            ip4addr.sin_port = htons(targetPort);
-            inet_pton(AF_INET, targetHost.toRawUTF8(), &ip4addr.sin_addr);
-            
-            //inet_ntop(AF_INET, &ip4addr.sin_addr, s, sizeof(s));
-            
-            //Logger::writeToLog(String::formatted("Attept seind to: %d %s", ntohs(ip4addr.sin_port), s ));
-            
-            result = sendto(socket->getRawSocketHandle(), buffer.getReadPointer(0), buffer.getNumChannels() * buffer.getNumSamples() * sizeof(float), 0, (struct sockaddr*)&ip4addr, sizeof(ip4addr));
-             */
-            
+            message->setAudioData(&buffer);
+            bytesRead = socket->write(targetHost, targetPort, message->getData(), message->getSize());
 
             if (bytesRead < 0) {
                 printf("sendto() returned %d errno %d %s\n", bytesRead, errno, strerror(errno));
@@ -90,12 +72,15 @@ void DiauproProcessor::processBlock(AudioSampleBuffer &buffer, MidiBuffer &midiM
 
         bytesRead = 0;
         if (socket->waitUntilReady(true, maxWaitTimeMs)) {
-            bytesRead = socket->read(buffer.getWritePointer(0), buffer.getNumChannels() * buffer.getNumSamples() * sizeof(float), false);
+            //bytesRead = socket->read(buffer.getWritePointer(0), buffer.getNumChannels() * buffer.getNumSamples() * sizeof(float), false);
+
+            bytesRead = message->readFromSocket(socket);
+            message->getAudioData(&buffer);
         }
 
     } else {
 
-        //do local processing
+        //TODO: do local processing
 
     }
 }

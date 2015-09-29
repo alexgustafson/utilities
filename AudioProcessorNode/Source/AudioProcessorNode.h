@@ -12,6 +12,7 @@
 #define AUDIOPROCESSORNODE_H_INCLUDED
 
 #include "../../ZeroConf/Source/ZeroConfManager.h"
+#include "DiauproMessage.h"
 
 class AudioProcessorNode :  public FileDescriptorListener,
                             public ZeroConfListener
@@ -28,8 +29,9 @@ public:
     
 private:
     
-    //ScopedPointer<DatagramSocket> socket;
+    ScopedPointer<DatagramSocket> socket;
     ScopedPointer<AudioSampleBuffer> buffer;
+    ScopedPointer<DiauproMessage> message;
     
     int senderPort;
     int bytesRead;

@@ -14,6 +14,7 @@
 #include "JuceHeader.h"
 #include "ZeroConfManager.h"
 #include "Monitor.h"
+#include "DiauproMessage.h"
 
 class DiauproProcessor : public AudioProcessor,
                          public ZeroConfListener
@@ -81,6 +82,7 @@ private:
 
     drow::FifoBuffer<float> circularBuffer;
     ScopedPointer<AudioSampleBuffer> tempBuffer;
+    ScopedPointer<DiauproMessage> message;
     ZeroConfService *activeNode;
     ZeroConfManager *zManager;
     Monitor *monitor;

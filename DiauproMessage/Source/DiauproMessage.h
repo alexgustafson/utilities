@@ -24,6 +24,7 @@ public:
     };
 
     int readFromSocket(DatagramSocket *sock);
+    int readFromSocket(DatagramSocket *sock, String &targetHost, int &targetPort);
 
     int getSequeceNumber();
 
@@ -34,6 +35,9 @@ public:
     void setSequenceNumber(int sequenceNumber);
 
     void setAudioData(AudioSampleBuffer *buffer);
+    void setMidiData(MidiBuffer &midiMessages);
+
+    MidiBuffer* getMidiData();
 
     AudioSampleBuffer *getAudioData(AudioSampleBuffer *buffer);
 
@@ -54,7 +58,7 @@ private:
         int audioDataSize;
         int midiDataSize;
         float *sampleData;
-        uint8 *midiData;
+        MidiBuffer *midiData;
     };
 
     void setNumberChannels(int numChannels);
@@ -62,6 +66,7 @@ private:
     void setNumberSamples(int numSamples);
 
     void setPointerToSampleData(float *ptr);
+    void setPointerToMidiData(MidiBuffer *ptr);
 
     size_t getAudioDataOffset();
     size_t getMidiDataOffset();

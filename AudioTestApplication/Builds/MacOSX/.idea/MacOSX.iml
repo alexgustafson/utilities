@@ -24,29 +24,17 @@
     <content url="file://$MODULE_DIR$/../../Source/MainComponent.cpp">
       <sourceFolder url="file://$MODULE_DIR$/../../Source/MainComponent.cpp" isTestSource="false" />
     </content>
-    <content url="file://$MODULE_DIR$/../../Source/NetProcess.cpp">
-      <sourceFolder url="file://$MODULE_DIR$/../../Source/NetProcess.cpp" isTestSource="false" />
+    <content url="file://$MODULE_DIR$/../../../DiauproMessage/Source/DiauproMessage.cpp">
+      <sourceFolder url="file://$MODULE_DIR$/../../../DiauproMessage/Source/DiauproMessage.cpp" isTestSource="false" />
     </content>
-    <content url="file://$MODULE_DIR$/../../Source/NetProcess.h">
-      <sourceFolder url="file://$MODULE_DIR$/../../Source/NetProcess.h" isTestSource="false" />
+    <content url="file://$MODULE_DIR$/../../../DiauproMessage/Source/DiauproMessage.h">
+      <sourceFolder url="file://$MODULE_DIR$/../../../DiauproMessage/Source/DiauproMessage.h" isTestSource="false" />
     </content>
-    <content url="file://$MODULE_DIR$/../../Source/NetworkBrowser.cpp">
-      <sourceFolder url="file://$MODULE_DIR$/../../Source/NetworkBrowser.cpp" isTestSource="false" />
+    <content url="file://$MODULE_DIR$/../../../Monitor/Source/Monitor.cpp">
+      <sourceFolder url="file://$MODULE_DIR$/../../../Monitor/Source/Monitor.cpp" isTestSource="false" />
     </content>
-    <content url="file://$MODULE_DIR$/../../Source/NetworkBrowser.h">
-      <sourceFolder url="file://$MODULE_DIR$/../../Source/NetworkBrowser.h" isTestSource="false" />
-    </content>
-    <content url="file://$MODULE_DIR$/../../Source/TestProcess.cpp">
-      <sourceFolder url="file://$MODULE_DIR$/../../Source/TestProcess.cpp" isTestSource="false" />
-    </content>
-    <content url="file://$MODULE_DIR$/../../Source/TestProcess.h">
-      <sourceFolder url="file://$MODULE_DIR$/../../Source/TestProcess.h" isTestSource="false" />
-    </content>
-    <content url="file://$MODULE_DIR$/../../../Monitor/src/Monitor.cpp">
-      <sourceFolder url="file://$MODULE_DIR$/../../../Monitor/src/Monitor.cpp" isTestSource="false" />
-    </content>
-    <content url="file://$MODULE_DIR$/../../../Monitor/src/Monitor.h">
-      <sourceFolder url="file://$MODULE_DIR$/../../../Monitor/src/Monitor.h" isTestSource="false" />
+    <content url="file://$MODULE_DIR$/../../../Monitor/Source/Monitor.h">
+      <sourceFolder url="file://$MODULE_DIR$/../../../Monitor/Source/Monitor.h" isTestSource="false" />
     </content>
     <content url="file://$MODULE_DIR$/../../../ZeroConf/Source/ZeroConfManager.cpp">
       <sourceFolder url="file://$MODULE_DIR$/../../../ZeroConf/Source/ZeroConfManager.cpp" isTestSource="false" />
