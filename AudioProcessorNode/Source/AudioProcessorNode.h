@@ -11,7 +11,7 @@
 #ifndef AUDIOPROCESSORNODE_H_INCLUDED
 #define AUDIOPROCESSORNODE_H_INCLUDED
 
-#include "../../ZeroConf/Source/ZeroConfManager.h"
+#include "ZeroConfManager.h"
 #include "DiauproMessage.h"
 
 class AudioProcessorNode :  public FileDescriptorListener,

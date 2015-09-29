@@ -29,6 +29,7 @@
           <Add directory="..\..\JuceLibraryCode"/>
           <Add directory="../../../Monitor/Source/"/>
           <Add directory="../../../DiauproMessage/Source/"/>
+          <Add directory="../../../ZeroConf/Source/"/>
           <Add directory="/usr/include/freetype2"/>
         </Compiler>
         <Linker>
@@ -42,6 +43,7 @@
           <Add library="rt"/>
           <Add directory="../../../Monitor/Source/"/>
           <Add directory="../../../DiauproMessage/Source/"/>
+          <Add directory="../../../ZeroConf/Source/"/>
         </Linker>
       </Target>
       <Target title="Release">
@@ -64,6 +66,7 @@
           <Add directory="..\..\JuceLibraryCode"/>
           <Add directory="../../../Monitor/Source/"/>
           <Add directory="../../../DiauproMessage/Source/"/>
+          <Add directory="../../../ZeroConf/Source/"/>
           <Add directory="/usr/include/freetype2"/>
         </Compiler>
         <Linker>
@@ -78,6 +81,7 @@
           <Add library="rt"/>
           <Add directory="../../../Monitor/Source/"/>
           <Add directory="../../../DiauproMessage/Source/"/>
+          <Add directory="../../../ZeroConf/Source/"/>
         </Linker>
       </Target>
     </Build>
