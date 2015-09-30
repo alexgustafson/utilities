@@ -14,7 +14,7 @@
 #include <arpa/inet.h>
 
 
-DiauproProcessor::DiauproProcessor() :  circularBuffer(41000) {
+DiauproProcessor::DiauproProcessor() : circularBuffer(41000) {
     tempBuffer = new AudioSampleBuffer(2, 44100);
     socket = new DatagramSocket(0);
     message = new DiauproMessage(65000, false);
@@ -57,9 +57,15 @@ AudioProcessorEditor *DiauproProcessor::createEditor() {
 
 void DiauproProcessor::processBlock(AudioSampleBuffer &buffer, MidiBuffer &midiMessages) {
 
+    if (!midiMessages.isEmpty()) {
+        Logger::writeToLog("has midi sent");
+    }
+
+
     if (activeNode != nullptr) {
         if (socket->waitUntilReady(false, maxWaitTimeMs)) {
             message->setAudioData(&buffer);
+            message->setMidiData(&midiMessages);
             bytesRead = socket->write(targetHost, targetPort, message->getData(), message->getSize());
 
             if (bytesRead < 0) {
@@ -76,6 +82,21 @@ void DiauproProcessor::processBlock(AudioSampleBuffer &buffer, MidiBuffer &midiM
 
             bytesRead = message->readFromSocket(socket);
             message->getAudioData(&buffer);
+
+            MidiBuffer tempBuffer;
+            message->getMidiData(tempBuffer);
+
+            MidiBuffer::Iterator iterator(tempBuffer);
+            MidiMessage tempMessage;
+            int sampleIndex;
+            if (!tempBuffer.isEmpty()) {
+                Logger::writeToLog("has midi returned");
+
+                while (iterator.getNextEvent(tempMessage, sampleIndex)) {
+                    Logger::writeToLog(String::formatted("midi note: %d", tempMessage.getNoteNumber()));
+                }
+            }
+
         }
 
     } else {
@@ -149,7 +170,7 @@ bool DiauproProcessor::acceptsMidi() const {
 void DiauproProcessor::handleZeroConfUpdate(OwnedArray<ZeroConfService> *serviceList) {
 
     if (serviceList->size() > 0) {
-        
+
         activeNode = serviceList->getUnchecked(0);
         targetHost = activeNode->ip;
         targetPort = activeNode->getPort();

@@ -42,6 +42,22 @@ void AudioProcessorNode::handleFileDescriptor(int fileDescriptor)
     Logger::writeToLog("packets received");
 
     bytesRead = message->readFromSocket(socket, senderHost, senderPort);
+    
+    
+    MidiBuffer tempBuffer;
+    message->getMidiData(tempBuffer);
+    
+    MidiBuffer::Iterator iterator(tempBuffer);
+    MidiMessage tempMessage;
+    int sampleIndex;
+    if (!tempBuffer.isEmpty()) {
+        Logger::writeToLog("has recieved");
+        
+        while (iterator.getNextEvent(tempMessage, sampleIndex)) {
+            Logger::writeToLog(String::formatted("midi note: %d", tempMessage.getNoteNumber()));
+        }
+    }
+    
 
     socket->write(senderHost, senderPort, message->getData(), message->getSize());
 

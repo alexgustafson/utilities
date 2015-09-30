@@ -38,7 +38,7 @@ public:
 
     void setMidiData(MidiBuffer *midiMessages);
 
-    MidiBuffer *getMidiData();
+    void getMidiData(MidiBuffer &buffer);
 
     AudioSampleBuffer *getAudioData(AudioSampleBuffer *buffer);
 
@@ -58,8 +58,8 @@ private:
         int numChannels;
         int audioDataSize;
         int midiDataSize;
-        float *sampleData;
-        MidiBuffer *midiData;
+        float* sampleData;
+        uint8* midiData;
     };
 
     void setNumberChannels(int numChannels);
@@ -68,7 +68,7 @@ private:
 
     void setPointerToSampleData(float *ptr);
 
-    void setPointerToMidiData(MidiBuffer *ptr);
+    void setPointerToMidiData(uint8 *ptr);
 
     size_t getAudioDataOffset();
 

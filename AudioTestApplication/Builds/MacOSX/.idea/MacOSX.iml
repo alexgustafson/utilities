@@ -30,6 +30,12 @@
     <content url="file://$MODULE_DIR$/../../../DiauproMessage/Source/DiauproMessage.h">
       <sourceFolder url="file://$MODULE_DIR$/../../../DiauproMessage/Source/DiauproMessage.h" isTestSource="false" />
     </content>
+    <content url="file://$MODULE_DIR$/../../../MidiUtility/Source/MidiUtiliy.cpp">
+      <sourceFolder url="file://$MODULE_DIR$/../../../MidiUtility/Source/MidiUtiliy.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../MidiUtility/Source/MidiUtiliy.h">
+      <sourceFolder url="file://$MODULE_DIR$/../../../MidiUtility/Source/MidiUtiliy.h" isTestSource="false" />
+    </content>
     <content url="file://$MODULE_DIR$/../../../Monitor/Source/Monitor.cpp">
       <sourceFolder url="file://$MODULE_DIR$/../../../Monitor/Source/Monitor.cpp" isTestSource="false" />
     </content>

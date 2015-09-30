@@ -103,6 +103,7 @@ void DiauproMessageTest::thirdTest()
     for(int i = 0; i < 16; i++)
     {
         sourceMidiBuffer.addEvent(MidiMessage::noteOn(i+1, i,(float)i), i);
+        Logger::writeToLog(String::formatted("midiBufferSize: %d",sourceMidiBuffer.data.size() * sizeof(uint8)));
     }
 
     ScopedPointer<DiauproMessage> sourceMessage;
@@ -123,7 +124,7 @@ void DiauproMessageTest::thirdTest()
     {
         destinationMessage->readFromSocket(&recievingSocket);
         destinationMessage->getAudioData(&destinationBuffer);
-        destinationMidiBuffer = *destinationMessage->getMidiData();
+        destinationMessage->getMidiData(destinationMidiBuffer);
     }
 
     expectEquals(sourceMessage->getNumberChannels(), 2);
@@ -140,7 +141,6 @@ void DiauproMessageTest::thirdTest()
         }
     }
 
-    expectEquals(destinationMidiBuffer.data[0], sourceMidiBuffer.data[0]);
     MidiMessage msg;
     int sampleIndex;
     MidiBuffer::Iterator iterator(destinationMidiBuffer);
@@ -149,6 +149,7 @@ void DiauproMessageTest::thirdTest()
     {
         expectEquals(msg.getNoteNumber(), i);
         expectEquals(msg.getChannel(), i + 1);
+        Logger::writeToLog(String::formatted("recieved note: %d on channel %d",msg.getNoteNumber(), msg.getChannel()));
         i++;
     }
 

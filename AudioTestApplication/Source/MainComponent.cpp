@@ -11,6 +11,7 @@
 
 #include "../JuceLibraryCode/JuceHeader.h"
 #include "DiauproProcessor.h"
+#include "MidiUtiliy.h"
 
 //==============================================================================
 /*
@@ -26,7 +27,7 @@ public:
         setSize (600, 250);
 
         // specify the number of input and output channels that we want to open
-
+        midiCollector = midiUtility.getMidiMessageCollector();
         
         monitor.startMonitoring();
 
@@ -55,7 +56,7 @@ public:
         // but be careful - it will be called on the audio thread, not the GUI thread.
 
         // For more details, see the help for AudioProcessor::prepareToPlay()
-        midiCollector.reset (sampleRate);
+        midiCollector->reset (sampleRate);
 
         diauproProcessor->prepareToPlay(sampleRate, samplesPerBlockExpected);
         
@@ -71,7 +72,7 @@ public:
         // (to prevent the output of random noise)
         //bufferToFill.clearActiveBufferRegion();
         MidiBuffer incomingMidi;
-        midiCollector.removeNextBlockOfMessages (incomingMidi, bufferToFill.numSamples);
+        midiCollector->removeNextBlockOfMessages (incomingMidi, bufferToFill.numSamples);
 
         diauproProcessor->processBlock(*bufferToFill.buffer, incomingMidi);
 
@@ -109,8 +110,8 @@ private:
 
     // Your private member variables go here...
     Monitor monitor;
-    MidiMessageCollector midiCollector;
-    
+    MidiMessageCollector *midiCollector;
+    MidiUtility midiUtility;
 
     DiauproProcessor *diauproProcessor;
 
