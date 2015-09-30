@@ -2,12 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3aa37274-6c16-4420-9e4a-344a6d41b9d0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DiauproMessage/Builds/MacOSX/build/Debug/DiauproMessage" afterPath="$PROJECT_DIR$/DiauproMessage/Builds/MacOSX/build/Debug/DiauproMessage" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DiauproMessage/Source/DiaproMessageTests.cpp" afterPath="$PROJECT_DIR$/DiauproMessage/Source/DiaproMessageTests.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DiauproMessage/Source/DiauproMessage.h" afterPath="$PROJECT_DIR$/DiauproMessage/Source/DiauproMessage.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DiauproMessage/Builds/MacOSX/.idea/misc.xml" afterPath="$PROJECT_DIR$/DiauproMessage/Builds/MacOSX/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MidiUtility/Builds/MacOSX/build/Debug/MidiUtility" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MidiUtility/Builds/MacOSX/RecentFilesMenuTemplate.nib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MidiUtility/Builds/MacOSX/.idea/.name" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MidiUtility/JuceLibraryCode/AppConfig.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MidiUtility/JuceLibraryCode/JuceHeader.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MidiUtility/Builds/MacOSX/.idea/MacOSX.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MidiUtility/Source/Main.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MidiUtility/Builds/LinuxMakefile/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MidiUtility/MidiUtility.jucer" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MidiUtility/Builds/MacOSX/MidiUtility.xcodeproj/xcuserdata/alexandergustafson.xcuserdatad/xcschemes/MidiUtility.xcscheme" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MidiUtility/Source/MidiUtiliy.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MidiUtility/Source/MidiUtiliy.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MidiUtility/JuceLibraryCode/ReadMe.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MidiUtility/JuceLibraryCode/modules/juce_audio_basics/juce_audio_basics.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MidiUtility/JuceLibraryCode/modules/juce_audio_devices/juce_audio_devices.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MidiUtility/JuceLibraryCode/modules/juce_audio_formats/juce_audio_formats.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MidiUtility/JuceLibraryCode/modules/juce_core/juce_core.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MidiUtility/JuceLibraryCode/modules/juce_data_structures/juce_data_structures.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MidiUtility/JuceLibraryCode/modules/juce_events/juce_events.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MidiUtility/Builds/MacOSX/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MidiUtility/Builds/MacOSX/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MidiUtility/Builds/MacOSX/MidiUtility.xcodeproj/project.pbxproj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MidiUtility/Builds/MacOSX/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MidiUtility/Builds/MacOSX/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MidiUtility/Builds/MacOSX/.idea/xcode.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/Builds/MacOSX/AudioTestApplication.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/AudioTestApplication/Builds/MacOSX/AudioTestApplication.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/AudioTestApplication.jucer" afterPath="$PROJECT_DIR$/AudioTestApplication/AudioTestApplication.jucer" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/Source/MainComponent.cpp" afterPath="$PROJECT_DIR$/AudioTestApplication/Source/MainComponent.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/Builds/LinuxMakefile/Makefile" afterPath="$PROJECT_DIR$/AudioTestApplication/Builds/LinuxMakefile/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/Builds/MacOSX/AudioTestApplication.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/AudioTestApplication/Builds/MacOSX/AudioTestApplication.xcodeproj/project.pbxproj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/Builds/MacOSX/.idea/workspace.xml" afterPath="$PROJECT_DIR$/AudioTestApplication/Builds/MacOSX/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DiauproMessage/Builds/MacOSX/.idea/workspace.xml" afterPath="$PROJECT_DIR$/DiauproMessage/Builds/MacOSX/.idea/workspace.xml" />
     </list>
     <ignored path="utilities.iws" />
@@ -53,7 +78,7 @@
       <file leaf-file-name="AudioProcessorNode.h" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AudioProcessorNode/Source/AudioProcessorNode.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.27474746">
+            <state vertical-scroll-proportion="0.27364185">
               <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
               <folding />
             </state>
@@ -72,40 +97,40 @@
       </file>
       <file leaf-file-name="Makefile" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ZeroConf/Builds/LinuxMakefile/Makefile">
+          <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
-          </provider>
-          <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="DNSSD.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Common/mDNSShared/Java/DNSSD.java">
+          <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
-          </provider>
-          <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Makefile" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AudioProcessorNode/Builds/LinuxMakefile/Makefile">
+          <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
-          </provider>
-          <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-            <state />
           </provider>
         </entry>
       </file>
@@ -164,8 +189,8 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="13" />
-    <option name="y" value="53" />
+    <option name="x" value="1717" />
+    <option name="y" value="45" />
     <option name="width" value="1050" />
     <option name="height" value="818" />
   </component>
@@ -252,7 +277,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Monitor" />
+              <option name="myItemId" value="MidiUtility" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -266,11 +291,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Monitor" />
+              <option name="myItemId" value="MidiUtility" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Source" />
+              <option name="myItemId" value="Builds" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -812,33 +837,39 @@
       <option name="project" value="LOCAL" />
       <updated>1443553542476</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="adding midi handling tests to DiauproMessage testcases.&#10;IMplementation finished.">
+      <created>1443560141278</created>
+      <option name="number" value="00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1443560141278</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="13" y="53" width="1050" height="818" extended-state="0" />
-    <editor active="true" />
+    <frame x="1717" y="45" width="1050" height="818" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34920636" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3561508" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27961433" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27884614" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287858" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -867,7 +898,8 @@
     <MESSAGE value="unified path structure" />
     <MESSAGE value="adding DiauproMessage module" />
     <MESSAGE value="adding midi handling to DiauproMessage" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding midi handling to DiauproMessage" />
+    <MESSAGE value="adding midi handling tests to DiauproMessage testcases.&#10;IMplementation finished." />
+    <option name="LAST_COMMIT_MESSAGE" value="adding midi handling tests to DiauproMessage testcases.&#10;IMplementation finished." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -883,36 +915,36 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ZeroConf/Builds/LinuxMakefile/Makefile">
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Common/mDNSShared/Java/DNSSD.java">
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AudioProcessorNode/Builds/LinuxMakefile/Makefile">
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AudioProcessorNode/Source/Main.cpp">
@@ -978,25 +1010,25 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ZeroConf/Builds/LinuxMakefile/Makefile">
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Common/mDNSShared/Java/DNSSD.java">
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ZeroConf/Source/ZeroConfTests.h">
@@ -1224,25 +1256,25 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ZeroConf/Builds/LinuxMakefile/Makefile">
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Common/mDNSShared/Java/DNSSD.java">
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AudioProcessorNode/Source/Main.cpp">
@@ -1270,14 +1302,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AudioProcessorNode/Builds/LinuxMakefile/Makefile">
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AudioProcessorNode/Source/AudioProcessorNode.cpp">
@@ -1290,7 +1322,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AudioProcessorNode/Source/AudioProcessorNode.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27474746">
+        <state vertical-scroll-proportion="0.27364185">
           <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
           <folding />
         </state>

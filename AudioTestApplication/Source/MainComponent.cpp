@@ -57,7 +57,6 @@ public:
         // For more details, see the help for AudioProcessor::prepareToPlay()
         midiCollector.reset (sampleRate);
 
-
         diauproProcessor->prepareToPlay(sampleRate, samplesPerBlockExpected);
         
     }
