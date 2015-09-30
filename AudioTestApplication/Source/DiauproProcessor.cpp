@@ -14,8 +14,7 @@
 #include <arpa/inet.h>
 
 
-DiauproProcessor::DiauproProcessor() : circularBuffer(41000) {
-    tempBuffer = new AudioSampleBuffer(2, 44100);
+DiauproProcessor::DiauproProcessor() {
     socket = new DatagramSocket(0);
     message = new DiauproMessage(65000, false);
     socket->bindToPort(0);
@@ -30,7 +29,7 @@ void DiauproProcessor::setMonitor(Monitor *monitor) {
 
     this->monitor = monitor;
     this->zManager = new ZeroConfManager(monitor, this);
-    this->zManager->browseService("_diapro._udp");
+    this->zManager->browseService(service_tag.toRawUTF8());
 }
 
 bool DiauproProcessor::hasEditor() const {
@@ -39,6 +38,7 @@ bool DiauproProcessor::hasEditor() const {
 
 void DiauproProcessor::prepareToPlay(double sampleRate, int estimatedSamplesPerBlock) {
 
+    this->sampleRate = sampleRate;
     maxWaitTimeMs = (estimatedSamplesPerBlock / sampleRate) * 1000;
 
 }
@@ -61,11 +61,11 @@ void DiauproProcessor::processBlock(AudioSampleBuffer &buffer, MidiBuffer &midiM
         Logger::writeToLog("has midi sent");
     }
 
-
     if (activeNode != nullptr) {
         if (socket->waitUntilReady(false, maxWaitTimeMs)) {
             message->setAudioData(&buffer);
             message->setMidiData(&midiMessages);
+            message->setSampleRate(sampleRate);
             bytesRead = socket->write(targetHost, targetPort, message->getData(), message->getSize());
 
             if (bytesRead < 0) {
@@ -78,7 +78,6 @@ void DiauproProcessor::processBlock(AudioSampleBuffer &buffer, MidiBuffer &midiM
 
         bytesRead = 0;
         if (socket->waitUntilReady(true, maxWaitTimeMs)) {
-            //bytesRead = socket->read(buffer.getWritePointer(0), buffer.getNumChannels() * buffer.getNumSamples() * sizeof(float), false);
 
             bytesRead = message->readFromSocket(socket);
             message->getAudioData(&buffer);
@@ -96,14 +95,18 @@ void DiauproProcessor::processBlock(AudioSampleBuffer &buffer, MidiBuffer &midiM
                     Logger::writeToLog(String::formatted("midi note: %d", tempMessage.getNoteNumber()));
                 }
             }
-
         }
 
     } else {
 
-        //TODO: do local processing
+        localProcess(buffer, midiMessages);
 
     }
+}
+
+void DiauproProcessor::localProcess(AudioSampleBuffer &buffer, MidiBuffer &midiMessages) {
+
+
 }
 
 bool DiauproProcessor::isOutputChannelStereoPair(int index) const {

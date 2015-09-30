@@ -20,12 +20,14 @@ DiauproMessage::DiauproMessage(int initialSize, bool initializeToZero) : data(in
     this->header.sequenceNumber = 0;
     this->header.sampleData = nullptr;
     this->header.midiData = nullptr;
+    this->header.sampleRate = 0;
 }
 
 int DiauproMessage::readFromSocket(DatagramSocket *sock) {
     int bytesRead = sock->read(this->data.getData(), this->data.getSize(), false);
     this->data.copyTo(&this->header, 0, sizeof(struct diapro_header));
     setPointerToSampleData((float *) ((char *) this->data.getData() + sizeof(this->header)));
+    setPointerToMidiData((uint8 *)((char *) this->data.getData() + getMidiDataOffset() ));
     return bytesRead;
 }
 
@@ -124,4 +126,12 @@ size_t DiauproMessage::getMidiDataOffset() {
 void DiauproMessage::getMidiData(MidiBuffer &buffer) {
 
     buffer.data = Array<uint8>(this->header.midiData, this->header.midiDataSize);
+}
+
+double DiauproMessage::getSampleRate() {
+    return this->header.sampleRate;
+}
+
+void DiauproMessage::setSampleRate(double rate) {
+    this->header.sampleRate = rate;
 }

@@ -49,6 +49,8 @@ ifeq ($(CONFIG),Release)
 endif
 
 OBJECTS := \
+  $(OBJDIR)/DiauproVCAProcessor_b1c4bbb3.o \
+  $(OBJDIR)/DiauproVCOProcessor_be5c265.o \
   $(OBJDIR)/MidiUtiliy_5e1eb1c9.o \
   $(OBJDIR)/DiauproMessage_d3d3602f.o \
   $(OBJDIR)/Monitor_7abf761f.o \
@@ -88,6 +90,16 @@ clean:
 strip:
 	@echo Stripping AudioTestApplication
 	-@strip --strip-unneeded $(OUTDIR)/$(TARGET)
+
+$(OBJDIR)/DiauproVCAProcessor_b1c4bbb3.o: ../../Source/DiauproVCAProcessor.cpp
+	-@mkdir -p $(OBJDIR)
+	@echo "Compiling DiauproVCAProcessor.cpp"
+	@$(CXX) $(CXXFLAGS) -o "$@" -c "$<"
+
+$(OBJDIR)/DiauproVCOProcessor_be5c265.o: ../../Source/DiauproVCOProcessor.cpp
+	-@mkdir -p $(OBJDIR)
+	@echo "Compiling DiauproVCOProcessor.cpp"
+	@$(CXX) $(CXXFLAGS) -o "$@" -c "$<"
 
 $(OBJDIR)/MidiUtiliy_5e1eb1c9.o: ../../../MidiUtility/Source/MidiUtiliy.cpp
 	-@mkdir -p $(OBJDIR)

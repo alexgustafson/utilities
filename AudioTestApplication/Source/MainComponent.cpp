@@ -12,6 +12,8 @@
 #include "../JuceLibraryCode/JuceHeader.h"
 #include "DiauproProcessor.h"
 #include "MidiUtiliy.h"
+#include "DiauproVCOProcessor.h"
+#include "DiauproVCAProcessor.h"
 
 //==============================================================================
 /*
@@ -33,6 +35,12 @@ public:
 
         diauproProcessor = new DiauproProcessor();
         diauproProcessor->setMonitor(&monitor);
+
+        diauproVCOProcessor = new DiauproVCOProcessor();
+        diauproVCOProcessor->setMonitor(&monitor);
+
+        diauproVCAProcessor = new DiauproVCAProcessor();
+        diauproVCAProcessor->setMonitor(&monitor);
 
         setAudioChannels (2, 2);
         
@@ -59,7 +67,9 @@ public:
         midiCollector->reset (sampleRate);
 
         diauproProcessor->prepareToPlay(sampleRate, samplesPerBlockExpected);
-        
+        diauproVCOProcessor->prepareToPlay(sampleRate, samplesPerBlockExpected);
+        diauproVCAProcessor->prepareToPlay(sampleRate, samplesPerBlockExpected);
+
     }
 
     void getNextAudioBlock (const AudioSourceChannelInfo& bufferToFill) override
@@ -75,6 +85,8 @@ public:
         midiCollector->removeNextBlockOfMessages (incomingMidi, bufferToFill.numSamples);
 
         diauproProcessor->processBlock(*bufferToFill.buffer, incomingMidi);
+        diauproVCOProcessor->processBlock(*bufferToFill.buffer, incomingMidi);
+        diauproVCAProcessor->processBlock(*bufferToFill.buffer, incomingMidi);
 
     }
 
@@ -114,6 +126,8 @@ private:
     MidiUtility midiUtility;
 
     DiauproProcessor *diauproProcessor;
+    DiauproVCOProcessor *diauproVCOProcessor;
+    DiauproVCAProcessor *diauproVCAProcessor;
 
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MainContentComponent)

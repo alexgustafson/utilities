@@ -53,9 +53,9 @@ void AudioProcessorNode::handleFileDescriptor(int fileDescriptor)
     if (!tempBuffer.isEmpty()) {
         Logger::writeToLog("has recieved");
         
-        while (iterator.getNextEvent(tempMessage, sampleIndex)) {
-            Logger::writeToLog(String::formatted("midi note: %d", tempMessage.getNoteNumber()));
-        }
+        //while (iterator.getNextEvent(tempMessage, sampleIndex)) {
+        //    Logger::writeToLog(String::formatted("midi note: %d", tempMessage.getNoteNumber()));
+        //}
     }
     
 

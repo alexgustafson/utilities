@@ -32,6 +32,10 @@ public:
 
     int getNumberChannels();
 
+    double getSampleRate();
+
+    void setSampleRate(double rate);
+
     void setSequenceNumber(int sequenceNumber);
 
     void setAudioData(AudioSampleBuffer *buffer);
@@ -56,6 +60,7 @@ private:
         int sequenceNumber;
         int numSamples;
         int numChannels;
+        double sampleRate;
         int audioDataSize;
         int midiDataSize;
         float* sampleData;

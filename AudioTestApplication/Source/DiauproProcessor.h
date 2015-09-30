@@ -17,8 +17,7 @@
 #include "DiauproMessage.h"
 
 class DiauproProcessor : public AudioProcessor,
-                         public ZeroConfListener
-{
+                         public ZeroConfListener {
 public:
     DiauproProcessor();
 
@@ -31,6 +30,7 @@ public:
     virtual bool hasEditor() const;
 
     virtual void prepareToPlay(double sampleRate, int estimatedSamplesPerBlock);
+    double getSampleRate() {return sampleRate;};
 
     virtual void getStateInformation(MemoryBlock &destData);
 
@@ -39,6 +39,8 @@ public:
     virtual AudioProcessorEditor *createEditor();
 
     virtual void processBlock(AudioSampleBuffer &buffer, MidiBuffer &midiMessages);
+
+    virtual void localProcess(AudioSampleBuffer &buffer, MidiBuffer &midiMessages);
 
     virtual bool isOutputChannelStereoPair(int index) const;
 
@@ -77,19 +79,17 @@ public:
 private:
 
     ScopedPointer<DatagramSocket> socket;
-    int targetPort;
-    String targetHost;
-
-    drow::FifoBuffer<float> circularBuffer;
-    ScopedPointer<AudioSampleBuffer> tempBuffer;
     ScopedPointer<DiauproMessage> message;
     ZeroConfService *activeNode;
     ZeroConfManager *zManager;
     Monitor *monitor;
-    WaitableEvent dataReturned;
     int maxWaitTimeMs;
     int bytesRead;
-    char ip[100];
+    int targetPort;
+    String targetHost;
+    double sampleRate;
+
+    String service_tag = "_diapro._udp";
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (DiauproProcessor)
 };
