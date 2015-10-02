@@ -14,7 +14,7 @@
 #include <arpa/inet.h>
 
 
-DiauproProcessor::DiauproProcessor() {
+DiauproProcessor::DiauproProcessor() : FileDescriptorListener("Audio Processor Node") {
     socket = new DatagramSocket(0);
     message = new DiauproMessage(65000, false);
     socket->bindToPort(0);
@@ -25,11 +25,24 @@ DiauproProcessor::~DiauproProcessor() {
 
 }
 
-void DiauproProcessor::setMonitor(Monitor *monitor) {
+void DiauproProcessor::setMonitor(Monitor *monitor, bool asNode) {
 
     this->monitor = monitor;
     this->zManager = new ZeroConfManager(monitor, this);
-    this->zManager->browseService(service_tag.toRawUTF8());
+
+    if (asNode) {
+        ZeroConfService *service = new ZeroConfService();
+
+        service->setPort(socket->getBoundPort());
+        service->setServiceName("Audio_Processor_Node");
+        service->setRegType(getServiceTag());
+
+        zManager->registerService(service);
+        this->monitor->addFileDescriptorAndListener(socket->getRawSocketHandle(), this);
+
+    } else {
+        this->zManager->browseService(getServiceTag().toRawUTF8());
+    }
 }
 
 bool DiauproProcessor::hasEditor() const {
@@ -82,13 +95,13 @@ void DiauproProcessor::processBlock(AudioSampleBuffer &buffer, MidiBuffer &midiM
             bytesRead = message->readFromSocket(socket);
             message->getAudioData(&buffer);
 
-            MidiBuffer tempBuffer;
-            message->getMidiData(tempBuffer);
 
-            MidiBuffer::Iterator iterator(tempBuffer);
+            message->getMidiData(midiBuffer);
+
+            MidiBuffer::Iterator iterator(midiBuffer);
             MidiMessage tempMessage;
             int sampleIndex;
-            if (!tempBuffer.isEmpty()) {
+            if (!midiBuffer.isEmpty()) {
                 Logger::writeToLog("has midi returned");
 
                 while (iterator.getNextEvent(tempMessage, sampleIndex)) {
@@ -170,20 +183,53 @@ bool DiauproProcessor::acceptsMidi() const {
 }
 
 
-void DiauproProcessor::handleZeroConfUpdate(OwnedArray<ZeroConfService> *serviceList) {
+void DiauproProcessor::handleZeroConfUpdate(OwnedArray<ZeroConfService, CriticalSection> *serviceList) {
 
     if (serviceList->size() > 0) {
+        
+        ZeroConfService* service;
 
-        activeNode = serviceList->getUnchecked(0);
-        targetHost = activeNode->ip;
-        targetPort = activeNode->getPort();
-
-        Logger::writeToLog(String::formatted("Node Found on %s:%d interface %d", targetHost.toRawUTF8(), targetPort, activeNode->getInterfaceIndex()));
+        for (int i = 0; i < serviceList->size(); i++) {
+            
+            service =serviceList->getUnchecked(i);
+            
+            if (!service->isTaken)
+            {
+                serviceList->getUnchecked(i)->isTaken = true;
+                service = serviceList->getUnchecked(i);
+                
+                activeNode = service;
+                targetHost = activeNode->ip;
+                targetPort = activeNode->getPort();
+                
+                Logger::writeToLog(String::formatted("%s Node Found on %s:%d interface %d", getServiceTag().toRawUTF8(), targetHost.toRawUTF8(), targetPort, activeNode->getInterfaceIndex()));
+                return;
+            }
+        }
+        this->activeNode = nullptr;
+        Logger::writeToLog(String::formatted("%s Node Not Found", getServiceTag().toRawUTF8()));
         return;
+        
     }
     this->activeNode = nullptr;
-    Logger::writeToLog("Node Lost");
+    Logger::writeToLog(String::formatted("%s Node Lost", getServiceTag().toRawUTF8()));
 
 }
 
 
+void DiauproProcessor::handleFileDescriptor(int fileDescriptor) {
+    Logger::writeToLog("packets received");
+    bytesRead = message->readFromSocket(socket, targetHost, targetPort);
+    
+    this->sampleRate = message->getSampleRate();
+    
+    audioSampleBuffer.setSize(message->getNumberChannels(), message->getNumberSamples(), true, false, true);
+    
+    message->getAudioData(&audioSampleBuffer);
+    message->getMidiData(midiBuffer);
+    localProcess(audioSampleBuffer, midiBuffer);
+    
+    message->setAudioData(&audioSampleBuffer);
+
+    socket->write(targetHost, targetPort, message->getData(), message->getSize());
+}

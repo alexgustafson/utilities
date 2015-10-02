@@ -20,6 +20,7 @@ public:
     DiauproVCAProcessor() {};
 
     void localProcess(AudioSampleBuffer &buffer, MidiBuffer &midiMessages);
+    String getServiceTag() override { return "_diaprovca._udp"; } ;
 
 private:
     double attackTimeInSamples = 300.0;
@@ -28,10 +29,8 @@ private:
     double releaseTimeInSamples = 22050.0;
 
     double phase = 0.0;
-
     int voice_count = 0;
 
-    String service_tag = "_vca_diapro._udp";
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (DiauproVCAProcessor)
 };

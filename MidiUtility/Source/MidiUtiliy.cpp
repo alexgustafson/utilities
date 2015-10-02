@@ -24,8 +24,8 @@ MidiUtility::MidiUtility() {
     if(devices.size() > 1)
     {
         midiInput = MidiInput::openDevice(0, this);
+        midiInput->start();
     }
-    midiInput->start();
 
 }
 

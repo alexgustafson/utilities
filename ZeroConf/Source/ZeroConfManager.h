@@ -18,6 +18,14 @@
 
 class ZeroConfService {
 public:
+    enum ResultStatus
+    {
+        initResult,
+        browseResult,
+        resolveResult,
+        queryResult,
+        registerResult
+    };
 
     int getInterfaceIndex() const {
         return interfaceIndex;
@@ -117,9 +125,9 @@ public:
 
     bool operator==(const ZeroConfService &rhs) const {
         return
-                serviceName == rhs.serviceName
-                        && regType == rhs.regType
-                        && replyDomain == rhs.replyDomain;
+                 serviceName.equalsIgnoreCase(rhs.serviceName)
+                        && regType.equalsIgnoreCase(rhs.regType)
+                        && replyDomain.equalsIgnoreCase(rhs.replyDomain);
     }
 
     const char *key() {
@@ -139,6 +147,8 @@ public:
         moreString = "";
         port = 0;
         ip = "";
+        isTaken = false;
+        status = ResultStatus::initResult;
     }
 
     int interfaceIndex;
@@ -154,6 +164,9 @@ public:
     String moreString = "";
     int port = 0;
     String ip = "";
+    bool isTaken = false;
+    DNSServiceRef sdRef;
+    ResultStatus  status;
 
 private:
 
@@ -164,7 +177,7 @@ public:
     virtual ~ZeroConfListener() {
     };
 
-    virtual void handleZeroConfUpdate(OwnedArray<ZeroConfService> *serviceList) = 0;
+    virtual void handleZeroConfUpdate(OwnedArray<ZeroConfService, CriticalSection> *serviceList) = 0;
 };
 
 
@@ -175,7 +188,7 @@ public:
 
     ~ZeroConfManager();
 
-    void browseService(const char *service_type);
+    void browseService(const char *regType);
 
     void registerService(ZeroConfService *service);
 
@@ -185,11 +198,7 @@ public:
 
     int getBrowseServiceFileDescriptor();
 
-    int getResolveServiceFileDescriptor();
-
     int getRegisterServiceFileDescriptor();
-                            
-    int getQueryServiceFileDescriptor();
 
 private:
 
@@ -198,17 +207,14 @@ private:
     void notifyListener();
 
     DNSServiceRef browseServiceRef;
-    DNSServiceRef resolveServiceRef;
     DNSServiceRef registerServiceRef;
-    DNSServiceRef queryServiceRef;
-
-    NamedValueSet browseResponse;
-    NamedValueSet resolveResponse;
 
     Monitor *monitor;
-
+                            
     ZeroConfListener *listener;
-    OwnedArray<ZeroConfService> serviceList;
+    OwnedArray<ZeroConfService, CriticalSection> serviceList;
+                            
+    CriticalSection lock;
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (ZeroConfManager)
 };

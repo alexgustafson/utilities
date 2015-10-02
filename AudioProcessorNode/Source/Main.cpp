@@ -10,7 +10,9 @@
 
 #include "../JuceLibraryCode/JuceHeader.h"
 #include "Monitor.h"
-#include "AudioProcessorNode.h"
+#include "DiauproProcessor.h"
+#include "DiauproVCAProcessor.h"
+#include "DiauproVCOProcessor.h"
 
 //==============================================================================
 int main (int argc, char* argv[])
@@ -19,18 +21,18 @@ int main (int argc, char* argv[])
     // ..your code goes here!
     Monitor monitor;
     monitor.startMonitoring();
-    
-    AudioProcessorNode audioProcessorNode;
-    ScopedPointer<ZeroConfManager> zeroConfManager = new ZeroConfManager(&monitor, &audioProcessorNode);
-    ScopedPointer<ZeroConfService> service = new ZeroConfService();
-    
-    service->setPort(audioProcessorNode.getPort());
-    service->setServiceName("Audio_Processor_Node");
-    service->setRegType("_diapro._udp");
-    
-    zeroConfManager->registerService(service);
-    
-    monitor.addFileDescriptorAndListener(audioProcessorNode.getSock(), &audioProcessorNode);
+
+    ScopedPointer<DiauproProcessor> diauproProcessor;
+    diauproProcessor = new DiauproProcessor();
+    diauproProcessor->setMonitor(&monitor, true);
+
+    ScopedPointer<DiauproVCOProcessor> diauproVCOProcessor;
+    diauproVCOProcessor = new DiauproVCOProcessor();
+    diauproVCOProcessor->setMonitor(&monitor, true);
+
+    ScopedPointer<DiauproVCAProcessor> diauproVCAProcessor;
+    diauproVCAProcessor = new DiauproVCAProcessor();
+    diauproVCAProcessor->setMonitor(&monitor, true);
     
     std::cout << "press enter to exit...";
     getchar();

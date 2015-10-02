@@ -49,6 +49,9 @@ ifeq ($(CONFIG),Release)
 endif
 
 OBJECTS := \
+  $(OBJDIR)/DiauproProcessor_140ab8f.o \
+  $(OBJDIR)/DiauproVCAProcessor_4e3a10b.o \
+  $(OBJDIR)/DiauproVCOProcessor_5f04a7bd.o \
   $(OBJDIR)/DiauproMessage_d3d3602f.o \
   $(OBJDIR)/Monitor_7abf761f.o \
   $(OBJDIR)/AudioProcessorNode_86a96807.o \
@@ -81,6 +84,21 @@ clean:
 strip:
 	@echo Stripping AudioProcessorNode
 	-@strip --strip-unneeded $(OUTDIR)/$(TARGET)
+
+$(OBJDIR)/DiauproProcessor_140ab8f.o: ../../../AudioTestApplication/Source/DiauproProcessor.cpp
+	-@mkdir -p $(OBJDIR)
+	@echo "Compiling DiauproProcessor.cpp"
+	@$(CXX) $(CXXFLAGS) -o "$@" -c "$<"
+
+$(OBJDIR)/DiauproVCAProcessor_4e3a10b.o: ../../../AudioTestApplication/Source/DiauproVCAProcessor.cpp
+	-@mkdir -p $(OBJDIR)
+	@echo "Compiling DiauproVCAProcessor.cpp"
+	@$(CXX) $(CXXFLAGS) -o "$@" -c "$<"
+
+$(OBJDIR)/DiauproVCOProcessor_5f04a7bd.o: ../../../AudioTestApplication/Source/DiauproVCOProcessor.cpp
+	-@mkdir -p $(OBJDIR)
+	@echo "Compiling DiauproVCOProcessor.cpp"
+	@$(CXX) $(CXXFLAGS) -o "$@" -c "$<"
 
 $(OBJDIR)/DiauproMessage_d3d3602f.o: ../../../DiauproMessage/Source/DiauproMessage.cpp
 	-@mkdir -p $(OBJDIR)

@@ -84,8 +84,8 @@ AudioSampleBuffer *DiauproMessage::getAudioData(AudioSampleBuffer *buffer) {
 
     for (int i = 0; i < getNumberChannels(); i++) {
         buffer->copyFrom(i, 0, this->header.sampleData + (i * getNumberSamples()), getNumberSamples());
+        
     }
-
     return buffer;
 }
 

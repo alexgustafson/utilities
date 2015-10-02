@@ -17,13 +17,16 @@
 #include "DiauproMessage.h"
 
 class DiauproProcessor : public AudioProcessor,
-                         public ZeroConfListener {
+                         public ZeroConfListener,
+                         public FileDescriptorListener{
 public:
     DiauproProcessor();
 
     ~DiauproProcessor();
 
-    void setMonitor(Monitor *monitor);
+    void setMonitor(Monitor *monitor, bool asNode = false);
+    virtual String getServiceTag() { return "_diapro._udp"; };
+
 
     //AudioProcessor Methods:
 
@@ -74,7 +77,12 @@ public:
 
     //ZeroConfListener Methods:
 
-    virtual void handleZeroConfUpdate(OwnedArray<ZeroConfService> *serviceList);
+    virtual void handleZeroConfUpdate(OwnedArray<ZeroConfService, CriticalSection> *serviceList);
+
+    //FileDescriptorListener Methods:
+
+    void handleFileDescriptor(int fileDescriptor);
+
 
 private:
 
@@ -88,8 +96,11 @@ private:
     int targetPort;
     String targetHost;
     double sampleRate;
+                             
+    AudioSampleBuffer audioSampleBuffer;
+    MidiBuffer midiBuffer;
 
-    String service_tag = "_diapro._udp";
+    String listenerName = "Diaupro Processor";
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (DiauproProcessor)
 };

@@ -20,6 +20,7 @@ public:
     DiauproVCOProcessor(){};
 
     void localProcess(AudioSampleBuffer &buffer, MidiBuffer &midiMessages);
+    String getServiceTag() override { return "_diaprovco._udp"; } ;
 
 private:
 
@@ -29,7 +30,7 @@ private:
     double step = 1.0;
     double level = 0.7;
 
-    String service_tag = "_vco_diapro._udp";
+
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (DiauproVCOProcessor)
 };

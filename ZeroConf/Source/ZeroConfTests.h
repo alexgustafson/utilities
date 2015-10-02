@@ -34,14 +34,13 @@ public:
         ZeroConfObserver() {};
         ~ZeroConfObserver() {};
         
-        void handleZeroConfUpdate(OwnedArray<ZeroConfService> *serviceList)
+        void handleZeroConfUpdate(OwnedArray<ZeroConfService, CriticalSection> *serviceList)
         {
             Logger::writeToLog("notified");
             for (int i = 0; i < serviceList->size(); i++) {
                 
                 ZeroConfService *service = serviceList->getUnchecked(i);
-                Logger::writeToLog(service->getFullname());
-                Logger::writeToLog(String::formatted("%" PRIu16, service->getPort()));
+                Logger::writeToLog(String::formatted("Found service %s %s %s:%d",service->getRegType().toRawUTF8(), service->getServiceName().toRawUTF8(),service->ip.toRawUTF8(),ntohs( service->getPort() )));
             }
         };
 

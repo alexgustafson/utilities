@@ -87,6 +87,21 @@
     <Linker>
       <Add library="dns_sd"/>
     </Linker>
+    <Unit filename="../../../AudioTestApplication/Source/DiauproProcessor.cpp"/>
+    <Unit filename="../../../AudioTestApplication/Source/DiauproProcessor.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../AudioTestApplication/Source/DiauproVCAProcessor.cpp"/>
+    <Unit filename="../../../AudioTestApplication/Source/DiauproVCAProcessor.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../AudioTestApplication/Source/DiauproVCOProcessor.cpp"/>
+    <Unit filename="../../../AudioTestApplication/Source/DiauproVCOProcessor.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
     <Unit filename="../../../DiauproMessage/Source/DiauproMessage.cpp"/>
     <Unit filename="../../../DiauproMessage/Source/DiauproMessage.h">
       <Option compile="0"/>

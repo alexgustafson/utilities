@@ -17,6 +17,7 @@ void DiauproVCOProcessor::localProcess(AudioSampleBuffer &buffer, MidiBuffer &mi
     MidiBuffer::Iterator midiEventIterator(midiMessages);
     MidiMessage nextMidiEvent;
     bool hasEvent;
+    buffer.clear();
 
     for(sampleNr = 0; sampleNr < buffer.getNumSamples(); sampleNr++)
     {
