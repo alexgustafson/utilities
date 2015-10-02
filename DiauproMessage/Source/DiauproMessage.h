@@ -42,6 +42,8 @@ public:
 
     void setMidiData(MidiBuffer *midiMessages);
 
+    void setStateData(void *stateData, size_t stateSize);
+
     void getMidiData(MidiBuffer &buffer);
 
     AudioSampleBuffer *getAudioData(AudioSampleBuffer *buffer);
@@ -63,8 +65,11 @@ private:
         double sampleRate;
         int audioDataSize;
         int midiDataSize;
-        float* sampleData;
-        uint8* midiData;
+        int stateDataSize;
+        double cpuUsage;
+        float *sampleData;
+        uint8 *midiData;
+        void *stateData;
     };
 
     void setNumberChannels(int numChannels);
@@ -75,9 +80,13 @@ private:
 
     void setPointerToMidiData(uint8 *ptr);
 
+    void setPointerToStateData(void *ptr);
+
     size_t getAudioDataOffset();
 
     size_t getMidiDataOffset();
+
+    size_t getStateDataOffset();
 
     MemoryBlock data;
     diapro_header header;

@@ -2,8 +2,8 @@
 <module type="CIDR_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/RecentFilesMenuTemplate.nib" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/build/Debug/AudioProcessorNode" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/RecentFilesMenuTemplate.nib" isTestSource="false" />
     </content>
     <content url="file://$MODULE_DIR$/../../JuceLibraryCode/AppConfig.h">
       <sourceFolder url="file://$MODULE_DIR$/../../JuceLibraryCode/AppConfig.h" isTestSource="false" />

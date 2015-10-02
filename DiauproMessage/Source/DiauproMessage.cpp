@@ -20,6 +20,7 @@ DiauproMessage::DiauproMessage(int initialSize, bool initializeToZero) : data(in
     this->header.sequenceNumber = 0;
     this->header.sampleData = nullptr;
     this->header.midiData = nullptr;
+    this->header.stateData = nullptr;
     this->header.sampleRate = 0;
 }
 
@@ -28,6 +29,7 @@ int DiauproMessage::readFromSocket(DatagramSocket *sock) {
     this->data.copyTo(&this->header, 0, sizeof(struct diapro_header));
     setPointerToSampleData((float *) ((char *) this->data.getData() + sizeof(this->header)));
     setPointerToMidiData((uint8 *)((char *) this->data.getData() + getMidiDataOffset() ));
+    setPointerToStateData((void *)((char *) this->data.getData() + getStateDataOffset() ));
     return bytesRead;
 }
 
@@ -36,6 +38,7 @@ int DiauproMessage::readFromSocket(DatagramSocket *sock, String &targetHost, int
     this->data.copyTo(&this->header, 0, sizeof(struct diapro_header));
     setPointerToSampleData((float *) ((char *) this->data.getData() + sizeof(this->header)));
     setPointerToMidiData((uint8 *)((char *) this->data.getData() + getMidiDataOffset() ));
+    setPointerToStateData((void *)((char *) this->data.getData() + getStateDataOffset() ));
     return bytesRead;
 }
 
@@ -80,6 +83,12 @@ void DiauproMessage::setMidiData(MidiBuffer *midiMessages) {
     this->header.midiDataSize = midiMessages->data.size() * sizeof(uint8);
 }
 
+void DiauproMessage::setStateData(void *stateData, size_t stateSize) {
+    this->data.copyFrom(stateData, getStateDataOffset(), stateSize);
+    setPointerToStateData((void *)((char *) this->data.getData() + getStateDataOffset() ));
+    this->header.stateDataSize = stateSize;
+}
+
 AudioSampleBuffer *DiauproMessage::getAudioData(AudioSampleBuffer *buffer) {
 
     for (int i = 0; i < getNumberChannels(); i++) {
@@ -106,6 +115,11 @@ void DiauproMessage::setPointerToMidiData(uint8 *ptr) {
     this->header.midiData = ptr;
 }
 
+
+void DiauproMessage::setPointerToStateData(void *ptr) {
+    this->header.stateData = ptr;
+}
+
 void *DiauproMessage::getData() {
     this->data.copyFrom(&this->header, 0, sizeof(this->header));
     return this->data.getData();
@@ -121,6 +135,10 @@ size_t DiauproMessage::getAudioDataOffset() {
 
 size_t DiauproMessage::getMidiDataOffset() {
     return sizeof(struct diapro_header) + (getNumberSamples() * getNumberChannels() * sizeof(float));
+}
+
+size_t DiauproMessage::getStateDataOffset() {
+    return sizeof(struct diapro_header) + (getNumberSamples() * getNumberChannels() * sizeof(float) + this->header.midiDataSize);
 }
 
 void DiauproMessage::getMidiData(MidiBuffer &buffer) {

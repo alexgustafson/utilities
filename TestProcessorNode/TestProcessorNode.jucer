@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="EnKTe5" name="TestProcessorNode" projectType="consoleapp"
+              version="1.0.0" bundleIdentifier="com.yourcompany.TestProcessorNode"
+              includeBinaryInAppConfig="1" jucerVersion="3.2.0">
+  <MAINGROUP id="hvPFS4" name="TestProcessorNode">
+    <GROUP id="{2CA8F3C7-5707-DC3B-97BA-33F673FE0C86}" name="Source">
+      <FILE id="hOGnvF" name="DiauproTestProcessor.cpp" compile="1" resource="0"
+            file="Source/DiauproTestProcessor.cpp"/>
+      <FILE id="GqSnCs" name="DiauproTestProcessor.h" compile="0" resource="0"
+            file="Source/DiauproTestProcessor.h"/>
+      <FILE id="xxWB40" name="DiauproMessage.cpp" compile="1" resource="0"
+            file="../DiauproMessage/Source/DiauproMessage.cpp"/>
+      <FILE id="ZDyV7g" name="DiauproMessage.h" compile="0" resource="0"
+            file="../DiauproMessage/Source/DiauproMessage.h"/>
+      <FILE id="c4c61z" name="ZeroConfManager.cpp" compile="1" resource="0"
+            file="../ZeroConf/Source/ZeroConfManager.cpp"/>
+      <FILE id="VaPLDb" name="ZeroConfManager.h" compile="0" resource="0"
+            file="../ZeroConf/Source/ZeroConfManager.h"/>
+      <FILE id="A7MQl4" name="Monitor.cpp" compile="1" resource="0" file="../Monitor/Source/Monitor.cpp"/>
+      <FILE id="efB6t5" name="Monitor.h" compile="0" resource="0" file="../Monitor/Source/Monitor.h"/>
+      <FILE id="E508ru" name="DiauproProcessor.cpp" compile="1" resource="0"
+            file="../AudioTestApplication/Source/DiauproProcessor.cpp"/>
+      <FILE id="xE5QZr" name="DiauproProcessor.h" compile="0" resource="0"
+            file="../AudioTestApplication/Source/DiauproProcessor.h"/>
+      <FILE id="cc7Kud" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" osxSDK="default" osxCompatibility="default" osxArchitecture="default"
+                       isDebug="1" optimisation="1" targetName="TestProcessorNode"/>
+        <CONFIGURATION name="Release" osxSDK="default" osxCompatibility="default" osxArchitecture="default"
+                       isDebug="0" optimisation="3" targetName="TestProcessorNode"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_video" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+    <LINUX_MAKE targetFolder="Builds/LinuxMakefile">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" libraryPath="/usr/X11R6/lib/" isDebug="1" optimisation="1"
+                       targetName="TestProcessorNode" headerPath="../../../Monitor/Source&#10;../../../DiauproMessage/Source&#10;../../../ZeroConf/Source&#10;../../../AudioTestApplication/Source"/>
+        <CONFIGURATION name="Release" libraryPath="/usr/X11R6/lib/" isDebug="0" optimisation="3"
+                       targetName="TestProcessorNode" headerPath="../../../Monitor/Source&#10;../../../DiauproMessage/Source&#10;../../../ZeroConf/Source&#10;../../../AudioTestApplication/Source"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_video" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../JUCE/modules"/>
+      </MODULEPATHS>
+    </LINUX_MAKE>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULES id="juce_audio_basics" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_audio_devices" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_audio_formats" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_audio_processors" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_core" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_cryptography" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_data_structures" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_events" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_graphics" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_gui_basics" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_gui_extra" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_opengl" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_video" showAllCode="1" useLocalCopy="0"/>
+  </MODULES>
+  <JUCEOPTIONS/>
+</JUCERPROJECT>

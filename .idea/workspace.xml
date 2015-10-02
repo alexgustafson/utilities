@@ -1,7 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3aa37274-6c16-4420-9e4a-344a6d41b9d0" name="Default" comment="" />
+    <list default="true" id="3aa37274-6c16-4420-9e4a-344a6d41b9d0" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestProcessorNode/Builds/MacOSX/RecentFilesMenuTemplate.nib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestProcessorNode/Builds/MacOSX/TestProcessorNode.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestProcessorNode/JuceLibraryCode/AppConfig.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestProcessorNode/Source/DiauproTestProcessor.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestProcessorNode/Source/DiauproTestProcessor.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestProcessorNode/JuceLibraryCode/JuceHeader.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestProcessorNode/Source/Main.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestProcessorNode/Builds/LinuxMakefile/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestProcessorNode/JuceLibraryCode/ReadMe.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestProcessorNode/TestProcessorNode.jucer" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestProcessorNode/Builds/MacOSX/TestProcessorNode.xcodeproj/xcuserdata/alexandergustafson.xcuserdatad/xcschemes/TestProcessorNode.xcscheme" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestProcessorNode/Builds/MacOSX/TestProcessorNode.xcodeproj/project.xcworkspace/xcshareddata/TestProcessorNode.xcscmblueprint" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestProcessorNode/Builds/MacOSX/TestProcessorNode.xcodeproj/project.xcworkspace/contents.xcworkspacedata" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestProcessorNode/JuceLibraryCode/modules/juce_audio_basics/juce_audio_basics.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestProcessorNode/JuceLibraryCode/modules/juce_audio_devices/juce_audio_devices.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestProcessorNode/JuceLibraryCode/modules/juce_audio_formats/juce_audio_formats.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestProcessorNode/JuceLibraryCode/modules/juce_audio_processors/juce_audio_processors.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestProcessorNode/JuceLibraryCode/modules/juce_core/juce_core.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestProcessorNode/JuceLibraryCode/modules/juce_cryptography/juce_cryptography.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestProcessorNode/JuceLibraryCode/modules/juce_data_structures/juce_data_structures.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestProcessorNode/JuceLibraryCode/modules/juce_events/juce_events.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestProcessorNode/JuceLibraryCode/modules/juce_graphics/juce_graphics.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestProcessorNode/JuceLibraryCode/modules/juce_gui_basics/juce_gui_basics.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestProcessorNode/JuceLibraryCode/modules/juce_gui_extra/juce_gui_extra.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestProcessorNode/JuceLibraryCode/modules/juce_opengl/juce_opengl.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestProcessorNode/JuceLibraryCode/modules/juce_video/juce_video.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestProcessorNode/Builds/MacOSX/TestProcessorNode.xcodeproj/project.pbxproj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestProcessorNode/Builds/MacOSX/TestProcessorNode.xcodeproj/xcuserdata/alexandergustafson.xcuserdatad/xcschemes/xcschememanagement.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/AudioProcessorNode.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/AudioProcessorNode.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/Builds/MacOSX/AudioTestApplication.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/AudioTestApplication/Builds/MacOSX/AudioTestApplication.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproVCOProcessor.cpp" afterPath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproVCOProcessor.cpp" />
+    </list>
     <ignored path="utilities.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -46,7 +78,7 @@
         <entry file="file://$PROJECT_DIR$/AudioTestApplication/Source/DiauproVCOProcessor.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -203,78 +235,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="utilities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utilities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utilities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AudioProcessorNode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utilities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utilities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AudioProcessorNode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Source" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utilities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utilities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AudioProcessorNode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Builds" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utilities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utilities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AudioProcessorNode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Builds" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LinuxMakefile" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -795,7 +755,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="33" y="35" width="1715" height="946" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287858" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -803,7 +763,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22175732" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22175732" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1226,7 +1186,7 @@
     <entry file="file://$PROJECT_DIR$/AudioTestApplication/Source/DiauproVCOProcessor.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
