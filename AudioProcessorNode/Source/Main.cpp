@@ -8,7 +8,7 @@
   ==============================================================================
 */
 
-#include "../JuceLibraryCode/JuceHeader.h"
+#include "JuceHeader.h"
 #include "Monitor.h"
 #include "DiauproProcessor.h"
 #include "DiauproVCAProcessor.h"
