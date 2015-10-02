@@ -41,7 +41,7 @@
         <entry file="file://$PROJECT_DIR$/AudioTestApplication/Source/DiauproVCOProcessor.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-0.121259846">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -763,7 +763,13 @@
       <option name="project" value="LOCAL" />
       <updated>1443786068054</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="fixing zeroconf manager, more robust browsing and resolving, tighter concurrency,">
+      <created>1443786227833</created>
+      <option name="number" value="00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1443786227833</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1241,7 +1247,7 @@
     <entry file="file://$PROJECT_DIR$/AudioTestApplication/Source/DiauproVCOProcessor.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.121259846">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -17,6 +17,8 @@ void DiauproVCOProcessor::localProcess(AudioSampleBuffer &buffer, MidiBuffer &mi
     MidiBuffer::Iterator midiEventIterator(midiMessages);
     MidiMessage nextMidiEvent;
     bool hasEvent;
+    
+    Logger::writeToLog("vco is processing");
 
     for(sampleNr = 0; sampleNr < buffer.getNumSamples(); sampleNr++)
     {
@@ -29,6 +31,7 @@ void DiauproVCOProcessor::localProcess(AudioSampleBuffer &buffer, MidiBuffer &mi
         {
             if(nextMidiEvent.isNoteOn())
             {
+                Logger::writeToLog("vco received midi");
                 voice_count++;
                 frequency = MidiMessage::getMidiNoteInHertz(nextMidiEvent.getNoteNumber());
                 double cyclesPerSample = frequency / getSampleRate();
@@ -44,7 +47,7 @@ void DiauproVCOProcessor::localProcess(AudioSampleBuffer &buffer, MidiBuffer &mi
             const float currentSample = (float) (sin (phase) * level);
             Logger::writeToLog(String(currentSample));
             phase += step;
-
+            Logger::writeToLog("vco processing sample");
             for(int i = 0; i < buffer.getNumChannels(); i++)
             {
                 float oldSample = buffer.getSample(i, sampleNr);
