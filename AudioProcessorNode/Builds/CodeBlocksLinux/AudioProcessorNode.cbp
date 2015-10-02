@@ -30,6 +30,7 @@
           <Add directory="../../../Monitor/Source"/>
           <Add directory="../../../DiauproMessage/Source"/>
           <Add directory="../../../ZeroConf/Source"/>
+          <Add directory="../../../AudioTestApplication/Source"/>
           <Add directory="/usr/include/freetype2"/>
         </Compiler>
         <Linker>
@@ -64,6 +65,7 @@
           <Add directory="../../../Monitor/Source"/>
           <Add directory="../../../DiauproMessage/Source"/>
           <Add directory="../../../ZeroConf/Source"/>
+          <Add directory="../../../AudioTestApplication/Source"/>
           <Add directory="/usr/include/freetype2"/>
         </Compiler>
         <Linker>

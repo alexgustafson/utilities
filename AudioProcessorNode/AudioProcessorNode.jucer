@@ -58,9 +58,9 @@
     <CODEBLOCKS_LINUX targetFolder="Builds/CodeBlocksLinux" extraLinkerFlags="" externalLibraries="dns_sd">
       <CONFIGURATIONS>
         <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="AudioProcessorNode"
-                       libraryPath="" headerPath="../../../Monitor/Source&#10;../../../DiauproMessage/Source&#10;../../../ZeroConf/Source"/>
+                       libraryPath="" headerPath="../../../Monitor/Source&#10;../../../DiauproMessage/Source&#10;../../../ZeroConf/Source&#10;../../../AudioTestApplication/Source"/>
         <CONFIGURATION name="Release" isDebug="0" optimisation="3" targetName="AudioProcessorNode"
-                       libraryPath="" headerPath="../../../Monitor/Source&#10;../../../DiauproMessage/Source&#10;../../../ZeroConf/Source"/>
+                       libraryPath="" headerPath="../../../Monitor/Source&#10;../../../DiauproMessage/Source&#10;../../../ZeroConf/Source&#10;../../../AudioTestApplication/Source"/>
       </CONFIGURATIONS>
       <MODULEPATHS>
         <MODULEPATH id="juce_core" path="../../../JUCE/modules"/>
@@ -78,9 +78,9 @@
     <LINUX_MAKE targetFolder="Builds/LinuxMakefile" externalLibraries="dns_sd">
       <CONFIGURATIONS>
         <CONFIGURATION name="Debug" libraryPath="/usr/X11R6/lib/" isDebug="1" optimisation="1"
-                       targetName="AudioProcessorNode" headerPath="../../../Monitor/Source&#10;../../../DiauproMessage/Source&#10;../../../ZeroConf/Source"/>
+                       targetName="AudioProcessorNode" headerPath="../../../Monitor/Source&#10;../../../DiauproMessage/Source&#10;../../../ZeroConf/Source&#10;../../../AudioTestApplication/Source"/>
         <CONFIGURATION name="Release" libraryPath="/usr/X11R6/lib/" isDebug="0" optimisation="3"
-                       targetName="AudioProcessorNode" headerPath="../../../Monitor/Source&#10;../../../DiauproMessage/Source&#10;../../../ZeroConf/Source"/>
+                       targetName="AudioProcessorNode" headerPath="../../../Monitor/Source&#10;../../../DiauproMessage/Source&#10;../../../ZeroConf/Source&#10;../../../AudioTestApplication/Source"/>
       </CONFIGURATIONS>
       <MODULEPATHS>
         <MODULEPATH id="juce_events" path="../../../JUCE/modules"/>
