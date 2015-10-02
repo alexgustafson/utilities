@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3aa37274-6c16-4420-9e4a-344a6d41b9d0" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/build/Debug/AudioProcessorNode" afterPath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/build/Debug/AudioProcessorNode" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/AudioProcessorNode.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/AudioProcessorNode.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/Builds/MacOSX/AudioTestApplication.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/AudioTestApplication/Builds/MacOSX/AudioTestApplication.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproVCOProcessor.cpp" afterPath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproVCOProcessor.cpp" />
@@ -475,12 +476,6 @@
       <option name="number" value="Default" />
       <updated>1440757148412</updated>
     </task>
-    <task id="LOCAL-00001" summary="init">
-      <created>1440757206058</created>
-      <option name="number" value="00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1440757206058</updated>
-    </task>
     <task id="LOCAL-00002" summary="init">
       <created>1440790582581</created>
       <option name="number" value="00002" />
@@ -769,7 +764,13 @@
       <option name="project" value="LOCAL" />
       <updated>1443786227833</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="testing vco">
+      <created>1443786899571</created>
+      <option name="number" value="00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1443786899572</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -829,7 +830,8 @@
     <MESSAGE value="midi serializer fixed and tested.&#10;midi added to audioprocessor and nodes" />
     <MESSAGE value="adding new processor modules" />
     <MESSAGE value="fixing zeroconf manager, more robust browsing and resolving, tighter concurrency," />
-    <option name="LAST_COMMIT_MESSAGE" value="fixing zeroconf manager, more robust browsing and resolving, tighter concurrency," />
+    <MESSAGE value="testing vco" />
+    <option name="LAST_COMMIT_MESSAGE" value="testing vco" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />

@@ -18,7 +18,7 @@ void DiauproVCOProcessor::localProcess(AudioSampleBuffer &buffer, MidiBuffer &mi
     MidiMessage nextMidiEvent;
     bool hasEvent;
     
-    Logger::writeToLog("vco is processing");
+    Logger::writeToLog(String::formatted("vco is processing %d samples", buffer.getNumSamples()));
 
     for(sampleNr = 0; sampleNr < buffer.getNumSamples(); sampleNr++)
     {
@@ -47,7 +47,6 @@ void DiauproVCOProcessor::localProcess(AudioSampleBuffer &buffer, MidiBuffer &mi
             const float currentSample = (float) (sin (phase) * level);
             Logger::writeToLog(String(currentSample));
             phase += step;
-            Logger::writeToLog("vco processing sample");
             for(int i = 0; i < buffer.getNumChannels(); i++)
             {
                 float oldSample = buffer.getSample(i, sampleNr);
