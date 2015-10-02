@@ -42,6 +42,7 @@ void DiauproVCOProcessor::localProcess(AudioSampleBuffer &buffer, MidiBuffer &mi
         if(voice_count > 0)
         {
             const float currentSample = (float) (sin (phase) * level);
+            Logger::writeToLog(String(currentSample));
             phase += step;
 
             for(int i = 0; i < buffer.getNumChannels(); i++)
