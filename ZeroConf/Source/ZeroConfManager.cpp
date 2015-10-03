@@ -278,6 +278,12 @@ void ZeroConfManager::handleFileDescriptor(int fileDescriptor)
         {
             service = serviceList.getUnchecked(i);
             err = DNSServiceProcessResult(service->sdRef);
+            if(err)
+            {
+                Logger::writeToLog("Could not process result");
+                fprintf(stderr, "DNSServiceProcessResult returned %d\n", err);
+                return;
+            }
             break;
         }
     }

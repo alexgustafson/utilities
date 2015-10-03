@@ -459,12 +459,6 @@
       <option name="number" value="Default" />
       <updated>1440757148412</updated>
     </task>
-    <task id="LOCAL-00016" summary="audio processor node added">
-      <created>1442774644845</created>
-      <option name="number" value="00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1442774644845</updated>
-    </task>
     <task id="LOCAL-00017" summary="audio processor node added">
       <created>1442774688075</created>
       <option name="number" value="00017" />
@@ -753,7 +747,13 @@
       <option name="project" value="LOCAL" />
       <updated>1443903461928</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="deeper midi inspection">
+      <created>1443903776381</created>
+      <option name="number" value="00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1443903776381</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="ToolWindowManager">
