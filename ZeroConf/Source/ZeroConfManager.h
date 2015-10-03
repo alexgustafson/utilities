@@ -200,6 +200,10 @@ public:
 
     int getRegisterServiceFileDescriptor();
 
+    OwnedArray<ZeroConfService, CriticalSection>* getServiceList();
+
+    void addService(ZeroConfService *service);
+
 private:
 
     void run() override;

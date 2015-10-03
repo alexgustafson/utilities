@@ -31,6 +31,8 @@ static void zeroBrowseCallback(DNSServiceRef sdRef,
                                void *context)
 {
 
+    ZeroConfManager* zManager = (ZeroConfManager*)context;
+
     String addString  = (flags & kDNSServiceFlagsAdd) ? "ADD" : "REMOVE";
     String moreString = (flags & kDNSServiceFlagsMoreComing) ? "MORE" : "";
     
@@ -43,16 +45,9 @@ static void zeroBrowseCallback(DNSServiceRef sdRef,
     service->setErrorCode(errorCode);
     service->setReplyDomain(replyDomain);
     service->status = ZeroConfService::ResultStatus::browseResult;
-    
-    OwnedArray<ZeroConfService, CriticalSection> *serviceList = (OwnedArray<ZeroConfService, CriticalSection> *)context;
-    for (int i = 0; i < serviceList->size(); i++) {
-        if (*service == *serviceList->getUnchecked(i) ) {
-            serviceList->remove(i);
-            break;
-        }
-    }
-    serviceList->add(service);
-    
+
+    zManager->addService(service);
+
 }
 
 static void zeroResolveCallback(DNSServiceRef sdRef,
@@ -184,7 +179,7 @@ void ZeroConfManager::browseService(const char * regType)
             regType,                // service type
             "",                     // default domains
             zeroBrowseCallback,     // call back function
-            (void*)&serviceList);        // no context
+            (void*)this);        // no context
     
     if (error == kDNSServiceErr_NoError) {
         Logger::writeToLog(String::formatted("Browsing for service: %s", regType));
@@ -208,12 +203,15 @@ void ZeroConfManager::handleFileDescriptor(int fileDescriptor)
 
     
     if (this->registerServiceRef && fileDescriptor == DNSServiceRefSockFD(this->registerServiceRef)) {
+
         err = DNSServiceProcessResult(this->registerServiceRef);
         return;
     }
     
     if (this->browseServiceRef && fileDescriptor == DNSServiceRefSockFD(this->browseServiceRef)) {
-        
+
+        //Socket for browserServiceRef was triggered
+
         err = DNSServiceProcessResult(this->browseServiceRef);
         
         for (int i = 0; i < serviceList.size(); i++) {
@@ -263,7 +261,7 @@ void ZeroConfManager::handleFileDescriptor(int fileDescriptor)
     
     if (service->status == ZeroConfService::ResultStatus::resolveResult)
     {
-        
+        Logger::writeToLog("Resolving service details");
         DNSServiceRef ref;
         
         error =  DNSServiceQueryRecord(&ref,
@@ -276,18 +274,19 @@ void ZeroConfManager::handleFileDescriptor(int fileDescriptor)
                                        (void*)service);
         
         if (error == kDNSServiceErr_NoError) {
-            
+
+            monitor->removeFileDescriptorAndListener(fileDescriptor);
             DNSServiceRefDeallocate(service->sdRef);
             service->sdRef = ref;
             
-            monitor->removeFileDescriptorAndListener(fileDescriptor);
+
             monitor->addFileDescriptorAndListener(DNSServiceRefSockFD(service->sdRef), this);
             
         }
         
     }else if(service->status == ZeroConfService::ResultStatus::queryResult)
     {
-        
+        Logger::writeToLog("Resolving service ip");
         monitor->removeFileDescriptorAndListener(fileDescriptor);
         DNSServiceRefDeallocate(service->sdRef);
         startThread();
@@ -309,6 +308,17 @@ int ZeroConfManager::getRegisterServiceFileDescriptor()
 }
 
 
+OwnedArray<ZeroConfService, CriticalSection> *ZeroConfManager::getServiceList() {
+    return &this->serviceList;
+}
 
+void ZeroConfManager::addService(ZeroConfService *service) {
 
-
+    for (int i = 0; i < serviceList.size(); i++) {
+        if (*service == *serviceList.getUnchecked(i) ) {
+            serviceList.remove(i);
+            break;
+        }
+    }
+    serviceList.add(service);
+}
