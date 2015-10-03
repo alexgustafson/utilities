@@ -2,37 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3aa37274-6c16-4420-9e4a-344a6d41b9d0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestProcessorNode/Builds/MacOSX/RecentFilesMenuTemplate.nib" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestProcessorNode/Builds/MacOSX/TestProcessorNode.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestProcessorNode/JuceLibraryCode/AppConfig.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestProcessorNode/Source/DiauproTestProcessor.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestProcessorNode/Source/DiauproTestProcessor.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestProcessorNode/JuceLibraryCode/JuceHeader.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestProcessorNode/Source/Main.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestProcessorNode/Builds/LinuxMakefile/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestProcessorNode/JuceLibraryCode/ReadMe.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestProcessorNode/TestProcessorNode.jucer" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestProcessorNode/Builds/MacOSX/TestProcessorNode.xcodeproj/xcuserdata/alexandergustafson.xcuserdatad/xcschemes/TestProcessorNode.xcscheme" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestProcessorNode/Builds/MacOSX/TestProcessorNode.xcodeproj/project.xcworkspace/xcshareddata/TestProcessorNode.xcscmblueprint" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestProcessorNode/Builds/MacOSX/TestProcessorNode.xcodeproj/project.xcworkspace/contents.xcworkspacedata" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestProcessorNode/JuceLibraryCode/modules/juce_audio_basics/juce_audio_basics.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestProcessorNode/JuceLibraryCode/modules/juce_audio_devices/juce_audio_devices.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestProcessorNode/JuceLibraryCode/modules/juce_audio_formats/juce_audio_formats.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestProcessorNode/JuceLibraryCode/modules/juce_audio_processors/juce_audio_processors.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestProcessorNode/JuceLibraryCode/modules/juce_core/juce_core.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestProcessorNode/JuceLibraryCode/modules/juce_cryptography/juce_cryptography.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestProcessorNode/JuceLibraryCode/modules/juce_data_structures/juce_data_structures.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestProcessorNode/JuceLibraryCode/modules/juce_events/juce_events.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestProcessorNode/JuceLibraryCode/modules/juce_graphics/juce_graphics.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestProcessorNode/JuceLibraryCode/modules/juce_gui_basics/juce_gui_basics.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestProcessorNode/JuceLibraryCode/modules/juce_gui_extra/juce_gui_extra.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestProcessorNode/JuceLibraryCode/modules/juce_opengl/juce_opengl.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestProcessorNode/JuceLibraryCode/modules/juce_video/juce_video.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestProcessorNode/Builds/MacOSX/TestProcessorNode.xcodeproj/project.pbxproj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestProcessorNode/Builds/MacOSX/TestProcessorNode.xcodeproj/xcuserdata/alexandergustafson.xcuserdatad/xcschemes/xcschememanagement.plist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/AudioProcessorNode.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/AudioProcessorNode.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/Builds/MacOSX/AudioTestApplication.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/AudioTestApplication/Builds/MacOSX/AudioTestApplication.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproVCOProcessor.cpp" afterPath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproVCOProcessor.cpp" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestProcessorNode/JuceLibraryCode/modules/juce_cryptography/juce_cryptography.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestProcessorNode/JuceLibraryCode/modules/juce_opengl/juce_opengl.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestProcessorNode/JuceLibraryCode/modules/juce_video/juce_video.h" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestProcessorNode/JuceLibraryCode/AppConfig.h" afterPath="$PROJECT_DIR$/TestProcessorNode/JuceLibraryCode/AppConfig.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestProcessorNode/JuceLibraryCode/JuceHeader.h" afterPath="$PROJECT_DIR$/TestProcessorNode/JuceLibraryCode/JuceHeader.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestProcessorNode/Builds/LinuxMakefile/Makefile" afterPath="$PROJECT_DIR$/TestProcessorNode/Builds/LinuxMakefile/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestProcessorNode/TestProcessorNode.jucer" afterPath="$PROJECT_DIR$/TestProcessorNode/TestProcessorNode.jucer" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestProcessorNode/Builds/MacOSX/TestProcessorNode.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/TestProcessorNode/Builds/MacOSX/TestProcessorNode.xcodeproj/project.pbxproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="utilities.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -96,48 +74,48 @@
       </file>
       <file leaf-file-name="Makefile" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ZeroConf/Builds/LinuxMakefile/Makefile">
+          <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
-          </provider>
-          <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="DNSSD.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Common/mDNSShared/Java/DNSSD.java">
+          <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
-          <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-            <state />
-          </provider>
         </entry>
       </file>
       <file leaf-file-name="Makefile" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AudioProcessorNode/Builds/LinuxMakefile/Makefile">
+          <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.714286">
+            <state vertical-scroll-proportion="0.0">
               <caret line="40" column="155" selection-start-line="40" selection-start-column="153" selection-end-line="40" selection-end-column="155" />
               <folding />
             </state>
-          </provider>
-          <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Main.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AudioProcessorNode/Source/Main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.17977528">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.7223114">
+              <caret line="30" column="52" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -190,9 +168,8 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="33" />
-    <option name="y" value="35" />
-    <option name="width" value="1715" />
+    <option name="y" value="23" />
+    <option name="width" value="1680" />
     <option name="height" value="946" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -219,7 +196,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -240,6 +216,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -455,12 +432,6 @@
       <created>1440757148412</created>
       <option name="number" value="Default" />
       <updated>1440757148412</updated>
-    </task>
-    <task id="LOCAL-00003" summary="init">
-      <created>1441024277639</created>
-      <option name="number" value="00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1441024277639</updated>
     </task>
     <task id="LOCAL-00004" summary="zeroconf basically finished">
       <created>1441280588428</created>
@@ -750,12 +721,18 @@
       <option name="project" value="LOCAL" />
       <updated>1443788420665</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="adding consolidated application tests">
+      <created>1443878907954</created>
+      <option name="number" value="00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1443878907955</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="33" y="35" width="1715" height="946" extended-state="0" />
-    <editor active="false" />
+    <frame x="0" y="23" width="1680" height="946" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287858" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -763,20 +740,20 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22175732" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22893773" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23770492" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -811,7 +788,8 @@
     <MESSAGE value="adding new processor modules" />
     <MESSAGE value="fixing zeroconf manager, more robust browsing and resolving, tighter concurrency," />
     <MESSAGE value="testing vco" />
-    <option name="LAST_COMMIT_MESSAGE" value="testing vco" />
+    <MESSAGE value="adding consolidated application tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding consolidated application tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -819,25 +797,25 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Common/mDNSShared/Java/DNSSD.java">
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AudioProcessorNode/Builds/LinuxMakefile/Makefile">
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AudioProcessorNode/Source/Main.cpp">
@@ -897,30 +875,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ZeroConf/Builds/LinuxMakefile/Makefile">
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Common/mDNSShared/Java/DNSSD.java">
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ZeroConf/Source/ZeroConfTests.h">
@@ -952,13 +929,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ZeroConf/JuceLibraryCode/JuceHeader.h">
@@ -969,13 +946,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ZeroConf/JuceLibraryCode/JuceHeader.h">
@@ -986,13 +963,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ZeroConf/JuceLibraryCode/JuceHeader.h">
@@ -1003,13 +980,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ZeroConf/JuceLibraryCode/JuceHeader.h">
@@ -1020,13 +997,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ZeroConf/JuceLibraryCode/JuceHeader.h">
@@ -1100,13 +1077,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.37931034">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ZeroConf/JuceLibraryCode/JuceHeader.h">
@@ -1141,30 +1118,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ZeroConf/Builds/LinuxMakefile/Makefile">
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Common/mDNSShared/Java/DNSSD.java">
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AudioTestApplication/Source/NetworkBrowser.cpp">
@@ -1208,14 +1184,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AudioProcessorNode/Builds/LinuxMakefile/Makefile">
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.714286">
+        <state vertical-scroll-proportion="0.0">
           <caret line="40" column="155" selection-start-line="40" selection-start-column="153" selection-end-line="40" selection-end-column="155" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AudioProcessorNode/Source/AudioProcessorNode.cpp">
@@ -1228,8 +1204,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AudioProcessorNode/Source/Main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.17977528">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.7223114">
+          <caret line="30" column="52" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
           <folding />
         </state>
       </provider>
