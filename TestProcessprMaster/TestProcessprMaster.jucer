@@ -57,9 +57,9 @@
     <LINUX_MAKE targetFolder="Builds/LinuxMakefile" externalLibraries="dns_sd">
       <CONFIGURATIONS>
         <CONFIGURATION name="Debug" libraryPath="/usr/X11R6/lib/" isDebug="1" optimisation="1"
-                       targetName="TestProcessprMaster" headerPath="../../../Monitor/Source&#10;../../../DiauproMessage/Source&#10;../../../ZeroConf/Source&#10;../../../AudioTestApplication/Source&#10;../../../TestProcessorNode/Source"/>
+                       targetName="TestProcessprMaster" headerPath="../../../Monitor/Source&#10;../../../DiauproMessage/Source&#10;../../../ZeroConf/Source&#10;../../../AudioTestApplication/Source&#10;../../../TestProcessorNode/Source&#10;../../../MidiUtility/Source"/>
         <CONFIGURATION name="Release" libraryPath="/usr/X11R6/lib/" isDebug="0" optimisation="3"
-                       targetName="TestProcessprMaster" headerPath="../../../Monitor/Source&#10;../../../DiauproMessage/Source&#10;../../../ZeroConf/Source&#10;../../../AudioTestApplication/Source&#10;../../../TestProcessorNode/Source"/>
+                       targetName="TestProcessprMaster" headerPath="../../../Monitor/Source&#10;../../../DiauproMessage/Source&#10;../../../ZeroConf/Source&#10;../../../AudioTestApplication/Source&#10;../../../TestProcessorNode/Source&#10;../../../MidiUtility/Source"/>
       </CONFIGURATIONS>
       <MODULEPATHS>
         <MODULEPATH id="juce_core" path="../../../JUCE/modules"/>
