@@ -49,8 +49,8 @@ ifeq ($(CONFIG),Release)
 endif
 
 OBJECTS := \
+  $(OBJDIR)/ConsolidatedTests_fa3d6747.o \
   $(OBJDIR)/DiauproProcessor_140ab8f.o \
-  $(OBJDIR)/ConsolidatedTests_fd93e903.o \
   $(OBJDIR)/DiauproTestProcessor_cd02bf39.o \
   $(OBJDIR)/ZeroConfManager_bf750d16.o \
   $(OBJDIR)/DiauproMessage_d3d3602f.o \
@@ -86,14 +86,14 @@ strip:
 	@echo Stripping TestProcessorMaster
 	-@strip --strip-unneeded $(OUTDIR)/$(TARGET)
 
+$(OBJDIR)/ConsolidatedTests_fa3d6747.o: ../../Source/ConsolidatedTests.cpp
+	-@mkdir -p $(OBJDIR)
+	@echo "Compiling ConsolidatedTests.cpp"
+	@$(CXX) $(CXXFLAGS) -o "$@" -c "$<"
+
 $(OBJDIR)/DiauproProcessor_140ab8f.o: ../../../AudioTestApplication/Source/DiauproProcessor.cpp
 	-@mkdir -p $(OBJDIR)
 	@echo "Compiling DiauproProcessor.cpp"
-	@$(CXX) $(CXXFLAGS) -o "$@" -c "$<"
-
-$(OBJDIR)/ConsolidatedTests_fd93e903.o: ../../../TestProcessorNode/Source/ConsolidatedTests.cpp
-	-@mkdir -p $(OBJDIR)
-	@echo "Compiling ConsolidatedTests.cpp"
 	@$(CXX) $(CXXFLAGS) -o "$@" -c "$<"
 
 $(OBJDIR)/DiauproTestProcessor_cd02bf39.o: ../../../TestProcessorNode/Source/DiauproTestProcessor.cpp

@@ -5,14 +5,14 @@
               includeBinaryInAppConfig="1" jucerVersion="3.2.0">
   <MAINGROUP id="RdrDLt" name="TestProcessorMaster">
     <GROUP id="{DB374EC1-DDA3-635C-06B2-7CF3107BBCF1}" name="Source">
+      <FILE id="LzOs6M" name="ConsolidatedTests.cpp" compile="1" resource="0"
+            file="Source/ConsolidatedTests.cpp"/>
+      <FILE id="UGlovV" name="ConsolidatedTests.h" compile="0" resource="0"
+            file="Source/ConsolidatedTests.h"/>
       <FILE id="CgOsbA" name="DiauproProcessor.cpp" compile="1" resource="0"
             file="../AudioTestApplication/Source/DiauproProcessor.cpp"/>
       <FILE id="yyK8XR" name="DiauproProcessor.h" compile="0" resource="0"
             file="../AudioTestApplication/Source/DiauproProcessor.h"/>
-      <FILE id="m70Foi" name="ConsolidatedTests.cpp" compile="1" resource="0"
-            file="../TestProcessorNode/Source/ConsolidatedTests.cpp"/>
-      <FILE id="WPd8ND" name="ConsolidatedTests.h" compile="0" resource="0"
-            file="../TestProcessorNode/Source/ConsolidatedTests.h"/>
       <FILE id="O64jmP" name="DiauproTestProcessor.cpp" compile="1" resource="0"
             file="../TestProcessorNode/Source/DiauproTestProcessor.cpp"/>
       <FILE id="PhBzlV" name="DiauproTestProcessor.h" compile="0" resource="0"
