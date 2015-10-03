@@ -48,6 +48,13 @@ static void zeroBrowseCallback(DNSServiceRef sdRef,
     service->setReplyDomain(replyDomain);
     service->status = ZeroConfService::ResultStatus::browseResult;
 
+    Logger::writeToLog("addString"  + addString);
+    Logger::writeToLog("moreString"  + addString);
+
+    Logger::writeToLog(String::formatted("Serivce Name: %s",  serviceName));
+    Logger::writeToLog(String::formatted("RegType: %s",  regtype));
+    Logger::writeToLog(String::formatted("Reply Domain: %s",  replyDomain));
+
     if(addString.equalsIgnoreCase("ADD")) Logger::writeToLog("Adding service");
     zManager->addService(service);
 
@@ -287,6 +294,8 @@ void ZeroConfManager::handleFileDescriptor(int fileDescriptor)
             monitor->addFileDescriptorAndListener(DNSServiceRefSockFD(service->sdRef), this);
             
         }
+
+        return;
         
     }else if(service->status == ZeroConfService::ResultStatus::queryResult)
     {
@@ -294,11 +303,15 @@ void ZeroConfManager::handleFileDescriptor(int fileDescriptor)
         monitor->removeFileDescriptorAndListener(fileDescriptor);
         DNSServiceRefDeallocate(service->sdRef);
         startThread();
+
+        return;
         
     }else if(service->status == ZeroConfService::ResultStatus::registerResult)
     {
-        
+        return;
     }
+
+    Logger::writeToLog("Should not arrive here");
 }
 
 int ZeroConfManager::getBrowseServiceFileDescriptor()
