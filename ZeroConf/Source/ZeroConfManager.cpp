@@ -31,6 +31,8 @@ static void zeroBrowseCallback(DNSServiceRef sdRef,
                                void *context)
 {
 
+    Logger::writeToLog("callback triggered : service found");
+
     ZeroConfManager* zManager = (ZeroConfManager*)context;
 
     String addString  = (flags & kDNSServiceFlagsAdd) ? "ADD" : "REMOVE";
