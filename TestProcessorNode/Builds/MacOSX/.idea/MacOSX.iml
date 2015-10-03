@@ -1124,51 +1124,6 @@
     <content url="file://$USER_HOME$/JUCE/modules/juce_core/zip/juce_ZipFile.h">
       <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_core/zip/juce_ZipFile.h" isTestSource="false" />
     </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_cryptography/encryption/juce_BlowFish.cpp">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_cryptography/encryption/juce_BlowFish.cpp" isTestSource="false" />
-    </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_cryptography/encryption/juce_BlowFish.h">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_cryptography/encryption/juce_BlowFish.h" isTestSource="false" />
-    </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_cryptography/encryption/juce_Primes.cpp">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_cryptography/encryption/juce_Primes.cpp" isTestSource="false" />
-    </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_cryptography/encryption/juce_Primes.h">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_cryptography/encryption/juce_Primes.h" isTestSource="false" />
-    </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_cryptography/encryption/juce_RSAKey.cpp">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_cryptography/encryption/juce_RSAKey.cpp" isTestSource="false" />
-    </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_cryptography/encryption/juce_RSAKey.h">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_cryptography/encryption/juce_RSAKey.h" isTestSource="false" />
-    </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_cryptography/hashing/juce_MD5.cpp">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_cryptography/hashing/juce_MD5.cpp" isTestSource="false" />
-    </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_cryptography/hashing/juce_MD5.h">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_cryptography/hashing/juce_MD5.h" isTestSource="false" />
-    </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_cryptography/hashing/juce_SHA256.cpp">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_cryptography/hashing/juce_SHA256.cpp" isTestSource="false" />
-    </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_cryptography/hashing/juce_SHA256.h">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_cryptography/hashing/juce_SHA256.h" isTestSource="false" />
-    </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_cryptography/hashing/juce_Whirlpool.cpp">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_cryptography/hashing/juce_Whirlpool.cpp" isTestSource="false" />
-    </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_cryptography/hashing/juce_Whirlpool.h">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_cryptography/hashing/juce_Whirlpool.h" isTestSource="false" />
-    </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_cryptography/juce_cryptography.h">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_cryptography/juce_cryptography.h" isTestSource="false" />
-    </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_cryptography/juce_cryptography.mm">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_cryptography/juce_cryptography.mm" isTestSource="false" />
-    </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_cryptography/juce_module_info">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_cryptography/juce_module_info" isTestSource="false" />
-    </content>
     <content url="file://$USER_HOME$/JUCE/modules/juce_data_structures/app_properties/juce_ApplicationProperties.cpp">
       <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_data_structures/app_properties/juce_ApplicationProperties.cpp" isTestSource="false" />
     </content>
@@ -2501,144 +2456,6 @@
     <content url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/native/juce_win32_WebBrowserComponent.cpp">
       <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/native/juce_win32_WebBrowserComponent.cpp" isTestSource="false" />
     </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_opengl/geometry/juce_Draggable3DOrientation.h">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_opengl/geometry/juce_Draggable3DOrientation.h" isTestSource="false" />
-    </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_opengl/geometry/juce_Matrix3D.h">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_opengl/geometry/juce_Matrix3D.h" isTestSource="false" />
-    </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_opengl/geometry/juce_Quaternion.h">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_opengl/geometry/juce_Quaternion.h" isTestSource="false" />
-    </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_opengl/geometry/juce_Vector3D.h">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_opengl/geometry/juce_Vector3D.h" isTestSource="false" />
-    </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_opengl/juce_module_info">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_opengl/juce_module_info" isTestSource="false" />
-    </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_opengl/juce_opengl.h">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_opengl/juce_opengl.h" isTestSource="false" />
-    </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_opengl/juce_opengl.mm">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_opengl/juce_opengl.mm" isTestSource="false" />
-    </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_opengl/native/juce_MissingGLDefinitions.h">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_opengl/native/juce_MissingGLDefinitions.h" isTestSource="false" />
-    </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_opengl/native/juce_OpenGLExtensions.h">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_opengl/native/juce_OpenGLExtensions.h" isTestSource="false" />
-    </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_opengl/native/juce_OpenGL_android.h">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_opengl/native/juce_OpenGL_android.h" isTestSource="false" />
-    </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_opengl/native/juce_OpenGL_ios.h">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_opengl/native/juce_OpenGL_ios.h" isTestSource="false" />
-    </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_opengl/native/juce_OpenGL_linux.h">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_opengl/native/juce_OpenGL_linux.h" isTestSource="false" />
-    </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_opengl/native/juce_OpenGL_osx.h">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_opengl/native/juce_OpenGL_osx.h" isTestSource="false" />
-    </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_opengl/native/juce_OpenGL_win32.h">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_opengl/native/juce_OpenGL_win32.h" isTestSource="false" />
-    </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_opengl/opengl/juce_OpenGLContext.cpp">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_opengl/opengl/juce_OpenGLContext.cpp" isTestSource="false" />
-    </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_opengl/opengl/juce_OpenGLContext.h">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_opengl/opengl/juce_OpenGLContext.h" isTestSource="false" />
-    </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_opengl/opengl/juce_OpenGLFrameBuffer.cpp">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_opengl/opengl/juce_OpenGLFrameBuffer.cpp" isTestSource="false" />
-    </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_opengl/opengl/juce_OpenGLFrameBuffer.h">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_opengl/opengl/juce_OpenGLFrameBuffer.h" isTestSource="false" />
-    </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_opengl/opengl/juce_OpenGLGraphicsContext.cpp">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_opengl/opengl/juce_OpenGLGraphicsContext.cpp" isTestSource="false" />
-    </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_opengl/opengl/juce_OpenGLGraphicsContext.h">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_opengl/opengl/juce_OpenGLGraphicsContext.h" isTestSource="false" />
-    </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_opengl/opengl/juce_OpenGLHelpers.cpp">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_opengl/opengl/juce_OpenGLHelpers.cpp" isTestSource="false" />
-    </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_opengl/opengl/juce_OpenGLHelpers.h">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_opengl/opengl/juce_OpenGLHelpers.h" isTestSource="false" />
-    </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_opengl/opengl/juce_OpenGLImage.cpp">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_opengl/opengl/juce_OpenGLImage.cpp" isTestSource="false" />
-    </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_opengl/opengl/juce_OpenGLImage.h">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_opengl/opengl/juce_OpenGLImage.h" isTestSource="false" />
-    </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_opengl/opengl/juce_OpenGLPixelFormat.cpp">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_opengl/opengl/juce_OpenGLPixelFormat.cpp" isTestSource="false" />
-    </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_opengl/opengl/juce_OpenGLPixelFormat.h">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_opengl/opengl/juce_OpenGLPixelFormat.h" isTestSource="false" />
-    </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_opengl/opengl/juce_OpenGLRenderer.h">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_opengl/opengl/juce_OpenGLRenderer.h" isTestSource="false" />
-    </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_opengl/opengl/juce_OpenGLShaderProgram.cpp">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_opengl/opengl/juce_OpenGLShaderProgram.cpp" isTestSource="false" />
-    </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_opengl/opengl/juce_OpenGLShaderProgram.h">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_opengl/opengl/juce_OpenGLShaderProgram.h" isTestSource="false" />
-    </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_opengl/opengl/juce_OpenGLTexture.cpp">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_opengl/opengl/juce_OpenGLTexture.cpp" isTestSource="false" />
-    </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_opengl/opengl/juce_OpenGLTexture.h">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_opengl/opengl/juce_OpenGLTexture.h" isTestSource="false" />
-    </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_opengl/utils/juce_OpenGLAppComponent.cpp">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_opengl/utils/juce_OpenGLAppComponent.cpp" isTestSource="false" />
-    </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_opengl/utils/juce_OpenGLAppComponent.h">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_opengl/utils/juce_OpenGLAppComponent.h" isTestSource="false" />
-    </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_video/capture/juce_CameraDevice.cpp">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_video/capture/juce_CameraDevice.cpp" isTestSource="false" />
-    </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_video/capture/juce_CameraDevice.h">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_video/capture/juce_CameraDevice.h" isTestSource="false" />
-    </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_video/juce_module_info">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_video/juce_module_info" isTestSource="false" />
-    </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_video/juce_video.h">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_video/juce_video.h" isTestSource="false" />
-    </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_video/juce_video.mm">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_video/juce_video.mm" isTestSource="false" />
-    </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_video/native/juce_android_CameraDevice.cpp">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_video/native/juce_android_CameraDevice.cpp" isTestSource="false" />
-    </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_video/native/juce_mac_CameraDevice.mm">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_video/native/juce_mac_CameraDevice.mm" isTestSource="false" />
-    </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_video/native/juce_mac_QuickTimeMovieComponent.mm">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_video/native/juce_mac_QuickTimeMovieComponent.mm" isTestSource="false" />
-    </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_video/native/juce_win32_CameraDevice.cpp">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_video/native/juce_win32_CameraDevice.cpp" isTestSource="false" />
-    </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_video/native/juce_win32_DirectShowComponent.cpp">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_video/native/juce_win32_DirectShowComponent.cpp" isTestSource="false" />
-    </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_video/native/juce_win32_QuickTimeMovieComponent.cpp">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_video/native/juce_win32_QuickTimeMovieComponent.cpp" isTestSource="false" />
-    </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_video/playback/juce_DirectShowComponent.h">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_video/playback/juce_DirectShowComponent.h" isTestSource="false" />
-    </content>
-    <content url="file://$USER_HOME$/JUCE/modules/juce_video/playback/juce_QuickTimeMovieComponent.h">
-      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_video/playback/juce_QuickTimeMovieComponent.h" isTestSource="false" />
-    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">
@@ -3003,7 +2820,6 @@
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/sources/juce_ChannelRemappingAudioSource.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/native/juce_win32_SystemStats.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_data_structures/app_properties/juce_PropertiesFile.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_video/juce_module_info" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/files/juce_FileSearchPath.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/code_editor/juce_CodeDocument.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/widgets/juce_TextEditor.cpp" />
@@ -3031,7 +2847,6 @@
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/native/juce_osx_ObjCHelpers.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/xml/juce_XmlElement.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_formats/codecs/juce_QuickTimeAudioFormat.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_opengl/native/juce_OpenGL_osx.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/buttons/juce_DrawableButton.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/containers/juce_DynamicObject.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/filebrowser/juce_FileSearchPathListComponent.cpp" />
@@ -3044,11 +2859,9 @@
           <root url="file://$USER_HOME$/JUCE/modules/juce_events/native/juce_win32_Messaging.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/colour/juce_FillType.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/threads/juce_WaitableEvent.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_opengl/native/juce_OpenGL_android.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/sources/juce_PositionableAudioSource.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/midi_io/juce_MidiMessageCollector.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/memory/juce_MemoryBlock.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/commands/juce_ApplicationCommandTarget.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/processors/juce_AudioProcessor.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/components/juce_ModalComponentManager.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/windows/juce_CallOutBox.h" />
@@ -3056,14 +2869,12 @@
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/sources/juce_AudioTransportSource.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_ResizableEdgeComponent.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_events/interprocess/juce_InterprocessConnectionServer.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_video/native/juce_android_CameraDevice.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_formats/format/juce_AudioFormatManager.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/menus/juce_PopupMenu.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/images/juce_ImageCache.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_events/broadcasters/juce_ChangeBroadcaster.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/geometry/juce_Path.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_events/messages/juce_MessageManager.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_video/native/juce_win32_QuickTimeMovieComponent.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/containers/juce_ElementComparator.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/containers/juce_DynamicObject.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/widgets/juce_ToolbarItemPalette.cpp" />
@@ -3081,7 +2892,6 @@
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/drawables/juce_DrawableText.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/native/juce_win32_Fonts.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/audio_io/juce_AudioIODeviceType.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_opengl/juce_module_info" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/memory/juce_Atomic.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_AnimatedPosition.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/drawables/juce_DrawableShape.h" />
@@ -3100,7 +2910,6 @@
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/geometry/juce_Point.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/native/juce_mac_Strings.mm" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/native/juce_linux_ALSA.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_opengl/juce_opengl.mm" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/unit_tests/juce_UnitTest.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_MultiDocumentPanel.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/documents/juce_FileBasedDocument.cpp" />
@@ -3114,14 +2923,12 @@
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/widgets/juce_Slider.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/native/juce_mac_AudioCDBurner.mm" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/application/juce_Application.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_opengl/opengl/juce_OpenGLRenderer.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/misc/juce_RecentlyOpenedFilesList.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/menus/juce_MenuBarComponent.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/xml/juce_XmlDocument.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_StretchableLayoutResizerBar.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_formats/format/juce_AudioFormatManager.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/mouse/juce_SelectedItemSet.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_opengl/geometry/juce_Matrix3D.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_Viewport.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/mouse/juce_MouseCursor.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/buttons/juce_ArrowButton.cpp" />
@@ -3145,9 +2952,8 @@
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/containers/juce_ReferenceCountedArray.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/positioning/juce_RelativeRectangle.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_events/broadcasters/juce_ChangeBroadcaster.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_video/juce_video.mm" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/streams/juce_OutputStream.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_formats/format/juce_AudioFormat.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/commands/juce_ApplicationCommandTarget.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/buffers/juce_AudioDataConverters.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/placement/juce_Justification.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_events/broadcasters/juce_ActionBroadcaster.cpp" />
@@ -3166,28 +2972,22 @@
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/streams/juce_OutputStream.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/native/juce_android_Audio.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/native/juce_linux_SystemStats.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_opengl/opengl/juce_OpenGLImage.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/positioning/juce_MarkerList.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_core/maths/juce_Expression.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/widgets/juce_Label.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_events/native/juce_mac_MessageManager.mm" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/keyboard/juce_SystemClipboard.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/components/juce_Component.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/containers/juce_PropertySet.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/native/juce_android_FileChooser.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/mouse/juce_MouseInputSource.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/filebrowser/juce_FileChooser.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/misc/juce_SystemTrayIconComponent.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_opengl/native/juce_OpenGLExtensions.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_cryptography/juce_module_info" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/time/juce_Time.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/text/juce_StringPairArray.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_opengl/utils/juce_OpenGLAppComponent.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/audio_io/juce_AudioDeviceManager.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/streams/juce_SubregionStream.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/fonts/juce_TextLayout.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_TabbedComponent.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/system/juce_TargetPlatform.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_cryptography/hashing/juce_MD5.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/embedding/juce_NSViewComponent.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/menus/juce_MenuBarComponent.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/widgets/juce_ProgressBar.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/synthesisers/juce_Synthesiser.h" />
@@ -3197,15 +2997,12 @@
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/files/juce_DirectoryIterator.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/widgets/juce_ListBox.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/memory/juce_HeapBlock.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_core/native/juce_win32_ComSmartPtr.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_opengl/opengl/juce_OpenGLFrameBuffer.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/filebrowser/juce_ImagePreviewComponent.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/text/juce_String.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/native/juce_mac_CoreAudio.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/drawables/juce_DrawableImage.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/files/juce_WildcardFileFilter.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/sources/juce_AudioTransportSource.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_opengl/opengl/juce_OpenGLPixelFormat.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/audio_io/juce_AudioIODevice.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/geometry/juce_PathStrokeType.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/lookandfeel/juce_LookAndFeel_V1.cpp" />
@@ -3230,7 +3027,6 @@
           <root url="file://$USER_HOME$/JUCE/modules/juce_events/broadcasters/juce_AsyncUpdater.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/colour/juce_ColourGradient.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/audio_cd/juce_AudioCDBurner.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_opengl/opengl/juce_OpenGLShaderProgram.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/juce_module_info" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/windows/juce_CallOutBox.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/fonts/juce_Typeface.h" />
@@ -3241,7 +3037,6 @@
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/application/juce_Application.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/juce_audio_processors.mm" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/files/juce_DirectoryIterator.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_cryptography/encryption/juce_BlowFish.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/juce_module_info" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_ComponentMovementWatcher.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/positioning/juce_RelativePoint.h" />
@@ -3260,13 +3055,12 @@
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/juce_module_info" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_ConcertinaPanel.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_AnimatedPositionBehaviours.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_video/juce_video.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/xml/juce_XmlElement.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/scanning/juce_KnownPluginList.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/threads/juce_ScopedWriteLock.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/sources/juce_IIRFilterAudioSource.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/maths/juce_NormalisableRange.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_opengl/opengl/juce_OpenGLPixelFormat.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_core/network/juce_MACAddress.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/midi_io/juce_MidiOutput.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/native/juce_win32_DirectWriteTypeLayout.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/mouse/juce_LassoComponent.h" />
@@ -3275,17 +3069,12 @@
           <root url="file://$USER_HOME$/JUCE/modules/juce_events/interprocess/juce_InterprocessConnection.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/native/juce_mac_Network.mm" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/widgets/juce_Toolbar.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_opengl/native/juce_OpenGL_linux.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_ScrollBar.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/native/juce_MultiTouchMapper.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/components/juce_CachedComponentImage.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/text/juce_Identifier.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/buttons/juce_DrawableButton.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_ScrollBar.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_video/native/juce_mac_CameraDevice.mm" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_opengl/opengl/juce_OpenGLHelpers.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/components/juce_Component.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/commands/juce_ApplicationCommandTarget.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/mouse/juce_MouseInactivityDetector.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/colour/juce_FillType.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/native/juce_linux_Midi.cpp" />
@@ -3297,23 +3086,19 @@
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/commands/juce_ApplicationCommandInfo.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/containers/juce_AbstractFifo.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/containers/juce_HashMap.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_opengl/native/juce_OpenGL_win32.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/midi_io/juce_MidiMessageCollector.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_formats/codecs/juce_CoreAudioFormat.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/format/juce_AudioPluginFormatManager.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/native/juce_linux_Fonts.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_opengl/native/juce_MissingGLDefinitions.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/components/juce_Desktop.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/menus/juce_MenuBarModel.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/midi/juce_MidiBuffer.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/effects/juce_Reverb.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_ResizableBorderComponent.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/widgets/juce_TableListBox.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/native/juce_RenderingHelpers.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_opengl/opengl/juce_OpenGLTexture.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/native/juce_mac_Windowing.mm" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/properties/juce_PropertyPanel.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/maths/juce_Random.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_cryptography/juce_cryptography.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/keyboard/juce_TextInputTarget.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_formats/format/juce_AudioFormat.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/files/juce_TemporaryFile.cpp" />
@@ -3334,29 +3119,23 @@
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/network/juce_Socket.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/text/juce_CharPointer_UTF16.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/contexts/juce_GraphicsContext.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_video/playback/juce_QuickTimeMovieComponent.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/containers/juce_LinkedListPointer.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_opengl/geometry/juce_Draggable3DOrientation.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_cryptography/hashing/juce_SHA256.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/filebrowser/juce_FileSearchPathListComponent.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_events/broadcasters/juce_ChangeListener.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_data_structures/app_properties/juce_PropertiesFile.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_formats/sampler/juce_Sampler.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/windows/juce_DialogWindow.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/positioning/juce_RelativeCoordinatePositioner.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_events/messages/juce_MessageListener.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/components/juce_Component.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_StretchableLayoutManager.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/properties/juce_PropertyPanel.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/misc/juce_Uuid.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/juce_audio_processors.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/format_types/juce_LADSPAPluginFormat.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_opengl/opengl/juce_OpenGLShaderProgram.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/mouse/juce_TextDragAndDropTarget.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/geometry/juce_AffineTransform.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/filebrowser/juce_DirectoryContentsDisplayComponent.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/native/juce_mac_FileChooser.mm" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_opengl/opengl/juce_OpenGLImage.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/positioning/juce_RelativePointPath.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_opengl/opengl/juce_OpenGLHelpers.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/embedding/juce_UIViewComponent.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/native/juce_ios_UIViewComponent.mm" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/native/juce_android_Threads.cpp" />
@@ -3368,7 +3147,6 @@
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/text/juce_Identifier.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/misc/juce_ColourSelector.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/zip/juce_GZIPDecompressorInputStream.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_opengl/opengl/juce_OpenGLGraphicsContext.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/code_editor/juce_LuaCodeTokeniser.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/native/juce_linux_Threads.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/text/juce_CharPointer_UTF32.h" />
@@ -3379,12 +3157,11 @@
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/components/juce_ComponentListener.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_events/messages/juce_Message.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/format_types/juce_VST3PluginFormat.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_cryptography/hashing/juce_Whirlpool.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/commands/juce_ApplicationCommandManager.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/embedding/juce_ActiveXControlComponent.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/scanning/juce_PluginDirectoryScanner.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_StretchableObjectResizer.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/positioning/juce_RelativeCoordinate.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/components/juce_Desktop.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/buttons/juce_ToggleButton.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/zip/juce_GZIPDecompressorInputStream.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/juce_module_info" />
@@ -3407,9 +3184,8 @@
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/components/juce_ComponentListener.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/streams/juce_FileInputSource.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/native/juce_linux_SystemTrayIcon.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/keyboard/juce_ModifierKeys.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/effects/juce_Decibels.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_data_structures/values/juce_Value.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/commands/juce_ApplicationCommandTarget.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/effects/juce_IIRFilter.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/misc/juce_BubbleMessageComponent.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/images/juce_ImageConvolutionKernel.h" />
@@ -3425,8 +3201,6 @@
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/threads/juce_InterProcessLock.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/native/juce_win32_Registry.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/text/juce_NewLine.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_video/capture/juce_CameraDevice.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_opengl/juce_opengl.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/misc/juce_KeyMappingEditorComponent.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/filebrowser/juce_FileTreeComponent.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/fonts/juce_AttributedString.cpp" />
@@ -3434,9 +3208,7 @@
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/threads/juce_TimeSliceThread.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/native/juce_win32_Network.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/misc/juce_SystemTrayIconComponent.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_cryptography/encryption/juce_Primes.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/colour/juce_Colour.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_video/playback/juce_DirectShowComponent.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/threads/juce_ScopedLock.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/files/juce_FileOutputStream.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/keyboard/juce_CaretComponent.cpp" />
@@ -3486,10 +3258,10 @@
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/native/juce_android_WebBrowserComponent.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_events/broadcasters/juce_ActionListener.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/native/juce_win32_Files.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/positioning/juce_RelativeCoordinate.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/geometry/juce_RectangleList.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/native/juce_android_Windowing.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_cryptography/encryption/juce_RSAKey.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/native/juce_linux_Fonts.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/positioning/juce_MarkerList.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/widgets/juce_ImageComponent.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/images/juce_ImageFileFormat.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/memory/juce_OptionalScopedPointer.h" />
@@ -3503,7 +3275,6 @@
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/misc/juce_RecentlyOpenedFilesList.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/placement/juce_RectanglePlacement.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/synthesisers/juce_Synthesiser.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_video/native/juce_win32_DirectShowComponent.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/audio_io/juce_AudioIODeviceType.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/widgets/juce_ToolbarItemComponent.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/mouse/juce_ComponentDragger.cpp" />
@@ -3517,7 +3288,7 @@
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/fonts/juce_CustomTypeface.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/logging/juce_FileLogger.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/mouse/juce_ComponentDragger.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/sources/juce_MixerAudioSource.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/positioning/juce_RelativeCoordinate.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/properties/juce_BooleanPropertyComponent.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_events/juce_events.mm" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/juce_audio_devices.mm" />
@@ -3532,12 +3303,10 @@
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/geometry/juce_PathIterator.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/text/juce_Base64.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/streams/juce_MemoryInputStream.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_cryptography/hashing/juce_SHA256.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/windows/juce_DialogWindow.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/native/juce_win32_Midi.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/text/juce_TextDiff.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/positioning/juce_RelativeRectangle.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_video/native/juce_win32_CameraDevice.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/files/juce_File.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/native/juce_linux_Clipboard.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/juce_gui_basics.mm" />
@@ -3551,7 +3320,6 @@
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/containers/juce_OwnedArray.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/containers/juce_SparseSet.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/windows/juce_ThreadWithProgressWindow.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_cryptography/juce_cryptography.mm" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_events/messages/juce_ApplicationBase.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/native/juce_win32_AudioCDBurner.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/code_editor/juce_CodeEditorComponent.cpp" />
@@ -3564,19 +3332,17 @@
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/native/juce_win32_SystemTrayIcon.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/format_types/juce_VST3PluginFormat.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/properties/juce_ButtonPropertyComponent.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/widgets/juce_Label.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_formats/codecs/juce_MP3AudioFormat.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/widgets/juce_TreeView.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/native/juce_win32_DragAndDrop.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/filebrowser/juce_DirectoryContentsList.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/text/juce_CharPointer_ASCII.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_formats/codecs/juce_OggVorbisAudioFormat.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/embedding/juce_NSViewComponent.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/sources/juce_ResamplingAudioSource.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/threads/juce_SpinLock.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/text/juce_StringArray.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/streams/juce_MemoryOutputStream.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_cryptography/encryption/juce_RSAKey.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_core/maths/juce_Expression.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/text/juce_String.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_formats/format/juce_AudioFormatWriter.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/streams/juce_InputSource.h" />
@@ -3592,11 +3358,12 @@
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_ComponentBuilder.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/system/juce_CompilerSupport.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_data_structures/undomanager/juce_UndoableAction.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_events/messages/juce_MessageListener.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_formats/codecs/juce_WindowsMediaAudioFormat.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/mouse/juce_MouseEvent.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/format_types/juce_VSTPluginFormat.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_ComponentMovementWatcher.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_core/network/juce_MACAddress.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/components/juce_CachedComponentImage.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/sources/juce_AudioSource.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_events/messages/juce_DeletedAtShutdown.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/files/juce_FileSearchPath.cpp" />
@@ -3605,14 +3372,13 @@
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/widgets/juce_TableHeaderComponent.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/text/juce_CharacterFunctions.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/scanning/juce_PluginListComponent.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_cryptography/hashing/juce_Whirlpool.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_formats/format/juce_AudioFormat.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/memory/juce_MemoryBlock.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/buttons/juce_TextButton.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/buttons/juce_TextButton.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_ComponentAnimator.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/code_editor/juce_LuaCodeTokeniser.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/logging/juce_Logger.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_opengl/opengl/juce_OpenGLContext.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/zip/juce_ZipFile.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/widgets/juce_ListBox.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/buttons/juce_ToolbarButton.h" />
@@ -3625,7 +3391,6 @@
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/time/juce_PerformanceCounter.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/positioning/juce_RelativePointPath.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/text/juce_StringPool.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_opengl/geometry/juce_Vector3D.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/drawables/juce_DrawableImage.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/misc/juce_BubbleComponent.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/xml/juce_XmlDocument.h" />
@@ -3633,7 +3398,6 @@
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/native/juce_curl_Network.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_events/native/juce_osx_MessageQueue.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/documents/juce_FileBasedDocument.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_opengl/opengl/juce_OpenGLFrameBuffer.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/format_types/juce_VSTMidiEventList.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/contexts/juce_LowLevelGraphicsContext.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/files/juce_FileInputStream.cpp" />
@@ -3659,7 +3423,6 @@
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/native/juce_ios_UIViewComponentPeer.mm" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/format/juce_AudioPluginFormat.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/buffers/juce_FloatVectorOperations.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_video/capture/juce_CameraDevice.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/juce_gui_extra.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/juce_graphics.mm" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/drawables/juce_Drawable.cpp" />
@@ -3681,7 +3444,6 @@
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/fonts/juce_GlyphArrangement.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/geometry/juce_Path.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/native/juce_mac_NSViewComponent.mm" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/filebrowser/juce_FileSearchPathListComponent.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/memory/juce_SharedResourcePointer.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/effects/juce_IIRFilter.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/sources/juce_ToneGeneratorAudioSource.cpp" />
@@ -3693,12 +3455,11 @@
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/filebrowser/juce_FileBrowserComponent.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/positioning/juce_RelativeCoordinatePositioner.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/lookandfeel/juce_LookAndFeel.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_cryptography/encryption/juce_BlowFish.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/sources/juce_MixerAudioSource.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/filebrowser/juce_FileChooserDialogBox.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/sources/juce_AudioSourcePlayer.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/lookandfeel/juce_LookAndFeel_V3.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/processors/juce_AudioProcessorEditor.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_opengl/geometry/juce_Quaternion.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/system/juce_SystemStats.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/misc/juce_AnimatedAppComponent.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/time/juce_RelativeTime.cpp" />
@@ -3715,7 +3476,7 @@
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/images/juce_Image.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/juce_module_info" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/native/juce_posix_SharedCode.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_cryptography/encryption/juce_Primes.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/juce_audio_processors.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/placement/juce_RectanglePlacement.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_events/native/juce_ios_MessageManager.mm" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/files/juce_File.cpp" />
@@ -3766,7 +3527,7 @@
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/properties/juce_TextPropertyComponent.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/buttons/juce_ShapeButton.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/mouse/juce_MouseListener.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_cryptography/hashing/juce_MD5.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_core/native/juce_win32_ComSmartPtr.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/commands/juce_ApplicationCommandID.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/sources/juce_ChannelRemappingAudioSource.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/threads/juce_Thread.cpp" />
@@ -3780,7 +3541,6 @@
           <root url="file://$USER_HOME$/JUCE/modules/juce_events/messages/juce_MountedVolumeListChangeDetector.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/threads/juce_ReadWriteLock.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/components/juce_ModalComponentManager.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_opengl/native/juce_OpenGL_ios.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/positioning/juce_RelativeParallelogram.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/memory/juce_WeakReference.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_MultiDocumentPanel.cpp" />
@@ -3793,15 +3553,12 @@
           <root url="file://$USER_HOME$/JUCE/modules/juce_data_structures/values/juce_ValueTreeSynchroniser.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_TabbedButtonBar.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/processors/juce_PluginDescription.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_opengl/opengl/juce_OpenGLTexture.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_opengl/utils/juce_OpenGLAppComponent.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_formats/format/juce_AudioFormatWriter.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/javascript/juce_JSON.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/audio_io/juce_AudioDeviceManager.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/misc/juce_LiveConstantEditor.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/native/juce_mac_SystemStats.mm" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_formats/codecs/juce_WavAudioFormat.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_video/native/juce_mac_QuickTimeMovieComponent.mm" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/contexts/juce_GraphicsContext.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/effects/juce_FFT.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/juce_audio_devices.h" />
@@ -3829,6 +3586,7 @@
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/native/juce_win32_AudioCDReader.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/fonts/juce_GlyphArrangement.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/midi/juce_MidiKeyboardState.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_data_structures/values/juce_Value.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/native/juce_mac_MainMenu.mm" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/geometry/juce_AffineTransform.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/network/juce_Socket.h" />
@@ -3839,17 +3597,15 @@
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/midi_io/juce_MidiOutput.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/misc/juce_Result.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/midi/juce_MidiKeyboardState.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/commands/juce_ApplicationCommandManager.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/keyboard/juce_ModifierKeys.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/misc/juce_SplashScreen.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/filebrowser/juce_FilenameComponent.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/logging/juce_FileLogger.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/filebrowser/juce_FileBrowserListener.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_opengl/opengl/juce_OpenGLContext.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/juce_module_info" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/buttons/juce_Button.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/native/juce_mac_CarbonViewWrapperComponent.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/drawables/juce_DrawableComposite.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_opengl/opengl/juce_OpenGLGraphicsContext.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/containers/juce_Array.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/time/juce_PerformanceCounter.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/native/juce_mac_Fonts.mm" />

@@ -20,6 +20,14 @@ void DiauproTestProcessor::localProcess(AudioSampleBuffer &buffer, MidiBuffer &m
     bool hasEvent;
     int nextMidiEventPosition = -1;
 
+
+    Logger::writeToLog("Midi Dump:");
+    for(int i = 0; i < midiMessages.data.size(); i++)
+    {
+        Logger::writeToLog(String::formatted("  %d", midiMessages.data[i]));
+    }
+    Logger::writeToLog("End Midi Dump:");
+
     while(midiEventIterator.getNextEvent(nextMidiEvent, nextMidiEventPosition))
     {
         if(nextMidiEvent.isNoteOnOrOff())

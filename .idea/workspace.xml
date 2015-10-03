@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3aa37274-6c16-4420-9e4a-344a6d41b9d0" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/TestProcessorNode/JuceLibraryCode/modules/juce_cryptography/juce_cryptography.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/TestProcessorNode/JuceLibraryCode/modules/juce_opengl/juce_opengl.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/TestProcessorNode/JuceLibraryCode/modules/juce_video/juce_video.h" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestProcessorNode/JuceLibraryCode/AppConfig.h" afterPath="$PROJECT_DIR$/TestProcessorNode/JuceLibraryCode/AppConfig.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestProcessorNode/JuceLibraryCode/JuceHeader.h" afterPath="$PROJECT_DIR$/TestProcessorNode/JuceLibraryCode/JuceHeader.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestProcessorNode/Builds/LinuxMakefile/Makefile" afterPath="$PROJECT_DIR$/TestProcessorNode/Builds/LinuxMakefile/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestProcessorNode/TestProcessorNode.jucer" afterPath="$PROJECT_DIR$/TestProcessorNode/TestProcessorNode.jucer" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestProcessorNode/Builds/MacOSX/TestProcessorNode.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/TestProcessorNode/Builds/MacOSX/TestProcessorNode.xcodeproj/project.pbxproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestProcessorNode/Source/DiauproTestProcessor.cpp" afterPath="$PROJECT_DIR$/TestProcessorNode/Source/DiauproTestProcessor.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestProcessorNode/Builds/MacOSX/.idea/MacOSX.iml" afterPath="$PROJECT_DIR$/TestProcessorNode/Builds/MacOSX/.idea/MacOSX.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestProcessorNode/Builds/MacOSX/.idea/workspace.xml" afterPath="$PROJECT_DIR$/TestProcessorNode/Builds/MacOSX/.idea/workspace.xml" />
     </list>
     <ignored path="utilities.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -433,12 +428,6 @@
       <option name="number" value="Default" />
       <updated>1440757148412</updated>
     </task>
-    <task id="LOCAL-00004" summary="zeroconf basically finished">
-      <created>1441280588428</created>
-      <option name="number" value="00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1441280588428</updated>
-    </task>
     <task id="LOCAL-00005" summary="adding audio handling classes">
       <created>1441296370630</created>
       <option name="number" value="00005" />
@@ -727,7 +716,13 @@
       <option name="project" value="LOCAL" />
       <updated>1443878907955</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="fixing linux paths">
+      <created>1443880988000</created>
+      <option name="number" value="00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1443880988000</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -789,7 +784,8 @@
     <MESSAGE value="fixing zeroconf manager, more robust browsing and resolving, tighter concurrency," />
     <MESSAGE value="testing vco" />
     <MESSAGE value="adding consolidated application tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding consolidated application tests" />
+    <MESSAGE value="fixing linux paths" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing linux paths" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
