@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3aa37274-6c16-4420-9e4a-344a6d41b9d0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestProcessprMaster/Builds/LinuxMakefile/Makefile" afterPath="$PROJECT_DIR$/TestProcessprMaster/Builds/LinuxMakefile/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestProcessprMaster/TestProcessprMaster.jucer" afterPath="$PROJECT_DIR$/TestProcessprMaster/TestProcessprMaster.jucer" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="utilities.iws" />
@@ -459,12 +457,6 @@
       <option name="number" value="Default" />
       <updated>1440757148412</updated>
     </task>
-    <task id="LOCAL-00009" summary="test modular audio processor added&#10;this will be subclassed into a networkable audio processor">
-      <created>1442422180802</created>
-      <option name="number" value="00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1442422180802</updated>
-    </task>
     <task id="LOCAL-00010" summary="audio processor node added">
       <created>1442751751822</created>
       <option name="number" value="00010" />
@@ -753,7 +745,13 @@
       <option name="project" value="LOCAL" />
       <updated>1443887001753</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="deeper midi inspection">
+      <created>1443887057544</created>
+      <option name="number" value="00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1443887057544</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="ToolWindowManager">
