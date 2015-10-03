@@ -13,15 +13,7 @@
 
 DiauproMessage::DiauproMessage(int initialSize, bool initializeToZero) : data(initialSize, initializeToZero) {
 
-    this->header.audioDataSize = 0;
-    this->header.midiDataSize = 0;
-    this->header.numChannels = 0;
-    this->header.numSamples = 0;
-    this->header.sequenceNumber = 0;
-    this->header.sampleData = nullptr;
-    this->header.midiData = nullptr;
-    this->header.stateData = nullptr;
-    this->header.sampleRate = 0;
+    this->clear();
 }
 
 int DiauproMessage::readFromSocket(DatagramSocket *sock) {
@@ -152,4 +144,16 @@ double DiauproMessage::getSampleRate() {
 
 void DiauproMessage::setSampleRate(double rate) {
     this->header.sampleRate = rate;
+}
+
+void DiauproMessage::clear() {
+    this->header.audioDataSize = 0;
+    this->header.midiDataSize = 0;
+    this->header.numChannels = 0;
+    this->header.numSamples = 0;
+    this->header.sequenceNumber = 0;
+    this->header.sampleData = nullptr;
+    this->header.midiData = nullptr;
+    this->header.stateData = nullptr;
+    this->header.sampleRate = 0;
 }

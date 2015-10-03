@@ -2,8 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3aa37274-6c16-4420-9e4a-344a6d41b9d0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestProcessorNode/Source/DiauproTestProcessor.cpp" afterPath="$PROJECT_DIR$/TestProcessorNode/Source/DiauproTestProcessor.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestProcessorNode/Builds/MacOSX/.idea/MacOSX.iml" afterPath="$PROJECT_DIR$/TestProcessorNode/Builds/MacOSX/.idea/MacOSX.iml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestProcessprMaster/JuceLibraryCode/modules/juce_opengl/juce_opengl.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TestProcessprMaster/JuceLibraryCode/modules/juce_video/juce_video.h" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestProcessprMaster/JuceLibraryCode/AppConfig.h" afterPath="$PROJECT_DIR$/TestProcessprMaster/JuceLibraryCode/AppConfig.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DiauproMessage/Source/DiauproMessage.cpp" afterPath="$PROJECT_DIR$/DiauproMessage/Source/DiauproMessage.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DiauproMessage/Source/DiauproMessage.h" afterPath="$PROJECT_DIR$/DiauproMessage/Source/DiauproMessage.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DiauproMessage/DiauproMessage.jucer" afterPath="$PROJECT_DIR$/DiauproMessage/DiauproMessage.jucer" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproProcessor.cpp" afterPath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproProcessor.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproProcessor.h" afterPath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproProcessor.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestProcessprMaster/JuceLibraryCode/JuceHeader.h" afterPath="$PROJECT_DIR$/TestProcessprMaster/JuceLibraryCode/JuceHeader.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DiauproMessage/Builds/LinuxMakefile/Makefile" afterPath="$PROJECT_DIR$/DiauproMessage/Builds/LinuxMakefile/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestProcessprMaster/Builds/LinuxMakefile/Makefile" afterPath="$PROJECT_DIR$/TestProcessprMaster/Builds/LinuxMakefile/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestProcessprMaster/TestProcessprMaster.jucer" afterPath="$PROJECT_DIR$/TestProcessprMaster/TestProcessprMaster.jucer" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestProcessorNode/Builds/MacOSX/.idea/workspace.xml" afterPath="$PROJECT_DIR$/TestProcessorNode/Builds/MacOSX/.idea/workspace.xml" />
     </list>
@@ -109,7 +119,7 @@
       <file leaf-file-name="Main.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AudioProcessorNode/Source/Main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7223114">
+            <state vertical-scroll-proportion="0.8035714">
               <caret line="30" column="52" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
               <folding />
             </state>
@@ -164,8 +174,8 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1680" />
-    <option name="height" value="946" />
+    <option name="width" value="1424" />
+    <option name="height" value="883" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -427,12 +437,6 @@
       <created>1440757148412</created>
       <option name="number" value="Default" />
       <updated>1440757148412</updated>
-    </task>
-    <task id="LOCAL-00005" summary="adding audio handling classes">
-      <created>1441296370630</created>
-      <option name="number" value="00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1441296370630</updated>
     </task>
     <task id="LOCAL-00006" summary="adding audio handling classes">
       <created>1441296387911</created>
@@ -722,12 +726,18 @@
       <option name="project" value="LOCAL" />
       <updated>1443880988000</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="deeper midi inspection">
+      <created>1443882987862</created>
+      <option name="number" value="00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1443882987862</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="946" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1424" height="883" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287858" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -735,11 +745,11 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22893773" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27134588" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23770492" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25663716" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -785,7 +795,8 @@
     <MESSAGE value="testing vco" />
     <MESSAGE value="adding consolidated application tests" />
     <MESSAGE value="fixing linux paths" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixing linux paths" />
+    <MESSAGE value="deeper midi inspection" />
+    <option name="LAST_COMMIT_MESSAGE" value="deeper midi inspection" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1200,7 +1211,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AudioProcessorNode/Source/Main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7223114">
+        <state vertical-scroll-proportion="0.8035714">
           <caret line="30" column="52" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
           <folding />
         </state>

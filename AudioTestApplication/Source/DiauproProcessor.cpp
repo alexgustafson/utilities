@@ -88,6 +88,7 @@ void DiauproProcessor::processBlock(AudioSampleBuffer &buffer, MidiBuffer &midiM
         }
 
         buffer.clear();
+        message->clear();
 
         bytesRead = 0;
         if (socket->waitUntilReady(true, maxWaitTimeMs)) {
@@ -240,4 +241,8 @@ bool DiauproProcessor::hasActiveNetworkConnection() {
         return true;
     }
     return false;
+}
+
+DiauproMessage *DiauproProcessor::getCurrentMessage() {
+    return this->message;
 }

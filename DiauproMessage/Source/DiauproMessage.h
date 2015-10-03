@@ -56,6 +56,8 @@ public:
 
     size_t getSize();
 
+    void clear();
+
 private:
 
     struct diapro_header {

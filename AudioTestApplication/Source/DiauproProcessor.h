@@ -85,6 +85,7 @@ public:
 
     bool hasActiveNetworkConnection();
 
+    DiauproMessage* getCurrentMessage();
 
 private:
 
