@@ -74,7 +74,7 @@ void DiauproProcessor::processBlock(AudioSampleBuffer &buffer, MidiBuffer &midiM
         Logger::writeToLog("has midi sent");
     }
 
-    if (activeNode != nullptr) {
+    if (hasActiveNetworkConnection()) {
         if (socket->waitUntilReady(false, maxWaitTimeMs)) {
             message->setAudioData(&buffer);
             message->setMidiData(&midiMessages);
@@ -232,4 +232,12 @@ void DiauproProcessor::handleFileDescriptor(int fileDescriptor) {
     message->setAudioData(&audioSampleBuffer);
 
     socket->write(targetHost, targetPort, message->getData(), message->getSize());
+}
+
+bool DiauproProcessor::hasActiveNetworkConnection() {
+    if (activeNode != nullptr)
+    {
+        return true;
+    }
+    return false;
 }

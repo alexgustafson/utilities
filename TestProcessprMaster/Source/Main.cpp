@@ -9,26 +9,18 @@
 */
 
 #include "../JuceLibraryCode/JuceHeader.h"
-#include "DiauproTestProcessor"
-#include "MidiUtiliy.h"
 
+#include "ConsolidatedTests.h"
 
 
 //==============================================================================
 int main (int argc, char* argv[])
 {
 
-    Monitor monitor;
-    monitor.startMonitoring();
-    
-    MidiMessageCollector *midiCollector;
-    MidiUtility midiUtility;
-    
-    midiCollector = midiUtility.getMidiMessageCollector();
-    
-    DiauproTestProcessor *diauproTestProcessor;
-    diauproTestProcessor = new DiauproTestProcessor();
-    diauproTestProcessor->setMonitor(&monitor);
+    static ConsolidatedTests consolidatedTests;
+    UnitTestRunner runner;
+    runner.setAssertOnFailure(false);
+    runner.runAllTests();
 
     
     return 0;

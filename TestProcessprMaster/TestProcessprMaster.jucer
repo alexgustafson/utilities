@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<JUCERPROJECT id="nNSVRx" name="TestProcessprMaster" projectType="consoleapp"
+<JUCERPROJECT id="nNSVRx" name="TestProcessorMaster" projectType="consoleapp"
               version="1.0.0" bundleIdentifier="com.yourcompany.TestProcessprMaster"
               includeBinaryInAppConfig="1" jucerVersion="3.2.0">
-  <MAINGROUP id="RdrDLt" name="TestProcessprMaster">
+  <MAINGROUP id="RdrDLt" name="TestProcessorMaster">
     <GROUP id="{DB374EC1-DDA3-635C-06B2-7CF3107BBCF1}" name="Source">
+      <FILE id="CgOsbA" name="DiauproProcessor.cpp" compile="1" resource="0"
+            file="../AudioTestApplication/Source/DiauproProcessor.cpp"/>
+      <FILE id="yyK8XR" name="DiauproProcessor.h" compile="0" resource="0"
+            file="../AudioTestApplication/Source/DiauproProcessor.h"/>
+      <FILE id="m70Foi" name="ConsolidatedTests.cpp" compile="1" resource="0"
+            file="../TestProcessorNode/Source/ConsolidatedTests.cpp"/>
+      <FILE id="WPd8ND" name="ConsolidatedTests.h" compile="0" resource="0"
+            file="../TestProcessorNode/Source/ConsolidatedTests.h"/>
       <FILE id="O64jmP" name="DiauproTestProcessor.cpp" compile="1" resource="0"
             file="../TestProcessorNode/Source/DiauproTestProcessor.cpp"/>
       <FILE id="PhBzlV" name="DiauproTestProcessor.h" compile="0" resource="0"
@@ -27,9 +35,9 @@
   <EXPORTFORMATS>
     <XCODE_MAC targetFolder="Builds/MacOSX">
       <CONFIGURATIONS>
-        <CONFIGURATION name="Debug" osxSDK="default" osxCompatibility="default" osxArchitecture="default"
+        <CONFIGURATION name="Debug" osxSDK="default" osxCompatibility="10.7 SDK" osxArchitecture="default"
                        isDebug="1" optimisation="1" targetName="TestProcessprMaster"/>
-        <CONFIGURATION name="Release" osxSDK="default" osxCompatibility="default" osxArchitecture="default"
+        <CONFIGURATION name="Release" osxSDK="default" osxCompatibility="10.7 SDK" osxArchitecture="default"
                        isDebug="0" optimisation="3" targetName="TestProcessprMaster"/>
       </CONFIGURATIONS>
       <MODULEPATHS>

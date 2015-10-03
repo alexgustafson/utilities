@@ -13,8 +13,7 @@
 #include "DiauproTestProcessor.h"
 
 //==============================================================================
-int main (int argc, char* argv[])
-{
+int main(int argc, char *argv[]) {
 
     Monitor monitor;
     monitor.startMonitoring();

@@ -24,7 +24,7 @@ void DiauproTestProcessor::localProcess(AudioSampleBuffer &buffer, MidiBuffer &m
     {
         if(nextMidiEvent.isNoteOnOrOff())
         {
-            Logger::writeToLog(String::formatted("Midi Note Found: nr : %d vel: %d", nextMidiEvent.getNoteNumber(), nextMidiEvent.getFloatVelocity()));
+            Logger::writeToLog(String::formatted("Midi Note Found:\n channel: %d\n nr : %d\n vel: %d", nextMidiEvent.getChannel(), nextMidiEvent.getNoteNumber(), nextMidiEvent.getFloatVelocity()));
         }
     }
 

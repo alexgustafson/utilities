@@ -83,13 +83,15 @@ public:
 
     void handleFileDescriptor(int fileDescriptor);
 
+    bool hasActiveNetworkConnection();
+
 
 private:
 
     ScopedPointer<DatagramSocket> socket;
     ScopedPointer<DiauproMessage> message;
     ZeroConfService *activeNode;
-    ZeroConfManager *zManager;
+    ScopedPointer<ZeroConfManager> zManager;
     Monitor *monitor;
     int maxWaitTimeMs;
     int bytesRead;
