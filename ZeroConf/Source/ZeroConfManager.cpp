@@ -46,6 +46,7 @@ static void zeroBrowseCallback(DNSServiceRef sdRef,
     service->setReplyDomain(replyDomain);
     service->status = ZeroConfService::ResultStatus::browseResult;
 
+    if(addString.equalsIgnoreCase("ADD")) Logger::writeToLog("Adding service");
     zManager->addService(service);
 
 }
@@ -211,6 +212,7 @@ void ZeroConfManager::handleFileDescriptor(int fileDescriptor)
     if (this->browseServiceRef && fileDescriptor == DNSServiceRefSockFD(this->browseServiceRef)) {
 
         //Socket for browserServiceRef was triggered
+        Logger::writeToLog("Browser service was triggered");
 
         err = DNSServiceProcessResult(this->browseServiceRef);
         

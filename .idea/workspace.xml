@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3aa37274-6c16-4420-9e4a-344a6d41b9d0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ZeroConf/Source/ZeroConfManager.cpp" afterPath="$PROJECT_DIR$/ZeroConf/Source/ZeroConfManager.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ZeroConf/Source/ZeroConfManager.h" afterPath="$PROJECT_DIR$/ZeroConf/Source/ZeroConfManager.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestProcessorNode/Builds/MacOSX/.idea/workspace.xml" afterPath="$PROJECT_DIR$/TestProcessorNode/Builds/MacOSX/.idea/workspace.xml" />
     </list>
@@ -460,12 +459,6 @@
       <option name="number" value="Default" />
       <updated>1440757148412</updated>
     </task>
-    <task id="LOCAL-00011" summary="audio processor node added">
-      <created>1442757568311</created>
-      <option name="number" value="00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1442757568311</updated>
-    </task>
     <task id="LOCAL-00012" summary="audio processor node added">
       <created>1442757756857</created>
       <option name="number" value="00012" />
@@ -754,7 +747,13 @@
       <option name="project" value="LOCAL" />
       <updated>1443898676313</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="deeper midi inspection">
+      <created>1443899385209</created>
+      <option name="number" value="00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1443899385209</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="ToolWindowManager">
