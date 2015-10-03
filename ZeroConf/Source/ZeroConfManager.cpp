@@ -53,7 +53,7 @@ static void zeroBrowseCallback(DNSServiceRef sdRef,
     service->status = ZeroConfService::ResultStatus::browseResult;
 
     Logger::writeToLog("addString"  + addString);
-    Logger::writeToLog("moreString"  + addString);
+    Logger::writeToLog("moreString"  + moreString);
 
     Logger::writeToLog(String::formatted("Serivce Name: %s",  serviceName));
     Logger::writeToLog(String::formatted("RegType: %s",  regtype));
@@ -228,7 +228,14 @@ void ZeroConfManager::handleFileDescriptor(int fileDescriptor)
         Logger::writeToLog("Browser service was triggered");
 
         err = DNSServiceProcessResult(this->browseServiceRef);
-        
+        if(err)
+        {
+            Logger::writeToLog("Could not process result");
+            fprintf(stderr, "DNSServiceProcessResult returned %d\n", err);
+            return;
+        }
+
+
         for (int i = 0; i < serviceList.size(); i++) {
             service = serviceList.getUnchecked(i) ;
             if (service->getAddString().equalsIgnoreCase("ADD")) {
