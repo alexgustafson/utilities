@@ -26,7 +26,7 @@ public:
 
     int readFromSocket(DatagramSocket *sock, String &targetHost, int &targetPort);
 
-    uint64 getSequeceNumber();
+    uint16 getSequeceNumber();
 
     uint16 getNumberSamples();
 
@@ -36,7 +36,7 @@ public:
 
     void setSampleRate(double rate);
 
-    void setSequenceNumber(uint64 sequenceNumber);
+    void setSequenceNumber(uint16 sequenceNumber);
 
     void setAudioData(AudioSampleBuffer *buffer);
 
@@ -63,7 +63,7 @@ public:
 private:
 
     struct diapro_header {
-        uint64 sequenceNumber;
+        uint16 sequenceNumber;
         uint16 numSamples;
         uint16 numChannels;
         double sampleRate;

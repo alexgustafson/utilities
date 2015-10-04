@@ -35,7 +35,7 @@ int DiauproMessage::readFromSocket(DatagramSocket *sock, String &targetHost, int
 }
 
 
-uint64 DiauproMessage::getSequeceNumber() {
+uint16 DiauproMessage::getSequeceNumber() {
     return this->header.sequenceNumber;
 }
 
@@ -55,7 +55,7 @@ void DiauproMessage::setNumberSamples(uint16 numSamples) {
     this->header.numSamples = numSamples;
 }
 
-void DiauproMessage::setSequenceNumber(uint64 sequenceNumber) {
+void DiauproMessage::setSequenceNumber(uint16 sequenceNumber) {
     this->header.sequenceNumber = sequenceNumber;
 }
 
