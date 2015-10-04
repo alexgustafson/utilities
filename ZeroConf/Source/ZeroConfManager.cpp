@@ -277,7 +277,6 @@ void ZeroConfManager::handleFileDescriptor(int fileDescriptor)
                 
             }else if (service->getAddString().equalsIgnoreCase("REMOVE")){
                 
-                DNSServiceRefDeallocate(*service->sdRef);
                 serviceList.removeObject(service);
                 startThread();
             }

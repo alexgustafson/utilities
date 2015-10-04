@@ -23,8 +23,6 @@ void DiauproVCOProcessor::localProcess(AudioSampleBuffer &buffer, MidiBuffer &mi
         if(nextMidiEventCount < sampleNr)
         {
             hasEvent = midiEventIterator.getNextEvent(nextMidiEvent,nextMidiEventCount );
-            
-            Logger::writeToLog("vco received midi");
         }
 
         if(hasEvent && nextMidiEventCount == sampleNr)
