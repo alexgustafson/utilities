@@ -1,4 +1,4 @@
-/*
+ /*
   ==============================================================================
 
     DiauproProcessor.cpp
@@ -99,7 +99,7 @@ void DiauproProcessor::processBlock(AudioSampleBuffer &buffer, MidiBuffer &midiM
 
             MidiBuffer::Iterator iterator(midiBuffer);
             MidiMessage tempMessage;
-            int sampleIndex;
+            int sampleIndex = 0;
             if (!midiBuffer.isEmpty()) {
                 Logger::writeToLog("has midi returned");
 

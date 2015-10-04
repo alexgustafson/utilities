@@ -28,16 +28,14 @@ void ConsolidatedTests::firstTest()
     MidiBuffer midiBuffer;
     midiBuffer.addEvent(MidiMessage::noteOn(1,1,(uint8) 2), 12);
 
-    Logger::writeToLog("Midi Dump:");
-    for(int i = 0; i < midiBuffer.data.size(); i++)
-    {
-        Logger::writeToLog(String::formatted("  %d", midiBuffer.data[i]));
-    }
-    Logger::writeToLog("End Midi Dump:");
 
     ScopedPointer<AudioSampleBuffer> buffer;
     buffer = new AudioSampleBuffer(1,22);
-    buffer->clear();
+    
+    for (int i = 0; i < buffer->getNumSamples(); i++) {
+        buffer->setSample(0, i, ((float)i) * 0.1f);
+    }
+    
 
     while (!diauproTestProcessor->hasActiveNetworkConnection())
     {

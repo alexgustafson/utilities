@@ -12,14 +12,17 @@
 
 void DiauproTestProcessor::localProcess(AudioSampleBuffer &buffer, MidiBuffer &midiMessages) {
     
-    Logger::writeToLog(String::formatted("Audio Channel Count: %d",buffer.getNumChannels()));
-    Logger::writeToLog(String::formatted("Audio Sample Count: %d",buffer.getNumSamples()));
+    for (int i = 0; i < buffer.getNumChannels(); i++) {
+        for (int j = 0; j < buffer.getNumSamples(); j++) {
+            Logger::writeToLog(String::formatted("sample %d %d value %f",i,j,buffer.getSample(i, j)));
+        }
+    }
     
     Logger::writeToLog(this->getCurrentMessage()->headerToString());
 
     MidiBuffer::Iterator midiEventIterator(midiMessages);
     MidiMessage nextMidiEvent;
-    bool hasEvent;
+
     int nextMidiEventPosition = -1;
 
 
