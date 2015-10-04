@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3aa37274-6c16-4420-9e4a-344a6d41b9d0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Monitor/Builds/MacOSX/Monitor.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/Monitor/Builds/MacOSX/Monitor.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ZeroConf/Builds/MacOSX/ZeroConf.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/ZeroConf/Builds/MacOSX/ZeroConf.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ZeroConf/Builds/MacOSX/build/Debug/ZeroConf" afterPath="$PROJECT_DIR$/ZeroConf/Builds/MacOSX/build/Debug/ZeroConf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Monitor/Source/Monitor.cpp" afterPath="$PROJECT_DIR$/Monitor/Source/Monitor.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Monitor/Source/Monitor.h" afterPath="$PROJECT_DIR$/Monitor/Source/Monitor.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ZeroConf/Source/ZeroConfManager.cpp" afterPath="$PROJECT_DIR$/ZeroConf/Source/ZeroConfManager.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -431,12 +427,6 @@
       <option name="number" value="Default" />
       <updated>1440757148412</updated>
     </task>
-    <task id="LOCAL-00022" summary="fixing paths in linux">
-      <created>1442822282724</created>
-      <option name="number" value="00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1442822282724</updated>
-    </task>
     <task id="LOCAL-00023" summary="fixing paths in linux">
       <created>1442822447649</created>
       <option name="number" value="00023" />
@@ -725,7 +715,13 @@
       <option name="project" value="LOCAL" />
       <updated>1443966467121</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="zeroconf fixed for linux">
+      <created>1443967558906</created>
+      <option name="number" value="00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1443967558906</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="ToolWindowManager">
