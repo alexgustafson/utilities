@@ -311,7 +311,7 @@ void ZeroConfManager::handleFileDescriptor(int fileDescriptor)
         
         if (error == kDNSServiceErr_NoError) {
 
-            monitor->removeFileDescriptorAndListener(fileDescriptor);
+            monitor->removeFileDescriptorAndListener(fileDescriptor, true);
             DNSServiceRefDeallocate(*service->sdRef);
             service->sdRef = ref;
             
@@ -326,7 +326,7 @@ void ZeroConfManager::handleFileDescriptor(int fileDescriptor)
     }else if(service->status == ZeroConfService::ResultStatus::queryResult)
     {
         Logger::writeToLog("Resolving service ip");
-        monitor->removeFileDescriptorAndListener(fileDescriptor);
+        monitor->removeFileDescriptorAndListener(fileDescriptor, true);
         DNSServiceRefDeallocate(*service->sdRef);
         startThread();
 
@@ -338,6 +338,8 @@ void ZeroConfManager::handleFileDescriptor(int fileDescriptor)
     }
 
     Logger::writeToLog("Should not arrive here");
+    monitor->removeFileDescriptorAndListener(fileDescriptor, true);
+    
 }
 
 int ZeroConfManager::getBrowseServiceFileDescriptor()

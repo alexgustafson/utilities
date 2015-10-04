@@ -121,7 +121,7 @@ void Monitor::addFileDescriptorAndListener(int fileDescriptor, FileDescriptorLis
     Logger::writeToLog(String::formatted("registered listener %s for fd %d on port %d | %s",listener->getFileDescriptorListenerName().toRawUTF8(),fileDescriptor, ntohs (sin_addr.sin_port), debugMessage.toRawUTF8()));
 }
 
-void Monitor::removeFileDescriptorAndListener(int fileDescriptor)
+void Monitor::removeFileDescriptorAndListener(int fileDescriptor, bool shoudlClose)
 {
     const ScopedLock myScopedLock (lock);
     
@@ -138,6 +138,10 @@ void Monitor::removeFileDescriptorAndListener(int fileDescriptor)
     getsockname (fileDescriptor, (struct sockaddr*) &sin_addr, &len);
     
     Logger::writeToLog(String::formatted("removed listener for port %d", ntohs (sin_addr.sin_port)));
+    
+    if (shoudlClose) {
+        close(fileDescriptor);
+    }
     
 }
 

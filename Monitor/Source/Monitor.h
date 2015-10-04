@@ -39,7 +39,7 @@ public:
     
     void initializeControlSocket();
     void addFileDescriptorAndListener(int fileDescriptor, FileDescriptorListener* listener, String debugMessage = "");
-    void removeFileDescriptorAndListener(int fileDescriptor);
+    void removeFileDescriptorAndListener(int fileDescriptor, bool shoudlClose=false);
     void startMonitoring();
     void stop();
     
