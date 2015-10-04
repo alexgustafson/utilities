@@ -94,6 +94,8 @@ static void zeroRegisterCallback(DNSServiceRef sdRef,
                                 void *context)
 {
     
+    Logger::writeToLog(String::formatted("service %s %s registered", serviceName, regtype));
+    
     ZeroConfService *service = new ZeroConfService();
     ZeroConfManager* zManager = (ZeroConfManager*)context;
     
@@ -246,6 +248,10 @@ void ZeroConfManager::handleFileDescriptor(int fileDescriptor)
             service = serviceList.getUnchecked(i) ;
             if (service->getAddString().equalsIgnoreCase("ADD") && service->status == ZeroConfService::ResultStatus::browseResult) {
                 
+                if (service->status == ZeroConfService::ResultStatus::browseComplete) {
+                    return;
+                }
+                
                 DNSServiceRef *ref = (DNSServiceRef *)calloc (1, sizeof(DNSServiceRef));
                 
                 error = DNSServiceResolve(ref,
@@ -258,7 +264,7 @@ void ZeroConfManager::handleFileDescriptor(int fileDescriptor)
                                           (void*)service);
                 
                 if (error == kDNSServiceErr_NoError) {
-                    
+                    service->status = ZeroConfService::ResultStatus::browseComplete;
                     service->sdRef = ref;
                     monitor->addFileDescriptorAndListener(DNSServiceRefSockFD(*service->sdRef), this, String::formatted("adding service to resolve: %s",service->getServiceName().toRawUTF8()));
                     

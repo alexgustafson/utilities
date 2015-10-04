@@ -22,6 +22,7 @@ public:
     {
         initResult,
         browseResult,
+        browseComplete,
         resolveResult,
         queryResult,
         registerResult
