@@ -40,7 +40,8 @@ public:
             for (int i = 0; i < serviceList->size(); i++) {
                 
                 ZeroConfService *service = serviceList->getUnchecked(i);
-                Logger::writeToLog(String::formatted("Found service %s %s %s:%d",service->getRegType().toRawUTF8(), service->getServiceName().toRawUTF8(),service->ip.toRawUTF8(), service->getPort() ));
+                String status = service->status == ZeroConfService::ResultStatus::queryResult ? "final" : "unfinished";
+                Logger::writeToLog(String::formatted("Found service %s %s %s:%d %s",service->getRegType().toRawUTF8(), service->getServiceName().toRawUTF8(),service->ip.toRawUTF8(), service->getPort(), status.toRawUTF8() ));
             }
         };
 

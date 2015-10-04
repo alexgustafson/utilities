@@ -2,6 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3aa37274-6c16-4420-9e4a-344a6d41b9d0" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/Builds/MacOSX/AudioTestApplication.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/AudioTestApplication/Builds/MacOSX/AudioTestApplication.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ZeroConf/Builds/MacOSX/ZeroConf.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/ZeroConf/Builds/MacOSX/ZeroConf.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ZeroConf/Builds/MacOSX/build/Debug/ZeroConf" afterPath="$PROJECT_DIR$/ZeroConf/Builds/MacOSX/build/Debug/ZeroConf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproProcessor.cpp" afterPath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproProcessor.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Monitor/Source/Monitor.cpp" afterPath="$PROJECT_DIR$/Monitor/Source/Monitor.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ZeroConf/Source/ZeroConfManager.cpp" afterPath="$PROJECT_DIR$/ZeroConf/Source/ZeroConfManager.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ZeroConf/Source/ZeroConfManager.h" afterPath="$PROJECT_DIR$/ZeroConf/Source/ZeroConfManager.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ZeroConf/Source/ZeroConfTests.cpp" afterPath="$PROJECT_DIR$/ZeroConf/Source/ZeroConfTests.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ZeroConf/Source/ZeroConfTests.h" afterPath="$PROJECT_DIR$/ZeroConf/Source/ZeroConfTests.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="utilities.iws" />
@@ -202,38 +211,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="utilities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utilities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utilities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestProcessprMaster" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utilities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utilities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestProcessprMaster" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Source" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -456,12 +433,6 @@
       <created>1440757148412</created>
       <option name="number" value="Default" />
       <updated>1440757148412</updated>
-    </task>
-    <task id="LOCAL-00019" summary="add unistd and fcntl headers to monitor">
-      <created>1442776154622</created>
-      <option name="number" value="00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1442776154622</updated>
     </task>
     <task id="LOCAL-00020" summary="add unistd and fcntl headers to monitor">
       <created>1442776291483</created>
@@ -751,7 +722,13 @@
       <option name="project" value="LOCAL" />
       <updated>1443960068999</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="monitor fixes on osx">
+      <created>1443964504569</created>
+      <option name="number" value="00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1443964504569</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -815,7 +792,8 @@
     <MESSAGE value="adding consolidated application tests" />
     <MESSAGE value="fixing linux paths" />
     <MESSAGE value="deeper midi inspection" />
-    <option name="LAST_COMMIT_MESSAGE" value="deeper midi inspection" />
+    <MESSAGE value="monitor fixes on osx" />
+    <option name="LAST_COMMIT_MESSAGE" value="monitor fixes on osx" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />

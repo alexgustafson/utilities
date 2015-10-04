@@ -194,7 +194,7 @@ void DiauproProcessor::handleZeroConfUpdate(OwnedArray<ZeroConfService, Critical
             
             service =serviceList->getUnchecked(i);
             
-            if (!service->isTaken)
+            if (!service->isTaken && service->status == ZeroConfService::ResultStatus::queryResult)
             {
                 serviceList->getUnchecked(i)->isTaken = true;
                 service = serviceList->getUnchecked(i);

@@ -113,6 +113,7 @@ void Monitor::addFileDescriptorAndListener(int fileDescriptor, FileDescriptorLis
         String msg("trigger update to monitor list");
         controlSocket->write("0.0.0.0", listenSocket->getBoundPort(), msg.toRawUTF8(), sizeof(msg.toRawUTF8()));
     }
+    
     struct sockaddr_in sin_addr;
     socklen_t len = sizeof (sin_addr);
     getsockname (fileDescriptor, (struct sockaddr*) &sin_addr, &len);
@@ -128,13 +129,12 @@ void Monitor::removeFileDescriptorAndListener(int fileDescriptor)
     fileDescriptors.removeFirstMatchingValue(fileDescriptor);
     
     if (fileDescriptor != control_listener) {
-        //sendto(control_send, "reset select", 13 * sizeof(char), 0, &control_address, len_control_address);
         String msg("trigger update to monitor list");
         controlSocket->write("0.0.0.0", listenSocket->getBoundPort(), msg.toRawUTF8(), sizeof(msg.toRawUTF8()));
     }
+    
     struct sockaddr_in sin_addr;
     socklen_t len = sizeof (sin_addr);
-    
     getsockname (fileDescriptor, (struct sockaddr*) &sin_addr, &len);
     
     Logger::writeToLog(String::formatted("removed listener for port %d", ntohs (sin_addr.sin_port)));
