@@ -70,6 +70,8 @@ AudioProcessorEditor *DiauproProcessor::createEditor() {
 
 void DiauproProcessor::processBlock(AudioSampleBuffer &buffer, MidiBuffer &midiMessages) {
 
+    const double callbackStartTime = Time::getMillisecondCounterHiRes();
+    
     if (!midiMessages.isEmpty()) {
         Logger::writeToLog("has midi sent");
     }
@@ -116,6 +118,12 @@ void DiauproProcessor::processBlock(AudioSampleBuffer &buffer, MidiBuffer &midiM
         localProcess(buffer, midiMessages);
 
     }
+    
+    const double msTaken = Time::getMillisecondCounterHiRes() - callbackStartTime;
+    const double filterAmount = 0.2;
+    processTimeMs += filterAmount * (msTaken - processTimeMs);
+    Logger::writeToLog(String::formatted("process time: %f", processTimeMs));
+    
 }
 
 void DiauproProcessor::localProcess(AudioSampleBuffer &buffer, MidiBuffer &midiMessages) {

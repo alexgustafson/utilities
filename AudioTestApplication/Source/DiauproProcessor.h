@@ -99,6 +99,7 @@ private:
     int targetPort;
     String targetHost;
     double sampleRate;
+    double processTimeMs;
                              
     AudioSampleBuffer audioSampleBuffer;
     MidiBuffer midiBuffer;
