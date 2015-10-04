@@ -177,7 +177,7 @@ void ZeroConfManager::registerService(ZeroConfService *service)
                                (void*)this);
     if (error == kDNSServiceErr_NoError) {
         service->sdRef = &registerServiceRef;
-        monitor->addFileDescriptorAndListener(this->getRegisterServiceFileDescriptor(), this);
+        monitor->addFileDescriptorAndListener(this->getRegisterServiceFileDescriptor(), this, String::formatted("register service: %s",service->getServiceName().toRawUTF8()));
     }else {
         fprintf(stderr, "DNSServiceRegister returned %d\n", error);
     }
@@ -203,7 +203,7 @@ void ZeroConfManager::browseService(const char * regType)
     
     if (error == kDNSServiceErr_NoError) {
         Logger::writeToLog(String::formatted("Browsing for service: %s", regType));
-        monitor->addFileDescriptorAndListener(this->getBrowseServiceFileDescriptor(), this);
+        monitor->addFileDescriptorAndListener(this->getBrowseServiceFileDescriptor(), this, String::formatted("browse for service: %s",regType));
         
     }else {
         fprintf(stderr, "DNSServiceDiscovery returned %d\n", error);
@@ -260,7 +260,7 @@ void ZeroConfManager::handleFileDescriptor(int fileDescriptor)
                 if (error == kDNSServiceErr_NoError) {
                     
                     service->sdRef = ref;
-                    monitor->addFileDescriptorAndListener(DNSServiceRefSockFD(*service->sdRef), this);
+                    monitor->addFileDescriptorAndListener(DNSServiceRefSockFD(*service->sdRef), this, String::formatted("adding service to resolve: %s",service->getServiceName().toRawUTF8()));
                     
                 }else{
                     Logger::writeToLog("Could not set DNSServiceResolve()");
@@ -315,7 +315,7 @@ void ZeroConfManager::handleFileDescriptor(int fileDescriptor)
             DNSServiceRefDeallocate(*service->sdRef);
             service->sdRef = ref;
             
-            monitor->addFileDescriptorAndListener(DNSServiceRefSockFD(*service->sdRef), this);
+            monitor->addFileDescriptorAndListener(DNSServiceRefSockFD(*service->sdRef), this, String::formatted("adding record to query: %s",service->getServiceName().toRawUTF8()));
             
         }else{
             fprintf(stderr, "DNSServiceResolve returned %d\n", error);

@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3aa37274-6c16-4420-9e4a-344a6d41b9d0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/Builds/MacOSX/AudioTestApplication.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/AudioTestApplication/Builds/MacOSX/AudioTestApplication.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Monitor/Builds/MacOSX/Monitor.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/Monitor/Builds/MacOSX/Monitor.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ZeroConf/Builds/MacOSX/ZeroConf.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/ZeroConf/Builds/MacOSX/ZeroConf.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ZeroConf/Builds/MacOSX/build/Debug/ZeroConf" afterPath="$PROJECT_DIR$/ZeroConf/Builds/MacOSX/build/Debug/ZeroConf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproProcessor.cpp" afterPath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproProcessor.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Monitor/Source/Monitor.cpp" afterPath="$PROJECT_DIR$/Monitor/Source/Monitor.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Monitor/Source/Monitor.h" afterPath="$PROJECT_DIR$/Monitor/Source/Monitor.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ZeroConf/Source/ZeroConfManager.cpp" afterPath="$PROJECT_DIR$/ZeroConf/Source/ZeroConfManager.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ZeroConf/Source/ZeroConfManager.h" afterPath="$PROJECT_DIR$/ZeroConf/Source/ZeroConfManager.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ZeroConf/Source/ZeroConfTests.cpp" afterPath="$PROJECT_DIR$/ZeroConf/Source/ZeroConfTests.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ZeroConf/Source/ZeroConfTests.h" afterPath="$PROJECT_DIR$/ZeroConf/Source/ZeroConfTests.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="utilities.iws" />
@@ -434,12 +431,6 @@
       <option name="number" value="Default" />
       <updated>1440757148412</updated>
     </task>
-    <task id="LOCAL-00020" summary="add unistd and fcntl headers to monitor">
-      <created>1442776291483</created>
-      <option name="number" value="00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1442776291483</updated>
-    </task>
     <task id="LOCAL-00021" summary="fixing paths in linux">
       <created>1442822188794</created>
       <option name="number" value="00021" />
@@ -728,7 +719,13 @@
       <option name="project" value="LOCAL" />
       <updated>1443964504569</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="zeroconf fixed for linux">
+      <created>1443965735944</created>
+      <option name="number" value="00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1443965735944</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -793,7 +790,8 @@
     <MESSAGE value="fixing linux paths" />
     <MESSAGE value="deeper midi inspection" />
     <MESSAGE value="monitor fixes on osx" />
-    <option name="LAST_COMMIT_MESSAGE" value="monitor fixes on osx" />
+    <MESSAGE value="zeroconf fixed for linux" />
+    <option name="LAST_COMMIT_MESSAGE" value="zeroconf fixed for linux" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />

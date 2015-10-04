@@ -100,7 +100,7 @@ void Monitor::run()
     }
 }
 
-void Monitor::addFileDescriptorAndListener(int fileDescriptor, FileDescriptorListener* listener)
+void Monitor::addFileDescriptorAndListener(int fileDescriptor, FileDescriptorListener* listener, String debugMessage)
 {
     // if this fails, you've passed an invalid fileDescriptor
     jassert(fileDescriptor > 0);
@@ -118,7 +118,7 @@ void Monitor::addFileDescriptorAndListener(int fileDescriptor, FileDescriptorLis
     socklen_t len = sizeof (sin_addr);
     getsockname (fileDescriptor, (struct sockaddr*) &sin_addr, &len);
     
-    Logger::writeToLog(String::formatted("registered listener %s for fd %d on port %d",listener->getFileDescriptorListenerName().toRawUTF8(),fileDescriptor, ntohs (sin_addr.sin_port)));
+    Logger::writeToLog(String::formatted("registered listener %s for fd %d on port %d | %s",listener->getFileDescriptorListenerName().toRawUTF8(),fileDescriptor, ntohs (sin_addr.sin_port), debugMessage.toRawUTF8()));
 }
 
 void Monitor::removeFileDescriptorAndListener(int fileDescriptor)

@@ -38,7 +38,7 @@ public:
     ~Monitor();
     
     void initializeControlSocket();
-    void addFileDescriptorAndListener(int fileDescriptor, FileDescriptorListener* listener);
+    void addFileDescriptorAndListener(int fileDescriptor, FileDescriptorListener* listener, String debugMessage = "");
     void removeFileDescriptorAndListener(int fileDescriptor);
     void startMonitoring();
     void stop();
