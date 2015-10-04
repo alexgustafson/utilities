@@ -25,7 +25,6 @@ void DiauproMessageTest::secondTest() {
     sendingSocket.bindToPort(0);
     recievingSocket.bindToPort(0);
 
-    uint16_t recievingPort = sendingSocket.getBoundPort();
 
     AudioSampleBuffer sourceBuffer(2, 20);
     AudioSampleBuffer destinationBuffer(2, 20);
@@ -35,7 +34,7 @@ void DiauproMessageTest::secondTest() {
     {
         for(int j = 0; j < sourceBuffer.getNumSamples(); j++)
         {
-            sourceBuffer.setSample(i, j, (float)i+1 * j );
+            sourceBuffer.setSample(i, j, ((float)j)*0.2f );
         }
     }
 
@@ -62,13 +61,13 @@ void DiauproMessageTest::secondTest() {
     expectEquals(destinationMessage->getNumberChannels(), (uint16)2);
     expectEquals(sourceMessage->getNumberSamples(), (uint16)20);
     expectEquals(destinationMessage->getNumberSamples(), (uint16)20);
-    expectEquals(destinationMessage->getSequeceNumber(), (uint64)221);
+    expectEquals(destinationMessage->getSequeceNumber(), (uint16)221);
 
     for(int i = 0; i < sourceBuffer.getNumChannels(); i++)
     {
         for(int j = 0; j < sourceBuffer.getNumSamples(); j++)
         {
-            expectEquals(sourceBuffer.getSample(i, j), destinationBuffer.getSample(i,j));
+            expectEquals(destinationBuffer.getSample(i,j), sourceBuffer.getSample(i, j));
         }
     }
 }
@@ -131,7 +130,7 @@ void DiauproMessageTest::thirdTest()
     expectEquals(destinationMessage->getNumberChannels(), (uint16)2);
     expectEquals(sourceMessage->getNumberSamples(), (uint16)20);
     expectEquals(destinationMessage->getNumberSamples(), (uint16)20);
-    expectEquals(destinationMessage->getSequeceNumber(), (uint64)221);
+    expectEquals(destinationMessage->getSequeceNumber(), (uint16)221);
 
     for(int i = 0; i < sourceBuffer.getNumChannels(); i++)
     {

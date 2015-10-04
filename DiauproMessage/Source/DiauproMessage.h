@@ -71,9 +71,9 @@ private:
         uint16 midiDataSize;
         uint16 stateDataSize;
         double cpuUsage;
-        float *sampleData;
-        uint8 *midiData;
-        void *stateData;
+        //float *sampleData;
+        //uint8 *midiData;
+        //void *stateData;
     };
 
     void setNumberChannels(uint16 numChannels);

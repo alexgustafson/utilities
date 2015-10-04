@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3aa37274-6c16-4420-9e4a-344a6d41b9d0" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DiauproMessage/Builds/MacOSX/build/Debug/DiauproMessage" afterPath="$PROJECT_DIR$/DiauproMessage/Builds/MacOSX/build/Debug/DiauproMessage" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DiauproMessage/Builds/MacOSX/DiauproMessage.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/DiauproMessage/Builds/MacOSX/DiauproMessage.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestProcessprMaster/Source/ConsolidatedTests.cpp" afterPath="$PROJECT_DIR$/TestProcessprMaster/Source/ConsolidatedTests.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproProcessor.cpp" afterPath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproProcessor.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestProcessorNode/Source/DiauproTestProcessor.cpp" afterPath="$PROJECT_DIR$/TestProcessorNode/Source/DiauproTestProcessor.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DiauproMessage/Source/DiaproMessageTests.cpp" afterPath="$PROJECT_DIR$/DiauproMessage/Source/DiaproMessageTests.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DiauproMessage/Source/DiauproMessage.cpp" afterPath="$PROJECT_DIR$/DiauproMessage/Source/DiauproMessage.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DiauproMessage/Source/DiauproMessage.h" afterPath="$PROJECT_DIR$/DiauproMessage/Source/DiauproMessage.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="utilities.iws" />
@@ -428,12 +431,6 @@
       <option name="number" value="Default" />
       <updated>1440757148412</updated>
     </task>
-    <task id="LOCAL-00028" summary="fixing paths in linux">
-      <created>1442825265005</created>
-      <option name="number" value="00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1442825265005</updated>
-    </task>
     <task id="LOCAL-00029" summary="fixing paths in linux">
       <created>1442844730311</created>
       <option name="number" value="00029" />
@@ -722,7 +719,13 @@
       <option name="project" value="LOCAL" />
       <updated>1443986237963</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="message fixing for linux">
+      <created>1443987754043</created>
+      <option name="number" value="00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1443987754043</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -763,7 +766,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="init" />
     <MESSAGE value="zeroconf basically finished" />
     <MESSAGE value="adding audio handling classes" />
     <MESSAGE value="test modular audio processor added&#10;this will be subclassed into a networkable audio processor" />
@@ -788,7 +790,8 @@
     <MESSAGE value="deeper midi inspection" />
     <MESSAGE value="monitor fixes on osx" />
     <MESSAGE value="zeroconf fixed for linux" />
-    <option name="LAST_COMMIT_MESSAGE" value="zeroconf fixed for linux" />
+    <MESSAGE value="message fixing for linux" />
+    <option name="LAST_COMMIT_MESSAGE" value="message fixing for linux" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />

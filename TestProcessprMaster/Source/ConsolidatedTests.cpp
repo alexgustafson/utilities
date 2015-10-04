@@ -54,8 +54,6 @@ void ConsolidatedTests::firstTest()
     MidiBuffer mBuffer;
     message->getMidiData(mBuffer);
     
-    
-
     Logger::writeToLog("Midi Dump:");
     for(int i = 0; i < midiBuffer.data.size(); i++)
     {
