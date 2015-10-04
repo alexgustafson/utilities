@@ -30,7 +30,6 @@ void Monitor::initializeControlSocket()
 {
     
     listenSocket = new DatagramSocket(false);
-    
     listenSocket->bindToPort(0);
     
     controlSocket = new DatagramSocket(false);
@@ -51,7 +50,6 @@ void Monitor::startMonitoring()
 
 void Monitor::stop()
 {
-    //sendto(control_send, "shutdown", 9 * sizeof(char), 0, &control_address, len_control_address);
     String msg("trigger update to monitor list");
     controlSocket->write("0.0.0.0", listenSocket->getBoundPort(), msg.toRawUTF8(), sizeof(msg.toRawUTF8()));
     stopThread(500);
@@ -112,7 +110,6 @@ void Monitor::addFileDescriptorAndListener(int fileDescriptor, FileDescriptorLis
     map.set(fileDescriptor , listener);
     
     if (fileDescriptor != control_listener) {
-        //sendto(control_send, "reset select", 13 * sizeof(char), 0, &control_address, len_control_address);
         String msg("trigger update to monitor list");
         controlSocket->write("0.0.0.0", listenSocket->getBoundPort(), msg.toRawUTF8(), sizeof(msg.toRawUTF8()));
     }

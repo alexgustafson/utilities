@@ -79,7 +79,7 @@ static void zeroResolveCallback(DNSServiceRef sdRef,
     
     response->setFullname(fullname);
     response->setHosttarget(hosttarget);
-    response->setPort(ntohs(port));
+    response->setPort(port);
     response->setInterfaceIndex(interfaceIndex);
     response->status = ZeroConfService::ResultStatus::resolveResult;
     response->sdRef = sdRef;

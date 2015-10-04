@@ -60,7 +60,7 @@ void ZeroConfTests::registerTest()
     ScopedPointer<ZeroConfManager> zeroConfManager2 = new ZeroConfManager(&monitor, &registrar);
     ScopedPointer<ZeroConfService> service = new ZeroConfService();
     
-    service->setPort(htons(9905));
+    service->setPort((uint16_t)(9905));
     service->setServiceName("Mu Shi");
     service->setRegType("_diapro._udp");
     
@@ -68,7 +68,7 @@ void ZeroConfTests::registerTest()
     ScopedPointer<ZeroConfManager> zeroConfManager3 = new ZeroConfManager(&monitor, &registrar2);
     ScopedPointer<ZeroConfService> service2 = new ZeroConfService();
     
-    service2->setPort(htons(32320));
+    service2->setPort((uint16_t)(32320));
     service2->setServiceName("Mi Shu");
     service2->setRegType("_diapro._udp");
     

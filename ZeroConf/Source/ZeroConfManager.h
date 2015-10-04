@@ -107,11 +107,11 @@ public:
         ZeroConfService::moreString = moreString;
     }
 
-    int getPort() const {
+    uint16_t getPort() const {
         return port;
     }
 
-    void setPort(int port) {
+    void setPort(uint16_t port) {
         ZeroConfService::port = port;
     }
     
@@ -162,7 +162,7 @@ public:
     String hosttarget = "";
     String addString = "";
     String moreString = "";
-    int port = 0;
+    uint16_t port = 0;
     String ip = "";
     bool isTaken = false;
     DNSServiceRef sdRef;
