@@ -95,8 +95,6 @@ void DiauproProcessor::processBlock(AudioSampleBuffer &buffer, MidiBuffer &midiM
 
             bytesRead = message->readFromSocket(socket);
             message->getAudioData(&buffer);
-
-
             message->getMidiData(midiBuffer);
 
             MidiBuffer::Iterator iterator(midiBuffer);
@@ -109,6 +107,8 @@ void DiauproProcessor::processBlock(AudioSampleBuffer &buffer, MidiBuffer &midiM
                     Logger::writeToLog(String::formatted("midi note: %d", tempMessage.getNoteNumber()));
                 }
             }
+        }else {
+            Logger::writeToLog("timedout");
         }
 
     } else {

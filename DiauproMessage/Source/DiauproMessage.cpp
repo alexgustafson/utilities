@@ -35,27 +35,27 @@ int DiauproMessage::readFromSocket(DatagramSocket *sock, String &targetHost, int
 }
 
 
-int DiauproMessage::getSequeceNumber() {
+uint64 DiauproMessage::getSequeceNumber() {
     return this->header.sequenceNumber;
 }
 
-int DiauproMessage::getNumberSamples() {
+uint16 DiauproMessage::getNumberSamples() {
     return this->header.numSamples;
 }
 
-int DiauproMessage::getNumberChannels() {
+uint16 DiauproMessage::getNumberChannels() {
     return this->header.numChannels;
 }
 
-void DiauproMessage::setNumberChannels(int numChannels) {
+void DiauproMessage::setNumberChannels(uint16 numChannels) {
     this->header.numChannels = numChannels;
 }
 
-void DiauproMessage::setNumberSamples(int numSamples) {
+void DiauproMessage::setNumberSamples(uint16 numSamples) {
     this->header.numSamples = numSamples;
 }
 
-void DiauproMessage::setSequenceNumber(int sequenceNumber) {
+void DiauproMessage::setSequenceNumber(uint64 sequenceNumber) {
     this->header.sequenceNumber = sequenceNumber;
 }
 
@@ -91,7 +91,6 @@ AudioSampleBuffer *DiauproMessage::getAudioData(AudioSampleBuffer *buffer) {
 }
 
 float *DiauproMessage::getSampleData() {
-    //return this->header.sampleData;
     return (float *) ((char *) this->data.getData() + sizeof(this->header));
 }
 
@@ -106,7 +105,6 @@ void DiauproMessage::setPointerToSampleData(float *ptr) {
 void DiauproMessage::setPointerToMidiData(uint8 *ptr) {
     this->header.midiData = ptr;
 }
-
 
 void DiauproMessage::setPointerToStateData(void *ptr) {
     this->header.stateData = ptr;
@@ -126,7 +124,7 @@ size_t DiauproMessage::getAudioDataOffset() {
 }
 
 size_t DiauproMessage::getMidiDataOffset() {
-    return sizeof(struct diapro_header) + (getNumberSamples() * getNumberChannels() * sizeof(float));
+    return sizeof(struct diapro_header) + (getNumberSamples() * getNumberChannels() * sizeof(float)) ;
 }
 
 size_t DiauproMessage::getStateDataOffset() {
@@ -149,6 +147,7 @@ void DiauproMessage::setSampleRate(double rate) {
 void DiauproMessage::clear() {
     this->header.audioDataSize = 0;
     this->header.midiDataSize = 0;
+    this->header.stateDataSize = 0;
     this->header.numChannels = 0;
     this->header.numSamples = 0;
     this->header.sequenceNumber = 0;
@@ -156,4 +155,9 @@ void DiauproMessage::clear() {
     this->header.midiData = nullptr;
     this->header.stateData = nullptr;
     this->header.sampleRate = 0;
+    this->data.fillWith((uint8) 0);
+}
+
+String DiauproMessage::headerToString() {
+    return String::formatted("Header:\n sequenceNumber: %d\n numChannels: %d\n numSamples: %d\n audioDataSize: %d\n midiDataSize: %d\n stateDataSize: %d\nEnd Header",this->header.sequenceNumber, this->header.numChannels, this->header.numSamples, this->header.audioDataSize, this->header.midiDataSize, this->header.stateDataSize);
 }

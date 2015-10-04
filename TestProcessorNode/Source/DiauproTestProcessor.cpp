@@ -11,7 +11,7 @@
 #include "DiauproTestProcessor.h"
 
 void DiauproTestProcessor::localProcess(AudioSampleBuffer &buffer, MidiBuffer &midiMessages) {
-
+    
     Logger::writeToLog(String::formatted("Audio Channel Count: %d",buffer.getNumChannels()));
     Logger::writeToLog(String::formatted("Audio Sample Count: %d",buffer.getNumSamples()));
 
@@ -36,4 +36,11 @@ void DiauproTestProcessor::localProcess(AudioSampleBuffer &buffer, MidiBuffer &m
         }
     }
 
+}
+
+void DiauproTestProcessor::processAudioWrapper(AudioSampleBuffer &buffer, MidiBuffer &midiMessages)
+{
+    data_returned = 0;
+    this->processBlock(buffer, midiMessages);
+    data_returned = 1;
 }

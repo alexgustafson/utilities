@@ -23,6 +23,10 @@ public:
     String getServiceTag() override {
         return "_diaproTest._udp";
     };
+    
+    int data_returned;
+    
+    void processAudioWrapper(AudioSampleBuffer &buffer, MidiBuffer &midiMessages);
 
 private:
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (DiauproTestProcessor)

@@ -3,8 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="3aa37274-6c16-4420-9e4a-344a6d41b9d0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ZeroConf/Builds/MacOSX/ZeroConf.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/ZeroConf/Builds/MacOSX/ZeroConf.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestProcessprMaster/Source/ConsolidatedTests.cpp" afterPath="$PROJECT_DIR$/TestProcessprMaster/Source/ConsolidatedTests.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DiauproMessage/Source/DiauproMessage.cpp" afterPath="$PROJECT_DIR$/DiauproMessage/Source/DiauproMessage.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DiauproMessage/Source/DiauproMessage.h" afterPath="$PROJECT_DIR$/DiauproMessage/Source/DiauproMessage.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproProcessor.cpp" afterPath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproProcessor.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestProcessorNode/Source/DiauproTestProcessor.cpp" afterPath="$PROJECT_DIR$/TestProcessorNode/Source/DiauproTestProcessor.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestProcessorNode/Source/DiauproTestProcessor.h" afterPath="$PROJECT_DIR$/TestProcessorNode/Source/DiauproTestProcessor.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Monitor/Source/Monitor.cpp" afterPath="$PROJECT_DIR$/Monitor/Source/Monitor.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ZeroConf/Source/ZeroConfManager.cpp" afterPath="$PROJECT_DIR$/ZeroConf/Source/ZeroConfManager.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ZeroConf/Source/ZeroConfManager.h" afterPath="$PROJECT_DIR$/ZeroConf/Source/ZeroConfManager.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="utilities.iws" />
@@ -428,12 +434,6 @@
       <option name="number" value="Default" />
       <updated>1440757148412</updated>
     </task>
-    <task id="LOCAL-00024" summary="fixing paths in linux">
-      <created>1442823376285</created>
-      <option name="number" value="00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1442823376285</updated>
-    </task>
     <task id="LOCAL-00025" summary="fixing paths in linux">
       <created>1442823614920</created>
       <option name="number" value="00025" />
@@ -722,7 +722,13 @@
       <option name="project" value="LOCAL" />
       <updated>1443968359206</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="zeroconf fixed for linux">
+      <created>1443969184214</created>
+      <option name="number" value="00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1443969184214</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="ToolWindowManager">

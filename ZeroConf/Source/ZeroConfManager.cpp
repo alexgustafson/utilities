@@ -254,6 +254,7 @@ void ZeroConfManager::handleFileDescriptor(int fileDescriptor)
                 
                 DNSServiceRef *ref = (DNSServiceRef *)calloc (1, sizeof(DNSServiceRef));
                 
+                //Note: this function does not work with Avahi's compatibility layer
                 error = DNSServiceResolve(ref,
                                           0,
                                           0,

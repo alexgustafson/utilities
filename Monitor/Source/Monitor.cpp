@@ -44,7 +44,7 @@ void Monitor::initializeControlSocket()
 void Monitor::startMonitoring()
 {
     initializeControlSocket();
-    addFileDescriptorAndListener(control_listener, this);
+    addFileDescriptorAndListener(control_listener, this, "adding monitor control socket");
     startThread();
 }
 
@@ -137,7 +137,7 @@ void Monitor::removeFileDescriptorAndListener(int fileDescriptor, bool shoudlClo
     socklen_t len = sizeof (sin_addr);
     getsockname (fileDescriptor, (struct sockaddr*) &sin_addr, &len);
     
-    Logger::writeToLog(String::formatted("removed listener for port %d", ntohs (sin_addr.sin_port)));
+    Logger::writeToLog(String::formatted("removed listener and fd %d on port %d",fileDescriptor, ntohs (sin_addr.sin_port)));
     
     if (shoudlClose) {
         close(fileDescriptor);
