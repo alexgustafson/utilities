@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3aa37274-6c16-4420-9e4a-344a6d41b9d0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Monitor/Builds/MacOSX/build/Debug/Monitor" afterPath="$PROJECT_DIR$/Monitor/Builds/MacOSX/build/Debug/Monitor" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Monitor/Builds/MacOSX/Monitor.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/Monitor/Builds/MacOSX/Monitor.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ZeroConf/Builds/MacOSX/ZeroConf.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/ZeroConf/Builds/MacOSX/ZeroConf.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ZeroConf/Builds/MacOSX/build/Debug/ZeroConf" afterPath="$PROJECT_DIR$/ZeroConf/Builds/MacOSX/build/Debug/ZeroConf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Monitor/Source/Monitor.cpp" afterPath="$PROJECT_DIR$/Monitor/Source/Monitor.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ZeroConf/Source/ZeroConfManager.cpp" afterPath="$PROJECT_DIR$/ZeroConf/Source/ZeroConfManager.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ZeroConf/Source/ZeroConfManager.h" afterPath="$PROJECT_DIR$/ZeroConf/Source/ZeroConfManager.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ZeroConf/Source/ZeroConfTests.cpp" afterPath="$PROJECT_DIR$/ZeroConf/Source/ZeroConfTests.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ZeroConf/Source/ZeroConfTests.h" afterPath="$PROJECT_DIR$/ZeroConf/Source/ZeroConfTests.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestProcessorNode/Builds/MacOSX/.idea/workspace.xml" afterPath="$PROJECT_DIR$/TestProcessorNode/Builds/MacOSX/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ZeroConf/Builds/MacOSX/.idea/workspace.xml" afterPath="$PROJECT_DIR$/ZeroConf/Builds/MacOSX/.idea/workspace.xml" />
     </list>
     <ignored path="utilities.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -117,7 +106,7 @@
       <file leaf-file-name="Main.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AudioProcessorNode/Source/Main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.1497326">
+            <state vertical-scroll-proportion="0.8395722">
               <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
               <folding />
             </state>
@@ -468,12 +457,6 @@
       <option name="number" value="Default" />
       <updated>1440757148412</updated>
     </task>
-    <task id="LOCAL-00018" summary="audio processor node added">
-      <created>1442775330068</created>
-      <option name="number" value="00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1442775330068</updated>
-    </task>
     <task id="LOCAL-00019" summary="add unistd and fcntl headers to monitor">
       <created>1442776154622</created>
       <option name="number" value="00019" />
@@ -762,13 +745,20 @@
       <option name="project" value="LOCAL" />
       <updated>1443903989384</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="deeper midi inspection">
+      <created>1443960068998</created>
+      <option name="number" value="00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1443960068999</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1424" height="883" extended-state="0" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287858" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -784,7 +774,6 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287858" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1241,7 +1230,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AudioProcessorNode/Source/Main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1497326">
+        <state vertical-scroll-proportion="0.8395722">
           <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding />
         </state>
