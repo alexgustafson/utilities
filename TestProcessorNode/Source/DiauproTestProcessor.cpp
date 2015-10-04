@@ -14,6 +14,8 @@ void DiauproTestProcessor::localProcess(AudioSampleBuffer &buffer, MidiBuffer &m
     
     Logger::writeToLog(String::formatted("Audio Channel Count: %d",buffer.getNumChannels()));
     Logger::writeToLog(String::formatted("Audio Sample Count: %d",buffer.getNumSamples()));
+    
+    Logger::writeToLog(this->getCurrentMessage()->headerToString());
 
     MidiBuffer::Iterator midiEventIterator(midiMessages);
     MidiMessage nextMidiEvent;
