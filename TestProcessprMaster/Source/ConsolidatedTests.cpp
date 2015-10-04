@@ -26,7 +26,8 @@ void ConsolidatedTests::firstTest()
     diauproTestProcessor->prepareToPlay(22050, 512);
 
     MidiBuffer midiBuffer;
-    midiBuffer.addEvent(MidiMessage::noteOn(1,1,(uint8) 2), 12);
+    midiBuffer.addEvent(MidiMessage::noteOn(1,1,0.7f), 12);
+    midiBuffer.addEvent(MidiMessage::noteOn(7,7,0.1f), 12);
 
 
     ScopedPointer<AudioSampleBuffer> buffer;
