@@ -2,52 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3aa37274-6c16-4420-9e4a-344a6d41b9d0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/Diaupro Plugin.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/DiauproPlugin.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/RecentFilesMenuTemplate.nib" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/build/Debug/Diaupro Plugin.component/Contents/MacOS/Diaupro Plugin" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/build/Debug/Diaupro Plugin.component/Contents/Resources/RecentFilesMenuTemplate.nib" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/build/Release/Diaupro Plugin.component/Contents/MacOS/Diaupro Plugin" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/build/Release/Diaupro Plugin.component/Contents/Resources/Diaupro Plugin.rsrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/build/Release/Diaupro Plugin.component/Contents/Resources/RecentFilesMenuTemplate.nib" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/Diaupro Plugin.xcodeproj/project.pbxproj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/Diaupro Plugin.xcodeproj/project.xcworkspace/contents.xcworkspacedata" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/Diaupro Plugin.xcodeproj/project.xcworkspace/xcshareddata/Diaupro Plugin.xcscmblueprint" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/Diaupro Plugin.xcodeproj/xcuserdata/alexandergustafson.xcuserdatad/xcschemes/Diaupro Plugin.xcscheme" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/Diaupro Plugin.xcodeproj/xcuserdata/alexandergustafson.xcuserdatad/xcschemes/xcschememanagement.plist" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/DiauproPlugin.xcodeproj/project.pbxproj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/DiauproPlugin.xcodeproj/project.xcworkspace/contents.xcworkspacedata" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/DiauproPlugin.xcodeproj/project.xcworkspace/xcshareddata/DiauproPlugin.xcscmblueprint" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/DiauproPlugin.xcodeproj/xcuserdata/alexandergustafson.xcuserdatad/xcschemes/DiauproPlugin.xcscheme" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/DiauproPlugin.xcodeproj/xcuserdata/alexandergustafson.xcuserdatad/xcschemes/xcschememanagement.plist" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/Info.plist" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/build/Debug/Diaupro Plugin.component/Contents/Info.plist" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/build/Debug/Diaupro Plugin.component/Contents/PkgInfo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/build/Release/Diaupro Plugin.component/Contents/Info.plist" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/build/Release/Diaupro Plugin.component/Contents/PkgInfo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diaupro Plugin/Diaupro Plugin.jucer" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diaupro Plugin/JuceLibraryCode/AppConfig.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diaupro Plugin/JuceLibraryCode/JuceHeader.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diaupro Plugin/JuceLibraryCode/ReadMe.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diaupro Plugin/JuceLibraryCode/modules/juce_audio_basics/juce_audio_basics.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diaupro Plugin/JuceLibraryCode/modules/juce_audio_devices/juce_audio_devices.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diaupro Plugin/JuceLibraryCode/modules/juce_audio_formats/juce_audio_formats.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diaupro Plugin/JuceLibraryCode/modules/juce_audio_plugin_client/juce_audio_plugin_client.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diaupro Plugin/JuceLibraryCode/modules/juce_audio_processors/juce_audio_processors.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diaupro Plugin/JuceLibraryCode/modules/juce_core/juce_core.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diaupro Plugin/JuceLibraryCode/modules/juce_data_structures/juce_data_structures.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diaupro Plugin/JuceLibraryCode/modules/juce_events/juce_events.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diaupro Plugin/JuceLibraryCode/modules/juce_graphics/juce_graphics.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diaupro Plugin/JuceLibraryCode/modules/juce_gui_basics/juce_gui_basics.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diaupro Plugin/JuceLibraryCode/modules/juce_gui_extra/juce_gui_extra.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diaupro Plugin/Source/PluginEditor.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diaupro Plugin/Source/PluginEditor.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diaupro Plugin/Source/PluginProcessor.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diaupro Plugin/Source/PluginProcessor.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/AudioProcessorNode.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/AudioProcessorNode.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/build/Debug/AudioProcessorNode" afterPath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/build/Debug/AudioProcessorNode" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/Builds/MacOSX/AudioTestApplication.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/AudioTestApplication/Builds/MacOSX/AudioTestApplication.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DiauproMessage/Builds/MacOSX/DiauproMessage.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/DiauproMessage/Builds/MacOSX/DiauproMessage.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DiauproMessage/Builds/MacOSX/build/Debug/DiauproMessage" afterPath="$PROJECT_DIR$/DiauproMessage/Builds/MacOSX/build/Debug/DiauproMessage" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/DiauproPlugin.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/DiauproPlugin.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/build/Debug/Diaupro Plugin.component/Contents/MacOS/Diaupro Plugin" afterPath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/build/Debug/Diaupro Plugin.component/Contents/MacOS/Diaupro Plugin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/build/Release/Diaupro Plugin.component/Contents/MacOS/Diaupro Plugin" afterPath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/build/Release/Diaupro Plugin.component/Contents/MacOS/Diaupro Plugin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/AudioProcessorNode.xcodeproj/xcuserdata/alexandergustafson.xcuserdatad/xcschemes/AudioProcessorNode.xcscheme" afterPath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/AudioProcessorNode.xcodeproj/xcuserdata/alexandergustafson.xcuserdatad/xcschemes/AudioProcessorNode.xcscheme" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproProcessor.cpp" afterPath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproProcessor.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproProcessor.h" afterPath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproProcessor.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/DiauproPlugin.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/DiauproPlugin.xcodeproj/project.pbxproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/DiauproPlugin.xcodeproj/xcuserdata/alexandergustafson.xcuserdatad/xcschemes/DiauproPlugin.xcscheme" afterPath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/DiauproPlugin.xcodeproj/xcuserdata/alexandergustafson.xcuserdatad/xcschemes/DiauproPlugin.xcscheme" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/build/Debug/Diaupro Plugin.component/Contents/Info.plist" afterPath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/build/Debug/Diaupro Plugin.component/Contents/Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diaupro Plugin/Diaupro Plugin.jucer" afterPath="$PROJECT_DIR$/Diaupro Plugin/Diaupro Plugin.jucer" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diaupro Plugin/Source/PluginProcessor.cpp" afterPath="$PROJECT_DIR$/Diaupro Plugin/Source/PluginProcessor.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diaupro Plugin/Source/PluginProcessor.h" afterPath="$PROJECT_DIR$/Diaupro Plugin/Source/PluginProcessor.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DiauproMessage/Source/DiauproMessage.cpp" afterPath="$PROJECT_DIR$/DiauproMessage/Source/DiauproMessage.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DiauproMessage/Source/DiauproMessage.h" afterPath="$PROJECT_DIR$/DiauproMessage/Source/DiauproMessage.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Monitor/Source/Monitor.cpp" afterPath="$PROJECT_DIR$/Monitor/Source/Monitor.cpp" />
     </list>
     <ignored path="utilities.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -194,8 +168,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="341" />
-    <option name="y" value="211" />
+    <option name="x" value="514" />
+    <option name="y" value="192" />
     <option name="width" value="1339" />
     <option name="height" value="809" />
   </component>
@@ -224,7 +198,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -244,14 +217,68 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utilities" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utilities" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Diaupro Plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utilities" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utilities" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Diaupro Plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utilities" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utilities" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Diaupro Plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Builds" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MacOSX" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/AudioTestApplication/Builds/MacOSX/AudioTestApplication.xcodeproj" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="FullScreen" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
@@ -467,12 +494,6 @@
       <created>1440757148412</created>
       <option name="number" value="Default" />
       <updated>1440757148412</updated>
-    </task>
-    <task id="LOCAL-00034" summary="hotswapping node enabled">
-      <created>1443001430504</created>
-      <option name="number" value="00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1443001430504</updated>
     </task>
     <task id="LOCAL-00035" summary="unified path structure">
       <created>1443003669647</created>
@@ -762,14 +783,20 @@
       <option name="project" value="LOCAL" />
       <updated>1443992339775</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="adding plugin vst/au ready">
+      <created>1444340225327</created>
+      <option name="number" value="00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1444340225328</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="341" y="211" width="1339" height="809" extended-state="0" />
+    <frame x="514" y="192" width="1339" height="809" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3153431" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3245952" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -803,7 +830,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="test modular audio processor added&#10;this will be subclassed into a networkable audio processor" />
     <MESSAGE value="audio processor node added" />
     <MESSAGE value="fix paths in linux" />
     <MESSAGE value="add unistd and fcntl headers to monitor" />
@@ -828,7 +854,8 @@
     <MESSAGE value="message fixing for linux" />
     <MESSAGE value="message serialisation bug fixes&#10;" />
     <MESSAGE value="message serialisation bug fixes&#10;all working on ubuntu devices!!!!&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="message serialisation bug fixes&#10;all working on ubuntu devices!!!!&#10;" />
+    <MESSAGE value="adding plugin vst/au ready" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding plugin vst/au ready" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -956,13 +983,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ZeroConf/JuceLibraryCode/JuceHeader.h">
@@ -973,13 +1000,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ZeroConf/JuceLibraryCode/JuceHeader.h">
@@ -990,13 +1017,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ZeroConf/JuceLibraryCode/JuceHeader.h">
@@ -1007,13 +1034,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ZeroConf/JuceLibraryCode/JuceHeader.h">
@@ -1024,13 +1051,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ZeroConf/JuceLibraryCode/JuceHeader.h">
@@ -1104,13 +1131,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.37931034">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ZeroConf/JuceLibraryCode/JuceHeader.h">

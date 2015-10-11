@@ -19,8 +19,7 @@ public:
 
     DiauproMessage(int initialSize, bool initializeToZero = false);
 
-    ~DiauproMessage() {
-    };
+    ~DiauproMessage() {};
 
     int readFromSocket(DatagramSocket *sock);
 
@@ -71,21 +70,11 @@ private:
         uint16 midiDataSize;
         uint16 stateDataSize;
         double cpuUsage;
-        //float *sampleData;
-        //uint8 *midiData;
-        //void *stateData;
     };
 
     void setNumberChannels(uint16 numChannels);
 
     void setNumberSamples(uint16 numSamples);
-    
-
-    void setPointerToSampleData(float *ptr);
-
-    void setPointerToMidiData(uint8 *ptr);
-
-    void setPointerToStateData(void *ptr);
 
     size_t getAudioDataOffset();
 

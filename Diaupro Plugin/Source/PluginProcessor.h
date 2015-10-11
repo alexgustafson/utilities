@@ -12,7 +12,8 @@
 #define PLUGINPROCESSOR_H_INCLUDED
 
 #include "../JuceLibraryCode/JuceHeader.h"
-
+#include "DiauproVCAProcessor.h"
+#include "DiauproVCOProcessor.h"
 
 //==============================================================================
 /**
@@ -66,6 +67,9 @@ public:
     void setStateInformation (const void* data, int sizeInBytes) override;
 
 private:
+    DiauproVCOProcessor diauproVCOProcessor;
+    DiauproVCAProcessor diauproVCAProcessor;
+    Monitor monitor;
     //==============================================================================
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (DiauproPluginAudioProcessor)
 };

@@ -16,8 +16,7 @@
 #include "Monitor.h"
 #include "DiauproMessage.h"
 
-class DiauproProcessor : public AudioProcessor,
-                         public ZeroConfListener,
+class DiauproProcessor : public ZeroConfListener,
                          public FileDescriptorListener{
 public:
     DiauproProcessor();

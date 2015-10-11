@@ -22,7 +22,7 @@ DiauproProcessor::DiauproProcessor() : FileDescriptorListener("Audio Processor N
 }
 
 DiauproProcessor::~DiauproProcessor() {
-
+    //todo: if i'm a node, remove my service from zeroconf
 }
 
 void DiauproProcessor::setMonitor(Monitor *monitor, bool asNode) {
@@ -122,7 +122,7 @@ void DiauproProcessor::processBlock(AudioSampleBuffer &buffer, MidiBuffer &midiM
     const double msTaken = Time::getMillisecondCounterHiRes() - callbackStartTime;
     const double filterAmount = 0.2;
     processTimeMs += filterAmount * (msTaken - processTimeMs);
-    Logger::writeToLog(String::formatted("process time: %f", processTimeMs));
+    //Logger::writeToLog(String::formatted("process time: %f", processTimeMs));
     
 }
 
@@ -227,7 +227,6 @@ void DiauproProcessor::handleZeroConfUpdate(OwnedArray<ZeroConfService, Critical
 
 
 void DiauproProcessor::handleFileDescriptor(int fileDescriptor) {
-    Logger::writeToLog("packets received");
     bytesRead = message->readFromSocket(socket, targetHost, targetPort);
     
     this->sampleRate = message->getSampleRate();

@@ -56,7 +56,6 @@ void DiauproMessage::setSequenceNumber(uint16 sequenceNumber) {
 void DiauproMessage::setAudioData(AudioSampleBuffer *buffer) {
     setNumberChannels(buffer->getNumChannels());
     setNumberSamples(buffer->getNumSamples());
-    //setPointerToSampleData((float *) ((char *) this->data.getData() + sizeof(this->header)));
     for (int i = 0; i < buffer->getNumChannels(); i++) {
         int channelOffset = i * buffer->getNumSamples() * sizeof(float);
         this->data.copyFrom(buffer->getReadPointer(i), getAudioDataOffset() + channelOffset, buffer->getNumSamples() * sizeof(float));
@@ -66,13 +65,11 @@ void DiauproMessage::setAudioData(AudioSampleBuffer *buffer) {
 
 void DiauproMessage::setMidiData(MidiBuffer *midiMessages) {
     this->data.copyFrom((void *) midiMessages->data.getRawDataPointer(), getMidiDataOffset(), midiMessages->data.size() * sizeof(uint8));
-    //setPointerToMidiData((uint8 *)((char *) this->data.getData() + getMidiDataOffset()));
     this->header.midiDataSize = midiMessages->data.size() * sizeof(uint8);
 }
 
 void DiauproMessage::setStateData(void *stateData, size_t stateSize) {
     this->data.copyFrom(stateData, getStateDataOffset(), stateSize);
-    //setPointerToStateData((void *)((char *) this->data.getData() + getStateDataOffset() ));
     this->header.stateDataSize = stateSize;
 }
 
@@ -92,17 +89,6 @@ int DiauproMessage::getSampleDataSize() {
     return getNumberSamples() * getNumberChannels() * sizeof(float);
 }
 
-void DiauproMessage::setPointerToSampleData(float *ptr) {
-    //this->header.sampleData = ptr;
-}
-
-void DiauproMessage::setPointerToMidiData(uint8 *ptr) {
-    //this->header.midiData = ptr;
-}
-
-void DiauproMessage::setPointerToStateData(void *ptr) {
-    //this->header.stateData = ptr;
-}
 
 void *DiauproMessage::getData() {
     this->data.copyFrom(&this->header, 0, sizeof(struct diapro_header));
@@ -145,9 +131,6 @@ void DiauproMessage::clear() {
     this->header.numChannels = 0;
     this->header.numSamples = 0;
     this->header.sequenceNumber = 0;
-    //this->header.sampleData = nullptr;
-    //this->header.midiData = nullptr;
-    //this->header.stateData = nullptr;
     this->header.sampleRate = 0;
     this->data.fillWith((uint8) 0);
 }

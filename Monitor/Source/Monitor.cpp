@@ -22,18 +22,24 @@ Monitor::Monitor() : FileDescriptorListener("Main Monitor"), Thread ("file descr
 }
 
 Monitor::~Monitor() {
-    close(control_listener);
-    close(control_send);
+    listenSocket->shutdown();
+    controlSocket->shutdown();
 }
 
 void Monitor::initializeControlSocket()
 {
     
     listenSocket = new DatagramSocket(false);
-    listenSocket->bindToPort(0);
+    if(!listenSocket->bindToPort(0))
+    {
+        Logger::writeToLog("listenSocket could not bind to a port");
+    }
     
     controlSocket = new DatagramSocket(false);
-    controlSocket->bindToPort(0);
+    if(!controlSocket->bindToPort(0))
+    {
+        Logger::writeToLog("controlSocket could not bind to a port");
+    }
     
     control_listener = listenSocket->getRawSocketHandle();
     control_send = controlSocket->getRawSocketHandle();
@@ -89,7 +95,6 @@ void Monitor::run()
                     FileDescriptorListener* listener = map[fd];
                     listener->handleFileDescriptor(fd);
                     
-                    Logger::writeToLog(String::formatted("update on fd %d with listener: %s",fd, listener->getFileDescriptorListenerName().toRawUTF8()));
                 }
             }
         }

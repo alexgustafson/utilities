@@ -6,13 +6,13 @@
 	<array>
 		<dict>
 			<key>description</key>
-			<string>Diaupro Plugin</string>
+			<string>DiauproPlugin</string>
 			<key>factoryFunction</key>
 			<string>DiauproPluginAUFactory</string>
 			<key>manufacturer</key>
 			<string>Manu</string>
 			<key>name</key>
-			<string>yourcompany: Diaupro Plugin</string>
+			<string>alexgustafson: DiauproPlugin</string>
 			<key>subtype</key>
 			<string>Mgvy</string>
 			<key>type</key>
@@ -26,7 +26,7 @@
 	<key>CFBundleExecutable</key>
 	<string>Diaupro Plugin</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.yourcompany.DiauproPlugin</string>
+	<string>com.alexgustafson.DiauproPlugin</string>
 	<key>CFBundleName</key>
 	<string>DiauproPlugin</string>
 	<key>CFBundlePackageType</key>
@@ -58,6 +58,6 @@
 	<key>NSHighResolutionCapable</key>
 	<true/>
 	<key>NSHumanReadableCopyright</key>
-	<string></string>
+	<string>AlexGustafson</string>
 </dict>
 </plist>
