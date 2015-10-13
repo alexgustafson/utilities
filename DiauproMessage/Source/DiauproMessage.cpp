@@ -138,3 +138,11 @@ void DiauproMessage::clear() {
 String DiauproMessage::headerToString() {
     return String::formatted("Header:\n sequenceNumber: %d\n numChannels: %d\n numSamples: %d\n audioDataSize: %d\n midiDataSize: %d\n stateDataSize: %d\nEnd Header",this->header.sequenceNumber, this->header.numChannels, this->header.numSamples, this->header.audioDataSize, this->header.midiDataSize, this->header.stateDataSize);
 }
+
+size_t DiauproMessage::getStateSize() {
+    return this->header.stateDataSize;
+}
+
+void *DiauproMessage::getState() {
+    return (void*)((char*)this->getData() + getStateDataOffset());
+}

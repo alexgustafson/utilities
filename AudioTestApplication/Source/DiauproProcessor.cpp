@@ -1,11 +1,11 @@
- /*
-  ==============================================================================
+/*
+ ==============================================================================
 
-    DiauproProcessor.cpp
-    Created: 22 Sep 2015 3:19:42pm
-    Author:  Alexander Gustafson
+   DiauproProcessor.cpp
+   Created: 22 Sep 2015 3:19:42pm
+   Author:  Alexander Gustafson
 
-  ==============================================================================
+ ==============================================================================
 */
 
 #include "DiauproProcessor.h"
@@ -22,16 +22,19 @@ DiauproProcessor::DiauproProcessor() : FileDescriptorListener("Audio Processor N
 }
 
 DiauproProcessor::~DiauproProcessor() {
-    //todo: if i'm a node, remove my service from zeroconf
+    if(this->isNode)
+    {
+        this->zManager->removeService(service);
+    }
 }
 
 void DiauproProcessor::setMonitor(Monitor *monitor, bool asNode) {
-
+    this->isNode = asNode;
     this->monitor = monitor;
     this->zManager = new ZeroConfManager(monitor, this);
 
     if (asNode) {
-        ZeroConfService *service = new ZeroConfService();
+        service = new ZeroConfService();
 
         service->setPort(socket->getBoundPort());
         service->setServiceName("Audio_Processor_Node");
@@ -41,6 +44,8 @@ void DiauproProcessor::setMonitor(Monitor *monitor, bool asNode) {
         this->monitor->addFileDescriptorAndListener(socket->getRawSocketHandle(), this);
 
     } else {
+
+        this->processState = new state();
         this->zManager->browseService(getServiceTag().toRawUTF8());
     }
 }
@@ -71,7 +76,7 @@ AudioProcessorEditor *DiauproProcessor::createEditor() {
 void DiauproProcessor::processBlock(AudioSampleBuffer &buffer, MidiBuffer &midiMessages) {
 
     const double callbackStartTime = Time::getMillisecondCounterHiRes();
-    
+
     if (!midiMessages.isEmpty()) {
         Logger::writeToLog("has midi sent");
     }
@@ -81,6 +86,7 @@ void DiauproProcessor::processBlock(AudioSampleBuffer &buffer, MidiBuffer &midiM
             message->setAudioData(&buffer);
             message->setMidiData(&midiMessages);
             message->setSampleRate(sampleRate);
+            message->setStateData(getState(), getStateSize());
             bytesRead = socket->write(targetHost, targetPort, message->getData(), message->getSize());
 
             if (bytesRead < 0) {
@@ -109,24 +115,23 @@ void DiauproProcessor::processBlock(AudioSampleBuffer &buffer, MidiBuffer &midiM
                     Logger::writeToLog(String::formatted("midi note: %d", tempMessage.getNoteNumber()));
                 }
             }
-        }else {
+        } else {
             Logger::writeToLog("timedout");
         }
 
     } else {
 
-        localProcess(buffer, midiMessages);
+        localProcess(buffer, midiMessages, getState());
 
     }
-    
+
     const double msTaken = Time::getMillisecondCounterHiRes() - callbackStartTime;
     const double filterAmount = 0.2;
     processTimeMs += filterAmount * (msTaken - processTimeMs);
-    //Logger::writeToLog(String::formatted("process time: %f", processTimeMs));
-    
+
 }
 
-void DiauproProcessor::localProcess(AudioSampleBuffer &buffer, MidiBuffer &midiMessages) {
+void DiauproProcessor::localProcess(AudioSampleBuffer &buffer, MidiBuffer &midiMessages, void *state) {
 
 
 }
@@ -195,22 +200,21 @@ bool DiauproProcessor::acceptsMidi() const {
 void DiauproProcessor::handleZeroConfUpdate(OwnedArray<ZeroConfService, CriticalSection> *serviceList) {
 
     if (serviceList->size() > 0) {
-        
-        ZeroConfService* service;
+
+        ZeroConfService *service;
 
         for (int i = 0; i < serviceList->size(); i++) {
-            
-            service =serviceList->getUnchecked(i);
-            
-            if (!service->isTaken && service->status == ZeroConfService::ResultStatus::queryResult)
-            {
+
+            service = serviceList->getUnchecked(i);
+
+            if (!service->isTaken && service->status == ZeroConfService::ResultStatus::queryResult) {
                 serviceList->getUnchecked(i)->isTaken = true;
                 service = serviceList->getUnchecked(i);
-                
+
                 activeNode = service;
                 targetHost = activeNode->ip;
                 targetPort = activeNode->getPort();
-                
+
                 Logger::writeToLog(String::formatted("%s Node Found on %s:%d interface %d", getServiceTag().toRawUTF8(), targetHost.toRawUTF8(), targetPort, activeNode->getInterfaceIndex()));
                 return;
             }
@@ -218,7 +222,7 @@ void DiauproProcessor::handleZeroConfUpdate(OwnedArray<ZeroConfService, Critical
         this->activeNode = nullptr;
         Logger::writeToLog(String::formatted("%s Node Not Found", getServiceTag().toRawUTF8()));
         return;
-        
+
     }
     this->activeNode = nullptr;
     Logger::writeToLog(String::formatted("%s Node Lost", getServiceTag().toRawUTF8()));
@@ -227,24 +231,29 @@ void DiauproProcessor::handleZeroConfUpdate(OwnedArray<ZeroConfService, Critical
 
 
 void DiauproProcessor::handleFileDescriptor(int fileDescriptor) {
+
+    const double nodeProcessTime = Time::getMillisecondCounterHiRes();
+
     bytesRead = message->readFromSocket(socket, targetHost, targetPort);
-    
+
     this->sampleRate = message->getSampleRate();
-    
+
     audioSampleBuffer.setSize(message->getNumberChannels(), message->getNumberSamples(), true, false, true);
-    
+
     message->getAudioData(&audioSampleBuffer);
     message->getMidiData(midiBuffer);
-    localProcess(audioSampleBuffer, midiBuffer);
-    
+    localProcess(audioSampleBuffer, midiBuffer, message->getState());
+
     message->setAudioData(&audioSampleBuffer);
 
+    this->processState->nodeProcessTime = Time::getMillisecondCounterHiRes() - nodeProcessTime;;
+
+    message->setStateData(getState(), getStateSize());
     socket->write(targetHost, targetPort, message->getData(), message->getSize());
 }
 
 bool DiauproProcessor::hasActiveNetworkConnection() {
-    if (activeNode != nullptr)
-    {
+    if (activeNode != nullptr) {
         return true;
     }
     return false;
@@ -252,4 +261,12 @@ bool DiauproProcessor::hasActiveNetworkConnection() {
 
 DiauproMessage *DiauproProcessor::getCurrentMessage() {
     return this->message;
+}
+
+void *DiauproProcessor::getState() {
+    return this->processState;
+}
+
+size_t DiauproProcessor::getStateSize() {
+    return sizeof(DiauproProcessor::state);
 }

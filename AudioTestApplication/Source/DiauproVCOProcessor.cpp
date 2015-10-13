@@ -10,8 +10,9 @@
 
 #include "DiauproVCOProcessor.h"
 
-void DiauproVCOProcessor::localProcess(AudioSampleBuffer &buffer, MidiBuffer &midiMessages) {
+void DiauproVCOProcessor::localProcess(AudioSampleBuffer &buffer, MidiBuffer &midiMessages, void* state) {
 
+    this->processState = *(vco_state*)state;
     int sampleNr;
     int nextMidiEventCount = -1;
     MidiBuffer::Iterator midiEventIterator(midiMessages);
@@ -29,21 +30,20 @@ void DiauproVCOProcessor::localProcess(AudioSampleBuffer &buffer, MidiBuffer &mi
         {
             if(nextMidiEvent.isNoteOn())
             {
-                
-                voice_count++;
-                frequency = MidiMessage::getMidiNoteInHertz(nextMidiEvent.getNoteNumber());
-                double cyclesPerSample = frequency / getSampleRate();
-                step = cyclesPerSample * 2.0 * double_Pi;
+                this->processState.voice_count++;
+                this->processState.frequency = MidiMessage::getMidiNoteInHertz(nextMidiEvent.getNoteNumber());
+                double cyclesPerSample = this->processState.frequency / getSampleRate();
+                this->processState.step = cyclesPerSample * 2.0 * double_Pi;
 
             } else{
-                voice_count--;
+                this->processState.voice_count--;
             }
         }
 
-        if(voice_count > 0)
+        if(this->processState.voice_count > 0)
         {
-            const float currentSample = (float) (sin (phase) * level);
-            phase += step;
+            const float currentSample = (float) (sin (this->processState.phase) * this->processState.level);
+            this->processState.phase += this->processState.step;
             for(int i = 0; i < buffer.getNumChannels(); i++)
             {
                 float oldSample = buffer.getSample(i, sampleNr);
@@ -52,4 +52,12 @@ void DiauproVCOProcessor::localProcess(AudioSampleBuffer &buffer, MidiBuffer &mi
 
         }
     }
+}
+
+void *DiauproVCOProcessor::getState() {
+    return &this->processState;
+}
+
+size_t DiauproVCOProcessor::getStateSize() {
+    return sizeof(vco_state) ;
 }

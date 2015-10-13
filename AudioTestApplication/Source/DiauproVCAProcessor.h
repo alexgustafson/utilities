@@ -19,17 +19,27 @@ class DiauproVCAProcessor : public DiauproProcessor
 public:
     DiauproVCAProcessor() {};
 
-    void localProcess(AudioSampleBuffer &buffer, MidiBuffer &midiMessages);
+    void localProcess(AudioSampleBuffer &buffer, MidiBuffer &midiMessages, void* state);
     String getServiceTag() override { return "_diaprovca._udp"; } ;
 
 private:
-    double attackTimeInSamples = 300.0;
-    double decayTimeInSamples = 3000.0;
-    double sustainLevel = 0.2;
-    double releaseTimeInSamples = 22050.0;
-
-    double phase = 0.0;
-    int voice_count = 0;
+    
+    struct vca_state {
+        int voice_count;
+        double phase;
+        double attack;
+        double decay;
+        double sustain;
+        double release;
+        double totalProcessTime;
+        double nodeProcessTime;
+    };
+    
+    struct vca_state processState;
+    
+    virtual void *getState() override;
+    
+    virtual size_t getStateSize() override;
 
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (DiauproVCAProcessor)

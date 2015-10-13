@@ -2,26 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3aa37274-6c16-4420-9e4a-344a6d41b9d0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/AudioProcessorNode.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/AudioProcessorNode.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/build/Debug/AudioProcessorNode" afterPath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/build/Debug/AudioProcessorNode" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/Builds/MacOSX/AudioTestApplication.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/AudioTestApplication/Builds/MacOSX/AudioTestApplication.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/DiauproPlugin.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/DiauproPlugin.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/build/Debug/Diaupro Plugin.component/Contents/MacOS/Diaupro Plugin" afterPath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/build/Debug/Diaupro Plugin.component/Contents/MacOS/Diaupro Plugin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/build/Release/Diaupro Plugin.component/Contents/MacOS/Diaupro Plugin" afterPath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/build/Release/Diaupro Plugin.component/Contents/MacOS/Diaupro Plugin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/AudioProcessorNode.xcodeproj/xcuserdata/alexandergustafson.xcuserdatad/xcschemes/AudioProcessorNode.xcscheme" afterPath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/AudioProcessorNode.xcodeproj/xcuserdata/alexandergustafson.xcuserdatad/xcschemes/AudioProcessorNode.xcscheme" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/Builds/MacOSX/AudioTestApplication.xcodeproj/xcuserdata/alexandergustafson.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" afterPath="$PROJECT_DIR$/AudioTestApplication/Builds/MacOSX/AudioTestApplication.xcodeproj/xcuserdata/alexandergustafson.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproProcessor.cpp" afterPath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproProcessor.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproProcessor.h" afterPath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproProcessor.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/DiauproPlugin.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/DiauproPlugin.xcodeproj/project.pbxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/DiauproPlugin.xcodeproj/xcuserdata/alexandergustafson.xcuserdatad/xcschemes/DiauproPlugin.xcscheme" afterPath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/DiauproPlugin.xcodeproj/xcuserdata/alexandergustafson.xcuserdatad/xcschemes/DiauproPlugin.xcscheme" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/build/Debug/Diaupro Plugin.component/Contents/Info.plist" afterPath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/build/Debug/Diaupro Plugin.component/Contents/Info.plist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diaupro Plugin/Diaupro Plugin.jucer" afterPath="$PROJECT_DIR$/Diaupro Plugin/Diaupro Plugin.jucer" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diaupro Plugin/Source/PluginProcessor.cpp" afterPath="$PROJECT_DIR$/Diaupro Plugin/Source/PluginProcessor.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproVCAProcessor.cpp" afterPath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproVCAProcessor.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproVCAProcessor.h" afterPath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproVCAProcessor.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproVCOProcessor.cpp" afterPath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproVCOProcessor.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproVCOProcessor.h" afterPath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproVCOProcessor.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/Source/MainComponent.cpp" afterPath="$PROJECT_DIR$/AudioTestApplication/Source/MainComponent.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diaupro Plugin/Source/PluginProcessor.h" afterPath="$PROJECT_DIR$/Diaupro Plugin/Source/PluginProcessor.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DiauproMessage/Source/DiauproMessage.cpp" afterPath="$PROJECT_DIR$/DiauproMessage/Source/DiauproMessage.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DiauproMessage/Source/DiauproMessage.h" afterPath="$PROJECT_DIR$/DiauproMessage/Source/DiauproMessage.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Monitor/Source/Monitor.cpp" afterPath="$PROJECT_DIR$/Monitor/Source/Monitor.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ZeroConf/Builds/MacOSX/.idea/workspace.xml" afterPath="$PROJECT_DIR$/ZeroConf/Builds/MacOSX/.idea/workspace.xml" />
     </list>
     <ignored path="utilities.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -116,8 +112,8 @@
       <file leaf-file-name="Main.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AudioProcessorNode/Source/Main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.61349696">
-              <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+            <state vertical-scroll-proportion="1.3100437">
+              <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -168,10 +164,10 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="514" />
-    <option name="y" value="192" />
-    <option name="width" value="1339" />
-    <option name="height" value="809" />
+    <option name="x" value="421" />
+    <option name="y" value="102" />
+    <option name="width" value="1224" />
+    <option name="height" value="778" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -198,6 +194,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -273,7 +270,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -494,12 +490,6 @@
       <created>1440757148412</created>
       <option name="number" value="Default" />
       <updated>1440757148412</updated>
-    </task>
-    <task id="LOCAL-00035" summary="unified path structure">
-      <created>1443003669647</created>
-      <option name="number" value="00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1443003669647</updated>
     </task>
     <task id="LOCAL-00036" summary="adding DiauproMessage module">
       <created>1443534310292</created>
@@ -789,19 +779,25 @@
       <option name="project" value="LOCAL" />
       <updated>1444340225328</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="adding plugin vst/au ready">
+      <created>1444565855167</created>
+      <option name="number" value="00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1444565855169</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="514" y="192" width="1339" height="809" extended-state="0" />
+    <frame x="421" y="102" width="1224" height="778" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3245952" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36717427" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28094575" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29360464" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1249,8 +1245,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AudioProcessorNode/Source/Main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61349696">
-          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+        <state vertical-scroll-proportion="1.3100437">
+          <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
           <folding />
         </state>
       </provider>

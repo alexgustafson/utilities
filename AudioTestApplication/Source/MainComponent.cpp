@@ -48,9 +48,10 @@ public:
 
     ~MainContentComponent()
     {
+        shutdownAudio();
         monitor.stop();
         
-        shutdownAudio();
+
         
     }
 
@@ -84,9 +85,9 @@ public:
         MidiBuffer incomingMidi;
         midiCollector->removeNextBlockOfMessages (incomingMidi, bufferToFill.numSamples);
 
-        diauproProcessor->processBlock(*bufferToFill.buffer, incomingMidi);
+        //diauproProcessor->processBlock(*bufferToFill.buffer, incomingMidi);
         diauproVCOProcessor->processBlock(*bufferToFill.buffer, incomingMidi);
-        diauproVCAProcessor->processBlock(*bufferToFill.buffer, incomingMidi);
+        //diauproVCAProcessor->processBlock(*bufferToFill.buffer, incomingMidi);
 
     }
 

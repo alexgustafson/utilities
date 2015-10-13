@@ -51,6 +51,9 @@ public:
 
     int getSampleDataSize();
 
+    size_t getStateSize();
+    void* getState();
+
     void *getData();
 
     size_t getSize();

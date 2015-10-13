@@ -14,22 +14,42 @@
 #include "JuceHeader.h"
 #include "DiauproProcessor.h"
 
+
+
+
 class DiauproVCOProcessor : public DiauproProcessor
 {
 public:
-    DiauproVCOProcessor(){};
+    DiauproVCOProcessor(){
+        this->processState.voice_count = 0;
+        this->processState.frequency = 1.0;
+        this->processState.phase = 1.0;
+        this->processState.step = 1.0;
+        this->processState.level = 0.7;
+        this->processState.totalProcessTime = 0.0;
+        this->processState.nodeProcessTime = 0.0;
+    };
 
-    void localProcess(AudioSampleBuffer &buffer, MidiBuffer &midiMessages);
+    virtual void *getState() override;
+
+    virtual size_t getStateSize() override;
+
+    void localProcess(AudioSampleBuffer &buffer, MidiBuffer &midiMessages, void* state);
     String getServiceTag() override { return "_diaprovco._udp"; } ;
 
 private:
 
-    int voice_count = 0;
-    double frequency = 1.0;
-    double phase = 1.0;
-    double step = 1.0;
-    double level = 0.7;
+    struct vco_state {
+        int voice_count;
+        double frequency;
+        double phase;
+        double step;
+        double level;
+        double totalProcessTime;
+        double nodeProcessTime;
+    };
 
+    struct vco_state processState;
 
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (DiauproVCOProcessor)

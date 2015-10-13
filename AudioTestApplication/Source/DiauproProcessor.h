@@ -17,22 +17,31 @@
 #include "DiauproMessage.h"
 
 class DiauproProcessor : public ZeroConfListener,
-                         public FileDescriptorListener{
+                         public FileDescriptorListener {
 public:
     DiauproProcessor();
 
     ~DiauproProcessor();
 
     void setMonitor(Monitor *monitor, bool asNode = false);
-    virtual String getServiceTag() { return "_diapro._udp"; };
 
+    virtual String getServiceTag() {
+        return "_diapro._udp";
+    };
+
+    virtual void *getState();
+
+    virtual size_t getStateSize();
 
     //AudioProcessor Methods:
 
     virtual bool hasEditor() const;
 
     virtual void prepareToPlay(double sampleRate, int estimatedSamplesPerBlock);
-    double getSampleRate() {return sampleRate;};
+
+    double getSampleRate() {
+        return sampleRate;
+    };
 
     virtual void getStateInformation(MemoryBlock &destData);
 
@@ -42,7 +51,7 @@ public:
 
     virtual void processBlock(AudioSampleBuffer &buffer, MidiBuffer &midiMessages);
 
-    virtual void localProcess(AudioSampleBuffer &buffer, MidiBuffer &midiMessages);
+    virtual void localProcess(AudioSampleBuffer &buffer, MidiBuffer &midiMessages, void *state = nullptr);
 
     virtual bool isOutputChannelStereoPair(int index) const;
 
@@ -84,13 +93,21 @@ public:
 
     bool hasActiveNetworkConnection();
 
-    DiauproMessage* getCurrentMessage();
+    DiauproMessage *getCurrentMessage();
 
 private:
+
+    struct state {
+        double totalProcessTime;
+        double nodeProcessTime;
+    };
+
+    struct state *processState;
 
     ScopedPointer<DatagramSocket> socket;
     ScopedPointer<DiauproMessage> message;
     ZeroConfService *activeNode;
+    ZeroConfService *service;
     ScopedPointer<ZeroConfManager> zManager;
     Monitor *monitor;
     int maxWaitTimeMs;
@@ -99,11 +116,13 @@ private:
     String targetHost;
     double sampleRate;
     double processTimeMs;
-                             
+
     AudioSampleBuffer audioSampleBuffer;
     MidiBuffer midiBuffer;
 
     String listenerName = "Diaupro Processor";
+
+    bool isNode;
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (DiauproProcessor)
 };
