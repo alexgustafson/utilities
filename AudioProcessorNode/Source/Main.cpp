@@ -22,17 +22,17 @@ int main (int argc, char* argv[])
     Monitor monitor;
     monitor.startMonitoring();
 
-    ScopedPointer<DiauproProcessor> diauproProcessor;
-    diauproProcessor = new DiauproProcessor();
-    diauproProcessor->setMonitor(&monitor, true);
+    //ScopedPointer<DiauproProcessor> diauproProcessor;
+    //diauproProcessor = new DiauproProcessor();
+    //diauproProcessor->setMonitor(&monitor, true);
 
     ScopedPointer<DiauproVCOProcessor> diauproVCOProcessor;
     diauproVCOProcessor = new DiauproVCOProcessor();
     diauproVCOProcessor->setMonitor(&monitor, true);
 
-    ScopedPointer<DiauproVCAProcessor> diauproVCAProcessor;
-    diauproVCAProcessor = new DiauproVCAProcessor();
-    diauproVCAProcessor->setMonitor(&monitor, true);
+    //ScopedPointer<DiauproVCAProcessor> diauproVCAProcessor;
+    //diauproVCAProcessor = new DiauproVCAProcessor();
+    //diauproVCAProcessor->setMonitor(&monitor, true);
     
     std::cout << "press enter to exit...";
     getchar();

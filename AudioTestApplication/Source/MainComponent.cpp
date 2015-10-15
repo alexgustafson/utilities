@@ -33,14 +33,14 @@ public:
         
         monitor.startMonitoring();
 
-        diauproProcessor = new DiauproProcessor();
-        diauproProcessor->setMonitor(&monitor);
+        //diauproProcessor = new DiauproProcessor();
+        //diauproProcessor->setMonitor(&monitor);
 
         diauproVCOProcessor = new DiauproVCOProcessor();
         diauproVCOProcessor->setMonitor(&monitor);
 
-        diauproVCAProcessor = new DiauproVCAProcessor();
-        diauproVCAProcessor->setMonitor(&monitor);
+        //diauproVCAProcessor = new DiauproVCAProcessor();
+        //diauproVCAProcessor->setMonitor(&monitor);
 
         setAudioChannels (2, 2);
         
@@ -67,9 +67,9 @@ public:
         // For more details, see the help for AudioProcessor::prepareToPlay()
         midiCollector->reset (sampleRate);
 
-        diauproProcessor->prepareToPlay(sampleRate, samplesPerBlockExpected);
+        //diauproProcessor->prepareToPlay(sampleRate, samplesPerBlockExpected);
         diauproVCOProcessor->prepareToPlay(sampleRate, samplesPerBlockExpected);
-        diauproVCAProcessor->prepareToPlay(sampleRate, samplesPerBlockExpected);
+        //diauproVCAProcessor->prepareToPlay(sampleRate, samplesPerBlockExpected);
 
     }
 

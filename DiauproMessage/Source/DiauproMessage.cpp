@@ -132,6 +132,8 @@ void DiauproMessage::clear() {
     this->header.numSamples = 0;
     this->header.sequenceNumber = 0;
     this->header.sampleRate = 0;
+    this->header.totalTime = 0.0;
+    this->header.processTime = 0.0;
     this->data.fillWith((uint8) 0);
 }
 
@@ -145,4 +147,21 @@ size_t DiauproMessage::getStateSize() {
 
 void *DiauproMessage::getState() {
     return (void*)((char*)this->getData() + getStateDataOffset());
+}
+
+void DiauproMessage::setProcessTime(double time)
+{
+    header.processTime = time;
+}
+void DiauproMessage::setTotalTime(double time)
+{
+    header.totalTime = time;
+}
+double DiauproMessage::getProcessTime()
+{
+    return header.processTime;
+}
+double DiauproMessage::getTotalTime()
+{
+    return header.totalTime;
 }

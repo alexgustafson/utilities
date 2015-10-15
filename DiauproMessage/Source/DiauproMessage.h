@@ -61,6 +61,11 @@ public:
     void clear();
     
     String headerToString();
+    
+    void setProcessTime(double time);
+    void setTotalTime(double time);
+    double getProcessTime();
+    double getTotalTime();
 
 private:
 
@@ -73,6 +78,8 @@ private:
         uint16 midiDataSize;
         uint16 stateDataSize;
         double cpuUsage;
+        double totalTime;
+        double processTime;
     };
 
     void setNumberChannels(uint16 numChannels);

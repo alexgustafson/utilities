@@ -20,21 +20,26 @@
 class DiauproVCOProcessor : public DiauproProcessor
 {
 public:
+    
     DiauproVCOProcessor(){
-        this->processState.voice_count = 0;
-        this->processState.frequency = 1.0;
-        this->processState.phase = 1.0;
-        this->processState.step = 1.0;
-        this->processState.level = 0.7;
-        this->processState.totalProcessTime = 0.0;
-        this->processState.nodeProcessTime = 0.0;
+        
+        this->processState = (vco_state*)malloc(sizeof(vco_state));
+        this->processState->voice_count = 0;
+        this->processState->frequency = 1.0;
+        this->processState->phase = 1.0;
+        this->processState->step = 1.0;
+        this->processState->level = 0.9;
+        this->processState->totalProcessTime = 0.0;
+        this->processState->nodeProcessTime = 0.0;
     };
 
     virtual void *getState() override;
 
     virtual size_t getStateSize() override;
+    
+    virtual void setState(void* state) override;
 
-    void localProcess(AudioSampleBuffer &buffer, MidiBuffer &midiMessages, void* state);
+    void localProcess(AudioSampleBuffer &buffer, MidiBuffer &midiMessages, void* state) override;
     String getServiceTag() override { return "_diaprovco._udp"; } ;
 
 private:
@@ -49,7 +54,7 @@ private:
         double nodeProcessTime;
     };
 
-    struct vco_state processState;
+    struct vco_state *processState;
 
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (DiauproVCOProcessor)

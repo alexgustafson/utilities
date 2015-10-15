@@ -25,13 +25,13 @@ public:
 
     void setMonitor(Monitor *monitor, bool asNode = false);
 
-    virtual String getServiceTag() {
-        return "_diapro._udp";
-    };
+    virtual String getServiceTag() = 0;
 
-    virtual void *getState();
+    virtual void *getState() = 0;
 
-    virtual size_t getStateSize();
+    virtual size_t getStateSize() = 0;
+                             
+    virtual void setState(void* state) = 0;
 
     //AudioProcessor Methods:
 
@@ -51,7 +51,7 @@ public:
 
     virtual void processBlock(AudioSampleBuffer &buffer, MidiBuffer &midiMessages);
 
-    virtual void localProcess(AudioSampleBuffer &buffer, MidiBuffer &midiMessages, void *state = nullptr);
+    virtual void localProcess(AudioSampleBuffer &buffer, MidiBuffer &midiMessages, void *state = nullptr) = 0;
 
     virtual bool isOutputChannelStereoPair(int index) const;
 

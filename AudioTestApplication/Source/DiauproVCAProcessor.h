@@ -21,7 +21,9 @@ public:
 
     void localProcess(AudioSampleBuffer &buffer, MidiBuffer &midiMessages, void* state);
     String getServiceTag() override { return "_diaprovca._udp"; } ;
-
+    virtual void *getState() override;
+    virtual size_t getStateSize() override;
+    virtual void setState(void* state) override;
 private:
     
     struct vca_state {
@@ -35,11 +37,9 @@ private:
         double nodeProcessTime;
     };
     
-    struct vca_state processState;
+    struct vca_state *processState;
     
-    virtual void *getState() override;
-    
-    virtual size_t getStateSize() override;
+
 
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (DiauproVCAProcessor)

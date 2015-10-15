@@ -76,6 +76,8 @@ AudioProcessorEditor *DiauproProcessor::createEditor() {
 void DiauproProcessor::processBlock(AudioSampleBuffer &buffer, MidiBuffer &midiMessages) {
 
     const double callbackStartTime = Time::getMillisecondCounterHiRes();
+    const double startTime = Time::getMillisecondCounterHiRes();
+    double returnTime;
 
     if (!midiMessages.isEmpty()) {
         Logger::writeToLog("has midi sent");
@@ -102,8 +104,13 @@ void DiauproProcessor::processBlock(AudioSampleBuffer &buffer, MidiBuffer &midiM
         if (socket->waitUntilReady(true, maxWaitTimeMs)) {
 
             bytesRead = message->readFromSocket(socket);
+            
+            returnTime = Time::getMillisecondCounterHiRes();
+            message->setTotalTime(startTime - returnTime);
+            
             message->getAudioData(&buffer);
             message->getMidiData(midiBuffer);
+            this->setState(message->getState());
 
             MidiBuffer::Iterator iterator(midiBuffer);
             MidiMessage tempMessage;
@@ -232,9 +239,11 @@ void DiauproProcessor::handleZeroConfUpdate(OwnedArray<ZeroConfService, Critical
 
 void DiauproProcessor::handleFileDescriptor(int fileDescriptor) {
 
-    const double nodeProcessTime = Time::getMillisecondCounterHiRes();
+    const double startTime = Time::getMillisecondCounterHiRes();
 
     bytesRead = message->readFromSocket(socket, targetHost, targetPort);
+    this->setState(message->getState());
+    
 
     this->sampleRate = message->getSampleRate();
 
@@ -242,13 +251,16 @@ void DiauproProcessor::handleFileDescriptor(int fileDescriptor) {
 
     message->getAudioData(&audioSampleBuffer);
     message->getMidiData(midiBuffer);
-    localProcess(audioSampleBuffer, midiBuffer, message->getState());
+    
+    localProcess(audioSampleBuffer, midiBuffer);
 
     message->setAudioData(&audioSampleBuffer);
-
-    this->processState->nodeProcessTime = Time::getMillisecondCounterHiRes() - nodeProcessTime;;
-
+    
+    
+    
     message->setStateData(getState(), getStateSize());
+    const double endTime =Time::getMillisecondCounterHiRes();
+    message->setProcessTime( endTime - startTime );
     socket->write(targetHost, targetPort, message->getData(), message->getSize());
 }
 
