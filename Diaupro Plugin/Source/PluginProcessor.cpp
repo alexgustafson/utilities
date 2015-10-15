@@ -17,7 +17,7 @@ DiauproPluginAudioProcessor::DiauproPluginAudioProcessor()
 {
     monitor.startMonitoring();
     diauproVCOProcessor.setMonitor(&monitor);
-    diauproVCAProcessor.setMonitor(&monitor);
+    //diauproVCAProcessor.setMonitor(&monitor);
 }
 
 DiauproPluginAudioProcessor::~DiauproPluginAudioProcessor()
@@ -133,7 +133,7 @@ void DiauproPluginAudioProcessor::prepareToPlay (double sampleRate, int samplesP
 
 
     diauproVCOProcessor.prepareToPlay(sampleRate, samplesPerBlock);
-    diauproVCAProcessor.prepareToPlay(sampleRate, samplesPerBlock);
+    //diauproVCAProcessor.prepareToPlay(sampleRate, samplesPerBlock);
 }
 
 void DiauproPluginAudioProcessor::releaseResources()
@@ -146,7 +146,7 @@ void DiauproPluginAudioProcessor::processBlock (AudioSampleBuffer& buffer, MidiB
 {
     buffer.clear();
     diauproVCOProcessor.processBlock(buffer, midiMessages);
-    diauproVCAProcessor.processBlock(buffer, midiMessages);
+    //diauproVCAProcessor.processBlock(buffer, midiMessages);
 }
 
 //==============================================================================

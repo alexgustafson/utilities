@@ -68,7 +68,7 @@ public:
 
 private:
     DiauproVCOProcessor diauproVCOProcessor;
-    DiauproVCAProcessor diauproVCAProcessor;
+    //DiauproVCAProcessor diauproVCAProcessor;
     Monitor monitor;
     Synthesiser synth;
     //==============================================================================
