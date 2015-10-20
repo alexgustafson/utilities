@@ -148,6 +148,8 @@ void DiauproPluginAudioProcessor::processBlock (AudioSampleBuffer& buffer, MidiB
     buffer.clear();
     diauproVCOProcessor.processBlock(buffer, midiMessages);
     //diauproVCAProcessor.processBlock(buffer, midiMessages);
+    
+    processTime = diauproVCOProcessor.getProcessTime();
 }
 
 //==============================================================================
@@ -175,9 +177,16 @@ void DiauproPluginAudioProcessor::setStateInformation (const void* data, int siz
     // whose contents will have been created by the getStateInformation() call.
 }
 
+void DiauproPluginAudioProcessor::handleAsyncUpdate ()
+{
+    
+}
+
 //==============================================================================
 // This creates new instances of the plugin..
 AudioProcessor* JUCE_CALLTYPE createPluginFilter()
 {
     return new DiauproPluginAudioProcessor();
 }
+
+

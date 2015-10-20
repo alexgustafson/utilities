@@ -94,6 +94,8 @@ public:
     bool hasActiveNetworkConnection();
 
     DiauproMessage *getCurrentMessage();
+                             
+    double getProcessTime();
 
 private:
 

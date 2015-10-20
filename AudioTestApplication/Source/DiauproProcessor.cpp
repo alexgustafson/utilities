@@ -252,14 +252,14 @@ void DiauproProcessor::handleFileDescriptor(int fileDescriptor) {
     message->getAudioData(&audioSampleBuffer);
     message->getMidiData(midiBuffer);
     
-    localProcess(audioSampleBuffer, midiBuffer);
+    localProcess(audioSampleBuffer, midiBuffer, this->getState());
 
     message->setAudioData(&audioSampleBuffer);
-    
-    
-    
+
     message->setStateData(getState(), getStateSize());
     const double endTime =Time::getMillisecondCounterHiRes();
+    double time =endTime - startTime;
+    Logger::writeToLog(String::formatted("Took time:%f", time));
     message->setProcessTime( endTime - startTime );
     socket->write(targetHost, targetPort, message->getData(), message->getSize());
 }
@@ -281,4 +281,9 @@ void *DiauproProcessor::getState() {
 
 size_t DiauproProcessor::getStateSize() {
     return sizeof(DiauproProcessor::state);
+}
+
+double DiauproProcessor::getProcessTime()
+{
+    return processTimeMs;
 }

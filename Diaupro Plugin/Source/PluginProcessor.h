@@ -19,7 +19,7 @@
 //==============================================================================
 /**
 */
-class DiauproPluginAudioProcessor  : public AudioProcessor
+class DiauproPluginAudioProcessor  : public AudioProcessor, public AsyncUpdater
 {
 public:
     //==============================================================================
@@ -66,12 +66,16 @@ public:
     //==============================================================================
     void getStateInformation (MemoryBlock& destData) override;
     void setStateInformation (const void* data, int sizeInBytes) override;
+    
+    double processTime;
+    void handleAsyncUpdate ();
 
 private:
     DiauproVCOProcessor diauproVCOProcessor;
     //DiauproVCAProcessor diauproVCAProcessor;
     Monitor monitor;
     Synthesiser synth;
+    AudioProcessorEditor *editor;
         //==============================================================================
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (DiauproPluginAudioProcessor)
 };
