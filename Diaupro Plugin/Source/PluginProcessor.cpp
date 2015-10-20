@@ -18,6 +18,7 @@ DiauproPluginAudioProcessor::DiauproPluginAudioProcessor()
     monitor.startMonitoring();
     diauproVCOProcessor.setMonitor(&monitor);
     //diauproVCAProcessor.setMonitor(&monitor);
+    
 }
 
 DiauproPluginAudioProcessor::~DiauproPluginAudioProcessor()

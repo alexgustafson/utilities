@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3aa37274-6c16-4420-9e4a-344a6d41b9d0" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/build/Release/Diaupro Plugin.component/Contents/Resources/Diaupro Plugin.rsrc" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/AudioProcessorNode.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/AudioProcessorNode.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/build/Debug/AudioProcessorNode" afterPath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/build/Debug/AudioProcessorNode" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/Builds/MacOSX/AudioTestApplication.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/AudioTestApplication/Builds/MacOSX/AudioTestApplication.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/DiauproPlugin.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/DiauproPlugin.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/build/Debug/Diaupro Plugin.component/Contents/MacOS/Diaupro Plugin" afterPath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/build/Debug/Diaupro Plugin.component/Contents/MacOS/Diaupro Plugin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/AudioProcessorNode.xcodeproj/xcuserdata/alexandergustafson.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" afterPath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/AudioProcessorNode.xcodeproj/xcuserdata/alexandergustafson.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/DiauproPlugin.xcodeproj/xcuserdata/alexandergustafson.xcuserdatad/xcschemes/DiauproPlugin.xcscheme" afterPath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/DiauproPlugin.xcodeproj/xcuserdata/alexandergustafson.xcuserdatad/xcschemes/DiauproPlugin.xcscheme" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/DiauproPlugin.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/DiauproPlugin.xcodeproj/project.pbxproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diaupro Plugin/Diaupro Plugin.jucer" afterPath="$PROJECT_DIR$/Diaupro Plugin/Diaupro Plugin.jucer" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diaupro Plugin/Source/PluginEditor.cpp" afterPath="$PROJECT_DIR$/Diaupro Plugin/Source/PluginEditor.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diaupro Plugin/Source/PluginEditor.h" afterPath="$PROJECT_DIR$/Diaupro Plugin/Source/PluginEditor.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diaupro Plugin/Source/PluginProcessor.cpp" afterPath="$PROJECT_DIR$/Diaupro Plugin/Source/PluginProcessor.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diaupro Plugin/Source/PluginProcessor.h" afterPath="$PROJECT_DIR$/Diaupro Plugin/Source/PluginProcessor.h" />
     </list>
@@ -46,8 +47,8 @@
       <file leaf-file-name="PluginProcessor.h" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Diaupro Plugin/Source/PluginProcessor.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.018270401">
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -82,7 +83,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1680" />
-    <option name="height" value="1023" />
+    <option name="height" value="918" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -109,6 +110,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -184,7 +186,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -405,12 +406,6 @@
       <created>1440757148412</created>
       <option name="number" value="Default" />
       <updated>1440757148412</updated>
-    </task>
-    <task id="LOCAL-00038" summary="adding midi handling to DiauproMessage">
-      <created>1443551804386</created>
-      <option name="number" value="00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1443551804386</updated>
     </task>
     <task id="LOCAL-00039" summary="adding midi handling to DiauproMessage">
       <created>1443552190978</created>
@@ -700,14 +695,20 @@
       <option name="project" value="LOCAL" />
       <updated>1444925780534</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="adding plugin vst/au ready">
+      <created>1444940929823</created>
+      <option name="number" value="00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1444940929823</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="1023" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1680" height="918" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22771673" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26436782" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1144,8 +1145,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Diaupro Plugin/Source/PluginProcessor.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.018270401">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>

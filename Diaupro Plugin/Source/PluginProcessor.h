@@ -14,6 +14,7 @@
 #include "../JuceLibraryCode/JuceHeader.h"
 #include "DiauproVCAProcessor.h"
 #include "DiauproVCOProcessor.h"
+#include "GUI.h"
 
 //==============================================================================
 /**
@@ -71,7 +72,7 @@ private:
     //DiauproVCAProcessor diauproVCAProcessor;
     Monitor monitor;
     Synthesiser synth;
-    //==============================================================================
+        //==============================================================================
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (DiauproPluginAudioProcessor)
 };
 

@@ -12,6 +12,8 @@
               jucerVersion="3.2.0" pluginAUSDKLocation="" companyName="AlexGustafson">
   <MAINGROUP id="ZMd7bj" name="DiauproPlugin">
     <GROUP id="{C0613FCB-8ACD-64C6-B6FD-CC11DB404B81}" name="Source">
+      <FILE id="BfiPTo" name="GUI.cpp" compile="1" resource="0" file="Source/GUI.cpp"/>
+      <FILE id="yil0XH" name="GUI.h" compile="0" resource="0" file="Source/GUI.h"/>
       <FILE id="oNnvFi" name="DiauproMessage.cpp" compile="1" resource="0"
             file="../DiauproMessage/Source/DiauproMessage.cpp"/>
       <FILE id="EuAioo" name="DiauproMessage.h" compile="0" resource="0"

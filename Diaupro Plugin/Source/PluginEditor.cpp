@@ -18,6 +18,7 @@ DiauproPluginAudioProcessorEditor::DiauproPluginAudioProcessorEditor (DiauproPlu
 {
     // Make sure that before the constructor has finished, you've set the
     // editor's size to whatever you need it to be.
+    addAndMakeVisible(gui = new DiauproGUI());
     setSize (400, 300);
 }
 
@@ -38,5 +39,6 @@ void DiauproPluginAudioProcessorEditor::paint (Graphics& g)
 void DiauproPluginAudioProcessorEditor::resized()
 {
     // This is generally where you'll want to lay out the positions of any
+    gui->setSize(getWidth(), getHeight());
     // subcomponents in your editor..
 }
