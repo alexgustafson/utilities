@@ -150,6 +150,7 @@ void DiauproPluginAudioProcessor::processBlock (AudioSampleBuffer& buffer, MidiB
     //diauproVCAProcessor.processBlock(buffer, midiMessages);
     
     processTime = diauproVCOProcessor.getProcessTime();
+    triggerAsyncUpdate ();
 }
 
 //==============================================================================
@@ -160,7 +161,8 @@ bool DiauproPluginAudioProcessor::hasEditor() const
 
 AudioProcessorEditor* DiauproPluginAudioProcessor::createEditor()
 {
-    return new DiauproPluginAudioProcessorEditor (*this);
+    this->editor = new DiauproPluginAudioProcessorEditor (*this);
+    return this->editor;
 }
 
 //==============================================================================
@@ -179,7 +181,11 @@ void DiauproPluginAudioProcessor::setStateInformation (const void* data, int siz
 
 void DiauproPluginAudioProcessor::handleAsyncUpdate ()
 {
-    
+
+    if (editor != nullptr && ((DiauproPluginAudioProcessorEditor *)editor)->isReady()) {
+
+        editor->repaint ();
+    }
 }
 
 //==============================================================================

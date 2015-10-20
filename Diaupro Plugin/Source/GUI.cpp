@@ -103,6 +103,10 @@ void DiauproGUI::resized()
 
 
 //[MiscUserCode] You can add your own definitions of your custom methods or any other code here...
+void DiauproGUI::setProcessTime(double processTime)
+{
+    timeLabel->setText(String(processTime), juce::NotificationType::sendNotificationAsync);
+}
 //[/MiscUserCode]
 
 

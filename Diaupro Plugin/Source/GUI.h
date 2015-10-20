@@ -43,6 +43,7 @@ public:
 
     //==============================================================================
     //[UserMethods]     -- You can add your own custom methods in this section.
+    void setProcessTime(double processTime);
     //[/UserMethods]
 
     void paint (Graphics& g);

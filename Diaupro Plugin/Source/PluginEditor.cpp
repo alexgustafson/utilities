@@ -14,8 +14,9 @@
 
 //==============================================================================
 DiauproPluginAudioProcessorEditor::DiauproPluginAudioProcessorEditor (DiauproPluginAudioProcessor& p)
-    : AudioProcessorEditor (&p), processor (p)
+    : AudioProcessorEditor (&p), processor (p), ready(false)
 {
+
     // Make sure that before the constructor has finished, you've set the
     // editor's size to whatever you need it to be.
     addAndMakeVisible(gui = new DiauproGUI());
@@ -29,11 +30,13 @@ DiauproPluginAudioProcessorEditor::~DiauproPluginAudioProcessorEditor()
 //==============================================================================
 void DiauproPluginAudioProcessorEditor::paint (Graphics& g)
 {
+    gui->setProcessTime(processor.processTime);
     g.fillAll (Colours::white);
 
     g.setColour (Colours::black);
     g.setFont (15.0f);
     g.drawFittedText ("Hello World!", getLocalBounds(), Justification::centred, 1);
+    ready = true;
 }
 
 void DiauproPluginAudioProcessorEditor::resized()
@@ -41,4 +44,9 @@ void DiauproPluginAudioProcessorEditor::resized()
     // This is generally where you'll want to lay out the positions of any
     gui->setSize(getWidth(), getHeight());
     // subcomponents in your editor..
+}
+
+bool DiauproPluginAudioProcessorEditor::isReady()
+{
+    return ready;
 }

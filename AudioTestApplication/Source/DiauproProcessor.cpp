@@ -259,7 +259,6 @@ void DiauproProcessor::handleFileDescriptor(int fileDescriptor) {
     message->setStateData(getState(), getStateSize());
     const double endTime =Time::getMillisecondCounterHiRes();
     double time =endTime - startTime;
-    Logger::writeToLog(String::formatted("Took time:%f", time));
     message->setProcessTime( endTime - startTime );
     socket->write(targetHost, targetPort, message->getData(), message->getSize());
 }
