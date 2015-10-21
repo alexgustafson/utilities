@@ -88,9 +88,10 @@ void DiauproProcessor::processBlock(AudioSampleBuffer &buffer, MidiBuffer &midiM
 
     if (hasActiveNetworkConnection()) {
         if (socket->waitUntilReady(false, maxWaitTimeMs)) {
+            
+            message->setSampleRate(sampleRate);
             message->setAudioData(&buffer);
             message->setMidiData(&midiMessages);
-            message->setSampleRate(sampleRate);
             message->setStateData(getState(), getStateSize());
             bytesRead = socket->write(targetHost, targetPort, message->getData(), message->getSize());
 
@@ -247,11 +248,11 @@ void DiauproProcessor::handleFileDescriptor(int fileDescriptor) {
     message->getAudioData(&audioSampleBuffer);
     message->getMidiData(midiBuffer);
     
-    localProcess(audioSampleBuffer, midiBuffer, this->getState());
+    localProcess(audioSampleBuffer, midiBuffer, message->getState());
 
     message->setAudioData(&audioSampleBuffer);
 
-    message->setStateData(getState(), getStateSize());
+    //message->setStateData(getState(), getStateSize());
     message->setProcessTime( Time::getMillisecondCounterHiRes() - startTime );
     socket->write(targetHost, targetPort, message->getData(), message->getSize());
 }
