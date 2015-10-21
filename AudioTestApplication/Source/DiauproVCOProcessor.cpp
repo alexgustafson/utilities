@@ -47,7 +47,7 @@ void DiauproVCOProcessor::localProcess(AudioSampleBuffer &buffer, MidiBuffer &mi
         {
             
             currentSample = (float) ( processState->phase * processState->level);
-            currentSample = sind(currentSample);
+            currentSample = sin(currentSample);
             
             processState->phase += processState->step;
             for(int i = 0; i < buffer.getNumChannels(); i++)
