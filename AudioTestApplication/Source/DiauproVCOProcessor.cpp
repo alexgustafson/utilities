@@ -71,5 +71,7 @@ size_t DiauproVCOProcessor::getStateSize() {
 
 void DiauproVCOProcessor::setState(void* state)
 {
-    this->processState = (vco_state*)state;
+    
+    memcpy(this->processState, (const void*)state, sizeof(vco_state));
+    
 }

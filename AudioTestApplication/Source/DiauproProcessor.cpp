@@ -235,21 +235,20 @@ void DiauproProcessor::handleFileDescriptor(int fileDescriptor) {
     const double startTime = Time::getMillisecondCounterHiRes();
 
     bytesRead = message->readFromSocket(socket, targetHost, targetPort);
-    this->setState(message->getState());
+    setState(message->getState());
     
-
-    this->sampleRate = message->getSampleRate();
+    sampleRate = message->getSampleRate();
 
     audioSampleBuffer.setSize(message->getNumberChannels(), message->getNumberSamples(), true, false, true);
 
     message->getAudioData(&audioSampleBuffer);
     message->getMidiData(midiBuffer);
     
-    localProcess(audioSampleBuffer, midiBuffer, message->getState());
+    localProcess(audioSampleBuffer, midiBuffer, getState());
 
     message->setAudioData(&audioSampleBuffer);
 
-    //message->setStateData(getState(), getStateSize());
+    message->setStateData(getState(), getStateSize());
     message->setProcessTime( Time::getMillisecondCounterHiRes() - startTime );
     socket->write(targetHost, targetPort, message->getData(), message->getSize());
 }
