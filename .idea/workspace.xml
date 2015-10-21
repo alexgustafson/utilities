@@ -4,7 +4,8 @@
     <list default="true" id="3aa37274-6c16-4420-9e4a-344a6d41b9d0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/AudioProcessorNode.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/AudioProcessorNode.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproProcessor.cpp" afterPath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproProcessor.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproVCOProcessor.cpp" afterPath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproVCOProcessor.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproVCOProcessor.h" afterPath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproVCOProcessor.h" />
     </list>
     <ignored path="utilities.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,8 +50,8 @@
       <file leaf-file-name="DiauproVCOProcessor.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AudioTestApplication/Source/DiauproVCOProcessor.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.24052478">
-              <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+            <state vertical-scroll-proportion="0.26239067">
+              <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -71,9 +72,9 @@
         <option value="$PROJECT_DIR$/AudioTestApplication/Source/NetworkBrowser.cpp" />
         <option value="$PROJECT_DIR$/AudioProcessorNode/Source/AudioProcessorNode.cpp" />
         <option value="$PROJECT_DIR$/AudioProcessorNode/Source/AudioProcessorNode.h" />
-        <option value="$PROJECT_DIR$/AudioTestApplication/Source/DiauproVCOProcessor.cpp" />
         <option value="$PROJECT_DIR$/AudioProcessorNode/Source/Main.cpp" />
         <option value="$PROJECT_DIR$/Diaupro Plugin/Source/PluginProcessor.h" />
+        <option value="$PROJECT_DIR$/AudioTestApplication/Source/DiauproVCOProcessor.cpp" />
       </list>
     </option>
   </component>
@@ -389,12 +390,6 @@
       <option name="number" value="Default" />
       <updated>1440757148412</updated>
     </task>
-    <task id="LOCAL-00048" summary="fixing zeroconf manager, more robust browsing and resolving, tighter concurrency,">
-      <created>1443786068054</created>
-      <option name="number" value="00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1443786068054</updated>
-    </task>
     <task id="LOCAL-00049" summary="fixing zeroconf manager, more robust browsing and resolving, tighter concurrency,">
       <created>1443786227833</created>
       <option name="number" value="00049" />
@@ -683,7 +678,13 @@
       <option name="project" value="LOCAL" />
       <updated>1445434124150</updated>
     </task>
-    <option name="localTasksCounter" value="97" />
+    <task id="LOCAL-00097" summary="what's up with processState on Arm">
+      <created>1445435457289</created>
+      <option name="number" value="00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1445435457289</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -724,7 +725,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix paths in linux" />
     <MESSAGE value="add unistd and fcntl headers to monitor" />
     <MESSAGE value="fixing paths in linux" />
     <MESSAGE value="moved zeroconf handling into audioprocessor" />
@@ -749,7 +749,8 @@
     <MESSAGE value="message serialisation bug fixes&#10;all working on ubuntu devices!!!!&#10;" />
     <MESSAGE value="adding plugin vst/au ready" />
     <MESSAGE value="statistic monitor stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="statistic monitor stuff" />
+    <MESSAGE value="what's up with processState on Arm" />
+    <option name="LAST_COMMIT_MESSAGE" value="what's up with processState on Arm" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1128,8 +1129,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AudioTestApplication/Source/DiauproVCOProcessor.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24052478">
-          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.26239067">
+          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
           <folding />
         </state>
       </provider>

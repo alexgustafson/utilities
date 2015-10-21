@@ -31,6 +31,7 @@ public:
         this->processState->level = 0.95;
         this->processState->totalProcessTime = 0.0;
         this->processState->nodeProcessTime = 0.0;
+        this->processState->toba = 54321;
     };
 
     virtual void *getState() override;
@@ -52,6 +53,7 @@ private:
         double level;
         double totalProcessTime;
         double nodeProcessTime;
+        int toba;
     };
 
     struct vco_state *processState;

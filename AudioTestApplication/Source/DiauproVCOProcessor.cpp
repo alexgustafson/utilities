@@ -11,7 +11,8 @@
 #include "DiauproVCOProcessor.h"
 
 void DiauproVCOProcessor::localProcess(AudioSampleBuffer &buffer, MidiBuffer &midiMessages, void* state) {
-    this->processState = (vco_state *)state;
+    vco_state* s = (vco_state *)state;
+    Logger::writeToLog(String(s->toba));
     int sampleNr;
     int nextMidiEventCount = -1;
     MidiBuffer::Iterator midiEventIterator(midiMessages);
@@ -30,15 +31,15 @@ void DiauproVCOProcessor::localProcess(AudioSampleBuffer &buffer, MidiBuffer &mi
         {
             if(nextMidiEvent.isNoteOn())
             {
-                processState->phase = 0.0;
-                processState->voice_count++;
-                processState->frequency = MidiMessage::getMidiNoteInHertz(nextMidiEvent.getNoteNumber());
-                double cyclesPerSample = processState->frequency / getSampleRate();
-                processState->step = cyclesPerSample * 2.0 * double_Pi;
+                s->phase = 0.0;
+                s->voice_count++;
+                s->frequency = MidiMessage::getMidiNoteInHertz(nextMidiEvent.getNoteNumber());
+                double cyclesPerSample = s->frequency / getSampleRate();
+                s->step = cyclesPerSample * 2.0 * double_Pi;
 
             } else{
-                processState->voice_count--;
-                processState->phase = 0.0;
+                s->voice_count--;
+                s->phase = 0.0;
 
             }
         }
@@ -46,10 +47,10 @@ void DiauproVCOProcessor::localProcess(AudioSampleBuffer &buffer, MidiBuffer &mi
         if(this->processState->voice_count > 0)
         {
             
-            currentSample = (float) ( processState->phase * processState->level);
+            currentSample = (float) ( s->phase * s->level);
             currentSample = sin(currentSample);
             
-            processState->phase += processState->step;
+            s->phase += s->step;
             for(int i = 0; i < buffer.getNumChannels(); i++)
             {
                 float oldSample = buffer.getSample(i, sampleNr);
@@ -61,7 +62,7 @@ void DiauproVCOProcessor::localProcess(AudioSampleBuffer &buffer, MidiBuffer &mi
 }
 
 void *DiauproVCOProcessor::getState() {
-    return this->processState;
+    return (void *)this->processState;
 }
 
 size_t DiauproVCOProcessor::getStateSize() {
