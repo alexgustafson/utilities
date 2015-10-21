@@ -18,7 +18,7 @@ void DiauproVCOProcessor::localProcess(AudioSampleBuffer &buffer, MidiBuffer &mi
     MidiBuffer::Iterator midiEventIterator(midiMessages);
     MidiMessage nextMidiEvent;
     bool hasEvent;
-    float currentSample;
+    double currentSample;
     
     for(sampleNr = 0; sampleNr < buffer.getNumSamples(); sampleNr++)
     {
@@ -47,7 +47,7 @@ void DiauproVCOProcessor::localProcess(AudioSampleBuffer &buffer, MidiBuffer &mi
         if(this->processState->voice_count > 0)
         {
             
-            currentSample = (float) ( s->phase * s->level);
+            currentSample =  s->phase * s->level;
             currentSample = sin(currentSample);
             
             s->phase += s->step;

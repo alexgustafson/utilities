@@ -82,9 +82,6 @@ void DiauproProcessor::processBlock(AudioSampleBuffer &buffer, MidiBuffer &midiM
     
     double returnTime;
 
-    if (!midiMessages.isEmpty()) {
-        Logger::writeToLog("has midi sent");
-    }
 
     if (hasActiveNetworkConnection()) {
         if (socket->waitUntilReady(false, maxWaitTimeMs)) {
@@ -114,14 +111,14 @@ void DiauproProcessor::processBlock(AudioSampleBuffer &buffer, MidiBuffer &midiM
             
             message->getAudioData(&buffer);
             message->getMidiData(midiBuffer);
-            this->setState(message->getState());
+            setState(message->getState());
             this->processTimeMs  = message->getProcessTime();
 
         } else {
             Logger::writeToLog("timedout");
             timeoutCount++;
             tripTimeMs = -1.0;
-            return;
+            localProcess(buffer, midiMessages, getState());
         }
 
     } else {
