@@ -17,8 +17,27 @@ DiauproPluginAudioProcessor::DiauproPluginAudioProcessor()
 {
     monitor.startMonitoring();
     diauproVCOProcessor.setMonitor(&monitor);
-    //diauproVCAProcessor.setMonitor(&monitor);
+    diauproVCAProcessor.setMonitor(&monitor);
+    diauproNullProcessor.setMonitor(&monitor);
     
+    vcoProcessTime = 0.0;
+    vcoRtTime = 0.0;
+    vcoRtMaxTime = 0.0;
+    vcoRtMinTime = 100.0;
+    
+    vcaProcessTime = 0.0;
+    vcaRtTime = 0.0;
+    vcaRtMaxTime = 0.0;
+    vcaRtMinTime = 100.0;
+    
+    nullProcessTime = 0.0;
+    nullRtTime = 0.0;
+    nullRtMaxTime = 0.0;
+    nullRtMinTime = 100.0;
+    
+    vcoNetStatus = false;
+    vcaNetStatus = false;
+    nullNetStatus = false;
 }
 
 DiauproPluginAudioProcessor::~DiauproPluginAudioProcessor()
@@ -132,9 +151,9 @@ void DiauproPluginAudioProcessor::changeProgramName (int index, const String& ne
 void DiauproPluginAudioProcessor::prepareToPlay (double sampleRate, int samplesPerBlock)
 {
 
-
+    diauproNullProcessor.prepareToPlay(sampleRate, samplesPerBlock);
     diauproVCOProcessor.prepareToPlay(sampleRate, samplesPerBlock);
-    //diauproVCAProcessor.prepareToPlay(sampleRate, samplesPerBlock);
+    diauproVCAProcessor.prepareToPlay(sampleRate, samplesPerBlock);
 }
 
 void DiauproPluginAudioProcessor::releaseResources()
@@ -146,10 +165,10 @@ void DiauproPluginAudioProcessor::releaseResources()
 void DiauproPluginAudioProcessor::processBlock (AudioSampleBuffer& buffer, MidiBuffer& midiMessages)
 {
     buffer.clear();
+    diauproNullProcessor.processBlock(buffer, midiMessages);
     diauproVCOProcessor.processBlock(buffer, midiMessages);
-    //diauproVCAProcessor.processBlock(buffer, midiMessages);
+    diauproVCAProcessor.processBlock(buffer, midiMessages);
     
-    processTime = diauproVCOProcessor.getProcessTime();
     triggerAsyncUpdate ();
 }
 
@@ -183,7 +202,25 @@ void DiauproPluginAudioProcessor::handleAsyncUpdate ()
 {
 
     if (editor != nullptr && ((DiauproPluginAudioProcessorEditor *)editor)->isReady()) {
-
+        vcoRtTime = diauproVCOProcessor.getRoundTripTime();
+        vcoProcessTime = diauproVCOProcessor.getProcessTime() ;
+        vcoRtMaxTime = jmax(vcoRtMaxTime, vcoRtTime);
+        if (vcoRtTime > 0.0) vcoRtMinTime = jmin(vcoRtMinTime, vcoRtTime);
+        vcoNetStatus = diauproVCOProcessor.hasActiveNetworkConnection();
+        
+        vcaRtTime = diauproVCAProcessor.getRoundTripTime();
+        vcaProcessTime = diauproVCAProcessor.getProcessTime() ;
+        vcaRtMaxTime = jmax(vcaRtMaxTime, vcaRtTime);
+        if (vcaRtTime > 0.0) vcaRtMinTime = jmin(vcaRtMinTime, vcaRtTime);
+        vcaNetStatus = diauproVCAProcessor.hasActiveNetworkConnection();
+        
+        nullRtTime = diauproNullProcessor.getRoundTripTime();
+        nullProcessTime = diauproNullProcessor.getProcessTime() ;
+        nullRtMaxTime = jmax(nullRtMaxTime, nullRtTime);
+        if (nullRtTime > 0.0) nullRtMinTime = jmin(nullRtMinTime, nullRtTime);
+        nullNetStatus = diauproNullProcessor.hasActiveNetworkConnection();
+        
+        
         editor->repaint ();
     }
 }

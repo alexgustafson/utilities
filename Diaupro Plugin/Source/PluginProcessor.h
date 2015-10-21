@@ -14,6 +14,7 @@
 #include "../JuceLibraryCode/JuceHeader.h"
 #include "DiauproVCAProcessor.h"
 #include "DiauproVCOProcessor.h"
+#include "DiauproNullProcessor.h"
 #include "GUI.h"
 
 //==============================================================================
@@ -67,12 +68,30 @@ public:
     void getStateInformation (MemoryBlock& destData) override;
     void setStateInformation (const void* data, int sizeInBytes) override;
     
-    double processTime;
-    void handleAsyncUpdate ();
+    double vcoProcessTime;
+    double vcoRtTime;
+    double vcoRtMaxTime;
+    double vcoRtMinTime;
+    bool vcoNetStatus;
+    
+    double vcaProcessTime;
+    double vcaRtTime;
+    double vcaRtMaxTime;
+    double vcaRtMinTime;
+    bool vcaNetStatus;
+    
+    double nullProcessTime;
+    double nullRtTime;
+    double nullRtMaxTime;
+    double nullRtMinTime;
+    bool nullNetStatus;
+    
+    void handleAsyncUpdate () override;
 
 private:
     DiauproVCOProcessor diauproVCOProcessor;
-    //DiauproVCAProcessor diauproVCAProcessor;
+    DiauproVCAProcessor diauproVCAProcessor;
+    DiauproNullProcessor diauproNullProcessor;
     Monitor monitor;
     Synthesiser synth;
     AudioProcessorEditor *editor;

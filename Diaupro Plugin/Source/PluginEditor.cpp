@@ -14,23 +14,30 @@
 
 //==============================================================================
 DiauproPluginAudioProcessorEditor::DiauproPluginAudioProcessorEditor (DiauproPluginAudioProcessor& p)
-    : AudioProcessorEditor (&p), processor (p), ready(false)
+    :  AudioProcessorEditor (&p),ready(false), processor (p)
 {
 
     // Make sure that before the constructor has finished, you've set the
     // editor's size to whatever you need it to be.
     addAndMakeVisible(gui = new DiauproGUI());
-    setSize (400, 300);
+    setSize (800, 800);
+    this->inst = this;
 }
 
 DiauproPluginAudioProcessorEditor::~DiauproPluginAudioProcessorEditor()
 {
+    this->inst = NULL;
 }
 
 //==============================================================================
 void DiauproPluginAudioProcessorEditor::paint (Graphics& g)
 {
-    gui->setProcessTime(processor.processTime);
+    gui->setVcoTime(processor.vcoProcessTime, processor.vcoRtTime, processor.vcoRtMaxTime, processor.vcoRtMinTime);
+    gui->setVcoNetStatus(processor.vcoNetStatus);
+    gui->setVcaTime(processor.vcaProcessTime, processor.vcaRtTime, processor.vcaRtMaxTime, processor.vcaRtMinTime);
+    gui->setVcaNetStatus(processor.vcaNetStatus);
+    gui->setNullTime(processor.nullProcessTime, processor.nullRtTime, processor.nullRtMaxTime, processor.nullRtMinTime);
+    gui->setNullNetStatus(processor.nullNetStatus);
     g.fillAll (Colours::white);
 
     g.setColour (Colours::black);
@@ -48,5 +55,8 @@ void DiauproPluginAudioProcessorEditor::resized()
 
 bool DiauproPluginAudioProcessorEditor::isReady()
 {
+    if (this != this->inst) {
+        return false;
+    }
     return ready;
 }

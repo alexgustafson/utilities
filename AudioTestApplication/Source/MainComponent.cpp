@@ -14,6 +14,7 @@
 #include "MidiUtiliy.h"
 #include "DiauproVCOProcessor.h"
 #include "DiauproVCAProcessor.h"
+#include "DiauproNULLProcessor.h"
 
 //==============================================================================
 /*
@@ -33,14 +34,14 @@ public:
         
         monitor.startMonitoring();
 
-        //diauproProcessor = new DiauproProcessor();
-        //diauproProcessor->setMonitor(&monitor);
+        diauproNullProcessor = new DiauproNullProcessor();
+        diauproNullProcessor->setMonitor(&monitor);
 
         diauproVCOProcessor = new DiauproVCOProcessor();
         diauproVCOProcessor->setMonitor(&monitor);
 
-        //diauproVCAProcessor = new DiauproVCAProcessor();
-        //diauproVCAProcessor->setMonitor(&monitor);
+        diauproVCAProcessor = new DiauproVCAProcessor();
+        diauproVCAProcessor->setMonitor(&monitor);
 
         setAudioChannels (2, 2);
         
@@ -67,9 +68,9 @@ public:
         // For more details, see the help for AudioProcessor::prepareToPlay()
         midiCollector->reset (sampleRate);
 
-        //diauproProcessor->prepareToPlay(sampleRate, samplesPerBlockExpected);
+        diauproNullProcessor->prepareToPlay(sampleRate, samplesPerBlockExpected);
         diauproVCOProcessor->prepareToPlay(sampleRate, samplesPerBlockExpected);
-        //diauproVCAProcessor->prepareToPlay(sampleRate, samplesPerBlockExpected);
+        diauproVCAProcessor->prepareToPlay(sampleRate, samplesPerBlockExpected);
 
     }
 
@@ -85,9 +86,9 @@ public:
         MidiBuffer incomingMidi;
         midiCollector->removeNextBlockOfMessages (incomingMidi, bufferToFill.numSamples);
 
-        //diauproProcessor->processBlock(*bufferToFill.buffer, incomingMidi);
+        diauproNullProcessor->processBlock(*bufferToFill.buffer, incomingMidi);
         diauproVCOProcessor->processBlock(*bufferToFill.buffer, incomingMidi);
-        //diauproVCAProcessor->processBlock(*bufferToFill.buffer, incomingMidi);
+        diauproVCAProcessor->processBlock(*bufferToFill.buffer, incomingMidi);
 
     }
 
@@ -126,10 +127,9 @@ private:
     MidiMessageCollector *midiCollector;
     MidiUtility midiUtility;
 
-    DiauproProcessor *diauproProcessor;
     DiauproVCOProcessor *diauproVCOProcessor;
     DiauproVCAProcessor *diauproVCAProcessor;
-
+    DiauproNullProcessor *diauproNullProcessor;
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MainContentComponent)
 };

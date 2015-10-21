@@ -17,9 +17,17 @@
 class DiauproVCAProcessor : public DiauproProcessor
 {
 public:
-    DiauproVCAProcessor() {};
+    DiauproVCAProcessor() {
+        this->processState = (vca_state*)malloc(sizeof(vca_state));
+        processState->voice_count = 0;
+        processState->phase = 0;
+        processState->attack = 200;
+        processState->decay = 84000;
+        processState->sustain = 0.0;
+        processState->release = 18000;
+    };
 
-    void localProcess(AudioSampleBuffer &buffer, MidiBuffer &midiMessages, void* state);
+    void localProcess(AudioSampleBuffer &buffer, MidiBuffer &midiMessages, void* state) override;
     String getServiceTag() override { return "_diaprovca._udp"; } ;
     virtual void *getState() override;
     virtual size_t getStateSize() override;

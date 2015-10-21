@@ -165,3 +165,9 @@ double DiauproMessage::getTotalTime()
 {
     return header.totalTime;
 }
+
+void DiauproMessage::incrementTotalTime(double time)
+{
+    header.totalTime += time;
+}
+

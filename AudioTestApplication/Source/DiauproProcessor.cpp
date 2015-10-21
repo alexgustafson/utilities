@@ -14,11 +14,12 @@
 #include <arpa/inet.h>
 
 
-DiauproProcessor::DiauproProcessor() : FileDescriptorListener("Audio Processor Node") {
+DiauproProcessor::DiauproProcessor() : FileDescriptorListener("Audio Processor Node"), processTimeMs(0.0), tripTimeMs(0.0) {
     socket = new DatagramSocket(0);
     message = new DiauproMessage(65000, false);
     socket->bindToPort(0);
     activeNode = nullptr;
+    timeoutCount = 0;
 }
 
 DiauproProcessor::~DiauproProcessor() {
@@ -77,6 +78,8 @@ void DiauproProcessor::processBlock(AudioSampleBuffer &buffer, MidiBuffer &midiM
 
     const double callbackStartTime = Time::getMillisecondCounterHiRes();
     const double startTime = Time::getMillisecondCounterHiRes();
+    
+    
     double returnTime;
 
     if (!midiMessages.isEmpty()) {
@@ -111,19 +114,13 @@ void DiauproProcessor::processBlock(AudioSampleBuffer &buffer, MidiBuffer &midiM
             message->getAudioData(&buffer);
             message->getMidiData(midiBuffer);
             this->setState(message->getState());
+            this->processTimeMs  = message->getProcessTime();
 
-            MidiBuffer::Iterator iterator(midiBuffer);
-            MidiMessage tempMessage;
-            int sampleIndex = 0;
-            if (!midiBuffer.isEmpty()) {
-                Logger::writeToLog("has midi returned");
-
-                while (iterator.getNextEvent(tempMessage, sampleIndex)) {
-                    Logger::writeToLog(String::formatted("midi note: %d", tempMessage.getNoteNumber()));
-                }
-            }
         } else {
             Logger::writeToLog("timedout");
+            timeoutCount++;
+            tripTimeMs = -1.0;
+            return;
         }
 
     } else {
@@ -131,10 +128,8 @@ void DiauproProcessor::processBlock(AudioSampleBuffer &buffer, MidiBuffer &midiM
         localProcess(buffer, midiMessages, getState());
 
     }
-
-    const double msTaken = Time::getMillisecondCounterHiRes() - callbackStartTime;
-    const double filterAmount = 0.2;
-    processTimeMs += filterAmount * (msTaken - processTimeMs);
+    
+    tripTimeMs  = Time::getMillisecondCounterHiRes() - callbackStartTime;
 
 }
 
@@ -257,9 +252,7 @@ void DiauproProcessor::handleFileDescriptor(int fileDescriptor) {
     message->setAudioData(&audioSampleBuffer);
 
     message->setStateData(getState(), getStateSize());
-    const double endTime =Time::getMillisecondCounterHiRes();
-    double time =endTime - startTime;
-    message->setProcessTime( endTime - startTime );
+    message->setProcessTime( Time::getMillisecondCounterHiRes() - startTime );
     socket->write(targetHost, targetPort, message->getData(), message->getSize());
 }
 
@@ -285,4 +278,8 @@ size_t DiauproProcessor::getStateSize() {
 double DiauproProcessor::getProcessTime()
 {
     return processTimeMs;
+}
+double DiauproProcessor::getRoundTripTime()
+{
+    return tripTimeMs;
 }

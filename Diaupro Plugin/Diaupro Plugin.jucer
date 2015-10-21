@@ -12,6 +12,14 @@
               jucerVersion="3.2.0" pluginAUSDKLocation="" companyName="AlexGustafson">
   <MAINGROUP id="ZMd7bj" name="DiauproPlugin">
     <GROUP id="{C0613FCB-8ACD-64C6-B6FD-CC11DB404B81}" name="Source">
+      <FILE id="rQfkaA" name="DiauproNullProcessor.cpp" compile="1" resource="0"
+            file="../AudioTestApplication/Source/DiauproNullProcessor.cpp"/>
+      <FILE id="JirHOD" name="DiauproNullProcessor.h" compile="0" resource="0"
+            file="../AudioTestApplication/Source/DiauproNullProcessor.h"/>
+      <FILE id="UvonDN" name="NetConnectivityIcon.cpp" compile="1" resource="0"
+            file="Source/NetConnectivityIcon.cpp"/>
+      <FILE id="vs8fAc" name="NetConnectivityIcon.h" compile="0" resource="0"
+            file="Source/NetConnectivityIcon.h"/>
       <FILE id="BfiPTo" name="GUI.cpp" compile="1" resource="0" file="Source/GUI.cpp"/>
       <FILE id="yil0XH" name="GUI.h" compile="0" resource="0" file="Source/GUI.h"/>
       <FILE id="oNnvFi" name="DiauproMessage.cpp" compile="1" resource="0"

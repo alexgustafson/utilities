@@ -96,6 +96,8 @@ public:
     DiauproMessage *getCurrentMessage();
                              
     double getProcessTime();
+    
+    double getRoundTripTime();
 
 private:
 
@@ -118,6 +120,8 @@ private:
     String targetHost;
     double sampleRate;
     double processTimeMs;
+    double tripTimeMs;
+    int timeoutCount;
 
     AudioSampleBuffer audioSampleBuffer;
     MidiBuffer midiBuffer;

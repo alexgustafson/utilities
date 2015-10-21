@@ -5,6 +5,10 @@
               includeBinaryInAppConfig="1" jucerVersion="3.2.0">
   <MAINGROUP id="eXMOZj" name="AudioProcessorNode">
     <GROUP id="{EFD99188-C070-E25C-E518-CE21E0420BC1}" name="Source">
+      <FILE id="X6ccNv" name="DiauproNullProcessor.cpp" compile="1" resource="0"
+            file="../AudioTestApplication/Source/DiauproNullProcessor.cpp"/>
+      <FILE id="HaPkUF" name="DiauproNullProcessor.h" compile="0" resource="0"
+            file="../AudioTestApplication/Source/DiauproNullProcessor.h"/>
       <FILE id="qA3sOR" name="DiauproProcessor.cpp" compile="1" resource="0"
             file="../AudioTestApplication/Source/DiauproProcessor.cpp"/>
       <FILE id="oTJsF8" name="DiauproProcessor.h" compile="0" resource="0"

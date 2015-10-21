@@ -24,6 +24,7 @@
 #include "JuceHeader.h"
 //[/Headers]
 
+#include "NetConnectivityIcon.h"
 
 
 //==============================================================================
@@ -34,7 +35,8 @@
     Describe your class and how it works here!
                                                                     //[/Comments]
 */
-class DiauproGUI  : public Component
+class DiauproGUI  : public Component,
+                    public ButtonListener
 {
 public:
     //==============================================================================
@@ -43,21 +45,76 @@ public:
 
     //==============================================================================
     //[UserMethods]     -- You can add your own custom methods in this section.
-    void setProcessTime(double processTime);
+    void setVcoTime(double pTime, double rtTime, double maxRtTime, double minRtTime );
+    void setVcoNetStatus(bool status);
+    void setVcaTime(double pTime, double rtTime, double maxRtTime, double minRtTime );
+    void setVcaNetStatus(bool status);
+    void setNullTime(double pTime, double rtTime, double maxRtTime, double minRtTime );
+    void setNullNetStatus(bool status);
     //[/UserMethods]
 
     void paint (Graphics& g);
     void resized();
+    void buttonClicked (Button* buttonThatWasClicked);
 
 
 
 private:
     //[UserVariables]   -- You can add your own custom variables in this section.
+    double vcoRtTime = 0;
+    double vcoPrTime = 0;
+    double vcoMaxRtTime = 0;
+    double vcoMinRtTime = 0;
+    Array<double> vcoTimes;
+    bool vcoNetStatus = false;
+
+    double vcaRtTime = 0;
+    double vcaPrTime = 0;
+    double vcaMaxRtTime = 0;
+    double vcaMinRtTime = 0;
+    Array<double> vcaTimes;
+    bool vcaNetStatus = false;
+
+    double nullRtTime = 0;
+    double nullPrTime = 0;
+    double nullMaxRtTime = 0;
+    double nullMinRtTime = 0;
+    Array<double> nullTimes;
+    bool nullNetStatus = false;
     //[/UserVariables]
 
     //==============================================================================
     ScopedPointer<Label> label;
-    ScopedPointer<Label> timeLabel;
+    ScopedPointer<Label> vcoRtTimeDisplay;
+    ScopedPointer<Label> label2;
+    ScopedPointer<NetConnectivityIcon> vcoNetworkStatusComponent;
+    ScopedPointer<Label> label3;
+    ScopedPointer<Label> label4;
+    ScopedPointer<TextButton> textButton;
+    ScopedPointer<Label> vcoMaxRtTimeLabel;
+    ScopedPointer<Label> vcoMinRtTimeLabel;
+    ScopedPointer<Label> label5;
+    ScopedPointer<Label> vcoPrTimeDisplay;
+    ScopedPointer<Label> label6;
+    ScopedPointer<Label> vcaRtTimeDisplay;
+    ScopedPointer<Label> label7;
+    ScopedPointer<NetConnectivityIcon> vcaNetworkStatusComponent;
+    ScopedPointer<Label> label8;
+    ScopedPointer<Label> label9;
+    ScopedPointer<Label> vcaMaxRtTimeLabel;
+    ScopedPointer<Label> vcaMinRtTimeLabel;
+    ScopedPointer<Label> label10;
+    ScopedPointer<Label> vcaPrTimeDisplay;
+    ScopedPointer<Label> label11;
+    ScopedPointer<Label> nullRtTimeDisplay;
+    ScopedPointer<Label> label12;
+    ScopedPointer<NetConnectivityIcon> nullNetworkStatusComponent;
+    ScopedPointer<Label> label13;
+    ScopedPointer<Label> label14;
+    ScopedPointer<Label> nullMaxRtTimeLabel;
+    ScopedPointer<Label> nullMinRtTimeLabel;
+    ScopedPointer<Label> label15;
+    ScopedPointer<Label> nullPrTimeDisplay;
 
 
     //==============================================================================

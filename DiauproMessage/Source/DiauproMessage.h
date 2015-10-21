@@ -64,6 +64,7 @@ public:
     
     void setProcessTime(double time);
     void setTotalTime(double time);
+    void incrementTotalTime(double time);
     double getProcessTime();
     double getTotalTime();
 
