@@ -5,6 +5,8 @@
               includeBinaryInAppConfig="1" jucerVersion="3.2.0">
   <MAINGROUP id="eXMOZj" name="AudioProcessorNode">
     <GROUP id="{EFD99188-C070-E25C-E518-CE21E0420BC1}" name="Source">
+      <FILE id="vnORHv" name="Monitor.cpp" compile="1" resource="0" file="../Monitor/Source/Monitor.cpp"/>
+      <FILE id="ZtrcyS" name="Monitor.h" compile="0" resource="0" file="../Monitor/Source/Monitor.h"/>
       <FILE id="X6ccNv" name="DiauproNullProcessor.cpp" compile="1" resource="0"
             file="../AudioTestApplication/Source/DiauproNullProcessor.cpp"/>
       <FILE id="HaPkUF" name="DiauproNullProcessor.h" compile="0" resource="0"
@@ -25,8 +27,6 @@
             file="../DiauproMessage/Source/DiauproMessage.cpp"/>
       <FILE id="z54WTG" name="DiauproMessage.h" compile="0" resource="0"
             file="../DiauproMessage/Source/DiauproMessage.h"/>
-      <FILE id="TqJSNJ" name="Monitor.cpp" compile="1" resource="0" file="../Monitor/Source/Monitor.cpp"/>
-      <FILE id="sDDkhO" name="Monitor.h" compile="0" resource="0" file="../Monitor/Source/Monitor.h"/>
       <FILE id="X87zHL" name="AudioProcessorNode.cpp" compile="1" resource="0"
             file="Source/AudioProcessorNode.cpp"/>
       <FILE id="eN7zAD" name="AudioProcessorNode.h" compile="0" resource="0"

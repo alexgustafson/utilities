@@ -89,6 +89,11 @@
     <Linker>
       <Add library="dns_sd"/>
     </Linker>
+    <Unit filename="../../../Monitor/Source/Monitor.cpp"/>
+    <Unit filename="../../../Monitor/Source/Monitor.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
     <Unit filename="../../../AudioTestApplication/Source/DiauproNullProcessor.cpp"/>
     <Unit filename="../../../AudioTestApplication/Source/DiauproNullProcessor.h">
       <Option compile="0"/>
@@ -111,11 +116,6 @@
     </Unit>
     <Unit filename="../../../DiauproMessage/Source/DiauproMessage.cpp"/>
     <Unit filename="../../../DiauproMessage/Source/DiauproMessage.h">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../Monitor/Source/Monitor.cpp"/>
-    <Unit filename="../../../Monitor/Source/Monitor.h">
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>

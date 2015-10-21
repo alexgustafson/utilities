@@ -49,12 +49,12 @@ ifeq ($(CONFIG),Release)
 endif
 
 OBJECTS := \
+  $(OBJDIR)/Monitor_7abf761f.o \
   $(OBJDIR)/DiauproNullProcessor_1f11a548.o \
   $(OBJDIR)/DiauproProcessor_140ab8f.o \
   $(OBJDIR)/DiauproVCAProcessor_4e3a10b.o \
   $(OBJDIR)/DiauproVCOProcessor_5f04a7bd.o \
   $(OBJDIR)/DiauproMessage_d3d3602f.o \
-  $(OBJDIR)/Monitor_7abf761f.o \
   $(OBJDIR)/AudioProcessorNode_86a96807.o \
   $(OBJDIR)/ZeroConfManager_bf750d16.o \
   $(OBJDIR)/Main_90ebc5c2.o \
@@ -86,6 +86,11 @@ strip:
 	@echo Stripping AudioProcessorNode
 	-@strip --strip-unneeded $(OUTDIR)/$(TARGET)
 
+$(OBJDIR)/Monitor_7abf761f.o: ../../../Monitor/Source/Monitor.cpp
+	-@mkdir -p $(OBJDIR)
+	@echo "Compiling Monitor.cpp"
+	@$(CXX) $(CXXFLAGS) -o "$@" -c "$<"
+
 $(OBJDIR)/DiauproNullProcessor_1f11a548.o: ../../../AudioTestApplication/Source/DiauproNullProcessor.cpp
 	-@mkdir -p $(OBJDIR)
 	@echo "Compiling DiauproNullProcessor.cpp"
@@ -109,11 +114,6 @@ $(OBJDIR)/DiauproVCOProcessor_5f04a7bd.o: ../../../AudioTestApplication/Source/D
 $(OBJDIR)/DiauproMessage_d3d3602f.o: ../../../DiauproMessage/Source/DiauproMessage.cpp
 	-@mkdir -p $(OBJDIR)
 	@echo "Compiling DiauproMessage.cpp"
-	@$(CXX) $(CXXFLAGS) -o "$@" -c "$<"
-
-$(OBJDIR)/Monitor_7abf761f.o: ../../../Monitor/Source/Monitor.cpp
-	-@mkdir -p $(OBJDIR)
-	@echo "Compiling Monitor.cpp"
 	@$(CXX) $(CXXFLAGS) -o "$@" -c "$<"
 
 $(OBJDIR)/AudioProcessorNode_86a96807.o: ../../Source/AudioProcessorNode.cpp
