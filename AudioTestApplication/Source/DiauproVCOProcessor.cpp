@@ -11,7 +11,7 @@
 #include "DiauproVCOProcessor.h"
 
 void DiauproVCOProcessor::localProcess(AudioSampleBuffer &buffer, MidiBuffer &midiMessages, void* state) {
-
+    this->processState = (vco_state *)state;
     int sampleNr;
     int nextMidiEventCount = -1;
     MidiBuffer::Iterator midiEventIterator(midiMessages);
@@ -41,7 +41,7 @@ void DiauproVCOProcessor::localProcess(AudioSampleBuffer &buffer, MidiBuffer &mi
 
         if(this->processState->voice_count > 0)
         {
-            const float currentSample = (float) (sin (processState->phase) * processState->level);
+            const float currentSample = (float) (sin (this->processState->phase) * this->processState->level);
             processState->phase += processState->step;
             for(int i = 0; i < buffer.getNumChannels(); i++)
             {

@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3aa37274-6c16-4420-9e4a-344a6d41b9d0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproNullProcessor.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproNullProcessor.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/AudioProcessorNode.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/AudioProcessorNode.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/DiauproPlugin.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/DiauproPlugin.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproVCOProcessor.cpp" afterPath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproVCOProcessor.cpp" />
     </list>
     <ignored path="utilities.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -379,12 +380,6 @@
       <option name="number" value="Default" />
       <updated>1440757148412</updated>
     </task>
-    <task id="LOCAL-00043" summary="adding midiinput utility">
-      <created>1443608928109</created>
-      <option name="number" value="00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1443608928109</updated>
-    </task>
     <task id="LOCAL-00044" summary="midi serializer fixed and tested.&#10;midi added to audioprocessor and nodes">
       <created>1443617488190</created>
       <option name="number" value="00044" />
@@ -673,7 +668,13 @@
       <option name="project" value="LOCAL" />
       <updated>1445430751472</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="statistic monitor stuff">
+      <created>1445431633022</created>
+      <option name="number" value="00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1445431633022</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="ToolWindowManager">
