@@ -3,10 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="3aa37274-6c16-4420-9e4a-344a6d41b9d0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/AudioProcessorNode.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/AudioProcessorNode.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/build/Debug/AudioProcessorNode" afterPath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/build/Debug/AudioProcessorNode" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/DiauproPlugin.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/DiauproPlugin.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/build/Debug/Diaupro Plugin.component/Contents/MacOS/Diaupro Plugin" afterPath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/build/Debug/Diaupro Plugin.component/Contents/MacOS/Diaupro Plugin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/AudioProcessorNode.xcodeproj/xcuserdata/alexandergustafson.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" afterPath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/AudioProcessorNode.xcodeproj/xcuserdata/alexandergustafson.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproVCOProcessor.cpp" afterPath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproVCOProcessor.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproVCOProcessor.h" afterPath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproVCOProcessor.h" />
     </list>
     <ignored path="utilities.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -381,12 +383,6 @@
       <option name="number" value="Default" />
       <updated>1440757148412</updated>
     </task>
-    <task id="LOCAL-00045" summary="adding new processor modules">
-      <created>1443637939390</created>
-      <option name="number" value="00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1443637939390</updated>
-    </task>
     <task id="LOCAL-00046" summary="fixing zeroconf manager, more robust browsing and resolving, tighter concurrency,">
       <created>1443784754677</created>
       <option name="number" value="00046" />
@@ -675,7 +671,13 @@
       <option name="project" value="LOCAL" />
       <updated>1445432913174</updated>
     </task>
-    <option name="localTasksCounter" value="94" />
+    <task id="LOCAL-00094" summary="statistic monitor stuff">
+      <created>1445433472980</created>
+      <option name="number" value="00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1445433472980</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
     <servers />
   </component>
   <component name="ToolWindowManager">
