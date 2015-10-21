@@ -2,37 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3aa37274-6c16-4420-9e4a-344a6d41b9d0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diaupro Plugin/Source/NetConnectivityIcon.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Diaupro Plugin/Source/NetConnectivityIcon.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/AudioProcessorNode.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/AudioProcessorNode.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/build/Debug/AudioProcessorNode" afterPath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/build/Debug/AudioProcessorNode" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/Builds/MacOSX/AudioTestApplication.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/AudioTestApplication/Builds/MacOSX/AudioTestApplication.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/DiauproPlugin.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/DiauproPlugin.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/build/Debug/Diaupro Plugin.component/Contents/MacOS/Diaupro Plugin" afterPath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/build/Debug/Diaupro Plugin.component/Contents/MacOS/Diaupro Plugin" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproNullProcessor.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproNullProcessor.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioProcessorNode/AudioProcessorNode.jucer" afterPath="$PROJECT_DIR$/AudioProcessorNode/AudioProcessorNode.jucer" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioProcessorNode/Builds/CodeBlocksLinux/AudioProcessorNode.cbp" afterPath="$PROJECT_DIR$/AudioProcessorNode/Builds/CodeBlocksLinux/AudioProcessorNode.cbp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioProcessorNode/Builds/LinuxMakefile/Makefile" afterPath="$PROJECT_DIR$/AudioProcessorNode/Builds/LinuxMakefile/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/AudioProcessorNode.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/AudioProcessorNode.xcodeproj/project.pbxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/AudioProcessorNode.xcodeproj/xcuserdata/alexandergustafson.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" afterPath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/AudioProcessorNode.xcodeproj/xcuserdata/alexandergustafson.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioProcessorNode/Source/Main.cpp" afterPath="$PROJECT_DIR$/AudioProcessorNode/Source/Main.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/AudioTestApplication.jucer" afterPath="$PROJECT_DIR$/AudioTestApplication/AudioTestApplication.jucer" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/Builds/LinuxMakefile/Makefile" afterPath="$PROJECT_DIR$/AudioTestApplication/Builds/LinuxMakefile/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/Builds/MacOSX/AudioTestApplication.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/AudioTestApplication/Builds/MacOSX/AudioTestApplication.xcodeproj/project.pbxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproProcessor.cpp" afterPath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproProcessor.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproProcessor.h" afterPath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproProcessor.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproVCAProcessor.h" afterPath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproVCAProcessor.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/Source/MainComponent.cpp" afterPath="$PROJECT_DIR$/AudioTestApplication/Source/MainComponent.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/DiauproPlugin.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/DiauproPlugin.xcodeproj/project.pbxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diaupro Plugin/Diaupro Plugin.jucer" afterPath="$PROJECT_DIR$/Diaupro Plugin/Diaupro Plugin.jucer" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diaupro Plugin/Source/GUI.cpp" afterPath="$PROJECT_DIR$/Diaupro Plugin/Source/GUI.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diaupro Plugin/Source/GUI.h" afterPath="$PROJECT_DIR$/Diaupro Plugin/Source/GUI.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diaupro Plugin/Source/PluginEditor.cpp" afterPath="$PROJECT_DIR$/Diaupro Plugin/Source/PluginEditor.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diaupro Plugin/Source/PluginEditor.h" afterPath="$PROJECT_DIR$/Diaupro Plugin/Source/PluginEditor.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diaupro Plugin/Source/PluginProcessor.cpp" afterPath="$PROJECT_DIR$/Diaupro Plugin/Source/PluginProcessor.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diaupro Plugin/Source/PluginProcessor.h" afterPath="$PROJECT_DIR$/Diaupro Plugin/Source/PluginProcessor.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DiauproMessage/Source/DiauproMessage.cpp" afterPath="$PROJECT_DIR$/DiauproMessage/Source/DiauproMessage.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DiauproMessage/Source/DiauproMessage.h" afterPath="$PROJECT_DIR$/DiauproMessage/Source/DiauproMessage.h" />
     </list>
     <ignored path="utilities.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -159,7 +131,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Diaupro Plugin" />
+              <option name="myItemId" value="AudioTestApplication" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -173,33 +145,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Diaupro Plugin" />
+              <option name="myItemId" value="AudioTestApplication" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Source" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utilities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utilities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Diaupro Plugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Builds" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MacOSX" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -428,12 +378,6 @@
       <created>1440757148412</created>
       <option name="number" value="Default" />
       <updated>1440757148412</updated>
-    </task>
-    <task id="LOCAL-00042" summary="adding midi handling tests to DiauproMessage testcases.&#10;IMplementation finished.">
-      <created>1443560141278</created>
-      <option name="number" value="00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1443560141278</updated>
     </task>
     <task id="LOCAL-00043" summary="adding midiinput utility">
       <created>1443608928109</created>
@@ -723,7 +667,13 @@
       <option name="project" value="LOCAL" />
       <updated>1445351350285</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="statistic monitor stuff">
+      <created>1445430751471</created>
+      <option name="number" value="00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1445430751472</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -732,6 +682,7 @@
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30181086" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287858" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -740,7 +691,6 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287858" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -764,7 +714,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="audio processor node added" />
     <MESSAGE value="fix paths in linux" />
     <MESSAGE value="add unistd and fcntl headers to monitor" />
     <MESSAGE value="fixing paths in linux" />
@@ -789,7 +738,8 @@
     <MESSAGE value="message serialisation bug fixes&#10;" />
     <MESSAGE value="message serialisation bug fixes&#10;all working on ubuntu devices!!!!&#10;" />
     <MESSAGE value="adding plugin vst/au ready" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding plugin vst/au ready" />
+    <MESSAGE value="statistic monitor stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="statistic monitor stuff" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
