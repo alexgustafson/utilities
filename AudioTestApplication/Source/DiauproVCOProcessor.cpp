@@ -29,6 +29,7 @@ void DiauproVCOProcessor::localProcess(AudioSampleBuffer &buffer, MidiBuffer &mi
         {
             if(nextMidiEvent.isNoteOn())
             {
+                processState->phase = 0.0;
                 processState->voice_count++;
                 processState->frequency = MidiMessage::getMidiNoteInHertz(nextMidiEvent.getNoteNumber());
                 double cyclesPerSample = processState->frequency / getSampleRate();
@@ -36,12 +37,14 @@ void DiauproVCOProcessor::localProcess(AudioSampleBuffer &buffer, MidiBuffer &mi
 
             } else{
                 processState->voice_count--;
+                processState->phase = 0.0;
+
             }
         }
 
         if(this->processState->voice_count > 0)
         {
-            const float currentSample = (float) (sin (this->processState->phase) * this->processState->level);
+            const float currentSample = (float) (sin (processState->phase) * processState->level);
             processState->phase += processState->step;
             for(int i = 0; i < buffer.getNumChannels(); i++)
             {

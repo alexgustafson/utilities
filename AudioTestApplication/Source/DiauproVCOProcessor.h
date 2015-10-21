@@ -26,9 +26,9 @@ public:
         this->processState = (vco_state*)malloc(sizeof(vco_state));
         this->processState->voice_count = 0;
         this->processState->frequency = 1.0;
-        this->processState->phase = 1.0;
+        this->processState->phase = 0.0;
         this->processState->step = 1.0;
-        this->processState->level = 0.9;
+        this->processState->level = 0.95;
         this->processState->totalProcessTime = 0.0;
         this->processState->nodeProcessTime = 0.0;
     };

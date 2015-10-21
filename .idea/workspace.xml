@@ -6,6 +6,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/DiauproPlugin.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/DiauproPlugin.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproVCOProcessor.cpp" afterPath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproVCOProcessor.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproVCOProcessor.h" afterPath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproVCOProcessor.h" />
     </list>
     <ignored path="utilities.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -74,8 +75,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="11" />
-    <option name="y" value="34" />
+    <option name="x" value="8" />
+    <option name="y" value="31" />
     <option name="width" value="1533" />
     <option name="height" value="806" />
   </component>
@@ -380,12 +381,6 @@
       <option name="number" value="Default" />
       <updated>1440757148412</updated>
     </task>
-    <task id="LOCAL-00044" summary="midi serializer fixed and tested.&#10;midi added to audioprocessor and nodes">
-      <created>1443617488190</created>
-      <option name="number" value="00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1443617488190</updated>
-    </task>
     <task id="LOCAL-00045" summary="adding new processor modules">
       <created>1443637939390</created>
       <option name="number" value="00045" />
@@ -674,11 +669,17 @@
       <option name="project" value="LOCAL" />
       <updated>1445431633022</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="statistic monitor stuff">
+      <created>1445432913174</created>
+      <option name="number" value="00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1445432913174</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="11" y="34" width="1533" height="806" extended-state="0" />
+    <frame x="8" y="31" width="1533" height="806" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30181086" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
