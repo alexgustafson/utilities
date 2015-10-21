@@ -11,7 +11,7 @@
 #include "DiauproVCAProcessor.h"
 
 void DiauproVCAProcessor::localProcess(AudioSampleBuffer &buffer, MidiBuffer &midiMessages, void* state) {
-    this->processState = (vca_state*)state;
+    vca_state* s = (vca_state*)state;
     int sampleNr;
     int nextMidiEventCount = -1;
     MidiBuffer::Iterator midiEventIterator(midiMessages);
@@ -27,17 +27,17 @@ void DiauproVCAProcessor::localProcess(AudioSampleBuffer &buffer, MidiBuffer &mi
 
         if(hasEvent && nextMidiEventCount == sampleNr)
         {
-            processState->phase = 0.0;
+            s->phase = 0.0;
             if(nextMidiEvent.isNoteOn())
             {
-                processState->voice_count++;
+                s->voice_count++;
 
             } else{
-                processState->voice_count--;
+                s->voice_count--;
             }
         }
 
-        if(processState->voice_count > 0)
+        if(s->voice_count > 0)
         {
             float currentSample;
 
@@ -46,27 +46,27 @@ void DiauproVCAProcessor::localProcess(AudioSampleBuffer &buffer, MidiBuffer &mi
                 currentSample = buffer.getSample(i, sampleNr);
 
                 //process current sample here
-                if(processState->phase < processState->attack)
+                if(s->phase < s->attack)
                 {
-                    currentSample = currentSample * ((processState->attack  - (processState->attack - processState->phase)) / processState->attack  );
+                    currentSample = currentSample * ((s->attack  - (s->attack - s->phase)) / s->attack  );
 
 
-                }else if(processState->phase < processState->attack + processState->decay)
+                }else if(s->phase < s->attack + s->decay)
                 {
-                    double diff = 1.0 - (processState->sustain);
-                    double fact = ( processState->decay - (processState->decay - (processState->phase - processState->attack))) / processState->decay  ;
+                    double diff = 1.0 - (s->sustain);
+                    double fact = ( s->decay - (s->decay - (s->phase - s->attack))) / s->decay  ;
                     currentSample = currentSample * (1.0 - (diff * fact));
                 }else {
-                    currentSample = currentSample * processState->sustain;
+                    currentSample = currentSample * s->sustain;
                 }
 
 
                 buffer.setSample(i, sampleNr, currentSample);
-                processState->phase++;
+                s->phase++;
             }
 
         }else {
-            if(processState->phase < processState->attack + processState->decay + processState->release)
+            if(s->phase < s->attack + s->decay + s->release)
             {
                 //signal is in release state
 
@@ -79,7 +79,7 @@ void DiauproVCAProcessor::localProcess(AudioSampleBuffer &buffer, MidiBuffer &mi
                     //process current sample here
 
                     buffer.setSample(i, sampleNr, currentSample);
-                    processState->phase++;
+                    s->phase++;
                 }
             }
         }
@@ -95,5 +95,5 @@ size_t DiauproVCAProcessor::getStateSize() {
 
 void DiauproVCAProcessor::setState(void* state)
 {
-    this->processState = (vca_state*)state;
+    memcpy(this->processState, (const void*)state, sizeof(vca_state));
 }

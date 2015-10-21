@@ -12,7 +12,6 @@
 
 void DiauproVCOProcessor::localProcess(AudioSampleBuffer &buffer, MidiBuffer &midiMessages, void* state) {
     vco_state* s = (vco_state *)state;
-    Logger::writeToLog(String(s->toba));
     int sampleNr;
     int nextMidiEventCount = -1;
     MidiBuffer::Iterator midiEventIterator(midiMessages);
