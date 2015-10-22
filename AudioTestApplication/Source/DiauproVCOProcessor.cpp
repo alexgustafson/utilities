@@ -18,6 +18,7 @@ void DiauproVCOProcessor::localProcess(AudioSampleBuffer &buffer, MidiBuffer &mi
     MidiMessage nextMidiEvent;
     bool hasEvent;
     double currentSample;
+    uint8 pitch;
     
     for(sampleNr = 0; sampleNr < buffer.getNumSamples(); sampleNr++)
     {
@@ -28,22 +29,17 @@ void DiauproVCOProcessor::localProcess(AudioSampleBuffer &buffer, MidiBuffer &mi
 
         if(hasEvent && nextMidiEventCount == sampleNr)
         {
-            if(nextMidiEvent.isNoteOn())
-            {
-                s->phase = 0.0;
-                s->voice_count++;
-                s->frequency = MidiMessage::getMidiNoteInHertz(nextMidiEvent.getNoteNumber());
-                double cyclesPerSample = s->frequency / getSampleRate();
-                s->step = cyclesPerSample * 2.0 * double_Pi;
+            
+            processNote(&nextMidiEvent);
 
-            } else{
-                s->voice_count--;
-                s->phase = 0.0;
+            s->phase = 0.0;
+            s->frequency = MidiMessage::getMidiNoteInHertz(getHighestNote());
+            double cyclesPerSample = s->frequency / getSampleRate();
+            s->step = cyclesPerSample * 2.0 * double_Pi;
 
-            }
         }
 
-        if(this->processState->voice_count > 0)
+        if((pitch = getHighestNote()) < 128)
         {
             
             currentSample =  s->phase * s->level;
@@ -73,4 +69,26 @@ void DiauproVCOProcessor::setState(void* state)
     
     memcpy(this->processState, (const void*)state, sizeof(vco_state));
     
+}
+
+void DiauproVCOProcessor::processNote(MidiMessage* message)
+{
+    if (this->processState->noteStates[message->getNoteNumber()] == (uint8)0) {
+        this->processState->noteStates[message->getNoteNumber()] = message->getVelocity();
+    }else{
+        this->processState->noteStates[message->getNoteNumber()] = (uint8)0;
+    }
+}
+
+uint8 DiauproVCOProcessor::getHighestNote()
+{
+    int i = 127;
+    while (i>=0 && this->processState->noteStates[i] == 0) {
+        
+        i--;
+    }
+    if (i > -1) {
+        return i;
+    }
+    return (uint8)128;
 }

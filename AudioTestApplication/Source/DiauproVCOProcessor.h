@@ -23,7 +23,7 @@ public:
     
     DiauproVCOProcessor(){
         
-        this->processState = (vco_state*)malloc(sizeof(vco_state));
+        this->processState = (vco_state*)calloc(1, sizeof(vco_state));
         this->processState->voice_count = 0;
         this->processState->frequency = 1.0;
         this->processState->phase = 0.0;
@@ -31,6 +31,7 @@ public:
         this->processState->level = 0.95;
         this->processState->totalProcessTime = 0.0;
         this->processState->nodeProcessTime = 0.0;
+        zerostruct(this->processState->noteStates);
     };
 
     virtual void *getState() override;
@@ -41,6 +42,8 @@ public:
 
     void localProcess(AudioSampleBuffer &buffer, MidiBuffer &midiMessages, void* state) override;
     String getServiceTag() override { return "_diaprovco._udp"; } ;
+    
+    MidiKeyboardState keyboardState;
 
 private:
 
@@ -52,9 +55,13 @@ private:
         double level;
         double totalProcessTime;
         double nodeProcessTime;
+        uint8 noteStates [128];
     };
 
     struct vco_state *processState;
+    
+    void processNote(MidiMessage* message);
+    uint8 getHighestNote();
 
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (DiauproVCOProcessor)

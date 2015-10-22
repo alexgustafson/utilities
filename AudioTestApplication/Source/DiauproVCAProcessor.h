@@ -25,6 +25,7 @@ public:
         processState->decay = 84000;
         processState->sustain = 0.0;
         processState->release = 18000;
+        zerostruct(this->processState->noteStates);
     };
 
     void localProcess(AudioSampleBuffer &buffer, MidiBuffer &midiMessages, void* state) override;
@@ -43,12 +44,15 @@ private:
         double release;
         double totalProcessTime;
         double nodeProcessTime;
+        uint8 noteStates [128];
     };
     
     struct vca_state *processState;
     
 
-
+    void processNote(MidiMessage* message);
+    uint8 getHighestNote();
+    bool hasNoteOn();
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (DiauproVCAProcessor)
 };

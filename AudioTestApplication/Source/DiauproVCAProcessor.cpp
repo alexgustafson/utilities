@@ -27,17 +27,17 @@ void DiauproVCAProcessor::localProcess(AudioSampleBuffer &buffer, MidiBuffer &mi
 
         if(hasEvent && nextMidiEventCount == sampleNr)
         {
-            s->phase = 0.0;
+            processNote(&nextMidiEvent);
             if(nextMidiEvent.isNoteOn())
             {
-                s->voice_count++;
+                s->phase = 0.0;
 
             } else{
-                s->voice_count--;
+
             }
         }
 
-        if(s->voice_count > 0)
+        if( hasNoteOn() )
         {
             float currentSample;
 
@@ -96,4 +96,39 @@ size_t DiauproVCAProcessor::getStateSize() {
 void DiauproVCAProcessor::setState(void* state)
 {
     memcpy(this->processState, (const void*)state, sizeof(vca_state));
+}
+
+void DiauproVCAProcessor::processNote(MidiMessage* message)
+{
+    if (this->processState->noteStates[message->getNoteNumber()] == (uint8)0) {
+        this->processState->noteStates[message->getNoteNumber()] = message->getVelocity();
+    }else{
+        this->processState->noteStates[message->getNoteNumber()] = (uint8)0;
+    }
+}
+
+uint8 DiauproVCAProcessor::getHighestNote()
+{
+    int i = 127;
+    while (i>=0 && this->processState->noteStates[i] == 0) {
+        
+        i--;
+    }
+    if (i > -1) {
+        return i;
+    }
+    return (uint8)128;
+}
+
+bool DiauproVCAProcessor::hasNoteOn()
+{
+    int i = 127;
+    while (i>=0 && this->processState->noteStates[i] == 0) {
+        
+        i--;
+    }
+    if (i > -1) {
+        return true;
+    }
+    return false;
 }
