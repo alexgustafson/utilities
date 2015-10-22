@@ -15,6 +15,7 @@
 //==============================================================================
 DiauproPluginAudioProcessor::DiauproPluginAudioProcessor()
 {
+    editorReady = false;
     monitor.startMonitoring();
     diauproVCOProcessor.setMonitor(&monitor);
     diauproVCAProcessor.setMonitor(&monitor);
@@ -42,6 +43,7 @@ DiauproPluginAudioProcessor::DiauproPluginAudioProcessor()
 
 DiauproPluginAudioProcessor::~DiauproPluginAudioProcessor()
 {
+    editorReady = false;
     monitor.stop();
 }
 
@@ -181,6 +183,7 @@ bool DiauproPluginAudioProcessor::hasEditor() const
 AudioProcessorEditor* DiauproPluginAudioProcessor::createEditor()
 {
     this->editor = new DiauproPluginAudioProcessorEditor (*this);
+    editorReady = true;
     return this->editor;
 }
 
@@ -201,7 +204,7 @@ void DiauproPluginAudioProcessor::setStateInformation (const void* data, int siz
 void DiauproPluginAudioProcessor::handleAsyncUpdate ()
 {
 
-    if (editor != nullptr && ((DiauproPluginAudioProcessorEditor *)editor)->isReady()) {
+    if (editor != nullptr && editorReady) {
         vcoRtTime = diauproVCOProcessor.getRoundTripTime();
         vcoProcessTime = diauproVCOProcessor.getProcessTime() ;
         vcoRtMaxTime = jmax(vcoRtMaxTime, vcoRtTime);
@@ -220,8 +223,7 @@ void DiauproPluginAudioProcessor::handleAsyncUpdate ()
         if (nullRtTime > 0.0) nullRtMinTime = jmin(nullRtMinTime, nullRtTime);
         nullNetStatus = diauproNullProcessor.hasActiveNetworkConnection();
         
-        
-        editor->repaint ();
+        if(((DiauproPluginAudioProcessorEditor *)editor)->isReady()) editor->repaint ();
     }
 }
 

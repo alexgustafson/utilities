@@ -31,19 +31,15 @@ void DiauproVCOProcessor::localProcess(AudioSampleBuffer &buffer, MidiBuffer &mi
         {
             
             processNote(&nextMidiEvent);
+            getHighestNote();
 
-            s->phase = 0.0;
-            s->frequency = MidiMessage::getMidiNoteInHertz(getHighestNote());
+            s->frequency = MidiMessage::getMidiNoteInHertz(this->processState->lastPlayedPitch);
             double cyclesPerSample = s->frequency / getSampleRate();
             s->step = cyclesPerSample * 2.0 * double_Pi;
 
         }
 
-        if((pitch = getHighestNote()) < 128)
-        {
-            
-            currentSample =  s->phase * s->level;
-            currentSample = sin(currentSample);
+            currentSample = sin(s->phase);
             
             s->phase += s->step;
             for(int i = 0; i < buffer.getNumChannels(); i++)
@@ -52,7 +48,7 @@ void DiauproVCOProcessor::localProcess(AudioSampleBuffer &buffer, MidiBuffer &mi
                 buffer.setSample(i, sampleNr, (currentSample + oldSample)*0.5);
             }
 
-        }
+        
     }
 }
 
@@ -88,7 +84,8 @@ uint8 DiauproVCOProcessor::getHighestNote()
         i--;
     }
     if (i > -1) {
-        return i;
+        this->processState->lastPlayedPitch = (uint8)i;
+        return (uint8)i;
     }
     return (uint8)128;
 }

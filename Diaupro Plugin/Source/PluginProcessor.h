@@ -95,6 +95,7 @@ private:
     Monitor monitor;
     Synthesiser synth;
     AudioProcessorEditor *editor;
+    bool editorReady;
         //==============================================================================
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (DiauproPluginAudioProcessor)
 };

@@ -20,11 +20,12 @@ public:
     DiauproVCAProcessor() {
         this->processState = (vca_state*)malloc(sizeof(vca_state));
         processState->voice_count = 0;
-        processState->phase = 0;
-        processState->attack = 200;
-        processState->decay = 84000;
-        processState->sustain = 0.0;
-        processState->release = 18000;
+        processState->phase = 0.0;
+        processState->vfactor = 0.0;
+        processState->attack = 800.0;
+        processState->decay = 34000.0;
+        processState->sustain = 0.2;
+        processState->release = 28000;
         zerostruct(this->processState->noteStates);
     };
 
@@ -38,6 +39,7 @@ private:
     struct vca_state {
         int voice_count;
         double phase;
+        double vfactor;
         double attack;
         double decay;
         double sustain;

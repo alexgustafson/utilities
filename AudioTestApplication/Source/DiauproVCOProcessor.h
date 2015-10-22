@@ -32,6 +32,7 @@ public:
         this->processState->totalProcessTime = 0.0;
         this->processState->nodeProcessTime = 0.0;
         zerostruct(this->processState->noteStates);
+        this->processState->lastPlayedPitch = (uint8)64;
     };
 
     virtual void *getState() override;
@@ -56,6 +57,7 @@ private:
         double totalProcessTime;
         double nodeProcessTime;
         uint8 noteStates [128];
+        uint8 lastPlayedPitch;
     };
 
     struct vco_state *processState;
