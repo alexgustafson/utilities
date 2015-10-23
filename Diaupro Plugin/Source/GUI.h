@@ -90,7 +90,7 @@ private:
     double asyncMinRtTime = 0;
     Array<double> asyncTimes;
     bool asyncNetStatus = false;
-    
+
     bool nullAsync = false;
     bool vcoAsync = false;
     bool vcaAsync = false;
