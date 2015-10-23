@@ -12,7 +12,6 @@
 #define DIAUPROASYNCPROCESSOR_H_INCLUDED
 
 #include "JuceHeader.h"
-#include "dRowAudio.h"
 #include "ZeroConfManager.h"
 #include "Monitor.h"
 #include "DiauproMessage.h"
