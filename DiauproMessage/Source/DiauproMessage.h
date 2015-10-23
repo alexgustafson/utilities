@@ -12,6 +12,7 @@
 #define DIAUPROMESSAGE_H_INCLUDED
 
 #include "JuceHeader.h"
+#include "dRowAudio.h"
 
 
 class DiauproMessage {
@@ -46,6 +47,7 @@ public:
     void getMidiData(MidiBuffer &buffer);
 
     AudioSampleBuffer *getAudioData(AudioSampleBuffer *buffer);
+    void getAudioData(OwnedArray<drow::FifoBuffer<float>> *buffers);
 
     float *getSampleData();
 

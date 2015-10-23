@@ -12,12 +12,13 @@
 #define DIAUPROVCOPROCESSOR_H_INCLUDED
 
 #include "JuceHeader.h"
-#include "DiauproProcessor.h"
+//#include "DiauproProcessor.h"
+#include "DiauproAsyncProcessor.h"
 
 
 
 
-class DiauproVCOProcessor : public DiauproProcessor
+class DiauproVCOProcessor : public DiauproAsyncProcessor
 {
 public:
     

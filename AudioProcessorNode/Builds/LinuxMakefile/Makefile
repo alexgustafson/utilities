@@ -49,6 +49,7 @@ ifeq ($(CONFIG),Release)
 endif
 
 OBJECTS := \
+  $(OBJDIR)/DiauproAsyncProcessor_4431b4e3.o \
   $(OBJDIR)/Monitor_7abf761f.o \
   $(OBJDIR)/DiauproNullProcessor_1f11a548.o \
   $(OBJDIR)/DiauproProcessor_140ab8f.o \
@@ -58,10 +59,12 @@ OBJECTS := \
   $(OBJDIR)/AudioProcessorNode_86a96807.o \
   $(OBJDIR)/ZeroConfManager_bf750d16.o \
   $(OBJDIR)/Main_90ebc5c2.o \
+  $(OBJDIR)/dRowAudio_5ea2f97c.o \
   $(OBJDIR)/juce_audio_basics_89a6632b.o \
   $(OBJDIR)/juce_audio_devices_3f459929.o \
   $(OBJDIR)/juce_audio_formats_6dc6e2c9.o \
   $(OBJDIR)/juce_audio_processors_eb06e1e3.o \
+  $(OBJDIR)/juce_audio_utils_9b3b2d69.o \
   $(OBJDIR)/juce_core_a278a20d.o \
   $(OBJDIR)/juce_data_structures_c98de09.o \
   $(OBJDIR)/juce_events_afa14001.o \
@@ -85,6 +88,11 @@ clean:
 strip:
 	@echo Stripping AudioProcessorNode
 	-@strip --strip-unneeded $(OUTDIR)/$(TARGET)
+
+$(OBJDIR)/DiauproAsyncProcessor_4431b4e3.o: ../../../AudioTestApplication/Source/DiauproAsyncProcessor.cpp
+	-@mkdir -p $(OBJDIR)
+	@echo "Compiling DiauproAsyncProcessor.cpp"
+	@$(CXX) $(CXXFLAGS) -o "$@" -c "$<"
 
 $(OBJDIR)/Monitor_7abf761f.o: ../../../Monitor/Source/Monitor.cpp
 	-@mkdir -p $(OBJDIR)
@@ -131,6 +139,11 @@ $(OBJDIR)/Main_90ebc5c2.o: ../../Source/Main.cpp
 	@echo "Compiling Main.cpp"
 	@$(CXX) $(CXXFLAGS) -o "$@" -c "$<"
 
+$(OBJDIR)/dRowAudio_5ea2f97c.o: ../../../../../JUCE/modules/dRowAudio/dRowAudio/dRowAudio.cpp
+	-@mkdir -p $(OBJDIR)
+	@echo "Compiling dRowAudio.cpp"
+	@$(CXX) $(CXXFLAGS) -o "$@" -c "$<"
+
 $(OBJDIR)/juce_audio_basics_89a6632b.o: ../../../../../JUCE/modules/juce_audio_basics/juce_audio_basics.cpp
 	-@mkdir -p $(OBJDIR)
 	@echo "Compiling juce_audio_basics.cpp"
@@ -149,6 +162,11 @@ $(OBJDIR)/juce_audio_formats_6dc6e2c9.o: ../../../../../JUCE/modules/juce_audio_
 $(OBJDIR)/juce_audio_processors_eb06e1e3.o: ../../../../../JUCE/modules/juce_audio_processors/juce_audio_processors.cpp
 	-@mkdir -p $(OBJDIR)
 	@echo "Compiling juce_audio_processors.cpp"
+	@$(CXX) $(CXXFLAGS) -o "$@" -c "$<"
+
+$(OBJDIR)/juce_audio_utils_9b3b2d69.o: ../../../../../JUCE/modules/juce_audio_utils/juce_audio_utils.cpp
+	-@mkdir -p $(OBJDIR)
+	@echo "Compiling juce_audio_utils.cpp"
 	@$(CXX) $(CXXFLAGS) -o "$@" -c "$<"
 
 $(OBJDIR)/juce_core_a278a20d.o: ../../../../../JUCE/modules/juce_core/juce_core.cpp

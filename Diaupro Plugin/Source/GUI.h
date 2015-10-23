@@ -51,6 +51,8 @@ public:
     void setVcaNetStatus(bool status);
     void setNullTime(double pTime, double rtTime, double maxRtTime, double minRtTime );
     void setNullNetStatus(bool status);
+    void setAsyncTime(double pTime, double rtTime, double maxRtTime, double minRtTime );
+    void setAsyncNetStatus(bool status);
     //[/UserMethods]
 
     void paint (Graphics& g);
@@ -81,6 +83,17 @@ private:
     double nullMinRtTime = 0;
     Array<double> nullTimes;
     bool nullNetStatus = false;
+
+    double asyncRtTime = 0;
+    double asyncPrTime = 0;
+    double asyncMaxRtTime = 0;
+    double asyncMinRtTime = 0;
+    Array<double> asyncTimes;
+    bool asyncNetStatus = false;
+    
+    bool nullAsync = false;
+    bool vcoAsync = false;
+    bool vcaAsync = false;
     //[/UserVariables]
 
     //==============================================================================
@@ -90,7 +103,6 @@ private:
     ScopedPointer<NetConnectivityIcon> vcoNetworkStatusComponent;
     ScopedPointer<Label> label3;
     ScopedPointer<Label> label4;
-    ScopedPointer<TextButton> textButton;
     ScopedPointer<Label> vcoMaxRtTimeLabel;
     ScopedPointer<Label> vcoMinRtTimeLabel;
     ScopedPointer<Label> label5;
@@ -115,6 +127,19 @@ private:
     ScopedPointer<Label> nullMinRtTimeLabel;
     ScopedPointer<Label> label15;
     ScopedPointer<Label> nullPrTimeDisplay;
+    ScopedPointer<Label> label16;
+    ScopedPointer<Label> asyncRtTimeDisplay;
+    ScopedPointer<Label> label17;
+    ScopedPointer<NetConnectivityIcon> asyncNetworkStatusComponent;
+    ScopedPointer<Label> label18;
+    ScopedPointer<Label> label19;
+    ScopedPointer<Label> asyncMaxRtTimeLabel;
+    ScopedPointer<Label> asyncMinRtTimeLabel;
+    ScopedPointer<Label> label20;
+    ScopedPointer<Label> asyncPrTimeDisplay;
+    ScopedPointer<TextButton> nullAsyncButton;
+    ScopedPointer<TextButton> vcoAsyncButton;
+    ScopedPointer<TextButton> vcaAsyncButton;
 
 
     //==============================================================================

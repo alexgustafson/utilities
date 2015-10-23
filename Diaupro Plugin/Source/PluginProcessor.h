@@ -15,6 +15,7 @@
 #include "DiauproVCAProcessor.h"
 #include "DiauproVCOProcessor.h"
 #include "DiauproNullProcessor.h"
+#include "DiauproAsyncProcessor.h"
 #include "GUI.h"
 
 //==============================================================================
@@ -86,12 +87,23 @@ public:
     double nullRtMinTime;
     bool nullNetStatus;
     
+    double asyncProcessTime;
+    double asyncRtTime;
+    double asyncRtMaxTime;
+    double asyncRtMinTime;
+    bool asyncNetStatus;
+    
     void handleAsyncUpdate () override;
+    
+    void setNullAsyncMode(bool async);
+    void setVCOAsyncMode(bool async);
+    void setVCAAsyncMode(bool async);
 
 private:
     DiauproVCOProcessor diauproVCOProcessor;
     DiauproVCAProcessor diauproVCAProcessor;
     DiauproNullProcessor diauproNullProcessor;
+    DiauproAsyncProcessor diauproAsyncProcessor;
     Monitor monitor;
     Synthesiser synth;
     AudioProcessorEditor *editor;

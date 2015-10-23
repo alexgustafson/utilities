@@ -81,6 +81,15 @@ AudioSampleBuffer *DiauproMessage::getAudioData(AudioSampleBuffer *buffer) {
     return buffer;
 }
 
+void DiauproMessage::getAudioData(OwnedArray<drow::FifoBuffer<float>> *buffers) {
+    
+    for (int i = 0; i < getNumberChannels(); i++) {
+        drow::FifoBuffer<float> *buffer = buffers->getUnchecked(i);
+        buffer->writeSamples((float*)((char*)this->data.getData() + getAudioDataOffset()+ (i * getNumberSamples() * sizeof(float) )), getNumberSamples());
+        
+    }
+}
+
 float *DiauproMessage::getSampleData() {
     return (float *) ((char *) this->data.getData() + getAudioDataOffset() );
 }

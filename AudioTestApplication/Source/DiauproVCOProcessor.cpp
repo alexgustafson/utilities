@@ -18,10 +18,12 @@ void DiauproVCOProcessor::localProcess(AudioSampleBuffer &buffer, MidiBuffer &mi
     MidiMessage nextMidiEvent;
     bool hasEvent;
     double currentSample;
-    uint8 pitch;
-    
+    s->frequency = MidiMessage::getMidiNoteInHertz(s->lastPlayedPitch);
+    double cyclesPerSample = s->frequency / getSampleRate();
+
     for(sampleNr = 0; sampleNr < buffer.getNumSamples(); sampleNr++)
     {
+
         if(nextMidiEventCount < sampleNr)
         {
             hasEvent = midiEventIterator.getNextEvent(nextMidiEvent,nextMidiEventCount );
@@ -33,21 +35,21 @@ void DiauproVCOProcessor::localProcess(AudioSampleBuffer &buffer, MidiBuffer &mi
             processNote(&nextMidiEvent);
             getHighestNote();
 
-            s->frequency = MidiMessage::getMidiNoteInHertz(this->processState->lastPlayedPitch);
-            double cyclesPerSample = s->frequency / getSampleRate();
-            s->step = cyclesPerSample * 2.0 * double_Pi;
+            s->frequency = MidiMessage::getMidiNoteInHertz(s->lastPlayedPitch);
+            cyclesPerSample = s->frequency / getSampleRate();
+            
 
         }
-
+        
             currentSample = sin(s->phase);
-            
-            s->phase += s->step;
+        
             for(int i = 0; i < buffer.getNumChannels(); i++)
             {
-                float oldSample = buffer.getSample(i, sampleNr);
-                buffer.setSample(i, sampleNr, (currentSample + oldSample)*0.5);
+                buffer.addSample(i, sampleNr, currentSample);
             }
-
+        
+        s->step += 0.005 * ( (cyclesPerSample * 2.0 * double_Pi) - s->step  );
+        s->phase += s->step;
         
     }
 }
@@ -62,9 +64,7 @@ size_t DiauproVCOProcessor::getStateSize() {
 
 void DiauproVCOProcessor::setState(void* state)
 {
-    
     memcpy(this->processState, (const void*)state, sizeof(vco_state));
-    
 }
 
 void DiauproVCOProcessor::processNote(MidiMessage* message)

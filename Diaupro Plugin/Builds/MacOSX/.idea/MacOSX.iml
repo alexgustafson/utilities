@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="CIDR_MODULE" version="4">
   <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$/../../../AudioTestApplication/Source/DiauproAsyncProcessor.cpp">
+      <sourceFolder url="file://$MODULE_DIR$/../../../AudioTestApplication/Source/DiauproAsyncProcessor.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../AudioTestApplication/Source/DiauproAsyncProcessor.h">
+      <sourceFolder url="file://$MODULE_DIR$/../../../AudioTestApplication/Source/DiauproAsyncProcessor.h" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../AudioTestApplication/Source/DiauproNullProcessor.cpp">
+      <sourceFolder url="file://$MODULE_DIR$/../../../AudioTestApplication/Source/DiauproNullProcessor.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../AudioTestApplication/Source/DiauproNullProcessor.h">
+      <sourceFolder url="file://$MODULE_DIR$/../../../AudioTestApplication/Source/DiauproNullProcessor.h" isTestSource="false" />
+    </content>
     <content url="file://$MODULE_DIR$/../../../AudioTestApplication/Source/DiauproProcessor.cpp">
       <sourceFolder url="file://$MODULE_DIR$/../../../AudioTestApplication/Source/DiauproProcessor.cpp" isTestSource="false" />
     </content>
@@ -29,6 +41,18 @@
     </content>
     <content url="file://$MODULE_DIR$/../../JuceLibraryCode/JuceHeader.h">
       <sourceFolder url="file://$MODULE_DIR$/../../JuceLibraryCode/JuceHeader.h" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Source/GUI.cpp">
+      <sourceFolder url="file://$MODULE_DIR$/../../Source/GUI.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Source/GUI.h">
+      <sourceFolder url="file://$MODULE_DIR$/../../Source/GUI.h" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Source/NetConnectivityIcon.cpp">
+      <sourceFolder url="file://$MODULE_DIR$/../../Source/NetConnectivityIcon.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Source/NetConnectivityIcon.h">
+      <sourceFolder url="file://$MODULE_DIR$/../../Source/NetConnectivityIcon.h" isTestSource="false" />
     </content>
     <content url="file://$MODULE_DIR$/../../Source/PluginEditor.cpp">
       <sourceFolder url="file://$MODULE_DIR$/../../Source/PluginEditor.cpp" isTestSource="false" />
@@ -59,6 +83,363 @@
     </content>
     <content url="file://$MODULE_DIR$/../../../ZeroConf/Source/ZeroConfManager.h">
       <sourceFolder url="file://$MODULE_DIR$/../../../ZeroConf/Source/ZeroConfManager.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_AudioFilePlayer.cpp">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_AudioFilePlayer.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_AudioFilePlayer.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_AudioFilePlayer.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_AudioFilePlayerExt.cpp">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_AudioFilePlayerExt.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_AudioFilePlayerExt.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_AudioFilePlayerExt.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_AudioSampleBufferAudioFormat.cpp">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_AudioSampleBufferAudioFormat.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_AudioSampleBufferAudioFormat.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_AudioSampleBufferAudioFormat.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_AudioUtility.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_AudioUtility.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_AudioUtilityUnitTests.cpp">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_AudioUtilityUnitTests.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_Buffer.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_Buffer.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_EnvelopeFollower.cpp">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_EnvelopeFollower.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_EnvelopeFollower.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_EnvelopeFollower.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_FifoBuffer.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_FifoBuffer.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_FilteringAudioSource.cpp">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_FilteringAudioSource.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_FilteringAudioSource.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_FilteringAudioSource.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_LoopingAudioSource.cpp">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_LoopingAudioSource.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_LoopingAudioSource.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_LoopingAudioSource.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_Pitch.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_Pitch.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_PitchDetector.cpp">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_PitchDetector.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_PitchDetector.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_PitchDetector.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_ReversibleAudioSource.cpp">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_ReversibleAudioSource.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_ReversibleAudioSource.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_ReversibleAudioSource.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_SampleRateConverter.cpp">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_SampleRateConverter.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_SampleRateConverter.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_SampleRateConverter.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_SoundTouchAudioSource.cpp">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_SoundTouchAudioSource.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_SoundTouchAudioSource.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_SoundTouchAudioSource.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_SoundTouchProcessor.cpp">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_SoundTouchProcessor.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_SoundTouchProcessor.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_SoundTouchProcessor.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/fft/dRowAudio_FFT.cpp">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/fft/dRowAudio_FFT.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/fft/dRowAudio_FFT.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/fft/dRowAudio_FFT.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/fft/dRowAudio_LTAS.cpp">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/fft/dRowAudio_LTAS.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/fft/dRowAudio_LTAS.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/fft/dRowAudio_LTAS.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/fft/dRowAudio_Window.cpp">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/fft/dRowAudio_Window.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/fft/dRowAudio_Window.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/fft/dRowAudio_Window.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/fft/dRowAudio_mac_FFTOperation.cpp">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/fft/dRowAudio_mac_FFTOperation.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/filters/dRowAudio_BiquadFilter.cpp">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/filters/dRowAudio_BiquadFilter.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/filters/dRowAudio_BiquadFilter.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/filters/dRowAudio_BiquadFilter.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/filters/dRowAudio_OnePoleFilter.cpp">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/filters/dRowAudio_OnePoleFilter.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/filters/dRowAudio_OnePoleFilter.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/filters/dRowAudio_OnePoleFilter.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/dRowAudio.mm">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/dRowAudio.mm" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/audiothumbnail/dRowAudio_AudioThumbnailImage.cpp">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/audiothumbnail/dRowAudio_AudioThumbnailImage.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/audiothumbnail/dRowAudio_AudioThumbnailImage.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/audiothumbnail/dRowAudio_AudioThumbnailImage.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/audiothumbnail/dRowAudio_ColouredAudioThumbnail.cpp">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/audiothumbnail/dRowAudio_ColouredAudioThumbnail.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/audiothumbnail/dRowAudio_ColouredAudioThumbnail.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/audiothumbnail/dRowAudio_ColouredAudioThumbnail.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/audiothumbnail/dRowAudio_DraggableWaveDisplay.cpp">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/audiothumbnail/dRowAudio_DraggableWaveDisplay.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/audiothumbnail/dRowAudio_DraggableWaveDisplay.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/audiothumbnail/dRowAudio_DraggableWaveDisplay.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/audiothumbnail/dRowAudio_PositionableWaveDisplay.cpp">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/audiothumbnail/dRowAudio_PositionableWaveDisplay.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/audiothumbnail/dRowAudio_PositionableWaveDisplay.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/audiothumbnail/dRowAudio_PositionableWaveDisplay.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_AudioFileDropTarget.cpp">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_AudioFileDropTarget.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_AudioFileDropTarget.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_AudioFileDropTarget.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_AudioOscilloscope.cpp">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_AudioOscilloscope.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_AudioOscilloscope.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_AudioOscilloscope.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_AudioTransportCursor.cpp">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_AudioTransportCursor.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_AudioTransportCursor.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_AudioTransportCursor.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_CentreAlignViewport.cpp">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_CentreAlignViewport.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_CentreAlignViewport.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_CentreAlignViewport.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_Clock.cpp">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_Clock.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_Clock.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_Clock.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_CpuMeter.cpp">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_CpuMeter.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_CpuMeter.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_CpuMeter.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_DefaultColours.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_DefaultColours.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_GraphicalComponent.cpp">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_GraphicalComponent.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_GraphicalComponent.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_GraphicalComponent.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_GuiHelpers.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_GuiHelpers.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_MusicLibraryTable.cpp">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_MusicLibraryTable.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_MusicLibraryTable.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_MusicLibraryTable.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_SegmentedMeter.cpp">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_SegmentedMeter.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_SegmentedMeter.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_SegmentedMeter.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_Sonogram.cpp">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_Sonogram.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_Sonogram.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_Sonogram.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_Spectrograph.cpp">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_Spectrograph.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_Spectrograph.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_Spectrograph.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_Spectroscope.cpp">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_Spectroscope.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_Spectroscope.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_Spectroscope.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_TriggeredScope.cpp">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_TriggeredScope.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_TriggeredScope.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_TriggeredScope.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/filebrowser/dRowAudio_BasicFileBrowser.cpp">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/filebrowser/dRowAudio_BasicFileBrowser.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/filebrowser/dRowAudio_BasicFileBrowser.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/filebrowser/dRowAudio_BasicFileBrowser.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/filebrowser/dRowAudio_ColumnFileBrowser.cpp">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/filebrowser/dRowAudio_ColumnFileBrowser.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/filebrowser/dRowAudio_ColumnFileBrowser.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/filebrowser/dRowAudio_ColumnFileBrowser.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/filebrowser/dRowAudio_ColumnFileBrowserLookAndFeel.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/filebrowser/dRowAudio_ColumnFileBrowserLookAndFeel.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/maths/dRowAudio_BezierCurve.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/maths/dRowAudio_BezierCurve.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/maths/dRowAudio_CumulativeMovingAverage.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/maths/dRowAudio_CumulativeMovingAverage.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/maths/dRowAudio_MathsUnitTests.cpp">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/maths/dRowAudio_MathsUnitTests.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/maths/dRowAudio_MathsUtilities.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/maths/dRowAudio_MathsUtilities.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/native/dRowAudio_AVAssetAudioFormat.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/native/dRowAudio_AVAssetAudioFormat.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/native/dRowAudio_AVAssetAudioFormat.mm">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/native/dRowAudio_AVAssetAudioFormat.mm" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/native/dRowAudio_AudioPicker.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/native/dRowAudio_AudioPicker.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/native/dRowAudio_AudioPicker.mm">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/native/dRowAudio_AudioPicker.mm" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/native/dRowAudio_IOSAudioConverter.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/native/dRowAudio_IOSAudioConverter.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/native/dRowAudio_IOSAudioConverter.mm">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/native/dRowAudio_IOSAudioConverter.mm" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/network/dRowAudio_CURLEasySession.cpp">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/network/dRowAudio_CURLEasySession.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/network/dRowAudio_CURLEasySession.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/network/dRowAudio_CURLEasySession.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/network/dRowAudio_CURLManager.cpp">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/network/dRowAudio_CURLManager.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/network/dRowAudio_CURLManager.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/network/dRowAudio_CURLManager.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/parameters/dRowAudio_PluginParameter.cpp">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/parameters/dRowAudio_PluginParameter.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/parameters/dRowAudio_PluginParameter.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/parameters/dRowAudio_PluginParameter.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/streams/dRowAudio_MemoryInputSource.cpp">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/streams/dRowAudio_MemoryInputSource.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/streams/dRowAudio_MemoryInputSource.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/streams/dRowAudio_MemoryInputSource.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/streams/dRowAudio_StreamAndFileHandler.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/streams/dRowAudio_StreamAndFileHandler.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/utility/dRowAudio_Comparators.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/utility/dRowAudio_Comparators.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/utility/dRowAudio_Constants.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/utility/dRowAudio_Constants.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/utility/dRowAudio_DebugObject.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/utility/dRowAudio_DebugObject.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/utility/dRowAudio_EncryptedString.cpp">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/utility/dRowAudio_EncryptedString.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/utility/dRowAudio_EncryptedString.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/utility/dRowAudio_EncryptedString.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/utility/dRowAudio_ITunesLibrary.cpp">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/utility/dRowAudio_ITunesLibrary.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/utility/dRowAudio_ITunesLibrary.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/utility/dRowAudio_ITunesLibrary.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/utility/dRowAudio_ITunesLibraryParser.cpp">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/utility/dRowAudio_ITunesLibraryParser.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/utility/dRowAudio_ITunesLibraryParser.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/utility/dRowAudio_ITunesLibraryParser.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/utility/dRowAudio_LockedPointer.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/utility/dRowAudio_LockedPointer.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/utility/dRowAudio_MusicLibraryHelpers.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/utility/dRowAudio_MusicLibraryHelpers.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/utility/dRowAudio_StateVariable.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/utility/dRowAudio_StateVariable.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/utility/dRowAudio_UnityBuilder.cpp">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/utility/dRowAudio_UnityBuilder.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/utility/dRowAudio_UnityBuilder.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/utility/dRowAudio_UnityBuilder.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/utility/dRowAudio_UnityProjectBuilder.cpp">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/utility/dRowAudio_UnityProjectBuilder.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/utility/dRowAudio_UnityProjectBuilder.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/utility/dRowAudio_UnityProjectBuilder.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/utility/dRowAudio_Utility.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/utility/dRowAudio_Utility.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/utility/dRowAudio_XmlHelpers.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/utility/dRowAudio_XmlHelpers.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/drowaudio/juce_module_info">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/drowaudio/juce_module_info" isTestSource="false" />
     </content>
     <content url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/buffers/juce_AudioDataConverters.cpp">
       <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/buffers/juce_AudioDataConverters.cpp" isTestSource="false" />
@@ -683,6 +1064,60 @@
     </content>
     <content url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/scanning/juce_PluginListComponent.h">
       <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/scanning/juce_PluginListComponent.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/juce_audio_utils/gui/juce_AudioAppComponent.cpp">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_audio_utils/gui/juce_AudioAppComponent.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/juce_audio_utils/gui/juce_AudioAppComponent.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_audio_utils/gui/juce_AudioAppComponent.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/juce_audio_utils/gui/juce_AudioDeviceSelectorComponent.cpp">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_audio_utils/gui/juce_AudioDeviceSelectorComponent.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/juce_audio_utils/gui/juce_AudioDeviceSelectorComponent.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_audio_utils/gui/juce_AudioDeviceSelectorComponent.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/juce_audio_utils/gui/juce_AudioThumbnail.cpp">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_audio_utils/gui/juce_AudioThumbnail.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/juce_audio_utils/gui/juce_AudioThumbnail.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_audio_utils/gui/juce_AudioThumbnail.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/juce_audio_utils/gui/juce_AudioThumbnailBase.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_audio_utils/gui/juce_AudioThumbnailBase.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/juce_audio_utils/gui/juce_AudioThumbnailCache.cpp">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_audio_utils/gui/juce_AudioThumbnailCache.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/juce_audio_utils/gui/juce_AudioThumbnailCache.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_audio_utils/gui/juce_AudioThumbnailCache.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/juce_audio_utils/gui/juce_AudioVisualiserComponent.cpp">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_audio_utils/gui/juce_AudioVisualiserComponent.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/juce_audio_utils/gui/juce_AudioVisualiserComponent.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_audio_utils/gui/juce_AudioVisualiserComponent.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/juce_audio_utils/gui/juce_MidiKeyboardComponent.cpp">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_audio_utils/gui/juce_MidiKeyboardComponent.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/juce_audio_utils/gui/juce_MidiKeyboardComponent.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_audio_utils/gui/juce_MidiKeyboardComponent.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/juce_audio_utils/juce_audio_utils.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_audio_utils/juce_audio_utils.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/juce_audio_utils/juce_audio_utils.mm">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_audio_utils/juce_audio_utils.mm" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/juce_audio_utils/juce_module_info">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_audio_utils/juce_module_info" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/juce_audio_utils/players/juce_AudioProcessorPlayer.cpp">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_audio_utils/players/juce_AudioProcessorPlayer.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/JUCE/modules/juce_audio_utils/players/juce_AudioProcessorPlayer.h">
+      <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_audio_utils/players/juce_AudioProcessorPlayer.h" isTestSource="false" />
     </content>
     <content url="file://$USER_HOME$/JUCE/modules/juce_core/containers/juce_AbstractFifo.cpp">
       <sourceFolder url="file://$USER_HOME$/JUCE/modules/juce_core/containers/juce_AbstractFifo.cpp" isTestSource="false" />
@@ -2975,9 +3410,11 @@
           <root url="file://$MODULE_DIR$/../../JuceLibraryCode/AppConfig.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/sources/juce_ChannelRemappingAudioSource.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/effects/juce_Decibels.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/network/dRowAudio_CURLEasySession.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_data_structures/app_properties/juce_PropertiesFile.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/files/juce_FileSearchPath.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/code_editor/juce_CodeDocument.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/properties/juce_TextPropertyComponent.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/widgets/juce_TextEditor.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/buffers/juce_AudioDataConverters.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/text/juce_Base64.h" />
@@ -2985,37 +3422,45 @@
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/time/juce_Time.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/midi/juce_MidiMessage.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/buttons/juce_ArrowButton.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_core/threads/juce_DynamicLibrary.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_plugin_client/RTAS/juce_RTAS_Wrapper.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/processors/juce_GenericAudioProcessorEditor.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_events/native/juce_linux_Messaging.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_events/juce_module_info" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/audiothumbnail/dRowAudio_ColouredAudioThumbnail.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/processors/juce_PluginDescription.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_Viewport.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_events/messages/juce_MessageListener.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_formats/sampler/juce_Sampler.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/geometry/juce_BorderSize.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_data_structures/values/juce_ValueTreeSynchroniser.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_core/zip/juce_ZipFile.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/windows/juce_TopLevelWindow.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/utility/dRowAudio_LockedPointer.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_ResizableBorderComponent.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/memory/juce_ReferenceCountedObject.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/memory/juce_ScopedPointer.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/positioning/juce_RelativeParallelogram.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_CpuMeter.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_formats/format/juce_AudioFormat.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/effects/juce_DropShadowEffect.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/juce_core.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/native/juce_osx_ObjCHelpers.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/xml/juce_XmlElement.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/containers/juce_DynamicObject.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/buttons/juce_DrawableButton.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/filebrowser/juce_FileSearchPathListComponent.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/native/juce_win32_Windowing.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/juce_gui_basics.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_utils/players/juce_AudioProcessorPlayer.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/native/juce_win32_Threads.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/filebrowser/juce_FilenameComponent.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/system/juce_StandardHeader.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/properties/juce_BooleanPropertyComponent.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/threads/juce_ThreadPool.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/properties/juce_SliderPropertyComponent.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/filters/dRowAudio_OnePoleFilter.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/widgets/juce_ProgressBar.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/format_types/juce_VST3Common.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_events/native/juce_win32_Messaging.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/colour/juce_FillType.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/threads/juce_WaitableEvent.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/sources/juce_PositionableAudioSource.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_core/unit_tests/juce_UnitTest.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/mouse/juce_TooltipClient.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/commands/juce_ApplicationCommandTarget.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/midi_io/juce_MidiMessageCollector.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/memory/juce_MemoryBlock.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/commands/juce_ApplicationCommandTarget.cpp" />
@@ -3023,27 +3468,32 @@
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_plugin_client/RTAS/juce_RTAS_DigiCode3.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/windows/juce_CallOutBox.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/midi/juce_MidiFile.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/sources/juce_AudioTransportSource.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/maths/dRowAudio_BezierCurve.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_ResizableEdgeComponent.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_events/interprocess/juce_InterprocessConnectionServer.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/geometry/juce_Point.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/fft/dRowAudio_Window.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/keyboard/juce_CaretComponent.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_formats/format/juce_AudioFormatManager.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/images/juce_ImageCache.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_EnvelopeFollower.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_FilteringAudioSource.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_data_structures/app_properties/juce_PropertiesFile.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_events/broadcasters/juce_ChangeBroadcaster.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/geometry/juce_Path.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_core/system/juce_TargetPlatform.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/filebrowser/juce_FileListComponent.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_events/messages/juce_MessageManager.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/widgets/juce_ComboBox.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/containers/juce_ElementComparator.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/containers/juce_DynamicObject.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_StretchableLayoutManager.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_plugin_client/AU/CoreAudioUtilityClasses/CAMutex.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_plugin_client/AU/CoreAudioUtilityClasses/CAAUParameter.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/effects/juce_DropShadowEffect.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/filebrowser/juce_FileListComponent.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/utility/dRowAudio_Comparators.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/time/juce_RelativeTime.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/buffers/juce_AudioSampleBuffer.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/native/juce_linux_Files.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/native/juce_ios_Windowing.mm" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/mouse/juce_DragAndDropContainer.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/utility/dRowAudio_DebugObject.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/memory/juce_ContainerDeletePolicy.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/files/juce_FileFilter.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/lookandfeel/juce_LookAndFeel_V3.cpp" />
@@ -3051,29 +3501,35 @@
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/drawables/juce_DrawableText.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/native/juce_win32_Fonts.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/audio_io/juce_AudioIODeviceType.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_core/memory/juce_Atomic.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_GuiHelpers.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_plugin_client/AU/CoreAudioUtilityClasses/AUMIDIEffectBase.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_AnimatedPosition.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/drawables/juce_DrawableShape.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/native/juce_linux_WebBrowserComponent.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/properties/juce_SliderPropertyComponent.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_events/messages/juce_Initialisation.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/colour/juce_ColourGradient.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/zip/juce_GZIPDecompressorInputStream.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/processors/juce_AudioProcessorEditor.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/properties/juce_PropertyPanel.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/properties/juce_ButtonPropertyComponent.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_plugin_client/AU/CoreAudioUtilityClasses/AUBuffer.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/filebrowser/juce_DirectoryContentsList.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/native/juce_freetype_Fonts.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_core/misc/juce_WindowsRegistry.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/native/juce_linux_ALSA.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/memory/juce_Memory.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/code_editor/juce_CodeEditorComponent.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/colour/juce_PixelFormats.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/menus/juce_MenuBarModel.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/files/juce_WildcardFileFilter.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_events/timers/juce_MultiTimer.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/geometry/juce_Point.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/native/juce_linux_AudioCDReader.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_core/zip/juce_ZipFile.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_formats/format/juce_AudioSubsectionReader.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/native/juce_mac_Strings.mm" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/native/juce_linux_ALSA.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_utils/juce_audio_utils.mm" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/mouse/juce_MouseInactivityDetector.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/code_editor/juce_XMLCodeTokeniser.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/unit_tests/juce_UnitTest.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_MultiDocumentPanel.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/documents/juce_FileBasedDocument.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/effects/juce_DropShadowEffect.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_utils/juce_module_info" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_MultiDocumentPanel.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_utils/gui/juce_AudioVisualiserComponent.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/native/juce_mac_CoreGraphicsContext.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/streams/juce_MemoryOutputStream.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/mouse/juce_MouseInputSource.cpp" />
@@ -3083,75 +3539,92 @@
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/widgets/juce_Slider.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/native/juce_mac_AudioCDBurner.mm" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/application/juce_Application.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/fonts/juce_GlyphArrangement.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/misc/juce_RecentlyOpenedFilesList.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_plugin_client/RTAS/juce_RTAS_Wrapper.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_core/xml/juce_XmlDocument.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/native/juce_win32_Direct2DGraphicsContext.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/menus/juce_MenuBarComponent.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_events/timers/juce_Timer.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_StretchableLayoutResizerBar.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_formats/format/juce_AudioFormatManager.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/mouse/juce_SelectedItemSet.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_AudioOscilloscope.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_events/juce_module_info" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_SampleRateConverter.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/utility/dRowAudio_Constants.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_Viewport.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/code_editor/juce_CodeTokeniser.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/windows/juce_TopLevelWindow.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/mouse/juce_MouseCursor.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/audiothumbnail/dRowAudio_PositionableWaveDisplay.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/buttons/juce_ArrowButton.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/containers/juce_PropertySet.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/commands/juce_KeyPressMappingSet.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/contexts/juce_LowLevelGraphicsSoftwareRenderer.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_events/messages/juce_DeletedAtShutdown.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/filebrowser/juce_FileBrowserListener.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_plugin_client/AU/CoreAudioUtilityClasses/AUCarbonViewDispatch.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/format_types/juce_VST3Headers.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/sources/juce_BufferingAudioSource.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/geometry/juce_Rectangle.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/menus/juce_PopupMenu.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/scanning/juce_PluginListComponent.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/maths/juce_Random.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/audiothumbnail/dRowAudio_PositionableWaveDisplay.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/native/juce_mac_Files.mm" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/drawables/juce_DrawableShape.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/midi/juce_MidiMessage.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/drawables/juce_DrawableRectangle.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/midi/juce_MidiFile.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_core/native/juce_mac_Threads.mm" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/audiothumbnail/dRowAudio_ColouredAudioThumbnail.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/juce_audio_processors.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/filebrowser/juce_FileBrowserComponent.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/juce_audio_basics.mm" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/menus/juce_PopupMenu.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/streams/juce_BufferedInputStream.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_core/containers/juce_ReferenceCountedArray.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/utility/dRowAudio_MusicLibraryHelpers.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/positioning/juce_RelativeRectangle.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_plugin_client/AAX/juce_AAX_Wrapper.mm" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_events/broadcasters/juce_ChangeBroadcaster.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_plugin_client/RTAS/juce_RTAS_DigiCode1.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/streams/juce_OutputStream.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/image_formats/juce_JPEGLoader.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/buffers/juce_AudioDataConverters.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_Clock.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/windows/juce_DocumentWindow.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/threads/juce_SpinLock.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_events/broadcasters/juce_ActionBroadcaster.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/sources/juce_BufferingAudioSource.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/contexts/juce_LowLevelGraphicsPostScriptRenderer.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_StretchableLayoutResizerBar.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/native/juce_win32_Direct2DGraphicsContext.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_core/threads/juce_ThreadPool.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/native/dRowAudio_AudioPicker.mm" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/widgets/juce_Toolbar.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/keyboard/juce_KeyPress.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/filters/dRowAudio_OnePoleFilter.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_core/containers/juce_Variant.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_plugin_client/AU/CoreAudioUtilityClasses/AUBase.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_ResizableCornerComponent.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/buttons/juce_TextButton.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/geometry/juce_AffineTransform.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_events/native/juce_win32_HiddenMessageWindow.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/windows/juce_DocumentWindow.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/placement/juce_RectanglePlacement.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/buttons/juce_ShapeButton.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_ResizableEdgeComponent.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_formats/format/juce_AudioFormatReaderSource.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/streams/juce_OutputStream.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/native/juce_android_Audio.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/native/juce_linux_SystemStats.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/widgets/juce_Label.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/positioning/juce_MarkerList.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_events/native/juce_mac_MessageManager.mm" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/keyboard/juce_SystemClipboard.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/components/juce_Component.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/containers/juce_PropertySet.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_core/text/juce_StringPool.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/native/juce_android_FileChooser.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/mouse/juce_MouseInputSource.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/filebrowser/juce_FileChooser.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/misc/juce_SystemTrayIconComponent.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/maths/dRowAudio_MathsUnitTests.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/filters/dRowAudio_BiquadFilter.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/native/dRowAudio_AVAssetAudioFormat.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/utility/dRowAudio_ITunesLibrary.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/time/juce_Time.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_events/juce_events.mm" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_core/text/juce_StringPairArray.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/widgets/juce_ComboBox.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_AudioSampleBufferAudioFormat.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/streams/juce_SubregionStream.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/fonts/juce_TextLayout.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_TabbedComponent.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_plugin_client/AAX/juce_AAX_Wrapper.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_core/system/juce_TargetPlatform.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_events/messages/juce_ApplicationBase.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/embedding/juce_NSViewComponent.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_plugin_client/utility/juce_CheckSettingMacros.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_plugin_client/utility/juce_CarbonVisibility.h" />
@@ -3162,57 +3635,62 @@
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/files/juce_DirectoryIterator.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/widgets/juce_ListBox.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/memory/juce_HeapBlock.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/widgets/juce_Slider.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/filebrowser/juce_ImagePreviewComponent.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/text/juce_String.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/native/juce_mac_CoreAudio.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/drawables/juce_DrawableImage.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_AudioFileDropTarget.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/scanning/juce_PluginListComponent.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/files/juce_WildcardFileFilter.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_plugin_client/AU/juce_AU_Resources.r" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/sources/juce_AudioTransportSource.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_utils/gui/juce_AudioThumbnailCache.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/audio_io/juce_AudioIODevice.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/native/juce_android_Midi.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/lookandfeel/juce_LookAndFeel_V1.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/code_editor/juce_XMLCodeTokeniser.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/keyboard/juce_KeyboardFocusTraverser.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/widgets/juce_ToolbarItemPalette.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/files/juce_TemporaryFile.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/memory/juce_Singleton.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/sources/juce_ReverbAudioSource.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/widgets/juce_Slider.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_events/native/juce_linux_Messaging.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/windows/juce_ComponentPeer.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/streams/juce_InputStream.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_core/network/juce_IPAddress.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_core/system/juce_SystemStats.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_formats/codecs/juce_QuickTimeAudioFormat.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/fonts/juce_Font.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/misc/juce_SplashScreen.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_plugin_client/AAX/juce_AAX_Wrapper.mm" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_AudioSampleBufferAudioFormat.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/network/dRowAudio_CURLEasySession.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/effects/juce_LagrangeInterpolator.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/lookandfeel/juce_LookAndFeel_V1.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/contexts/juce_LowLevelGraphicsSoftwareRenderer.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/properties/juce_TextPropertyComponent.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/positioning/juce_RelativePoint.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/utility/dRowAudio_StateVariable.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_core/text/juce_StringPool.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/colour/juce_Colour.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/native/dRowAudio_IOSAudioConverter.mm" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/native/juce_posix_NamedPipe.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_events/broadcasters/juce_AsyncUpdater.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/colour/juce_ColourGradient.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/fonts/juce_GlyphArrangement.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_plugin_client/AU/CoreAudioUtilityClasses/CAStreamBasicDescription.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/audio_cd/juce_AudioCDBurner.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/audiothumbnail/dRowAudio_DraggableWaveDisplay.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/juce_module_info" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/windows/juce_CallOutBox.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/fonts/juce_Typeface.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/colour/juce_Colours.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/processors/juce_AudioProcessorParameter.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/mouse/juce_MouseInactivityDetector.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/widgets/juce_ImageComponent.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/containers/juce_Variant.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/application/juce_Application.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/juce_audio_processors.mm" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/files/juce_DirectoryIterator.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_plugin_client/VST3/juce_VST3_Wrapper.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/juce_module_info" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_ComponentMovementWatcher.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/keyboard/juce_TextEditorKeyMapper.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/positioning/juce_RelativePoint.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/colour/juce_Colour.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_core/time/juce_PerformanceCounter.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/zip/juce_GZIPCompressorOutputStream.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_core/xml/juce_XmlDocument.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/geometry/juce_Line.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/buttons/juce_HyperlinkButton.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/sources/juce_AudioTransportSource.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/windows/juce_TooltipWindow.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/memory/juce_ByteOrder.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/network/juce_URL.cpp" />
@@ -3222,31 +3700,40 @@
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/native/juce_win32_FileChooser.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/midi_io/juce_MidiInput.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/juce_module_info" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/maths/dRowAudio_MathsUtilities.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_ConcertinaPanel.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_AnimatedPositionBehaviours.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_core/threads/juce_ChildProcess.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/parameters/dRowAudio_PluginParameter.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_AudioUtilityUnitTests.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/image_formats/juce_PNGLoader.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/scanning/juce_KnownPluginList.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/threads/juce_ScopedWriteLock.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/code_editor/juce_CodeEditorComponent.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/sources/juce_IIRFilterAudioSource.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/maths/juce_NormalisableRange.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/menus/juce_MenuBarComponent.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/midi_io/juce_MidiOutput.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_Pitch.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/widgets/juce_TreeView.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_core/containers/juce_ReferenceCountedArray.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/lookandfeel/juce_LookAndFeel_V1.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_Sonogram.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/native/juce_win32_DirectWriteTypeLayout.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/mouse/juce_LassoComponent.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_formats/codecs/juce_QuickTimeAudioFormat.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/drawables/juce_DrawablePath.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_events/interprocess/juce_InterprocessConnection.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/native/juce_mac_Network.mm" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/widgets/juce_Toolbar.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_ScrollBar.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/drawables/juce_DrawableImage.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/streams/dRowAudio_MemoryInputSource.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/native/juce_MultiTouchMapper.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/components/juce_CachedComponentImage.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_plugin_client/utility/juce_PluginUtilities.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/text/juce_Identifier.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/buttons/juce_DrawableButton.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_ScrollBar.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_core/network/juce_IPAddress.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/components/juce_Component.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/commands/juce_ApplicationCommandTarget.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/misc/juce_SystemTrayIconComponent.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/placement/juce_RectanglePlacement.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/mouse/juce_MouseInactivityDetector.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/colour/juce_FillType.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/native/juce_linux_Midi.cpp" />
@@ -3262,7 +3749,7 @@
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/midi_io/juce_MidiMessageCollector.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_formats/codecs/juce_CoreAudioFormat.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/format/juce_AudioPluginFormatManager.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/native/juce_linux_Fonts.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/midi/juce_MidiKeyboardState.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/menus/juce_MenuBarModel.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/midi/juce_MidiBuffer.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/effects/juce_Reverb.h" />
@@ -3270,165 +3757,198 @@
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/widgets/juce_TableListBox.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/native/juce_RenderingHelpers.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/windows/juce_DocumentWindow.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/native/juce_mac_SystemTrayIcon.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/native/juce_mac_Windowing.mm" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/properties/juce_PropertyPanel.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_core/maths/juce_Random.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/windows/juce_ResizableWindow.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/keyboard/juce_TextInputTarget.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_formats/format/juce_AudioFormat.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_core/files/juce_TemporaryFile.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/image_formats/juce_PNGLoader.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/native/dRowAudio_IOSAudioConverter.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_core/xml/juce_XmlDocument.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/misc/juce_Result.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/audio_cd/juce_AudioCDReader.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/widgets/juce_Label.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/streams/juce_MemoryInputStream.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_core/maths/juce_Random.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/audio_io/juce_SystemAudioVolume.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_events/timers/juce_MultiTimer.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/native/juce_mac_NSViewComponentPeer.mm" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/widgets/juce_ToolbarItemComponent.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/effects/juce_FFT.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_ConcertinaPanel.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_ComponentAnimator.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/text/juce_StringArray.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/format_types/juce_VSTPluginFormat.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/windows/juce_AlertWindow.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_utils/gui/juce_AudioDeviceSelectorComponent.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/images/juce_ImageCache.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/network/juce_Socket.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_data_structures/values/juce_ValueTree.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/text/juce_CharPointer_UTF16.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/contexts/juce_GraphicsContext.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/containers/juce_LinkedListPointer.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/filebrowser/juce_FileSearchPathListComponent.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_events/broadcasters/juce_ChangeListener.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_data_structures/app_properties/juce_PropertiesFile.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/native/juce_linux_FileChooser.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_formats/sampler/juce_Sampler.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/windows/juce_DialogWindow.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/positioning/juce_RelativeCoordinatePositioner.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_events/messages/juce_MessageListener.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_StretchableLayoutManager.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/properties/juce_PropertyPanel.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/midi/juce_MidiMessage.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/components/juce_ComponentListener.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/utility/dRowAudio_ITunesLibraryParser.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/misc/juce_Uuid.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/juce_graphics.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/format_types/juce_LADSPAPluginFormat.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_core/native/juce_win32_SystemStats.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/mouse/juce_TextDragAndDropTarget.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/geometry/juce_AffineTransform.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_core/threads/juce_Thread.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/filebrowser/juce_DirectoryContentsDisplayComponent.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_FilteringAudioSource.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/utility/dRowAudio_UnityBuilder.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/native/juce_mac_FileChooser.mm" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/misc/juce_ColourSelector.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/positioning/juce_RelativePointPath.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/embedding/juce_UIViewComponent.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_plugin_client/AU/CoreAudioUtilityClasses/AUOutputElement.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/native/juce_android_Threads.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/properties/juce_SliderPropertyComponent.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/format_types/juce_LADSPAPluginFormat.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/audio_io/juce_AudioIODevice.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_formats/juce_module_info" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/image_formats/juce_GIFLoader.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_formats/codecs/juce_OggVorbisAudioFormat.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/text/juce_Identifier.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_plugin_client/AU/CoreAudioUtilityClasses/AUOutputBase.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_core/native/juce_win32_Network.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_plugin_client/AU/CoreAudioUtilityClasses/AUDispatch.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/code_editor/juce_LuaCodeTokeniser.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_events/interprocess/juce_InterprocessConnection.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/native/juce_linux_Threads.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/menus/juce_MenuBarComponent.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/text/juce_CharPointer_UTF32.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/native/juce_win32_WASAPI.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/windows/juce_TopLevelWindow.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_SegmentedMeter.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/threads/juce_CriticalSection.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/threads/juce_ChildProcess.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/native/juce_mac_CoreMidi.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/widgets/juce_Toolbar.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/components/juce_ComponentListener.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_events/messages/juce_Message.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/format_types/juce_VST3PluginFormat.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/commands/juce_ApplicationCommandManager.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/embedding/juce_ActiveXControlComponent.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/utility/dRowAudio_UnityProjectBuilder.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_formats/codecs/juce_WavAudioFormat.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/scanning/juce_PluginDirectoryScanner.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_StretchableObjectResizer.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/positioning/juce_RelativeCoordinate.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/components/juce_Desktop.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/parameters/dRowAudio_PluginParameter.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/buttons/juce_ToggleButton.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_Spectroscope.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/zip/juce_GZIPDecompressorInputStream.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/juce_module_info" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_ComponentBuilder.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_formats/codecs/juce_AiffAudioFormat.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/misc/juce_AppleRemote.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_utils/gui/juce_MidiKeyboardComponent.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/buttons/juce_HyperlinkButton.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/misc/juce_Uuid.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_plugin_client/AU/CoreAudioUtilityClasses/AUEffectBase.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_AudioFileDropTarget.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/maths/juce_Expression.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/native/juce_win32_ASIO.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_core/streams/juce_BufferedInputStream.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/native/juce_android_Fonts.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/keyboard/juce_KeyListener.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_data_structures/app_properties/juce_ApplicationProperties.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_plugin_client/utility/juce_IncludeSystemHeaders.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_plugin_client/RTAS/juce_RTAS_WinUtilities.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_ResizableCornerComponent.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_events/broadcasters/juce_AsyncUpdater.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/processors/juce_AudioProcessor.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_AudioFilePlayerExt.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/native/juce_mac_Fonts.mm" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_formats/codecs/juce_LAMEEncoderAudioFormat.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/filebrowser/juce_FileTreeComponent.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/components/juce_ComponentListener.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/geometry/juce_Line.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/streams/juce_FileInputSource.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/native/juce_linux_SystemTrayIcon.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_TriggeredScope.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/documents/juce_FileBasedDocument.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_formats/format/juce_AudioFormatManager.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_data_structures/values/juce_Value.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/effects/juce_IIRFilter.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/misc/juce_BubbleMessageComponent.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/images/juce_ImageConvolutionKernel.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/utility/dRowAudio_UnityProjectBuilder.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_data_structures/juce_module_info" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/keyboard/juce_KeyPress.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_PitchDetector.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_plugin_client/AU/CoreAudioUtilityClasses/AUMIDIBase.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/misc/juce_AnimatedAppComponent.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_Spectrograph.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/native/juce_win32_WebBrowserComponent.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/misc/juce_DropShadower.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_data_structures/juce_data_structures.mm" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/native/juce_linux_JackAudio.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/commands/juce_KeyPressMappingSet.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/properties/juce_PropertyComponent.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_LoopingAudioSource.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/components/juce_ModalComponentManager.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/native/juce_BasicNativeHeaders.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/threads/juce_InterProcessLock.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/native/juce_win32_Registry.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/text/juce_NewLine.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_plugin_client/AU/CoreAudioUtilityClasses/AUBuffer.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_SampleRateConverter.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/misc/juce_KeyMappingEditorComponent.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/filebrowser/juce_FileTreeComponent.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/fonts/juce_AttributedString.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_CentreAlignViewport.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_formats/codecs/juce_AiffAudioFormat.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/windows/juce_ResizableWindow.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_core/memory/juce_MemoryBlock.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/threads/juce_TimeSliceThread.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_core/native/juce_win32_Network.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_core/javascript/juce_JSON.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/misc/juce_SystemTrayIconComponent.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/colour/juce_Colour.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/misc/juce_ColourSelector.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_events/messages/juce_Initialisation.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/threads/juce_ScopedLock.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/files/juce_FileOutputStream.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/utility/dRowAudio_EncryptedString.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/keyboard/juce_CaretComponent.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/properties/juce_ChoicePropertyComponent.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/processors/juce_AudioProcessorEditor.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/drawables/juce_DrawableText.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_TabbedComponent.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/keyboard/juce_TextEditorKeyMapper.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/images/juce_Image.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/mouse/juce_FileDragAndDropTarget.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/filebrowser/juce_FileChooser.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/buttons/juce_ImageButton.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_plugin_client/utility/juce_WindowsHooks.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/midi/juce_MidiMessageSequence.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/processors/juce_GenericAudioProcessorEditor.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/native/juce_ios_Audio.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/mouse/juce_MouseEvent.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/effects/juce_GlowEffect.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/contexts/juce_LowLevelGraphicsPostScriptRenderer.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/contexts/juce_LowLevelGraphicsSoftwareRenderer.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_LoopingAudioSource.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/logging/juce_Logger.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/streams/dRowAudio_MemoryInputSource.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/network/juce_NamedPipe.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/format_types/juce_AudioUnitPluginFormat.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/mouse/juce_TooltipClient.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_events/messages/juce_NotificationType.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_AudioTransportCursor.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_plugin_client/AU/CoreAudioUtilityClasses/AUInputElement.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/files/juce_FileInputStream.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_data_structures/values/juce_ValueTree.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/effects/juce_FFT.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/javascript/juce_Javascript.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/format/juce_AudioPluginFormatManager.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/utility/dRowAudio_EncryptedString.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/lookandfeel/juce_LookAndFeel_V2.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_CentreAlignViewport.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/javascript/juce_Javascript.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/fonts/juce_Typeface.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/mouse/juce_FileDragAndDropTarget.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_AudioFilePlayer.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/format/juce_AudioPluginFormat.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_formats/codecs/juce_WavAudioFormat.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_core/xml/juce_XmlElement.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_PitchDetector.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/windows/juce_TopLevelWindow.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/containers/juce_SortedSet.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/text/juce_StringPool.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/drawables/juce_Drawable.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/lookandfeel/juce_LookAndFeel.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_data_structures/values/juce_ValueTree.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/format/juce_AudioPluginFormatManager.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_core/memory/juce_Atomic.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/properties/juce_PropertyComponent.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/threads/juce_HighResolutionTimer.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_formats/format/juce_BufferingAudioFormatReader.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/native/juce_win32_DirectWriteTypeface.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/commands/juce_ApplicationCommandInfo.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/sources/juce_IIRFilterAudioSource.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_plugin_client/juce_module_info" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/juce_module_info" />
@@ -3440,21 +3960,28 @@
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/native/juce_android_WebBrowserComponent.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_events/broadcasters/juce_ActionListener.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/native/juce_win32_Files.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_SegmentedMeter.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/audiothumbnail/dRowAudio_DraggableWaveDisplay.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/geometry/juce_RectangleList.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/native/juce_android_Windowing.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/positioning/juce_MarkerList.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/widgets/juce_ImageComponent.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/native/juce_linux_Fonts.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/images/juce_Image.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/filebrowser/juce_FilePreviewComponent.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_ResizableCornerComponent.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/images/juce_ImageFileFormat.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/colour/juce_Colour.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/memory/juce_OptionalScopedPointer.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/code_editor/juce_XMLCodeTokeniser.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_formats/codecs/juce_CoreAudioFormat.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_AudioOscilloscope.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_formats/format/juce_MemoryMappedAudioFormatReader.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/geometry/juce_EdgeTable.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_events/native/juce_ScopedXLock.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/native/dRowAudio_AudioPicker.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/native/juce_MidiDataConcatenator.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/maths/juce_Range.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/misc/juce_RecentlyOpenedFilesList.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/placement/juce_RectanglePlacement.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_SoundTouchProcessor.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/synthesisers/juce_Synthesiser.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/audio_io/juce_AudioIODeviceType.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/widgets/juce_ToolbarItemComponent.cpp" />
@@ -3462,117 +3989,146 @@
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/processors/juce_AudioProcessorGraph.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_events/native/juce_android_Messaging.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_formats/juce_audio_formats.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/sources/juce_ToneGeneratorAudioSource.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/midi/juce_MidiMessageSequence.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/containers/juce_ScopedValueSetter.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/fonts/juce_CustomTypeface.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_data_structures/undomanager/juce_UndoManager.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/properties/juce_PropertyComponent.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/fonts/juce_CustomTypeface.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/placement/juce_RectanglePlacement.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/mouse/juce_ComponentDragger.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_core/logging/juce_FileLogger.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/images/juce_ImageCache.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/positioning/juce_RelativeCoordinate.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/properties/juce_BooleanPropertyComponent.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_core/threads/juce_DynamicLibrary.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_events/juce_events.mm" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/juce_audio_devices.mm" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/containers/juce_ArrayAllocationBase.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/widgets/juce_ToolbarItemFactory.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/code_editor/juce_CodeEditorComponent.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/juce_audio_devices.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_utils/gui/juce_MidiKeyboardComponent.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/widgets/juce_ImageComponent.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_core/memory/juce_LeakedObjectDetector.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/filebrowser/juce_ImagePreviewComponent.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/positioning/juce_RelativeParallelogram.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/juce_audio_basics.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_core/misc/juce_WindowsRegistry.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/juce_module_info" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_plugin_client/AU/CoreAudioUtilityClasses/CAVectorUnit.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/text/juce_TextDiff.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/files/juce_MemoryMappedFile.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/geometry/juce_PathIterator.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/text/juce_Base64.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_core/streams/juce_MemoryInputStream.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/utility/dRowAudio_Utility.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/fonts/juce_TextLayout.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/windows/juce_DialogWindow.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/native/juce_win32_Midi.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/text/juce_TextDiff.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/positioning/juce_RelativeRectangle.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_utils/gui/juce_AudioAppComponent.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/files/juce_File.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/native/juce_linux_Clipboard.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_events/broadcasters/juce_AsyncUpdater.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/juce_gui_basics.mm" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_plugin_client/RTAS/juce_RTAS_DigiCode2.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/filebrowser/dRowAudio_BasicFileBrowser.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/processors/juce_AudioPlayHead.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/colour/juce_PixelFormats.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/juce_gui_extra.mm" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_core/network/juce_URL.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_formats/codecs/juce_LAMEEncoderAudioFormat.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/widgets/juce_TableListBox.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_plugin_client/utility/juce_FakeMouseMoveGenerator.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_ComponentMovementWatcher.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/drawables/juce_SVGParser.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_data_structures/app_properties/juce_ApplicationProperties.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/misc/juce_AppleRemote.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/threads/juce_Process.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/containers/juce_OwnedArray.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/containers/juce_SparseSet.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/misc/juce_AnimatedAppComponent.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/windows/juce_ThreadWithProgressWindow.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_plugin_client/AU/CoreAudioUtilityClasses/CAAudioChannelLayout.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_events/messages/juce_ApplicationBase.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/native/juce_win32_AudioCDBurner.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/code_editor/juce_CodeEditorComponent.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/properties/juce_TextPropertyComponent.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/filebrowser/juce_DirectoryContentsDisplayComponent.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/native/juce_linux_AudioCDReader.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/commands/juce_ApplicationCommandManager.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/processors/juce_AudioProcessor.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/effects/juce_GlowEffect.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_AudioTransportCursor.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/keyboard/juce_KeyListener.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/native/juce_mac_SystemTrayIcon.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_core/native/juce_android_Misc.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/files/juce_FileOutputStream.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/native/juce_win32_SystemTrayIcon.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/format_types/juce_VST3PluginFormat.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/properties/juce_ButtonPropertyComponent.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/fft/dRowAudio_mac_FFTOperation.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/keyboard/juce_KeyboardFocusTraverser.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_formats/codecs/juce_MP3AudioFormat.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/widgets/juce_TreeView.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/native/juce_win32_DragAndDrop.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_utils/gui/juce_AudioThumbnailBase.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/filebrowser/juce_DirectoryContentsList.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/text/juce_CharPointer_ASCII.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/properties/juce_ChoicePropertyComponent.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_formats/codecs/juce_OggVorbisAudioFormat.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/juce_module_info" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/sources/juce_ResamplingAudioSource.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/text/juce_StringArray.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/mouse/juce_MouseEvent.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/streams/juce_MemoryOutputStream.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/maths/juce_Expression.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/misc/juce_AnimatedAppComponent.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/text/juce_String.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/drawables/juce_DrawableRectangle.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_formats/format/juce_AudioFormatWriter.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/streams/juce_InputSource.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_events/messages/juce_DeletedAtShutdown.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/native/juce_mac_CoreGraphicsHelpers.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_formats/format/juce_AudioFormatReader.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/windows/juce_NativeMessageBox.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_plugin_client/AU/CoreAudioUtilityClasses/AUCarbonViewControl.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/keyboard/juce_KeyboardFocusTraverser.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/juce_graphics.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_core/containers/juce_Variant.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_events/messages/juce_ApplicationBase.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/windows/juce_TooltipWindow.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/filebrowser/dRowAudio_ColumnFileBrowserLookAndFeel.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/sources/juce_ToneGeneratorAudioSource.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_core/xml/juce_XmlElement.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/fft/dRowAudio_LTAS.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/midi_io/juce_MidiOutput.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_GraphicalComponent.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/widgets/juce_ProgressBar.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_ComponentBuilder.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_core/logging/juce_Logger.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/system/juce_CompilerSupport.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_data_structures/undomanager/juce_UndoableAction.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_formats/codecs/juce_WindowsMediaAudioFormat.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_plugin_client/VST/juce_VST_Wrapper.mm" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/positioning/juce_RelativeRectangle.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_core/text/juce_LocalisedStrings.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/mouse/juce_MouseEvent.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/format_types/juce_VSTPluginFormat.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_plugin_client/VST3/juce_VST3_Wrapper.mm" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_ComponentMovementWatcher.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_core/native/juce_win32_SystemStats.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_Spectrograph.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/network/juce_MACAddress.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_utils/gui/juce_AudioDeviceSelectorComponent.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/sources/juce_AudioSource.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_plugin_client/RTAS/juce_RTAS_DigiCode2.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/code_editor/juce_LuaCodeTokeniser.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_events/messages/juce_DeletedAtShutdown.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/files/juce_FileSearchPath.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/text/juce_LocalisedStrings.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_core/logging/juce_FileLogger.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/widgets/juce_TableHeaderComponent.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_core/threads/juce_ChildProcess.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_GraphicalComponent.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/text/juce_CharacterFunctions.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/scanning/juce_PluginListComponent.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/dRowAudio.mm" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_SoundTouchAudioSource.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_formats/format/juce_AudioFormat.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_core/memory/juce_MemoryBlock.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_AudioFilePlayer.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/buttons/juce_TextButton.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/buttons/juce_TextButton.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_Clock.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_ComponentAnimator.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/code_editor/juce_LuaCodeTokeniser.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_core/logging/juce_Logger.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_MusicLibraryTable.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_utils/players/juce_AudioProcessorPlayer.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/zip/juce_ZipFile.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/widgets/juce_ListBox.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/buttons/juce_ToolbarButton.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/buffers/juce_AudioSampleBuffer.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/native/juce_linux_JackAudio.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_utils/gui/juce_AudioThumbnailCache.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/native/juce_win32_ActiveXComponent.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_EnvelopeFollower.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_StretchableLayoutManager.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_core/text/juce_LocalisedStrings.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/filebrowser/dRowAudio_BasicFileBrowser.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/text/juce_CharacterFunctions.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/windows/juce_ComponentPeer.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/time/juce_PerformanceCounter.h" />
@@ -3581,6 +4137,7 @@
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/widgets/juce_ToolbarItemPalette.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/drawables/juce_DrawableImage.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_GroupComponent.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/network/dRowAudio_CURLManager.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/effects/juce_LagrangeInterpolator.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/native/juce_curl_Network.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_events/native/juce_osx_MessageQueue.h" />
@@ -3588,56 +4145,66 @@
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/format_types/juce_VSTMidiEventList.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/contexts/juce_LowLevelGraphicsContext.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/files/juce_FileInputStream.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/audio_cd/juce_AudioCDBurner.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_core/javascript/juce_JSON.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_plugin_client/AU/CoreAudioUtilityClasses/AUCarbonViewDispatch.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/geometry/juce_Path.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/native/juce_win32_ASIO.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/juce_module_info" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/misc/juce_PreferencesPanel.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/misc/juce_BubbleComponent.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_core/native/juce_android_Misc.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/widgets/juce_ProgressBar.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/sources/juce_PositionableAudioSource.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_MultiDocumentPanel.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/system/juce_SystemStats.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/code_editor/juce_CPlusPlusCodeTokeniserFunctions.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_formats/juce_audio_formats.mm" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/native/juce_android_Network.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_formats/format/juce_AudioSubsectionReader.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/widgets/juce_TableHeaderComponent.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/misc/juce_KeyMappingEditorComponent.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/processors/juce_AudioProcessorGraph.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/windows/juce_ThreadWithProgressWindow.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/streams/dRowAudio_StreamAndFileHandler.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/geometry/juce_EdgeTable.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/processors/juce_AudioPluginInstance.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/widgets/juce_Label.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/filebrowser/juce_FileSearchPathListComponent.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_AudioUtility.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/fft/dRowAudio_Window.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/buttons/juce_ToolbarButton.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/processors/juce_AudioProcessorListener.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/misc/juce_ColourSelector.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/utility/dRowAudio_ITunesLibraryParser.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/native/juce_ios_UIViewComponentPeer.mm" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/format/juce_AudioPluginFormat.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/native/juce_linux_Clipboard.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_plugin_client/RTAS/juce_RTAS_MacUtilities.mm" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/buffers/juce_FloatVectorOperations.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/buttons/juce_HyperlinkButton.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/embedding/juce_ActiveXControlComponent.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_AudioFilePlayerExt.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/juce_gui_extra.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/juce_graphics.mm" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/drawables/juce_Drawable.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/misc/juce_WebBrowserComponent.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/drawables/juce_DrawableText.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_events/messages/juce_NotificationType.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/network/dRowAudio_CURLManager.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/filebrowser/dRowAudio_ColumnFileBrowser.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/zip/juce_GZIPCompressorOutputStream.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/filebrowser/juce_DirectoryContentsList.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_ReversibleAudioSource.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_data_structures/juce_data_structures.mm" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/widgets/juce_TextEditor.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_plugin_client/utility/juce_IncludeModuleHeaders.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_core/native/juce_mac_Threads.mm" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/mouse/juce_DragAndDropTarget.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/sources/juce_ResamplingAudioSource.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/network/juce_MACAddress.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/widgets/juce_TableHeaderComponent.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/drawables/juce_DrawableRectangle.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/buttons/juce_Button.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/mouse/juce_ComponentDragger.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_formats/codecs/juce_FlacAudioFormat.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/fonts/juce_GlyphArrangement.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_events/interprocess/juce_InterprocessConnectionServer.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/windows/juce_TooltipWindow.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/geometry/juce_Path.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/native/juce_mac_NSViewComponent.mm" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/memory/juce_SharedResourcePointer.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/effects/juce_IIRFilter.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/sources/juce_ToneGeneratorAudioSource.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/scanning/juce_PluginListComponent.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_utils/gui/juce_AudioAppComponent.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_core/files/juce_TemporaryFile.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/maths/juce_MathsFunctions.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/containers/juce_AbstractFifo.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/misc/juce_BubbleMessageComponent.h" />
@@ -3647,52 +4214,53 @@
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/lookandfeel/juce_LookAndFeel.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/sources/juce_MixerAudioSource.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/filebrowser/juce_FileChooserDialogBox.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_SoundTouchProcessor.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/sources/juce_AudioSourcePlayer.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/lookandfeel/juce_LookAndFeel_V3.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/processors/juce_AudioProcessorEditor.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_core/system/juce_SystemStats.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/misc/juce_AnimatedAppComponent.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/utility/dRowAudio_UnityBuilder.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/native/juce_win32_DragAndDrop.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/fft/dRowAudio_FFT.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_utils/gui/juce_AudioThumbnail.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/time/juce_RelativeTime.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/native/juce_win32_DirectSound.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_core/threads/juce_Thread.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/files/juce_FileFilter.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/native/juce_mac_NSViewComponentPeer.mm" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/native/juce_linux_Windowing.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/widgets/juce_ToolbarItemFactory.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/commands/juce_ApplicationCommandManager.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_GroupComponent.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/juce_gui_extra.mm" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/processors/juce_PluginDescription.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/keyboard/juce_KeyPress.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_core/xml/juce_XmlDocument.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/keyboard/juce_ModifierKeys.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/misc/juce_PreferencesPanel.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/images/juce_Image.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/juce_module_info" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_core/memory/juce_LeakedObjectDetector.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/geometry/juce_PathStrokeType.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_SoundTouchAudioSource.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/native/juce_posix_SharedCode.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/effects/juce_FFT.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/juce_audio_processors.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/contexts/juce_LowLevelGraphicsPostScriptRenderer.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_events/native/juce_ios_MessageManager.mm" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/files/juce_File.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_plugin_client/AU/CoreAudioUtilityClasses/AUCarbonViewBase.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/windows/juce_ResizableWindow.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/text/juce_StringRef.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/native/juce_android_FileChooser.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_core/unit_tests/juce_UnitTest.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_events/messages/juce_ApplicationBase.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_StretchableObjectResizer.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/threads/juce_ThreadLocalValue.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/images/juce_ImageConvolutionKernel.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/properties/juce_ButtonPropertyComponent.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_ScrollBar.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/filebrowser/juce_FileChooserDialogBox.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_events/messages/juce_CallbackMessage.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_formats/codecs/juce_WindowsMediaAudioFormat.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_formats/format/juce_AudioFormatReader.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_events/interprocess/juce_InterprocessConnection.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_FifoBuffer.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/scanning/juce_KnownPluginList.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/native/juce_linux_CommonFile.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/threads/juce_ScopedReadLock.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/native/juce_win32_Windowing.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/juce_gui_basics.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_MusicLibraryTable.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_utils/juce_audio_utils.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/misc/juce_BubbleComponent.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/native/juce_ios_UIViewComponent.mm" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/commands/juce_ApplicationCommandInfo.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_Spectroscope.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/effects/juce_GlowEffect.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/network/juce_IPAddress.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/maths/juce_BigInteger.h" />
@@ -3700,78 +4268,81 @@
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/streams/juce_SubregionStream.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/native/juce_android_Files.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/threads/juce_ReadWriteLock.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_core/threads/juce_ThreadPool.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/sources/juce_BufferingAudioSource.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/images/juce_ImageFileFormat.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/colour/juce_Colours.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_formats/format/juce_AudioSubsectionReader.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/native/juce_linux_Network.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/images/juce_Image.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_core/streams/juce_MemoryInputStream.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/code_editor/juce_CPlusPlusCodeTokeniser.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/components/juce_Desktop.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/windows/juce_AlertWindow.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/properties/juce_ChoicePropertyComponent.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/native/juce_android_SystemStats.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/lookandfeel/juce_LookAndFeel_V2.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_core/network/juce_URL.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/native/dRowAudio_AVAssetAudioFormat.mm" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/native/juce_android_JNIHelpers.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_data_structures/values/juce_Value.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/drawables/juce_DrawablePath.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_events/interprocess/juce_InterprocessConnectionServer.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_plugin_client/AU/CoreAudioUtilityClasses/ComponentBase.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/native/juce_mac_AudioCDReader.mm" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/positioning/juce_RelativePoint.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_ComponentBoundsConstrainer.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_core/text/juce_StringPairArray.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/properties/juce_TextPropertyComponent.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/properties/juce_ButtonPropertyComponent.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/audiothumbnail/dRowAudio_AudioThumbnailImage.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/buttons/juce_ShapeButton.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/mouse/juce_MouseListener.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/native/juce_win32_ComSmartPtr.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/native/juce_mac_WebBrowserComponent.mm" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/commands/juce_ApplicationCommandID.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/sources/juce_ChannelRemappingAudioSource.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/threads/juce_Thread.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/geometry/juce_PathIterator.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/menus/juce_MenuBarComponent.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/geometry/juce_PathStrokeType.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_events/timers/juce_Timer.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_core/streams/juce_BufferedInputStream.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/native/juce_mac_AudioCDReader.mm" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_events/messages/juce_MountedVolumeListChangeDetector.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/misc/juce_LiveConstantEditor.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/positioning/juce_MarkerList.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/format_types/juce_AudioUnitPluginFormat.mm" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/placement/juce_Justification.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_events/messages/juce_MountedVolumeListChangeDetector.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/utility/dRowAudio_XmlHelpers.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/threads/juce_ReadWriteLock.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/components/juce_ModalComponentManager.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/filebrowser/dRowAudio_ColumnFileBrowser.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/fft/dRowAudio_LTAS.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/positioning/juce_RelativeParallelogram.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/memory/juce_WeakReference.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_MultiDocumentPanel.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_CpuMeter.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/text/juce_StringPairArray.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_data_structures/undomanager/juce_UndoManager.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/native/juce_mac_WebBrowserComponent.mm" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/filters/dRowAudio_BiquadFilter.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/system/juce_PlatformDefs.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/native/juce_mac_AppleRemote.mm" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_ComponentBuilder.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_plugin_client/AU/CoreAudioUtilityClasses/CAStreamBasicDescription.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_utils/gui/juce_AudioVisualiserComponent.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/buffers/juce_AudioDataConverters.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_TabbedButtonBar.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/processors/juce_PluginDescription.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_formats/format/juce_AudioFormatWriter.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/javascript/juce_JSON.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/audio_io/juce_AudioDeviceManager.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_data_structures/values/juce_ValueTreeSynchroniser.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_DefaultColours.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/maths/dRowAudio_CumulativeMovingAverage.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_utils/gui/juce_AudioThumbnail.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/misc/juce_LiveConstantEditor.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/native/juce_mac_SystemStats.mm" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_plugin_client/AU/CoreAudioUtilityClasses/MusicDeviceBase.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_formats/codecs/juce_WavAudioFormat.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/native/juce_linux_FileChooser.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_Sonogram.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/contexts/juce_GraphicsContext.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/effects/juce_FFT.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/juce_audio_devices.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_Buffer.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/dRowAudio_TriggeredScope.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_formats/codecs/juce_MP3AudioFormat.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/filebrowser/juce_FilePreviewComponent.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_data_structures/values/juce_ValueTreeSynchroniser.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/midi/juce_MidiBuffer.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/fonts/juce_AttributedString.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/colour/juce_ColourGradient.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_events/timers/juce_MultiTimer.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/scanning/juce_PluginDirectoryScanner.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_plugin_client/utility/juce_PluginHostType.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/code_editor/juce_CodeDocument.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/fft/dRowAudio_FFT.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_plugin_client/VST/juce_VST_Wrapper.mm" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/filebrowser/juce_FileListComponent.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_events/broadcasters/juce_ListenerList.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/network/juce_NamedPipe.cpp" />
@@ -3779,43 +4350,44 @@
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_plugin_client/AU/CoreAudioUtilityClasses/CarbonEventHandler.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/native/juce_android_OpenSL.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/maths/juce_BigInteger.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/commands/juce_KeyPressMappingSet.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/gui/audiothumbnail/dRowAudio_AudioThumbnailImage.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/layout/juce_ComponentBoundsConstrainer.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/windows/juce_ThreadWithProgressWindow.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_plugin_client/AU/CoreAudioUtilityClasses/AUOutputBase.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_formats/codecs/juce_FlacAudioFormat.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/mouse/juce_MouseCursor.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_events/juce_events.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/threads/juce_TimeSliceThread.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/native/juce_win32_AudioCDReader.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/fonts/juce_GlyphArrangement.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/midi/juce_MidiKeyboardState.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/native/juce_mac_MainMenu.mm" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/geometry/juce_AffineTransform.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/network/juce_Socket.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/sources/juce_MixerAudioSource.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/mouse/juce_DragAndDropContainer.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/midi/juce_MidiMessageSequence.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/geometry/juce_PathStrokeType.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/midi_io/juce_MidiOutput.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/misc/juce_Result.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/midi/juce_MidiKeyboardState.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/keyboard/juce_ModifierKeys.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/misc/juce_SplashScreen.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/audio/dRowAudio_ReversibleAudioSource.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/menus/juce_PopupMenu.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/filebrowser/juce_FilenameComponent.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/logging/juce_FileLogger.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/filebrowser/juce_FileBrowserListener.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_formats/codecs/juce_WavAudioFormat.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/misc/juce_DropShadower.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_processors/juce_module_info" />
+          <root url="file://$USER_HOME$/JUCE/modules/drowaudio/dRowAudio/utility/dRowAudio_ITunesLibrary.cpp" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/lookandfeel/juce_LookAndFeel_V2.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/buttons/juce_Button.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_extra/native/juce_mac_CarbonViewWrapperComponent.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/drawables/juce_DrawableComposite.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/containers/juce_Array.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_core/time/juce_PerformanceCounter.cpp" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/native/juce_mac_Fonts.mm" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/midi/juce_MidiFile.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/buttons/juce_ToggleButton.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_basics/buffers/juce_FloatVectorOperations.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_events/timers/juce_Timer.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_devices/sources/juce_AudioSourcePlayer.h" />
-          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/widgets/juce_TreeView.h" />
+          <root url="file://$USER_HOME$/JUCE/modules/juce_gui_basics/keyboard/juce_KeyPress.cpp" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_core/text/juce_CharPointer_UTF8.h" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_audio_plugin_client/AU/juce_AU_Wrapper.mm" />
           <root url="file://$USER_HOME$/JUCE/modules/juce_graphics/effects/juce_ImageEffectFilter.h" />

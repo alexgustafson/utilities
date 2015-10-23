@@ -5,6 +5,10 @@
               includeBinaryInAppConfig="1" jucerVersion="3.2.0">
   <MAINGROUP id="eXMOZj" name="AudioProcessorNode">
     <GROUP id="{EFD99188-C070-E25C-E518-CE21E0420BC1}" name="Source">
+      <FILE id="Xe33Oh" name="DiauproAsyncProcessor.cpp" compile="1" resource="0"
+            file="../AudioTestApplication/Source/DiauproAsyncProcessor.cpp"/>
+      <FILE id="STFICe" name="DiauproAsyncProcessor.h" compile="0" resource="0"
+            file="../AudioTestApplication/Source/DiauproAsyncProcessor.h"/>
       <FILE id="vnORHv" name="Monitor.cpp" compile="1" resource="0" file="../Monitor/Source/Monitor.cpp"/>
       <FILE id="ZtrcyS" name="Monitor.h" compile="0" resource="0" file="../Monitor/Source/Monitor.h"/>
       <FILE id="X6ccNv" name="DiauproNullProcessor.cpp" compile="1" resource="0"
@@ -57,6 +61,8 @@
         <MODULEPATH id="juce_gui_basics" path="../../../JUCE/modules"/>
         <MODULEPATH id="juce_graphics" path="../../../JUCE/modules"/>
         <MODULEPATH id="juce_gui_extra" path="../../../JUCE/modules"/>
+        <MODULEPATH id="dRowAudio" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../JUCE/modules"/>
       </MODULEPATHS>
     </XCODE_MAC>
     <CODEBLOCKS_LINUX targetFolder="Builds/CodeBlocksLinux" extraLinkerFlags="" externalLibraries="dns_sd">
@@ -77,6 +83,8 @@
         <MODULEPATH id="juce_gui_basics" path="../../../JUCE/modules"/>
         <MODULEPATH id="juce_graphics" path="../../../JUCE/modules"/>
         <MODULEPATH id="juce_gui_extra" path="../../../JUCE/modules"/>
+        <MODULEPATH id="dRowAudio" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../JUCE/modules"/>
       </MODULEPATHS>
     </CODEBLOCKS_LINUX>
     <LINUX_MAKE targetFolder="Builds/LinuxMakefile" externalLibraries="dns_sd">
@@ -97,14 +105,18 @@
         <MODULEPATH id="juce_gui_basics" path="../../../JUCE/modules"/>
         <MODULEPATH id="juce_graphics" path="../../../JUCE/modules"/>
         <MODULEPATH id="juce_gui_extra" path="../../../JUCE/modules"/>
+        <MODULEPATH id="dRowAudio" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../JUCE/modules"/>
       </MODULEPATHS>
     </LINUX_MAKE>
   </EXPORTFORMATS>
   <MODULES>
+    <MODULE id="dRowAudio" showAllCode="1" useLocalCopy="0"/>
     <MODULES id="juce_audio_basics" showAllCode="1" useLocalCopy="0"/>
     <MODULES id="juce_audio_devices" showAllCode="1" useLocalCopy="0"/>
     <MODULES id="juce_audio_formats" showAllCode="1" useLocalCopy="0"/>
     <MODULES id="juce_audio_processors" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0"/>
     <MODULES id="juce_core" showAllCode="1" useLocalCopy="0"/>
     <MODULES id="juce_data_structures" showAllCode="1" useLocalCopy="0"/>
     <MODULES id="juce_events" showAllCode="1" useLocalCopy="0"/>
@@ -112,5 +124,6 @@
     <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0"/>
     <MODULES id="juce_gui_extra" showAllCode="1" useLocalCopy="0"/>
   </MODULES>
-  <JUCEOPTIONS/>
+  <JUCEOPTIONS DROWAUDIO_USE_FFTREAL="disabled" DROWAUDIO_USE_SOUNDTOUCH="disabled"
+               DROWAUDIO_USE_CURL="disabled"/>
 </JUCERPROJECT>

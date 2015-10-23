@@ -38,6 +38,8 @@ void DiauproPluginAudioProcessorEditor::paint (Graphics& g)
     gui->setVcaNetStatus(processor.vcaNetStatus);
     gui->setNullTime(processor.nullProcessTime, processor.nullRtTime, processor.nullRtMaxTime, processor.nullRtMinTime);
     gui->setNullNetStatus(processor.nullNetStatus);
+    gui->setAsyncTime(processor.asyncProcessTime, processor.asyncRtTime, processor.asyncRtMaxTime, processor.asyncRtMinTime);
+    gui->setAsyncNetStatus(processor.asyncNetStatus);
     g.fillAll (Colours::white);
 
     g.setColour (Colours::black);
@@ -59,4 +61,17 @@ bool DiauproPluginAudioProcessorEditor::isReady()
         return false;
     }
     return ready;
+}
+
+void DiauproPluginAudioProcessorEditor::setNullAsync(bool async)
+{
+    processor.setNullAsyncMode(async);
+}
+void DiauproPluginAudioProcessorEditor::setVcoAsync(bool async )
+{
+    processor.setVCOAsyncMode(async);
+}
+void DiauproPluginAudioProcessorEditor::setVcaAsync(bool async )
+{
+    processor.setVCAAsyncMode(async);
 }

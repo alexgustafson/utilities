@@ -28,6 +28,10 @@ public:
     void paint (Graphics&) override;
     void resized() override;
     bool isReady();
+    
+    void setNullAsync(bool async);
+    void setVcoAsync(bool async );
+    void setVcaAsync(bool async );
 
 private:
     // This reference is provided as a quick way for your editor to

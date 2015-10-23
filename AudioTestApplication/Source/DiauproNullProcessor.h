@@ -12,9 +12,10 @@
 #define DIAUPRONULLPROCESSOR_H_INCLUDED
 
 #include "JuceHeader.h"
-#include "DiauproProcessor.h"
+//#include "DiauproProcessor.h"
+#include "DiauproAsyncProcessor.h"
 
-class DiauproNullProcessor : public DiauproProcessor
+class DiauproNullProcessor : public DiauproAsyncProcessor
 {
 public:
     DiauproNullProcessor() {

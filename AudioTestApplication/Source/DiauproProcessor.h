@@ -101,7 +101,7 @@ public:
 
 private:
 
-    struct state {
+    struct diauproState {
         double totalProcessTime;
         double nodeProcessTime;
     };

@@ -89,6 +89,11 @@
     <Linker>
       <Add library="dns_sd"/>
     </Linker>
+    <Unit filename="../../../AudioTestApplication/Source/DiauproAsyncProcessor.cpp"/>
+    <Unit filename="../../../AudioTestApplication/Source/DiauproAsyncProcessor.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
     <Unit filename="../../../Monitor/Source/Monitor.cpp"/>
     <Unit filename="../../../Monitor/Source/Monitor.h">
       <Option compile="0"/>
@@ -130,6 +135,478 @@
       <Option link="0"/>
     </Unit>
     <Unit filename="../../Source/Main.cpp"/>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/audio/dRowAudio_AudioFilePlayer.cpp">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/audio/dRowAudio_AudioFilePlayer.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/audio/dRowAudio_AudioFilePlayerExt.cpp">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/audio/dRowAudio_AudioFilePlayerExt.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/audio/dRowAudio_AudioSampleBufferAudioFormat.cpp">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/audio/dRowAudio_AudioSampleBufferAudioFormat.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/audio/dRowAudio_AudioUtility.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/audio/dRowAudio_AudioUtilityUnitTests.cpp">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/audio/dRowAudio_Buffer.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/audio/dRowAudio_EnvelopeFollower.cpp">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/audio/dRowAudio_EnvelopeFollower.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/audio/dRowAudio_FifoBuffer.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/audio/dRowAudio_FilteringAudioSource.cpp">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/audio/dRowAudio_FilteringAudioSource.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/audio/dRowAudio_LoopingAudioSource.cpp">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/audio/dRowAudio_LoopingAudioSource.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/audio/dRowAudio_Pitch.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/audio/dRowAudio_PitchDetector.cpp">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/audio/dRowAudio_PitchDetector.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/audio/dRowAudio_ReversibleAudioSource.cpp">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/audio/dRowAudio_ReversibleAudioSource.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/audio/dRowAudio_SampleRateConverter.cpp">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/audio/dRowAudio_SampleRateConverter.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/audio/dRowAudio_SoundTouchAudioSource.cpp">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/audio/dRowAudio_SoundTouchAudioSource.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/audio/dRowAudio_SoundTouchProcessor.cpp">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/audio/dRowAudio_SoundTouchProcessor.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/audio/fft/dRowAudio_FFT.cpp">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/audio/fft/dRowAudio_FFT.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/audio/fft/dRowAudio_LTAS.cpp">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/audio/fft/dRowAudio_LTAS.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/audio/fft/dRowAudio_mac_FFTOperation.cpp">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/audio/fft/dRowAudio_Window.cpp">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/audio/fft/dRowAudio_Window.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/audio/filters/dRowAudio_BiquadFilter.cpp">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/audio/filters/dRowAudio_BiquadFilter.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/audio/filters/dRowAudio_OnePoleFilter.cpp">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/audio/filters/dRowAudio_OnePoleFilter.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/gui/dRowAudio_AudioFileDropTarget.cpp">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/gui/dRowAudio_AudioFileDropTarget.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/gui/dRowAudio_AudioOscilloscope.cpp">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/gui/dRowAudio_AudioOscilloscope.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/gui/dRowAudio_AudioTransportCursor.cpp">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/gui/dRowAudio_AudioTransportCursor.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/gui/dRowAudio_CentreAlignViewport.cpp">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/gui/dRowAudio_CentreAlignViewport.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/gui/dRowAudio_Clock.cpp">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/gui/dRowAudio_Clock.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/gui/dRowAudio_CpuMeter.cpp">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/gui/dRowAudio_CpuMeter.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/gui/dRowAudio_DefaultColours.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/gui/dRowAudio_GraphicalComponent.cpp">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/gui/dRowAudio_GraphicalComponent.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/gui/dRowAudio_GuiHelpers.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/gui/dRowAudio_MusicLibraryTable.cpp">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/gui/dRowAudio_MusicLibraryTable.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/gui/dRowAudio_SegmentedMeter.cpp">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/gui/dRowAudio_SegmentedMeter.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/gui/dRowAudio_Sonogram.cpp">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/gui/dRowAudio_Sonogram.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/gui/dRowAudio_Spectrograph.cpp">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/gui/dRowAudio_Spectrograph.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/gui/dRowAudio_Spectroscope.cpp">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/gui/dRowAudio_Spectroscope.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/gui/dRowAudio_TriggeredScope.cpp">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/gui/dRowAudio_TriggeredScope.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/gui/audiothumbnail/dRowAudio_AudioThumbnailImage.cpp">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/gui/audiothumbnail/dRowAudio_AudioThumbnailImage.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/gui/audiothumbnail/dRowAudio_ColouredAudioThumbnail.cpp">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/gui/audiothumbnail/dRowAudio_ColouredAudioThumbnail.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/gui/audiothumbnail/dRowAudio_DraggableWaveDisplay.cpp">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/gui/audiothumbnail/dRowAudio_DraggableWaveDisplay.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/gui/audiothumbnail/dRowAudio_PositionableWaveDisplay.cpp">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/gui/audiothumbnail/dRowAudio_PositionableWaveDisplay.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/gui/filebrowser/dRowAudio_BasicFileBrowser.cpp">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/gui/filebrowser/dRowAudio_BasicFileBrowser.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/gui/filebrowser/dRowAudio_ColumnFileBrowser.cpp">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/gui/filebrowser/dRowAudio_ColumnFileBrowser.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/gui/filebrowser/dRowAudio_ColumnFileBrowserLookAndFeel.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/maths/dRowAudio_BezierCurve.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/maths/dRowAudio_CumulativeMovingAverage.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/maths/dRowAudio_MathsUnitTests.cpp">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/maths/dRowAudio_MathsUtilities.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/native/dRowAudio_AudioPicker.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/native/dRowAudio_AudioPicker.mm">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/native/dRowAudio_AVAssetAudioFormat.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/native/dRowAudio_AVAssetAudioFormat.mm">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/native/dRowAudio_IOSAudioConverter.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/native/dRowAudio_IOSAudioConverter.mm">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/network/dRowAudio_CURLEasySession.cpp">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/network/dRowAudio_CURLEasySession.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/network/dRowAudio_CURLManager.cpp">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/network/dRowAudio_CURLManager.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/parameters/dRowAudio_PluginParameter.cpp">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/parameters/dRowAudio_PluginParameter.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/streams/dRowAudio_MemoryInputSource.cpp">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/streams/dRowAudio_MemoryInputSource.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/streams/dRowAudio_StreamAndFileHandler.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/utility/dRowAudio_Comparators.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/utility/dRowAudio_Constants.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/utility/dRowAudio_DebugObject.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/utility/dRowAudio_EncryptedString.cpp">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/utility/dRowAudio_EncryptedString.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/utility/dRowAudio_ITunesLibrary.cpp">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/utility/dRowAudio_ITunesLibrary.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/utility/dRowAudio_ITunesLibraryParser.cpp">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/utility/dRowAudio_ITunesLibraryParser.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/utility/dRowAudio_LockedPointer.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/utility/dRowAudio_MusicLibraryHelpers.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/utility/dRowAudio_StateVariable.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/utility/dRowAudio_UnityBuilder.cpp">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/utility/dRowAudio_UnityBuilder.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/utility/dRowAudio_UnityProjectBuilder.cpp">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/utility/dRowAudio_UnityProjectBuilder.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/utility/dRowAudio_Utility.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/utility/dRowAudio_XmlHelpers.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/juce_module_info">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
     <Unit filename="../../../../../JUCE/modules/juce_audio_basics/buffers/juce_AudioDataConverters.cpp">
       <Option compile="0"/>
       <Option link="0"/>
@@ -759,6 +1236,74 @@
       <Option link="0"/>
     </Unit>
     <Unit filename="../../../../../JUCE/modules/juce_audio_processors/juce_audio_processors.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/juce_audio_utils/gui/juce_AudioAppComponent.cpp">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/juce_audio_utils/gui/juce_AudioAppComponent.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/juce_audio_utils/gui/juce_AudioDeviceSelectorComponent.cpp">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/juce_audio_utils/gui/juce_AudioDeviceSelectorComponent.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/juce_audio_utils/gui/juce_AudioThumbnail.cpp">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/juce_audio_utils/gui/juce_AudioThumbnail.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/juce_audio_utils/gui/juce_AudioThumbnailBase.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/juce_audio_utils/gui/juce_AudioThumbnailCache.cpp">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/juce_audio_utils/gui/juce_AudioThumbnailCache.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/juce_audio_utils/gui/juce_AudioVisualiserComponent.cpp">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/juce_audio_utils/gui/juce_AudioVisualiserComponent.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/juce_audio_utils/gui/juce_MidiKeyboardComponent.cpp">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/juce_audio_utils/gui/juce_MidiKeyboardComponent.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/juce_audio_utils/players/juce_AudioProcessorPlayer.cpp">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/juce_audio_utils/players/juce_AudioProcessorPlayer.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/juce_audio_utils/juce_module_info">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../../../JUCE/modules/juce_audio_utils/juce_audio_utils.h">
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
@@ -3310,10 +3855,12 @@
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
+    <Unit filename="../../../../../JUCE/modules/dRowAudio/dRowAudio/dRowAudio.cpp"/>
     <Unit filename="../../../../../JUCE/modules/juce_audio_basics/juce_audio_basics.cpp"/>
     <Unit filename="../../../../../JUCE/modules/juce_audio_devices/juce_audio_devices.cpp"/>
     <Unit filename="../../../../../JUCE/modules/juce_audio_formats/juce_audio_formats.cpp"/>
     <Unit filename="../../../../../JUCE/modules/juce_audio_processors/juce_audio_processors.cpp"/>
+    <Unit filename="../../../../../JUCE/modules/juce_audio_utils/juce_audio_utils.cpp"/>
     <Unit filename="../../../../../JUCE/modules/juce_core/juce_core.cpp"/>
     <Unit filename="../../../../../JUCE/modules/juce_data_structures/juce_data_structures.cpp"/>
     <Unit filename="../../../../../JUCE/modules/juce_events/juce_events.cpp"/>

@@ -12,6 +12,10 @@
               jucerVersion="3.2.0" pluginAUSDKLocation="" companyName="AlexGustafson">
   <MAINGROUP id="ZMd7bj" name="DiauproPlugin">
     <GROUP id="{C0613FCB-8ACD-64C6-B6FD-CC11DB404B81}" name="Source">
+      <FILE id="hkOwHg" name="DiauproAsyncProcessor.cpp" compile="1" resource="0"
+            file="../AudioTestApplication/Source/DiauproAsyncProcessor.cpp"/>
+      <FILE id="WXOKmn" name="DiauproAsyncProcessor.h" compile="0" resource="0"
+            file="../AudioTestApplication/Source/DiauproAsyncProcessor.h"/>
       <FILE id="rQfkaA" name="DiauproNullProcessor.cpp" compile="1" resource="0"
             file="../AudioTestApplication/Source/DiauproNullProcessor.cpp"/>
       <FILE id="JirHOD" name="DiauproNullProcessor.h" compile="0" resource="0"
@@ -74,15 +78,19 @@
         <MODULEPATH id="juce_audio_formats" path="../../../JUCE/modules"/>
         <MODULEPATH id="juce_audio_processors" path="../../../JUCE/modules"/>
         <MODULEPATH id="juce_audio_plugin_client" path="../../../JUCE/modules"/>
+        <MODULEPATH id="dRowAudio" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../JUCE/modules"/>
       </MODULEPATHS>
     </XCODE_MAC>
   </EXPORTFORMATS>
   <MODULES>
+    <MODULE id="dRowAudio" showAllCode="1" useLocalCopy="0"/>
     <MODULES id="juce_audio_basics" showAllCode="1" useLocalCopy="0"/>
     <MODULES id="juce_audio_devices" showAllCode="1" useLocalCopy="0"/>
     <MODULES id="juce_audio_formats" showAllCode="1" useLocalCopy="0"/>
     <MODULES id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"/>
     <MODULES id="juce_audio_processors" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0"/>
     <MODULES id="juce_core" showAllCode="1" useLocalCopy="0"/>
     <MODULES id="juce_data_structures" showAllCode="1" useLocalCopy="0"/>
     <MODULES id="juce_events" showAllCode="1" useLocalCopy="0"/>
@@ -90,5 +98,6 @@
     <MODULES id="juce_gui_basics" showAllCode="1" useLocalCopy="0"/>
     <MODULES id="juce_gui_extra" showAllCode="1" useLocalCopy="0"/>
   </MODULES>
-  <JUCEOPTIONS JUCE_QUICKTIME="disabled"/>
+  <JUCEOPTIONS JUCE_QUICKTIME="disabled" DROWAUDIO_USE_FFTREAL="disabled" DROWAUDIO_USE_SOUNDTOUCH="disabled"
+               DROWAUDIO_USE_CURL="disabled"/>
 </JUCERPROJECT>

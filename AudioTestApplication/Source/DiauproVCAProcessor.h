@@ -12,9 +12,9 @@
 #define DIAUPROVCAPROCESSOR_H_INCLUDED
 
 #include "JuceHeader.h"
-#include "DiauproProcessor.h"
+#include "DiauproAsyncProcessor.h"
 
-class DiauproVCAProcessor : public DiauproProcessor
+class DiauproVCAProcessor : public DiauproAsyncProcessor
 {
 public:
     DiauproVCAProcessor() {
@@ -26,6 +26,7 @@ public:
         processState->decay = 34000.0;
         processState->sustain = 0.2;
         processState->release = 28000;
+        processState->lastVelocity = 0.0f;
         zerostruct(this->processState->noteStates);
     };
 
@@ -47,6 +48,7 @@ private:
         double totalProcessTime;
         double nodeProcessTime;
         uint8 noteStates [128];
+        float lastVelocity;
     };
     
     struct vca_state *processState;

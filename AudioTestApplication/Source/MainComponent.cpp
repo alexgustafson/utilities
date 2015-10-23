@@ -15,6 +15,7 @@
 #include "DiauproVCOProcessor.h"
 #include "DiauproVCAProcessor.h"
 #include "DiauproNULLProcessor.h"
+#include "DiauproAsyncProcessor.h"
 
 //==============================================================================
 /*
@@ -42,7 +43,10 @@ public:
 
         diauproVCAProcessor = new DiauproVCAProcessor();
         diauproVCAProcessor->setMonitor(&monitor);
-
+        
+        diauproAsyncProcessor = new DiauproAsyncProcessor();
+        diauproAsyncProcessor->setMonitor(&monitor);
+        diauproAsyncProcessor->initializeRingBuffers(2, 44100);
         setAudioChannels (2, 2);
         
     }
@@ -71,6 +75,7 @@ public:
         diauproNullProcessor->prepareToPlay(sampleRate, samplesPerBlockExpected);
         diauproVCOProcessor->prepareToPlay(sampleRate, samplesPerBlockExpected);
         diauproVCAProcessor->prepareToPlay(sampleRate, samplesPerBlockExpected);
+        diauproAsyncProcessor->prepareToPlay(sampleRate, samplesPerBlockExpected);
 
     }
 
@@ -89,6 +94,7 @@ public:
         diauproNullProcessor->processBlock(*bufferToFill.buffer, incomingMidi);
         diauproVCOProcessor->processBlock(*bufferToFill.buffer, incomingMidi);
         diauproVCAProcessor->processBlock(*bufferToFill.buffer, incomingMidi);
+        diauproAsyncProcessor->processBlock(*bufferToFill.buffer, incomingMidi);
 
     }
 
@@ -127,9 +133,10 @@ private:
     MidiMessageCollector *midiCollector;
     MidiUtility midiUtility;
 
-    DiauproVCOProcessor *diauproVCOProcessor;
-    DiauproVCAProcessor *diauproVCAProcessor;
-    DiauproNullProcessor *diauproNullProcessor;
+    ScopedPointer<DiauproVCOProcessor> diauproVCOProcessor;
+    ScopedPointer<DiauproVCAProcessor> diauproVCAProcessor;
+    ScopedPointer<DiauproNullProcessor> diauproNullProcessor;
+    ScopedPointer<DiauproAsyncProcessor> diauproAsyncProcessor;
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MainContentComponent)
 };

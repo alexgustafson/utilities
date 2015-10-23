@@ -49,6 +49,7 @@ ifeq ($(CONFIG),Release)
 endif
 
 OBJECTS := \
+  $(OBJDIR)/DiauproAsyncProcessor_3d36c58b.o \
   $(OBJDIR)/DiauproNullProcessor_e53dfa0.o \
   $(OBJDIR)/DiauproVCAProcessor_b1c4bbb3.o \
   $(OBJDIR)/DiauproVCOProcessor_be5c265.o \
@@ -91,6 +92,11 @@ clean:
 strip:
 	@echo Stripping AudioTestApplication
 	-@strip --strip-unneeded $(OUTDIR)/$(TARGET)
+
+$(OBJDIR)/DiauproAsyncProcessor_3d36c58b.o: ../../Source/DiauproAsyncProcessor.cpp
+	-@mkdir -p $(OBJDIR)
+	@echo "Compiling DiauproAsyncProcessor.cpp"
+	@$(CXX) $(CXXFLAGS) -o "$@" -c "$<"
 
 $(OBJDIR)/DiauproNullProcessor_e53dfa0.o: ../../Source/DiauproNullProcessor.cpp
 	-@mkdir -p $(OBJDIR)

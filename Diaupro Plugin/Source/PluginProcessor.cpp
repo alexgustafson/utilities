@@ -20,6 +20,12 @@ DiauproPluginAudioProcessor::DiauproPluginAudioProcessor()
     diauproVCOProcessor.setMonitor(&monitor);
     diauproVCAProcessor.setMonitor(&monitor);
     diauproNullProcessor.setMonitor(&monitor);
+    diauproAsyncProcessor.setMonitor(&monitor);
+    
+    diauproNullProcessor.initializeRingBuffers(2, 44100);
+    diauproAsyncProcessor.initializeRingBuffers(2, 44100);
+    diauproVCOProcessor.initializeRingBuffers(2, 44100);
+    diauproVCAProcessor.initializeRingBuffers(2, 44100);
     
     vcoProcessTime = 0.0;
     vcoRtTime = 0.0;
@@ -36,9 +42,15 @@ DiauproPluginAudioProcessor::DiauproPluginAudioProcessor()
     nullRtMaxTime = 0.0;
     nullRtMinTime = 100.0;
     
+    asyncProcessTime = 0.0;
+    asyncRtTime = 0.0;
+    asyncRtMaxTime = 0.0;
+    asyncRtMinTime = 100.0;
+    
     vcoNetStatus = false;
     vcaNetStatus = false;
     nullNetStatus = false;
+    asyncNetStatus = false;
 }
 
 DiauproPluginAudioProcessor::~DiauproPluginAudioProcessor()
@@ -156,6 +168,7 @@ void DiauproPluginAudioProcessor::prepareToPlay (double sampleRate, int samplesP
     diauproNullProcessor.prepareToPlay(sampleRate, samplesPerBlock);
     diauproVCOProcessor.prepareToPlay(sampleRate, samplesPerBlock);
     diauproVCAProcessor.prepareToPlay(sampleRate, samplesPerBlock);
+    diauproAsyncProcessor.prepareToPlay(sampleRate, samplesPerBlock);
 }
 
 void DiauproPluginAudioProcessor::releaseResources()
@@ -170,6 +183,7 @@ void DiauproPluginAudioProcessor::processBlock (AudioSampleBuffer& buffer, MidiB
     diauproNullProcessor.processBlock(buffer, midiMessages);
     diauproVCOProcessor.processBlock(buffer, midiMessages);
     diauproVCAProcessor.processBlock(buffer, midiMessages);
+    diauproAsyncProcessor.processBlock(buffer, midiMessages);
     
     triggerAsyncUpdate ();
 }
@@ -223,8 +237,26 @@ void DiauproPluginAudioProcessor::handleAsyncUpdate ()
         if (nullRtTime > 0.0) nullRtMinTime = jmin(nullRtMinTime, nullRtTime);
         nullNetStatus = diauproNullProcessor.hasActiveNetworkConnection();
         
+        asyncRtTime = diauproAsyncProcessor.getRoundTripTime();
+        asyncProcessTime = diauproAsyncProcessor.getProcessTime() ;
+        asyncRtMaxTime = jmax(asyncRtMaxTime, asyncRtTime);
+        if (asyncRtTime > 0.0) asyncRtMinTime = jmin(asyncRtMinTime, asyncRtTime);
+        asyncNetStatus = diauproAsyncProcessor.hasActiveNetworkConnection();
+        
         if(((DiauproPluginAudioProcessorEditor *)editor)->isReady()) editor->repaint ();
     }
+}
+void DiauproPluginAudioProcessor::setNullAsyncMode(bool async)
+{
+    diauproNullProcessor.setAsyncMode(async);
+}
+void DiauproPluginAudioProcessor::setVCOAsyncMode(bool async)
+{
+    diauproVCOProcessor.setAsyncMode(async);
+}
+void DiauproPluginAudioProcessor::setVCAAsyncMode(bool async)
+{
+    diauproVCAProcessor.setAsyncMode(async);
 }
 
 //==============================================================================

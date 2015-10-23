@@ -19,11 +19,11 @@ void DiauproVCAProcessor::localProcess(AudioSampleBuffer &buffer, MidiBuffer &mi
     bool hasEvent;
     
     float currentSample;
-
+    double vcoeff;
 
     for(sampleNr = 0; sampleNr < buffer.getNumSamples(); sampleNr++)
     {
-        
+        vcoeff = s->vfactor;
         
         if(nextMidiEventCount < sampleNr)
         {
@@ -39,34 +39,26 @@ void DiauproVCAProcessor::localProcess(AudioSampleBuffer &buffer, MidiBuffer &mi
                 
             }else{
                 s->phase = 0.0;
+                s->lastVelocity = nextMidiEvent.getFloatVelocity();
             }
         }
 
         if( hasNoteOn() )
         {
             
-
-
                 if(s->phase < s->attack)
                 {
-                    s->vfactor = ((s->attack  - (s->attack - s->phase)) / s->attack  );
+                    vcoeff = ((s->attack  - (s->attack - s->phase)) / s->attack  );
 
                 }else if(s->phase < s->attack + s->decay)
                 {
                     double diff = 1.0 - (s->sustain);
                     double fact = ( s->decay - (s->decay - (s->phase - s->attack))) / s->decay  ;
-                    s->vfactor = (1.0 - (diff * fact));
+                    vcoeff = (1.0 - (diff * fact)) ;
                     
                 }else {
-                    s->vfactor = s->sustain;
+                    vcoeff = s->sustain;
                 }
-
-            for(int i = 0; i < buffer.getNumChannels(); i++)
-            {
-                currentSample = buffer.getSample(i, sampleNr) * s->vfactor;
-                buffer.setSample(i, sampleNr, currentSample);
-                
-            }
 
 
         }else {
@@ -77,27 +69,29 @@ void DiauproVCAProcessor::localProcess(AudioSampleBuffer &buffer, MidiBuffer &mi
 
                 if (s->release > 0.0) {
             
-                    s->vfactor = s->sustain * (s->release - s->phase) / s->release;
+                    vcoeff = s->sustain * (s->release - s->phase) / s->release;
                 }else {
-                    s->vfactor = 0.0;
+                    vcoeff = 0.0;
                 }
 
             }else
             {
-                s->vfactor = 0.0;
+                vcoeff = 0.0;
             }
             
-            for(int i = 0; i < buffer.getNumChannels(); i++)
-            {
-                currentSample = buffer.getSample(i, sampleNr);
-                currentSample = currentSample * s->vfactor;
-                buffer.setSample(i, sampleNr, currentSample);
-                
-            }
+
+            
+        }
+        s->vfactor += 0.01 * ((vcoeff* s->lastVelocity) - s->vfactor);
+        for(int i = 0; i < buffer.getNumChannels(); i++)
+        {
+            currentSample = buffer.getSample(i, sampleNr) * s->vfactor;
+            buffer.setSample(i, sampleNr, currentSample);
             
         }
         s->phase++;
-    }}
+    }
+}
 
 void *DiauproVCAProcessor::getState() {
     return this->processState;

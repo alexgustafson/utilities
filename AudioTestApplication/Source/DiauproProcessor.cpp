@@ -46,7 +46,6 @@ void DiauproProcessor::setMonitor(Monitor *monitor, bool asNode) {
 
     } else {
 
-        this->processState = new state();
         this->zManager->browseService(getServiceTag().toRawUTF8());
     }
 }
@@ -269,7 +268,7 @@ void *DiauproProcessor::getState() {
 }
 
 size_t DiauproProcessor::getStateSize() {
-    return sizeof(DiauproProcessor::state);
+    return sizeof(diauproState);
 }
 
 double DiauproProcessor::getProcessTime()

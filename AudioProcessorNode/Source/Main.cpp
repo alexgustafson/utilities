@@ -14,6 +14,7 @@
 #include "DiauproVCAProcessor.h"
 #include "DiauproVCOProcessor.h"
 #include "DiauproNullProcessor.h"
+#include "DiauproAsyncProcessor.h"
 
 //==============================================================================
 int main (int argc, char* argv[])
@@ -34,6 +35,10 @@ int main (int argc, char* argv[])
     ScopedPointer<DiauproVCAProcessor> diauproVCAProcessor;
     diauproVCAProcessor = new DiauproVCAProcessor();
     diauproVCAProcessor->setMonitor(&monitor, true);
+    
+    ScopedPointer<DiauproAsyncProcessor> diauproAsyncProcessor;
+    diauproAsyncProcessor = new DiauproAsyncProcessor();
+    diauproAsyncProcessor->setMonitor(&monitor, true);
     
     std::cout << "press enter to exit...";
     getchar();
