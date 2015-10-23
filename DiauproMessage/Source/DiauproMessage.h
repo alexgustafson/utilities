@@ -67,6 +67,8 @@ public:
     void incrementTotalTime(double time);
     double getProcessTime();
     double getTotalTime();
+    void setTag(uint32 tag);
+    uint32 getTag();
 
 private:
 
@@ -81,6 +83,7 @@ private:
         double cpuUsage;
         double totalTime;
         double processTime;
+        uint32 tagNr;
     };
 
     void setNumberChannels(uint16 numChannels);

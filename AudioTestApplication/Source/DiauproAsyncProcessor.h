@@ -109,6 +109,9 @@ public:
             startThread();
         }
     };
+    
+    void setTag(uint32 tag);
+    uint32 getTag();
 
 private:
     
@@ -134,6 +137,7 @@ private:
     double tripTimeMs;
     int timeoutCount;
     
+    
     AudioSampleBuffer audioSampleBuffer;
     MidiBuffer midiBuffer;
     
@@ -144,6 +148,7 @@ private:
 
     OwnedArray<drow::FifoBuffer<float>> ringBuffers;
     CriticalSection lock;
+    uint32 tagNr;
     
     
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (DiauproAsyncProcessor)

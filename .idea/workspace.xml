@@ -1,415 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3aa37274-6c16-4420-9e4a-344a6d41b9d0" name="Default" comment="added async option">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/UnityProjectBuilder/Builds/MacOSX/RecentFilesMenuTemplate.nib" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/BuildUnity/MacOSX/Icon.icns" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/BuildUnity/MacOSX/RecentFilesMenuTemplate.nib" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/BuildUnity/VisualStudio2010/icon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/BuildUnity/iOS/Icon.icns" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/Builds/MacOSX/Icon.icns" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/Builds/MacOSX/RecentFilesMenuTemplate.nib" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/Builds/VisualStudio2010/icon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/Builds/iOS/Icon.icns" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/Source/resources/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/Source/resources/splash_screen.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/UnityProjectBuilder/Builds/MacOSX/UnityProjectBuilder.xcodeproj/project.pbxproj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/UnityProjectBuilder/Builds/MacOSX/UnityProjectBuilder.xcodeproj/project.xcworkspace/contents.xcworkspacedata" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/UnityProjectBuilder/Builds/VisualStudio2010/UnityProjectBuilder.sln" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/UnityProjectBuilder/Builds/VisualStudio2010/UnityProjectBuilder.vcxproj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/UnityProjectBuilder/Builds/VisualStudio2010/UnityProjectBuilder.vcxproj.filters" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/UnityProjectBuilder/Builds/VisualStudio2010/resources.rc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/UnityProjectBuilder/JuceLibraryCode/AppConfig.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/UnityProjectBuilder/JuceLibraryCode/JuceHeader.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/UnityProjectBuilder/JuceLibraryCode/ReadMe.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/UnityProjectBuilder/JuceLibraryCode/modules/dRowAudio/dRowAudio.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/UnityProjectBuilder/Source/Main.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/UnityProjectBuilder/UnityProjectBuilder.jucer" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/BuildUnity/Linux/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/BuildUnity/MacOSX/Info.plist" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/BuildUnity/MacOSX/dRowAudio Demo.xcodeproj/project.pbxproj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/BuildUnity/MacOSX/dRowAudio Demo.xcodeproj/project.xcworkspace/contents.xcworkspacedata" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/BuildUnity/VisualStudio2010/dRowAudio Demo.sln" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/BuildUnity/VisualStudio2010/dRowAudio Demo.vcxproj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/BuildUnity/VisualStudio2010/dRowAudio Demo.vcxproj.filters" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/BuildUnity/VisualStudio2010/resources.rc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/BuildUnity/iOS/Info.plist" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/BuildUnity/iOS/dRowAudio Demo.xcodeproj/project.pbxproj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/Builds/Linux/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/Builds/MacOSX/Info.plist" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/Builds/MacOSX/dRowAudio Demo.xcodeproj/project.pbxproj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/Builds/MacOSX/dRowAudio Demo.xcodeproj/project.xcworkspace/contents.xcworkspacedata" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/Builds/MacOSX/dRowAudio Demo.xcodeproj/project.xcworkspace/xcshareddata/dRowAudio Demo.xccheckout" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/Builds/VisualStudio2010/dRowAudio Demo.sln" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/Builds/VisualStudio2010/dRowAudio Demo.vcxproj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/Builds/VisualStudio2010/dRowAudio Demo.vcxproj.filters" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/Builds/VisualStudio2010/resources.rc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/Builds/iOS/Info.plist" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/Builds/iOS/dRowAudio Demo.xcodeproj/project.pbxproj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/Builds/iOS/dRowAudio Demo.xcodeproj/project.xcworkspace/contents.xcworkspacedata" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/JuceLibraryCode/AppConfig.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/JuceLibraryCode/BinaryData.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/JuceLibraryCode/BinaryData.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/JuceLibraryCode/JuceHeader.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/JuceLibraryCode/ReadMe.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/JuceLibraryCode/modules/dRowAudio/dRowAudio.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/Source/DemoHeader.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/Source/DemoLookAndFeel.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/Source/DemoLookAndFeel.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/Source/Main.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/Source/MainComponent.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/Source/MainComponent.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/Source/MainWindow.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/Source/MainWindow.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/Source/TrackInfoComponent.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/Source/TrackInfoComponent.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/Source/TransportComponent.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/Source/TransportComponent.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/Source/UnityBuild0.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/Source/UnityBuild1.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/Source/UnityBuild2.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/Source/UnityBuild3.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/Source/fft/FFTDemo.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/Source/fft/FFTDemo.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/Source/fft/PitchDetectorComponent.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/Source/fft/PitchDetectorComponent.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/Source/fft/PitchTracker.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/Source/fft/PitchTracker.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/Source/network/ConnectionComponent.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/Source/network/ConnectionComponent.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/Source/network/LocalDirectoryListBox.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/Source/network/LocalDirectoryListBox.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/Source/network/NetworkDemo.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/Source/network/NetworkDemo.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/Source/network/RemoteDirectoryListBox.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/Source/network/RemoteDirectoryListBox.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/Source/playback/AudioPlaybackDemo.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/Source/playback/AudioPlaybackDemo.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/Source/playback/BufferTransformAudioSource.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/Source/playback/BufferTransformAudioSource.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/Source/playback/CurvePoint.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/Source/playback/DistortionComponent.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/Source/playback/DistortionComponent.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/Source/playback/DistortionDemo.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/Source/playback/DistortionDemo.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/Source/playback/LoopComponent.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/Source/playback/LoopComponent.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/buildunity.command" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/dRowAudio Demo.jucer" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/apps/dRowAudio Demo/dRowAudio DemoUnityBuild.jucer" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/dRowAudio_AudioFilePlayer.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/dRowAudio_AudioFilePlayer.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/dRowAudio_AudioFilePlayerExt.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/dRowAudio_AudioFilePlayerExt.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/dRowAudio_AudioSampleBufferAudioFormat.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/dRowAudio_AudioSampleBufferAudioFormat.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/dRowAudio_AudioUtility.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/dRowAudio_AudioUtilityUnitTests.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/dRowAudio_Buffer.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/dRowAudio_EnvelopeFollower.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/dRowAudio_EnvelopeFollower.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/dRowAudio_FifoBuffer.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/dRowAudio_FilteringAudioSource.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/dRowAudio_FilteringAudioSource.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/dRowAudio_LoopingAudioSource.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/dRowAudio_LoopingAudioSource.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/dRowAudio_Pitch.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/dRowAudio_PitchDetector.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/dRowAudio_PitchDetector.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/dRowAudio_ReversibleAudioSource.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/dRowAudio_ReversibleAudioSource.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/dRowAudio_SampleRateConverter.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/dRowAudio_SampleRateConverter.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/dRowAudio_SoundTouchAudioSource.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/dRowAudio_SoundTouchAudioSource.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/dRowAudio_SoundTouchProcessor.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/dRowAudio_SoundTouchProcessor.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/fft/dRowAudio_FFT.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/fft/dRowAudio_FFT.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/fft/dRowAudio_LTAS.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/fft/dRowAudio_LTAS.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/fft/dRowAudio_Window.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/fft/dRowAudio_Window.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/fft/dRowAudio_mac_FFTOperation.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/fft/fftreal/Array.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/fft/fftreal/Array.hpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/fft/fftreal/DynArray.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/fft/fftreal/DynArray.hpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/fft/fftreal/FFTReal.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/fft/fftreal/FFTReal.hpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/fft/fftreal/FFTRealFixLen.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/fft/fftreal/FFTRealFixLen.hpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/fft/fftreal/FFTRealFixLenParam.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/fft/fftreal/FFTRealPassDirect.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/fft/fftreal/FFTRealPassDirect.hpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/fft/fftreal/FFTRealPassInverse.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/fft/fftreal/FFTRealPassInverse.hpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/fft/fftreal/FFTRealSelect.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/fft/fftreal/FFTRealSelect.hpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/fft/fftreal/FFTRealUseTrigo.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/fft/fftreal/FFTRealUseTrigo.hpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/fft/fftreal/OscSinCos.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/fft/fftreal/OscSinCos.hpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/fft/fftreal/def.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/filters/dRowAudio_BiquadFilter.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/filters/dRowAudio_BiquadFilter.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/filters/dRowAudio_OnePoleFilter.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/filters/dRowAudio_OnePoleFilter.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/soundtouch/AAFilter.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/soundtouch/AAFilter.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/soundtouch/BPMDetect.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/soundtouch/BPMDetect.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/soundtouch/FIFOSampleBuffer.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/soundtouch/FIFOSampleBuffer.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/soundtouch/FIFOSamplePipe.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/soundtouch/FIRFilter.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/soundtouch/FIRFilter.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/soundtouch/PeakFinder.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/soundtouch/PeakFinder.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/soundtouch/RateTransposer.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/soundtouch/RateTransposer.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/soundtouch/STTypes.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/soundtouch/SoundTouch.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/soundtouch/SoundTouch.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/soundtouch/SoundTouch_Includes.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/soundtouch/SoundTouch_Source.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/soundtouch/TDStretch.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/soundtouch/TDStretch.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/soundtouch/cpu_detect.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/soundtouch/cpu_detect_x64_gcc.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/soundtouch/cpu_detect_x64_win.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/soundtouch/cpu_detect_x86_gcc.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/soundtouch/cpu_detect_x86_win.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/soundtouch/mmx_optimized.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/soundtouch/soundtouch_config.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/soundtouch/sse_optimized.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/dRowAudio.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/dRowAudio.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/dRowAudio.mm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/gpl.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/gui/audiothumbnail/dRowAudio_AudioThumbnailImage.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/gui/audiothumbnail/dRowAudio_AudioThumbnailImage.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/gui/audiothumbnail/dRowAudio_ColouredAudioThumbnail.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/gui/audiothumbnail/dRowAudio_ColouredAudioThumbnail.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/gui/audiothumbnail/dRowAudio_DraggableWaveDisplay.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/gui/audiothumbnail/dRowAudio_DraggableWaveDisplay.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/gui/audiothumbnail/dRowAudio_PositionableWaveDisplay.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/gui/audiothumbnail/dRowAudio_PositionableWaveDisplay.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/gui/dRowAudio_AudioFileDropTarget.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/gui/dRowAudio_AudioFileDropTarget.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/gui/dRowAudio_AudioOscilloscope.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/gui/dRowAudio_AudioOscilloscope.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/gui/dRowAudio_AudioTransportCursor.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/gui/dRowAudio_AudioTransportCursor.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/gui/dRowAudio_CentreAlignViewport.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/gui/dRowAudio_CentreAlignViewport.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/gui/dRowAudio_Clock.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/gui/dRowAudio_Clock.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/gui/dRowAudio_CpuMeter.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/gui/dRowAudio_CpuMeter.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/gui/dRowAudio_DefaultColours.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/gui/dRowAudio_GraphicalComponent.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/gui/dRowAudio_GraphicalComponent.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/gui/dRowAudio_GuiHelpers.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/gui/dRowAudio_MusicLibraryTable.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/gui/dRowAudio_MusicLibraryTable.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/gui/dRowAudio_SegmentedMeter.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/gui/dRowAudio_SegmentedMeter.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/gui/dRowAudio_Sonogram.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/gui/dRowAudio_Sonogram.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/gui/dRowAudio_Spectrograph.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/gui/dRowAudio_Spectrograph.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/gui/dRowAudio_Spectroscope.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/gui/dRowAudio_Spectroscope.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/gui/dRowAudio_TriggeredScope.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/gui/dRowAudio_TriggeredScope.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/gui/filebrowser/dRowAudio_BasicFileBrowser.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/gui/filebrowser/dRowAudio_BasicFileBrowser.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/gui/filebrowser/dRowAudio_ColumnFileBrowser.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/gui/filebrowser/dRowAudio_ColumnFileBrowser.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/gui/filebrowser/dRowAudio_ColumnFileBrowserLookAndFeel.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/juce_module_info" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/maths/dRowAudio_BezierCurve.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/maths/dRowAudio_CumulativeMovingAverage.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/maths/dRowAudio_MathsUnitTests.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/maths/dRowAudio_MathsUtilities.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/native/dRowAudio_AVAssetAudioFormat.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/native/dRowAudio_AVAssetAudioFormat.mm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/native/dRowAudio_AudioPicker.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/native/dRowAudio_AudioPicker.mm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/native/dRowAudio_IOSAudioConverter.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/native/dRowAudio_IOSAudioConverter.mm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/network/curl/include/curl/curl.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/network/curl/include/curl/curlbuild.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/network/curl/include/curl/curlrules.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/network/curl/include/curl/curlver.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/network/curl/include/curl/easy.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/network/curl/include/curl/mprintf.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/network/curl/include/curl/multi.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/network/curl/include/curl/stdcheaders.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/network/curl/include/curl/typecheck-gcc.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/network/dRowAudio_CURLEasySession.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/network/dRowAudio_CURLEasySession.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/network/dRowAudio_CURLManager.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/network/dRowAudio_CURLManager.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/parameters/dRowAudio_PluginParameter.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/parameters/dRowAudio_PluginParameter.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/streams/dRowAudio_MemoryInputSource.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/streams/dRowAudio_MemoryInputSource.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/streams/dRowAudio_StreamAndFileHandler.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/utility/dRowAudio_Comparators.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/utility/dRowAudio_Constants.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/utility/dRowAudio_DebugObject.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/utility/dRowAudio_EncryptedString.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/utility/dRowAudio_EncryptedString.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/utility/dRowAudio_ITunesLibrary.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/utility/dRowAudio_ITunesLibrary.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/utility/dRowAudio_ITunesLibraryParser.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/utility/dRowAudio_ITunesLibraryParser.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/utility/dRowAudio_LockedPointer.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/utility/dRowAudio_MusicLibraryHelpers.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/utility/dRowAudio_StateVariable.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/utility/dRowAudio_UnityBuilder.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/utility/dRowAudio_UnityBuilder.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/utility/dRowAudio_UnityProjectBuilder.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/utility/dRowAudio_UnityProjectBuilder.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/utility/dRowAudio_Utility.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/utility/dRowAudio_XmlHelpers.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/juce_module_info" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Common/ParameterUpdater.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Common/ParameterUpdater.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Common/PluginHelpers.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Common/PluginLookAndFeel.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Common/PluginLookAndFeel.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Distortion/src/DRowAudioEditorComponent.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Distortion/src/DRowAudioEditorComponent.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Distortion/src/DRowAudioFilter.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Distortion/src/DRowAudioFilter.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Distortion/src/JucePluginCharacteristics.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Distortion/src/Parameters.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Distortion/src/includes.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Distortion/src/juce_AppConfig.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Distortion/src/juce_LibrarySource.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Distortion/src/juce_LibrarySource.mm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/DistortionShaper/src/CurvePoint.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/DistortionShaper/src/DRowAudioEditorComponent copy.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/DistortionShaper/src/DRowAudioEditorComponent copy.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/DistortionShaper/src/DRowAudioEditorComponent.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/DistortionShaper/src/DRowAudioEditorComponent.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/DistortionShaper/src/DRowAudioFilter.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/DistortionShaper/src/DRowAudioFilter.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/DistortionShaper/src/GraphComponent.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/DistortionShaper/src/GraphComponent.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/DistortionShaper/src/JucePluginCharacteristics.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/DistortionShaper/src/Parameters.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/DistortionShaper/src/includes.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/DistortionShaper/src/juce_AppConfig.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/DistortionShaper/src/juce_LibrarySource.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Echo/src/JucePluginCharacteristics.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Echo/src/dRowEchoCommon.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Echo/src/dRowEchoCommon.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Echo/src/dRowEchoEditorComponent.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Echo/src/dRowEchoEditorComponent.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Echo/src/dRowEchoFilter.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Echo/src/dRowEchoFilter.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Echo/src/includes.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Echo/src/juce_AppConfig.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Echo/src/juce_LibrarySource.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Echo/src/juce_LibrarySource.mm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/FDNReverb/Builds/Linux/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/FDNReverb/Builds/MacOSX/FDNReverb.xcodeproj/project.pbxproj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/FDNReverb/Builds/MacOSX/Info.plist" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/FDNReverb/Builds/VisualStudio2008/FDNReverb.sln" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/FDNReverb/Builds/VisualStudio2008/FDNReverb.vcproj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/FDNReverb/Builds/VisualStudio2010/FDNReverb.sln" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/FDNReverb/Builds/VisualStudio2010/FDNReverb.vcxproj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/FDNReverb/Builds/VisualStudio2010/FDNReverb.vcxproj.filters" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/FDNReverb/FDNReverb.jucer" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/FDNReverb/JuceLibraryCode/AppConfig.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/FDNReverb/JuceLibraryCode/JuceHeader.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/FDNReverb/JuceLibraryCode/ReadMe.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/FDNReverb/JuceLibraryCode/modules/dRowAudio/dRowAudio.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/FDNReverb/JuceLibraryCode/modules/juce_audio_plugin_client/juce_audio_plugin_client.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/FDNReverb/Source/FDNReverb/FDNReverb.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/FDNReverb/Source/FDNReverb/FDNReverb.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/FDNReverb/Source/FDNReverb/FeedbackMatrixBuffer.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/FDNReverb/Source/FDNReverb/FeedbackMatrixBuffer.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/FDNReverb/Source/FDNReverb/MultitapDelayLine.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/FDNReverb/Source/FDNReverb/MultitapDelayLine.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/FDNReverb/Source/PluginEditor.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/FDNReverb/Source/PluginEditor.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/FDNReverb/Source/PluginProcessor.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/FDNReverb/Source/PluginProcessor.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Flanger/src/DRowAudioEditorComponent.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Flanger/src/DRowAudioEditorComponent.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Flanger/src/DRowAudioFilter.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Flanger/src/DRowAudioFilter.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Flanger/src/JucePluginCharacteristics.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Flanger/src/Parameters.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Flanger/src/Resources/flanger_title.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Flanger/src/Resources/flanger_title.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Flanger/src/includes.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Flanger/src/juce_AppConfig.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Flanger/src/juce_LibrarySource.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Flanger/src/juce_LibrarySource.mm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Gate/src/DRowAudioEditorComponent.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Gate/src/DRowAudioEditorComponent.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Gate/src/DRowAudioFilter.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Gate/src/DRowAudioFilter.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Gate/src/DRowAudioParameters.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Gate/src/JucePluginCharacteristics.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Gate/src/MeterComponent.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Gate/src/MeterComponent.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Gate/src/dRowParameter.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Gate/src/dRowParameter.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Gate/src/includes.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Gate/src/juce_AppConfig.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Gate/src/juce_LibrarySource.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Gate/src/juce_LibrarySource.mm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Reverb/src/DRowAudioEditorComponent copy.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Reverb/src/DRowAudioEditorComponent copy.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Reverb/src/DRowAudioEditorComponent.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Reverb/src/DRowAudioEditorComponent.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Reverb/src/DRowAudioFilter.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Reverb/src/DRowAudioFilter.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Reverb/src/JucePluginCharacteristics.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Reverb/src/Parameters.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Reverb/src/includes.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Reverb/src/juce_AppConfig.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Reverb/src/juce_LibrarySource.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Tremolo/Builds/MacOSX/Info.plist" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Tremolo/Builds/MacOSX/Tremolo.xcodeproj/project.pbxproj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Tremolo/Builds/MacOSX/Tremolo.xcodeproj/project.xcworkspace/contents.xcworkspacedata" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Tremolo/Builds/VisualStudio2010/Tremolo.sln" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Tremolo/Builds/VisualStudio2010/Tremolo.vcxproj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Tremolo/Builds/VisualStudio2010/Tremolo.vcxproj.filters" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Tremolo/Builds/VisualStudio2010/resources.rc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Tremolo/JuceLibraryCode/AppConfig.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Tremolo/JuceLibraryCode/JuceHeader.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Tremolo/JuceLibraryCode/ReadMe.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Tremolo/JuceLibraryCode/modules/dRowAudio/dRowAudio.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Tremolo/JuceLibraryCode/modules/juce_audio_plugin_client/juce_audio_plugin_client.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Tremolo/Source/Common.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Tremolo/Source/PluginEditor.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Tremolo/Source/PluginEditor.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Tremolo/Source/PluginProcessor.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Tremolo/Source/PluginProcessor.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Tremolo/Source/TremoloBufferView.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Tremolo/Source/TremoloBufferView.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/plugins/Tremolo/Tremolo.jucer" />
+    <list default="true" id="3aa37274-6c16-4420-9e4a-344a6d41b9d0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/AudioProcessorNode.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/AudioProcessorNode.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/build/Debug/AudioProcessorNode" afterPath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/build/Debug/AudioProcessorNode" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/DiauproPlugin.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/DiauproPlugin.xcodeproj/project.xcworkspace/xcuserdata/alexandergustafson.xcuserdatad/UserInterfaceState.xcuserstate" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/build/Debug/Diaupro Plugin.component/Contents/MacOS/Diaupro Plugin" afterPath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/build/Debug/Diaupro Plugin.component/Contents/MacOS/Diaupro Plugin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioProcessorNode/AudioProcessorNode.jucer" afterPath="$PROJECT_DIR$/AudioProcessorNode/AudioProcessorNode.jucer" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioProcessorNode/Builds/CodeBlocksLinux/AudioProcessorNode.cbp" afterPath="$PROJECT_DIR$/AudioProcessorNode/Builds/CodeBlocksLinux/AudioProcessorNode.cbp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioProcessorNode/Builds/LinuxMakefile/Makefile" afterPath="$PROJECT_DIR$/AudioProcessorNode/Builds/LinuxMakefile/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/AudioProcessorNode.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/AudioProcessorNode/Builds/MacOSX/AudioProcessorNode.xcodeproj/project.pbxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/AppConfig.h" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/AppConfig.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio.h" afterPath="$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diaupro Plugin/Source/GUI.h" afterPath="$PROJECT_DIR$/Diaupro Plugin/Source/GUI.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproAsyncProcessor.cpp" afterPath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproAsyncProcessor.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproAsyncProcessor.h" afterPath="$PROJECT_DIR$/AudioTestApplication/Source/DiauproAsyncProcessor.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/DiauproPlugin.xcodeproj/xcuserdata/alexandergustafson.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" afterPath="$PROJECT_DIR$/Diaupro Plugin/Builds/MacOSX/DiauproPlugin.xcodeproj/xcuserdata/alexandergustafson.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diaupro Plugin/Source/PluginProcessor.cpp" afterPath="$PROJECT_DIR$/Diaupro Plugin/Source/PluginProcessor.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Diaupro Plugin/Source/PluginProcessor.h" afterPath="$PROJECT_DIR$/Diaupro Plugin/Source/PluginProcessor.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DiauproMessage/Source/DiauproMessage.cpp" afterPath="$PROJECT_DIR$/DiauproMessage/Source/DiauproMessage.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DiauproMessage/Source/DiauproMessage.h" afterPath="$PROJECT_DIR$/DiauproMessage/Source/DiauproMessage.h" />
     </list>
     <ignored path="utilities.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -441,11 +45,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AppConfig.h" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AppConfig.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/AppConfig.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5675676">
+            <state vertical-scroll-proportion="0.0">
               <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dRowAudio.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/dRowAudio.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="310" column="41" selection-start-line="310" selection-start-column="41" selection-end-line="310" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dRowAudio_StreamAndFileHandler.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/streams/dRowAudio_StreamAndFileHandler.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dRowAudio_FifoBuffer.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/dRowAudio_FifoBuffer.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dRowAudio_EnvelopeFollower.h" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/dRowAudio_EnvelopeFollower.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -481,51 +125,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JuceHeader.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/JuceHeader.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="dRowAudio.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio.h">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="juce_audio_basics.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/juce_audio_basics/juce_audio_basics.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DiauproVCOProcessor.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AudioTestApplication/Source/DiauproVCOProcessor.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -591,7 +195,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -600,184 +203,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utilities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utilities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utilities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utilities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DiauproMessage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utilities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utilities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DiauproMessage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Source" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utilities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utilities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AudioTestApplication" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utilities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utilities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AudioProcessorNode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utilities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utilities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AudioProcessorNode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JuceLibraryCode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utilities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utilities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AudioProcessorNode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JuceLibraryCode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utilities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utilities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AudioProcessorNode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JuceLibraryCode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dRowAudio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utilities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utilities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AudioProcessorNode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Builds" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utilities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utilities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AudioProcessorNode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Builds" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LinuxMakefile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -1000,12 +428,6 @@
       <created>1440757148412</created>
       <option name="number" value="Default" />
       <updated>1440757148412</updated>
-    </task>
-    <task id="LOCAL-00063" summary="deeper midi inspection">
-      <created>1443902817098</created>
-      <option name="number" value="00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1443902817098</updated>
     </task>
     <task id="LOCAL-00064" summary="deeper midi inspection">
       <created>1443903461928</created>
@@ -1295,14 +717,20 @@
       <option name="project" value="LOCAL" />
       <updated>1445609535851</updated>
     </task>
-    <option name="localTasksCounter" value="112" />
+    <task id="LOCAL-00112" summary="adding drowAudio">
+      <created>1445611250728</created>
+      <option name="number" value="00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1445611250729</updated>
+    </task>
+    <option name="localTasksCounter" value="113" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="1727" y="36" width="1404" height="860" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2444934" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3979442" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1336,7 +764,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="moved zeroconf handling into audioprocessor" />
     <MESSAGE value="Merge branch 'master' of https://github.com/alexgustafson/utilities&#10;&#10;# Conflicts:&#10;#&#9;AudioProcessorNode/AudioProcessorNode.jucer&#10;#&#9;AudioProcessorNode/Builds/LinuxMakefile/Makefile&#10;" />
     <MESSAGE value="hotswapping node enabled" />
     <MESSAGE value="unified path structure" />
@@ -1361,41 +788,14 @@
     <MESSAGE value="what's up with processState on Arm" />
     <MESSAGE value="gitignore upate" />
     <MESSAGE value="added async option" />
-    <option name="LAST_COMMIT_MESSAGE" value="added async option" />
+    <MESSAGE value="adding drowAudio" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding drowAudio" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ZeroConf/Builds/LinuxMakefile/Makefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/mDNSShared/Java/DNSSD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ZeroConf/Source/ZeroConfTests.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ZeroConf/Source/ZeroConfManager.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ZeroConf/Source/ZeroConfTests.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1411,13 +811,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ZeroConf/JuceLibraryCode/JuceHeader.h">
@@ -1428,13 +828,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ZeroConf/JuceLibraryCode/JuceHeader.h">
@@ -1445,13 +845,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ZeroConf/JuceLibraryCode/JuceHeader.h">
@@ -1462,13 +862,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ZeroConf/JuceLibraryCode/JuceHeader.h">
@@ -1479,13 +879,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ZeroConf/JuceLibraryCode/JuceHeader.h">
@@ -1559,13 +959,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.37931034">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ZeroConf/JuceLibraryCode/JuceHeader.h">
@@ -1670,7 +1070,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1678,7 +1077,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1686,7 +1084,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1694,7 +1091,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1702,7 +1098,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1748,8 +1143,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/AppConfig.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5675676">
+        <state vertical-scroll-proportion="0.0">
           <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/dRowAudio.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="310" column="41" selection-start-line="310" selection-start-column="41" selection-end-line="310" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/streams/dRowAudio_StreamAndFileHandler.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/dRowAudio_FifoBuffer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AudioProcessorNode/JuceLibraryCode/modules/dRowAudio/dRowAudio/audio/dRowAudio_EnvelopeFollower.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>

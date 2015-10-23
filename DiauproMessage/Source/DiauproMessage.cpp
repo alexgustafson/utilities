@@ -144,6 +144,7 @@ void DiauproMessage::clear() {
     this->header.totalTime = 0.0;
     this->header.processTime = 0.0;
     this->data.fillWith((uint8) 0);
+    this->header.tagNr = (uint32)0;
 }
 
 String DiauproMessage::headerToString() {
@@ -178,5 +179,12 @@ double DiauproMessage::getTotalTime()
 void DiauproMessage::incrementTotalTime(double time)
 {
     header.totalTime += time;
+}
+
+void DiauproMessage::setTag(uint32 tag){
+    header.tagNr = tag;
+}
+uint32 DiauproMessage::getTag(){
+    return header.tagNr;
 }
 

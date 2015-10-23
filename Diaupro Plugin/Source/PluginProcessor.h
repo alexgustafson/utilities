@@ -93,6 +93,8 @@ public:
     double asyncRtMinTime;
     bool asyncNetStatus;
     
+    double audioLatency;
+    
     void handleAsyncUpdate () override;
     
     void setNullAsyncMode(bool async);
@@ -108,6 +110,8 @@ private:
     Synthesiser synth;
     AudioProcessorEditor *editor;
     bool editorReady;
+    
+    int tagCountdown;
         //==============================================================================
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (DiauproPluginAudioProcessor)
 };

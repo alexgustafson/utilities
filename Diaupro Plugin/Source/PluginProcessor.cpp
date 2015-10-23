@@ -51,6 +51,9 @@ DiauproPluginAudioProcessor::DiauproPluginAudioProcessor()
     vcaNetStatus = false;
     nullNetStatus = false;
     asyncNetStatus = false;
+    
+    audioLatency = 0;
+    tagCountdown = 50;
 }
 
 DiauproPluginAudioProcessor::~DiauproPluginAudioProcessor()
@@ -180,10 +183,30 @@ void DiauproPluginAudioProcessor::releaseResources()
 void DiauproPluginAudioProcessor::processBlock (AudioSampleBuffer& buffer, MidiBuffer& midiMessages)
 {
     buffer.clear();
+    
+    if (tagCountdown > 0) {
+        tagCountdown--;
+        diauproNullProcessor.setTag((uint32) 0);
+    }else{
+        tagCountdown = 50;
+        audioLatency = Time::getMillisecondCounterHiRes();
+        diauproNullProcessor.setTag((uint32) 555);
+    }
     diauproNullProcessor.processBlock(buffer, midiMessages);
+    
+    diauproVCOProcessor.setTag(diauproNullProcessor.getTag());
     diauproVCOProcessor.processBlock(buffer, midiMessages);
+    
+    diauproVCAProcessor.setTag(diauproVCOProcessor.getTag());
     diauproVCAProcessor.processBlock(buffer, midiMessages);
+    
+    diauproAsyncProcessor.setTag(diauproVCAProcessor.getTag());
     diauproAsyncProcessor.processBlock(buffer, midiMessages);
+    
+    if (diauproAsyncProcessor.getTag() > 0) {
+        audioLatency = Time::getMillisecondCounterHiRes() - audioLatency;
+        Logger::writeToLog(String::formatted("latency in ms: %f", audioLatency));
+    }
     
     triggerAsyncUpdate ();
 }
@@ -242,6 +265,8 @@ void DiauproPluginAudioProcessor::handleAsyncUpdate ()
         asyncRtMaxTime = jmax(asyncRtMaxTime, asyncRtTime);
         if (asyncRtTime > 0.0) asyncRtMinTime = jmin(asyncRtMinTime, asyncRtTime);
         asyncNetStatus = diauproAsyncProcessor.hasActiveNetworkConnection();
+        
+        
         
         if(((DiauproPluginAudioProcessorEditor *)editor)->isReady()) editor->repaint ();
     }

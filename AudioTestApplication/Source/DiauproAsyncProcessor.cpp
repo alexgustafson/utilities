@@ -11,7 +11,7 @@
 #include "DiauproAsyncProcessor.h"
 
 DiauproAsyncProcessor::DiauproAsyncProcessor() : Thread("Diaupro Async Processor"), FileDescriptorListener("Audio Processor Node"),
-processTimeMs(0.0), tripTimeMs(0.0), asyncMode(false) {
+processTimeMs(0.0), tripTimeMs(0.0), asyncMode(false), tagNr((uint32) 0) {
     
     this->processState = (diauprostate*)malloc(sizeof(diauprostate));
     processState->nodeProcessTime = 0.0;
@@ -127,7 +127,7 @@ void DiauproAsyncProcessor::processBlock(AudioSampleBuffer &buffer, MidiBuffer &
                 
                 returnTime = Time::getMillisecondCounterHiRes();
                 message->setTotalTime(startTime - returnTime);
-                
+                message->setTag(tagNr);
                 message->getAudioData(&buffer);
                 message->getMidiData(midiBuffer);
                 setState(message->getState());
@@ -137,6 +137,7 @@ void DiauproAsyncProcessor::processBlock(AudioSampleBuffer &buffer, MidiBuffer &
                 Logger::writeToLog("timedout");
                 timeoutCount++;
                 tripTimeMs = -1.0;
+                tagNr = (uint32)0;
                 localProcess(buffer, midiMessages, getState());
             }
         }
@@ -158,6 +159,8 @@ void DiauproAsyncProcessor::run()
             bytesRead = message->readFromSocket(socket);
             message->getAudioData(&ringBuffers);
             message->getMidiData(midiBuffer);
+            tagNr = message->getTag();
+
             setState(message->getState());
             this->processTimeMs  = message->getProcessTime();
         }
@@ -284,6 +287,10 @@ void DiauproAsyncProcessor::handleFileDescriptor(int fileDescriptor) {
     
     message->getAudioData(&audioSampleBuffer);
     message->getMidiData(midiBuffer);
+    if(message->getTag() == (uint32)555)
+    {
+        Logger::writeToLog("Got tag");
+    }
     
     localProcess(audioSampleBuffer, midiBuffer, getState());
     
@@ -326,5 +333,12 @@ double DiauproAsyncProcessor::getRoundTripTime()
 {
     return tripTimeMs;
 }
-
+void DiauproAsyncProcessor::setTag(uint32 tag)
+{
+    tagNr = tag;
+}
+uint32 DiauproAsyncProcessor::getTag()
+{
+    return tagNr;
+}
 
