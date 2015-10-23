@@ -12,8 +12,6 @@
 #define DIAUPROMESSAGE_H_INCLUDED
 
 #include "JuceHeader.h"
-#include "dRowAudio.h"
-
 
 class DiauproMessage {
 public:
