@@ -13,7 +13,7 @@
 
 
 //==============================================================================
-DiauproPluginAudioProcessor::DiauproPluginAudioProcessor()
+DiauproPluginAudioProcessor::DiauproPluginAudioProcessor() : file("~/Desktop/diaupro_log.txt")
 {
     editorReady = false;
     monitor.startMonitoring();
@@ -26,6 +26,8 @@ DiauproPluginAudioProcessor::DiauproPluginAudioProcessor()
     diauproAsyncProcessor.initializeRingBuffers(2, 44100);
     diauproVCOProcessor.initializeRingBuffers(2, 44100);
     diauproVCAProcessor.initializeRingBuffers(2, 44100);
+    
+    diauproAsyncProcessor.setAsyncMode(true);
     
     vcoProcessTime = 0.0;
     vcoRtTime = 0.0;
@@ -54,6 +56,9 @@ DiauproPluginAudioProcessor::DiauproPluginAudioProcessor()
     
     audioLatency = 0;
     tagCountdown = 50;
+    
+    
+    logfile = new FileOutputStream(file);
 }
 
 DiauproPluginAudioProcessor::~DiauproPluginAudioProcessor()
@@ -183,13 +188,14 @@ void DiauproPluginAudioProcessor::releaseResources()
 void DiauproPluginAudioProcessor::processBlock (AudioSampleBuffer& buffer, MidiBuffer& midiMessages)
 {
     buffer.clear();
+    double startTime;
     
     if (tagCountdown > 0) {
         tagCountdown--;
         diauproNullProcessor.setTag((uint32) 0);
     }else{
         tagCountdown = 50;
-        audioLatency = Time::getMillisecondCounterHiRes();
+        startTime = Time::getMillisecondCounterHiRes();
         diauproNullProcessor.setTag((uint32) 555);
     }
     diauproNullProcessor.processBlock(buffer, midiMessages);
@@ -204,8 +210,7 @@ void DiauproPluginAudioProcessor::processBlock (AudioSampleBuffer& buffer, MidiB
     diauproAsyncProcessor.processBlock(buffer, midiMessages);
     
     if (diauproAsyncProcessor.getTag() > 0) {
-        audioLatency = Time::getMillisecondCounterHiRes() - audioLatency;
-        Logger::writeToLog(String::formatted("latency in ms: %f", audioLatency));
+        audioLatency = Time::getMillisecondCounterHiRes() - startTime;
     }
     
     triggerAsyncUpdate ();
@@ -242,6 +247,7 @@ void DiauproPluginAudioProcessor::handleAsyncUpdate ()
 {
 
     if (editor != nullptr && editorReady) {
+        
         vcoRtTime = diauproVCOProcessor.getRoundTripTime();
         vcoProcessTime = diauproVCOProcessor.getProcessTime() ;
         vcoRtMaxTime = jmax(vcoRtMaxTime, vcoRtTime);
@@ -265,10 +271,11 @@ void DiauproPluginAudioProcessor::handleAsyncUpdate ()
         asyncRtMaxTime = jmax(asyncRtMaxTime, asyncRtTime);
         if (asyncRtTime > 0.0) asyncRtMinTime = jmin(asyncRtMinTime, asyncRtTime);
         asyncNetStatus = diauproAsyncProcessor.hasActiveNetworkConnection();
-        
-        
-        
+
         if(((DiauproPluginAudioProcessorEditor *)editor)->isReady()) editor->repaint ();
+        
+        String log = String::formatted("vcoRtTime: %f\n", vcoRtTime);
+        logfile->write(log.toRawUTF8(), sizeof(log.toRawUTF8()));
     }
 }
 void DiauproPluginAudioProcessor::setNullAsyncMode(bool async)
@@ -282,6 +289,10 @@ void DiauproPluginAudioProcessor::setVCOAsyncMode(bool async)
 void DiauproPluginAudioProcessor::setVCAAsyncMode(bool async)
 {
     diauproVCAProcessor.setAsyncMode(async);
+}
+double DiauproPluginAudioProcessor::getLatency()
+{
+    return audioLatency;
 }
 
 //==============================================================================

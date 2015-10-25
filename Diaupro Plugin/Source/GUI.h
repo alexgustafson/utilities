@@ -140,6 +140,8 @@ private:
     ScopedPointer<TextButton> nullAsyncButton;
     ScopedPointer<TextButton> vcoAsyncButton;
     ScopedPointer<TextButton> vcaAsyncButton;
+    ScopedPointer<Label> label21;
+    ScopedPointer<Label> latencyLabel;
 
 
     //==============================================================================

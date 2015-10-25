@@ -32,6 +32,8 @@ public:
     void setNullAsync(bool async);
     void setVcoAsync(bool async );
     void setVcaAsync(bool async );
+    
+    double getLatency();
 
 private:
     // This reference is provided as a quick way for your editor to

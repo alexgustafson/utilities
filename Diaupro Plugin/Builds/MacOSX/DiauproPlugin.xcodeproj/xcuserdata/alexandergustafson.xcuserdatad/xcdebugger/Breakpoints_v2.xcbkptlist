@@ -42,12 +42,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../Source/GUI.cpp"
-            timestampString = "467298645.780133"
+            timestampString = "467316130.546328"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "592"
-            endingLineNumber = "592"
-            landmarkName = "DiauproGUI::setVcoTime(double pTime, double rtTime, double maxRtTime, double minRtTime )"
+            startingLineNumber = "594"
+            endingLineNumber = "594"
+            landmarkName = "DiauproGUI::buttonClicked (Button* buttonThatWasClicked)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

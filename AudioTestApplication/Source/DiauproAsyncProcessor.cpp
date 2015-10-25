@@ -287,10 +287,6 @@ void DiauproAsyncProcessor::handleFileDescriptor(int fileDescriptor) {
     
     message->getAudioData(&audioSampleBuffer);
     message->getMidiData(midiBuffer);
-    if(message->getTag() == (uint32)555)
-    {
-        Logger::writeToLog("Got tag");
-    }
     
     localProcess(audioSampleBuffer, midiBuffer, getState());
     

@@ -100,6 +100,7 @@ public:
     void setNullAsyncMode(bool async);
     void setVCOAsyncMode(bool async);
     void setVCAAsyncMode(bool async);
+    double getLatency();
 
 private:
     DiauproVCOProcessor diauproVCOProcessor;
@@ -110,6 +111,8 @@ private:
     Synthesiser synth;
     AudioProcessorEditor *editor;
     bool editorReady;
+    File file;
+    ScopedPointer<FileOutputStream> logfile;
     
     int tagCountdown;
         //==============================================================================

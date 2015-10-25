@@ -75,3 +75,8 @@ void DiauproPluginAudioProcessorEditor::setVcaAsync(bool async )
 {
     processor.setVCAAsyncMode(async);
 }
+
+double DiauproPluginAudioProcessorEditor::getLatency()
+{
+    return processor.getLatency();
+}

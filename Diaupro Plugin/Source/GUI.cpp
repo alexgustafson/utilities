@@ -18,13 +18,14 @@
 */
 
 //[Headers] You can add your own extra header files here...
+
 //[/Headers]
 
 #include "GUI.h"
-#include "PluginEditor.h"
 
 
 //[MiscUserDefs] You can add your own user definitions and misc code here...
+#include "PluginEditor.h"
 //[/MiscUserDefs]
 
 //==============================================================================
@@ -344,6 +345,22 @@ DiauproGUI::DiauproGUI ()
     vcaAsyncButton->setColour (TextButton::buttonColourId, Colour (0xffeaeaff));
     vcaAsyncButton->setColour (TextButton::buttonOnColourId, Colour (0xff31ff65));
 
+    addAndMakeVisible (label21 = new Label ("new label",
+                                            TRANS("Total Latency:")));
+    label21->setFont (Font (15.00f, Font::plain));
+    label21->setJustificationType (Justification::centredLeft);
+    label21->setEditable (false, false, false);
+    label21->setColour (TextEditor::textColourId, Colours::black);
+    label21->setColour (TextEditor::backgroundColourId, Colour (0x00000000));
+
+    addAndMakeVisible (latencyLabel = new Label ("new label",
+                                                 TRANS("0ms")));
+    latencyLabel->setFont (Font (15.00f, Font::plain));
+    latencyLabel->setJustificationType (Justification::centredLeft);
+    latencyLabel->setEditable (false, false, false);
+    latencyLabel->setColour (TextEditor::textColourId, Colours::black);
+    latencyLabel->setColour (TextEditor::backgroundColourId, Colour (0x00000000));
+
 
     //[UserPreSize]
 
@@ -405,6 +422,8 @@ DiauproGUI::~DiauproGUI()
     nullAsyncButton = nullptr;
     vcoAsyncButton = nullptr;
     vcaAsyncButton = nullptr;
+    label21 = nullptr;
+    latencyLabel = nullptr;
 
 
     //[Destructor]. You can add your own custom destruction code here..
@@ -537,6 +556,8 @@ void DiauproGUI::resized()
     nullAsyncButton->setBounds (getWidth() - 157, 8, 32, 16);
     vcoAsyncButton->setBounds (getWidth() - 157, 200, 32, 16);
     vcaAsyncButton->setBounds (getWidth() - 157, 392, 32, 16);
+    label21->setBounds (16, 768, 96, 24);
+    latencyLabel->setBounds (112, 768, 96, 24);
     //[UserResized] Add your own custom resize handling here..
     //[/UserResized]
 }
@@ -552,7 +573,7 @@ void DiauproGUI::buttonClicked (Button* buttonThatWasClicked)
         nullAsync = !nullAsync;
         nullAsyncButton->setToggleState(nullAsync, juce::NotificationType::dontSendNotification);
         (findParentComponentOfClass<DiauproPluginAudioProcessorEditor>())->setNullAsync(nullAsync);
-        
+
         //[/UserButtonCode_nullAsyncButton]
     }
     else if (buttonThatWasClicked == vcoAsyncButton)
@@ -649,6 +670,8 @@ void DiauproGUI::setAsyncTime(double pTime, double rtTime, double maxRtTime, dou
     asyncMaxRtTimeLabel->setText(String(maxRtTime), juce::NotificationType::sendNotificationAsync);
     asyncMinRtTimeLabel->setText(String(minRtTime), juce::NotificationType::sendNotificationAsync);
     asyncRtTimeDisplay->setText(String(asyncRtTime), juce::NotificationType::sendNotificationAsync);
+    
+    latencyLabel->setText(String((findParentComponentOfClass<DiauproPluginAudioProcessorEditor>())->getLatency()), juce::NotificationType::sendNotificationAsync);
 
     if (rtTime > 0) asyncTimes.add(rtTime);
 
@@ -900,6 +923,16 @@ BEGIN_JUCER_METADATA
               virtualName="" explicitFocusOrder="0" pos="157R 392 32 16" bgColOff="ffeaeaff"
               bgColOn="ff31ff65" buttonText="async" connectedEdges="0" needsCallback="1"
               radioGroupId="0"/>
+  <LABEL name="new label" id="a21f824e5df8e0e5" memberName="label21" virtualName=""
+         explicitFocusOrder="0" pos="16 768 96 24" edTextCol="ff000000"
+         edBkgCol="0" labelText="Total Latency:" editableSingleClick="0"
+         editableDoubleClick="0" focusDiscardsChanges="0" fontname="Default font"
+         fontsize="15" bold="0" italic="0" justification="33"/>
+  <LABEL name="new label" id="c565df5b52f472a8" memberName="latencyLabel"
+         virtualName="" explicitFocusOrder="0" pos="112 768 96 24" edTextCol="ff000000"
+         edBkgCol="0" labelText="0ms" editableSingleClick="0" editableDoubleClick="0"
+         focusDiscardsChanges="0" fontname="Default font" fontsize="15"
+         bold="0" italic="0" justification="33"/>
 </JUCER_COMPONENT>
 
 END_JUCER_METADATA
